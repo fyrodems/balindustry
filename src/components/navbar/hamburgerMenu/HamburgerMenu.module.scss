@@ -1,0 +1,88 @@
+@import '@/app/styles/colors';
+@import '@/app/styles/diff';
+
+.hamburgerMenu {
+  position: absolute;
+  top: $navbar-height-mobile;
+  width: 100%;
+  max-width: 350px;
+  background-color: $white;
+  color: $text-dark-color;
+  transition: 0.3s;
+  height: calc(100vh - $navbar-height-mobile);
+  max-height: 690px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  li {
+    border-bottom: 1px solid $gray;
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+  }
+
+  li:last-child {
+    border-bottom: none;
+  }
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.linkWrapper {
+  border-bottom: 2px solid $text-dark-color;
+  margin: 0 20px;
+}
+
+.closed {
+  right: -350px;
+}
+
+.open {
+  right: 0;
+}
+
+.basketWrapper {
+  margin: 0 20px;
+
+  li {
+    justify-content: flex-start;
+    gap: 15px;
+  }
+}
+
+.optionsWrapper {
+  background-color: $side-navbar-bottom-color;
+
+  ul {
+    margin: 0;
+  }
+
+  li {
+    justify-content: flex-start;
+    gap: 15px;
+    padding: 0 30px;
+  }
+
+  li:last-child {
+    gap: 0;
+  }
+
+  li:first-child {
+    border-top: 1px solid $gray;
+
+    svg:last-child {
+      margin-left: auto;
+      transform: rotate(-90deg);
+    }
+  }
+}
+
+.returnButton {
+  font-weight: 700;
+}

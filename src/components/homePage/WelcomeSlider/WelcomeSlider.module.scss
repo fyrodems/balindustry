@@ -1,0 +1,84 @@
+@import '@/app/styles/colors';
+@import '@/app/styles/fontSizes';
+@import '@/app/styles/diff';
+@import '@/app/styles/mixins';
+
+.welcomeSlider {
+  position: relative;
+  color: $white;
+  overflow: hidden;
+  height: 100vh;
+  padding: 0 30px;
+  padding-top: $navbar-height-mobile;
+
+  h1 {
+    font-size: $section-name-small-size;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  p {
+    font-size: $large;
+    font-weight: 400;
+    text-align: center;
+    line-height: 22px;
+  }
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  button {
+    margin: 36px 0;
+  }
+
+  @include laptop {
+    h1 {
+      font-size: $welcome-slider-header-s;
+    }
+  }
+}
+
+.welcomeSwiper {
+  height: calc(100% - 60px);
+}
+
+.slideContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  cursor: pointer;
+
+  button {
+    background-color: $welcome-slider-button;
+  }
+
+  button:hover {
+    background-color: $welcome-slider-button-hover;
+    color: $text-dark-color;
+  }
+
+  @include laptop {
+    margin: auto;
+    max-width: 1000px;
+  }
+}
+
+.paginationBullet {
+  background: $white;
+  opacity: 1;
+  height: 23px;
+  width: 23px;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 0 4px;
+
+  border: 3px solid transparent;
+}

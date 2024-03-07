@@ -1,0 +1,38 @@
+@import './breakpoints';
+
+// breakpoints
+@mixin small-phone {
+  @media only screen and (min-width: $breakpoint-xs) {
+    @content;
+  }
+}
+
+@mixin phone {
+  @media only screen and (min-width: $breakpoint-s) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media only screen and (min-width: $breakpoint-m) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media only screen and (min-width: $breakpoint-l) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (min-width: $breakpoint-xl) {
+    @content;
+  }
+}
+
+@mixin desktop-large {
+  @media only screen and (min-width: $breakpoint-xxl) {
+    @content;
+  }
+}

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Warstwa_1" data-name="Warstwa 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1080">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Gradient_bez_nazwy_3-21);
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10, .cls-11, .cls-12, .cls-13, .cls-14, .cls-15, .cls-16, .cls-17, .cls-18, .cls-19, .cls-20, .cls-21, .cls-22, .cls-23, .cls-24 {
+        stroke-width: 0px;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10, .cls-11, .cls-12, .cls-13, .cls-14, .cls-15, .cls-16, .cls-18, .cls-19, .cls-20, .cls-21, .cls-22, .cls-23, .cls-24 {
+        opacity: .03;
+      }
+
+      .cls-2 {
+        fill: url(#Gradient_bez_nazwy_3-10);
+      }
+
+      .cls-3 {
+        fill: url(#Gradient_bez_nazwy_3-11);
+      }
+
+      .cls-4 {
+        fill: url(#Gradient_bez_nazwy_3-7);
+      }
+
+      .cls-5 {
+        fill: url(#Gradient_bez_nazwy_3-3);
+      }
+
+      .cls-6 {
+        fill: url(#Gradient_bez_nazwy_3);
+      }
+
+      .cls-7 {
+        fill: url(#Gradient_bez_nazwy_3-14);
+      }
+
+      .cls-8 {
+        fill: url(#Gradient_bez_nazwy_3-18);
+      }
+
+      .cls-9 {
+        fill: url(#Gradient_bez_nazwy_3-20);
+      }
+
+      .cls-10 {
+        fill: url(#Gradient_bez_nazwy_3-9);
+      }
+
+      .cls-11 {
+        fill: url(#Gradient_bez_nazwy_3-16);
+      }
+
+      .cls-12 {
+        fill: url(#Gradient_bez_nazwy_3-5);
+      }
+
+      .cls-13 {
+        fill: url(#Gradient_bez_nazwy_3-23);
+      }
+
+      .cls-14 {
+        fill: url(#Gradient_bez_nazwy_3-8);
+      }
+
+      .cls-15 {
+        fill: url(#Gradient_bez_nazwy_3-13);
+      }
+
+      .cls-16 {
+        fill: url(#Gradient_bez_nazwy_3-12);
+      }
+
+      .cls-17 {
+        fill: #2a2a2a;
+      }
+
+      .cls-18 {
+        fill: url(#Gradient_bez_nazwy_3-15);
+      }
+
+      .cls-19 {
+        fill: url(#Gradient_bez_nazwy_3-4);
+      }
+
+      .cls-20 {
+        fill: url(#Gradient_bez_nazwy_3-22);
+      }
+
+      .cls-21 {
+        fill: url(#Gradient_bez_nazwy_3-17);
+      }
+
+      .cls-22 {
+        fill: url(#Gradient_bez_nazwy_3-6);
+      }
+
+      .cls-23 {
+        fill: url(#Gradient_bez_nazwy_3-2);
+      }
+
+      .cls-24 {
+        fill: url(#Gradient_bez_nazwy_3-19);
+      }
+    </style>
+    <linearGradient id="Gradient_bez_nazwy_3" data-name="Gradient bez nazwy 3" x1="5.58" y1="540" x2="78.11" y2="540" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <linearGradient id="Gradient_bez_nazwy_3-2" data-name="Gradient bez nazwy 3" x1="88.99" x2="161.52" xlink:href="#Gradient_bez_nazwy_3"/>
+    <linearGradient id="Gradient_bez_nazwy_3-3" data-name="Gradient bez nazwy 3" x1="172.4" x2="244.93" xlink:href="#Gradient_bez_nazwy_3"/>
+    <linearGradient id="Gradient_bez_nazwy_3-4" data-name="Gradient bez nazwy 3" x1="255.81" x2="328.34" xlink:href="#Gradient_bez_nazwy_3"/>
+    <linearGradient id="Gradient_bez_nazwy_3-5" data-name="Gradient bez nazwy 3" x1="339.43" x2="411.96" xlink:href="#Gradient_bez_nazwy_3"/>
+    <linearGradient id="Gradient_bez_nazwy_3-6" data-name="Gradient bez nazwy 3" x1="422.84" x2="495.37" xlink:href="#Gradient_bez_nazwy_3"/>
+    <linearGradient id="Gradient_bez_nazwy_3-7" data-name="Gradient bez nazwy 3" x1="506.25" x2="578.78" xlink:href="#Gradient_bez_nazwy_3"/>
+    <linearGradient id="Gradient_bez_nazwy_3-8" data-name="Gradient bez nazwy 3" x1="589.66" x2="662.19" xlink:href="#Gradient_bez_nazwy_3"/>
+    <linearGradient id="Gradient_bez_nazwy_3-9" data-name="Gradient bez nazwy 3" x1="673.07" x2="745.6" xlink:href="#Gradient_bez_nazwy_3"/>
+    <linearGradient id="Gradient_bez_nazwy_3-10" data-name="Gradient bez nazwy 3" x1="756.48" x2="829.01" xlink:href="#Gradient_bez_nazwy_3"/>
+    <linearGradient id="Gradient_bez_nazwy_3-11" data-name="Gradient bez nazwy 3" x1="839.89" x2="912.42" xlink:href="#Gradient_bez_nazwy_3"/>
+    <linearGradient id="Gradient_bez_nazwy_3-12" data-name="Gradient bez nazwy 3" x1="923.3" x2="995.83" xlink:href="#Gradient_bez_nazwy_3"/>
+    <linearGradient id="Gradient_bez_nazwy_3-13" data-name="Gradient bez nazwy 3" x1="1006.92" x2="1079.45" xlink:href="#Gradient_bez_nazwy_3"/>
+    <linearGradient id="Gradient_bez_nazwy_3-14" data-name="Gradient bez nazwy 3" x1="1090.33" x2="1162.86" xlink:href="#Gradient_bez_nazwy_3"/>
+    <linearGradient id="Gradient_bez_nazwy_3-15" data-name="Gradient bez nazwy 3" x1="1173.74" x2="1246.27" xlink:href="#Gradient_bez_nazwy_3"/>
+    <linearGradient id="Gradient_bez_nazwy_3-16" data-name="Gradient bez nazwy 3" x1="1257.15" x2="1329.67" xlink:href="#Gradient_bez_nazwy_3"/>
+    <linearGradient id="Gradient_bez_nazwy_3-17" data-name="Gradient bez nazwy 3" x1="1340.56" x2="1413.08" xlink:href="#Gradient_bez_nazwy_3"/>
+    <linearGradient id="Gradient_bez_nazwy_3-18" data-name="Gradient bez nazwy 3" x1="1423.97" x2="1496.49" xlink:href="#Gradient_bez_nazwy_3"/>
+    <linearGradient id="Gradient_bez_nazwy_3-19" data-name="Gradient bez nazwy 3" x1="1507.38" x2="1579.9" xlink:href="#Gradient_bez_nazwy_3"/>
+    <linearGradient id="Gradient_bez_nazwy_3-20" data-name="Gradient bez nazwy 3" x1="1590.79" x2="1663.31" xlink:href="#Gradient_bez_nazwy_3"/>
+    <linearGradient id="Gradient_bez_nazwy_3-21" data-name="Gradient bez nazwy 3" x1="1674.19" x2="1746.72" xlink:href="#Gradient_bez_nazwy_3"/>
+    <linearGradient id="Gradient_bez_nazwy_3-22" data-name="Gradient bez nazwy 3" x1="1757.6" x2="1830.13" xlink:href="#Gradient_bez_nazwy_3"/>
+    <linearGradient id="Gradient_bez_nazwy_3-23" data-name="Gradient bez nazwy 3" x1="1841.01" x2="1913.54" xlink:href="#Gradient_bez_nazwy_3"/>
+  </defs>
+  <rect class="cls-17" y="0" width="1920" height="1080"/>
+  <rect class="cls-6" y="0" width="83.41" height="1080"/>
+  <rect class="cls-23" x="83.41" y="0" width="83.41" height="1080"/>
+  <rect class="cls-5" x="166.82" y="0" width="83.41" height="1080"/>
+  <rect class="cls-19" x="250.23" y="0" width="83.41" height="1080"/>
+  <rect class="cls-12" x="333.85" y="0" width="83.41" height="1080"/>
+  <rect class="cls-22" x="417.26" y="0" width="83.41" height="1080"/>
+  <rect class="cls-4" x="500.67" y="0" width="83.41" height="1080"/>
+  <rect class="cls-14" x="584.08" y="0" width="83.41" height="1080"/>
+  <rect class="cls-10" x="667.49" width="83.41" height="1080"/>
+  <rect class="cls-2" x="750.9" width="83.41" height="1080"/>
+  <rect class="cls-3" x="834.31" width="83.41" height="1080"/>
+  <rect class="cls-16" x="917.71" width="83.41" height="1080"/>
+  <rect class="cls-15" x="1001.34" width="83.41" height="1080"/>
+  <rect class="cls-7" x="1084.74" width="83.41" height="1080"/>
+  <rect class="cls-18" x="1168.15" width="83.41" height="1080"/>
+  <rect class="cls-11" x="1251.56" width="83.41" height="1080"/>
+  <rect class="cls-21" x="1334.97" width="83.41" height="1080"/>
+  <rect class="cls-8" x="1418.38" width="83.41" height="1080"/>
+  <rect class="cls-24" x="1501.79" width="83.41" height="1080"/>
+  <rect class="cls-9" x="1585.2" width="83.41" height="1080"/>
+  <rect class="cls-1" x="1668.61" width="83.41" height="1080"/>
+  <rect class="cls-20" x="1752.02" width="83.41" height="1080"/>
+  <rect class="cls-13" x="1835.43" width="83.41" height="1080"/>
+</svg>

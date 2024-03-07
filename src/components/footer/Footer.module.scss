@@ -1,0 +1,114 @@
+@import '@/app/styles/fontSizes';
+@import '@/app/styles/colors';
+@import '@/app/styles/mixins';
+
+.footer {
+  background-color: $footer-bg;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $text-white-color;
+  padding: 0 12px;
+  padding-top: 80px;
+  padding-bottom: 20px;
+
+  @include phone {
+    padding: 0 60px;
+    padding-top: 80px;
+    padding-bottom: 20px;
+  }
+
+  @include tablet {
+    padding: 0 70px;
+    padding-top: 80px;
+    padding-bottom: 20px;
+  }
+}
+
+.logoContainer {
+  width: 100%;
+}
+
+.menuContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  gap: 20px;
+  align-items: center;
+  text-align: center;
+
+  @include tablet {
+    gap: 35px;
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+
+    h4 {
+      min-height: 45px;
+    }
+  }
+  @include laptop {
+    padding: 0 55px;
+    gap: 35px;
+    flex-direction: row;
+    text-align: left;
+  }
+
+  @include desktop {
+    padding: 0 125px;
+    gap: 88px;
+    flex-direction: row;
+    text-align: left;
+  }
+
+  h4 {
+    font-size: $extra-large;
+  }
+
+  li {
+    min-width: 70px;
+    margin-top: 16px;
+    cursor: pointer;
+  }
+}
+
+.bottomBar {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 36px;
+  margin-top: 60px;
+  flex-direction: column;
+
+  @include tablet {
+    flex-direction: row;
+    gap: 5px;
+  }
+
+  @include laptop {
+    gap: 50px;
+  }
+
+  ul {
+    margin: 0;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+  }
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+}

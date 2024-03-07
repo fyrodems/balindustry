@@ -1,0 +1,31 @@
+@import '@/app/styles/mixins';
+.contentWrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1600px;
+
+  section {
+    margin-bottom: 100px;
+    padding: 0 10px;
+
+    h2 {
+      text-align: center;
+    }
+  }
+
+  @include phone {
+    section {
+      padding: 0 40px;
+    }
+  }
+
+  @include laptop {
+    section {
+      padding: 0 50px;
+
+      h2 {
+        text-align: left;
+      }
+    }
+  }
+}

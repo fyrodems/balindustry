@@ -1,0 +1,16 @@
+@import '@/app/styles/colors';
+
+.swiper-pagination-bullet-active {
+  border: 3px solid $orange !important;
+
+  span {
+    background-color: #eb6e2e;
+    display: block;
+    position: relative;
+    top: 3px;
+    left: 3px;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+  }
+}

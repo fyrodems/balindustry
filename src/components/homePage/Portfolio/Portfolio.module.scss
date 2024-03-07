@@ -1,0 +1,40 @@
+@import '@/app/styles/fontSizes';
+@import '@/app/styles/colors';
+@import '@/app/styles/mixins';
+
+.portfolio {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 45px;
+
+  h2 {
+    color: $section-name-color;
+    font-size: $section-name-small-size;
+    font-weight: 400;
+    margin-bottom: 0;
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+    max-width: 230px;
+    padding: 16px 24px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 23px;
+  }
+
+  @include laptop {
+    flex-direction: row;
+    align-items: flex-end;
+
+    h2 {
+      font-size: $section-name-size;
+    }
+
+    button {
+      margin-left: auto;
+    }
+  }
+}

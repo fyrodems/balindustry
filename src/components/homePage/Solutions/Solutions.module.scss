@@ -1,0 +1,50 @@
+@import '@/app/styles/fontSizes';
+@import '@/app/styles/colors';
+@import '@/app/styles/mixins';
+
+.solutions {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 0 50px;
+  align-items: center;
+
+  h2 {
+    color: $section-name-color;
+    font-size: $section-name-small-size;
+    font-weight: 400;
+    margin-bottom: 0;
+    width: 100%;
+  }
+
+  p {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  button {
+    width: 100%;
+    max-width: 230px;
+    padding: 16px 24px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 23px;
+  }
+
+  @include laptop {
+    align-items: flex-start;
+
+    h2 {
+      font-size: $section-name-size;
+    }
+
+    p {
+      text-align: left;
+      width: 70%;
+    }
+
+    button {
+      margin-left: auto;
+    }
+  }
+}

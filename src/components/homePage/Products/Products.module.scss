@@ -1,0 +1,185 @@
+@import '@/app/styles/colors';
+@import '@/app/styles/fontSizes';
+@import '@/app/styles/mixins';
+
+.products {
+  h2 {
+    color: $section-name-color;
+    font-size: $section-name-small-size;
+    font-weight: 400;
+  }
+
+  button {
+    background-color: $white;
+    color: $text-dark-color;
+    padding: 16px;
+    font-weight: 600;
+    min-width: 200px;
+    max-width: 275px;
+  }
+
+  button:hover {
+    background-color: $gray;
+    color: $text-dark-color;
+  }
+
+  @include laptop {
+    h2 {
+      font-size: $section-name-size;
+    }
+
+    button {
+      align-self: flex-end;
+    }
+  }
+}
+
+.productsContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  row-gap: 70px;
+  column-gap: 80px;
+
+  @include laptop {
+    row-gap: 70px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 140px;
+    column-gap: 50px;
+  }
+
+  @include desktop {
+    column-gap: 80px;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid $button-bg;
+  cursor: pointer;
+  max-width: 330px;
+
+  @include small-phone {
+    max-width: 100%;
+  }
+
+  @include laptop {
+    max-width: 415px;
+  }
+
+  @include desktop {
+    max-width: 100%;
+  }
+}
+
+.cardTop {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 24px;
+  background-color: $button-bg;
+  color: $text-white-color;
+  padding: 25px;
+  min-height: 390px;
+
+  div:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+  }
+
+  button {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  h3 {
+    font-weight: 500;
+    font-size: $popular-offers-header;
+  }
+
+  @include laptop {
+    flex-direction: row;
+    min-height: 230px;
+    gap: 25px;
+
+    div:first-child {
+      flex-direction: row;
+      gap: 25px;
+    }
+
+    .servicesCard .headerWOImg {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    button {
+      display: none;
+    }
+
+    h3 {
+      font-size: 20px;
+    }
+
+    img {
+      width: 200px;
+    }
+  }
+
+  @include desktop {
+    h3 {
+      font-size: $products-section-h3;
+    }
+  }
+}
+
+.cardBottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  padding: 0 40px;
+  text-align: center;
+
+  h3 {
+    font-weight: 500;
+    font-size: $products-section-h3;
+    margin-bottom: 0;
+  }
+
+  @include laptop {
+    padding: 0;
+    text-align: left;
+    align-items: flex-start;
+
+    h3 {
+      width: 50%;
+    }
+  }
+}
+
+.servicesCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+
+  button {
+    display: block;
+  }
+}
+
+.headerWOImg {
+  display: flex;
+  flex-direction: column;
+  h3 {
+    margin-bottom: 8px;
+  }
+}

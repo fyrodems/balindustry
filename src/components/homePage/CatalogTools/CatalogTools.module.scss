@@ -1,0 +1,132 @@
+@import '@/app/styles/fontSizes';
+@import '@/app/styles/colors';
+@import '@/app/styles/mixins';
+
+.catalogTools {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  @include laptop {
+    flex-direction: row;
+
+    .container:first-child {
+      flex: 1;
+    }
+
+    .container:last-child {
+      flex: 1;
+    }
+  }
+}
+
+.container {
+  border-radius: 24px;
+  background: $card-bg;
+  box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(15px);
+  display: flex;
+  flex-direction: column;
+  padding: 35px;
+  overflow: hidden;
+  min-height: 350px;
+  padding-bottom: 0;
+
+  @include laptop {
+    flex-direction: row;
+    min-height: 100%;
+    padding-bottom: 35px;
+  }
+}
+
+.iconContainer {
+  border-radius: 50%;
+  background-color: $button-bg;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 52px;
+  height: 52px;
+
+  svg {
+    color: $gray;
+    width: 34px;
+    height: 34px;
+  }
+}
+
+.containerText {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  text-align: center;
+
+  @include laptop {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  a {
+    color: $text-dark-color;
+  }
+}
+
+.imgContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 170px;
+
+  img {
+    height: 170px;
+    width: 250px;
+  }
+
+  .toolPhoto {
+    img {
+      margin-left: 10%;
+      width: 80%;
+    }
+  }
+
+  @include laptop {
+    position: relative;
+    left: 35px;
+    width: 100%;
+    flex: 2;
+    height: 290px;
+
+    img {
+      position: absolute;
+      top: -25px;
+      left: -10px;
+      height: 125%;
+      width: 130%;
+      scale: 1.2;
+    }
+
+    .toolPhoto {
+      img {
+        margin-left: 0;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.container:last-child {
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    scale: 1;
+  }
+}
+
+.drillIcon {
+  margin-left: 5px;
+}
