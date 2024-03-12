@@ -23,7 +23,7 @@ export default function CatalogTools() {
         <div className={styles.imgContainer}>
           <Image src={catalog} alt="Catalog photo" />
         </div>
-        {/* <Button disabled={false} size="XL" content="Pobierz katalog" /> */}
+        <Button disabled={false} size="XL" content="Pobierz katalog" />
       </div>
       <div className={styles.container}>
         <div className={styles.containerText}>

@@ -113,6 +113,17 @@
     div:first-child {
       flex-direction: row;
       gap: 25px;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    [data-role='flex-helper'] {
+      display: none;
+    }
+
+    div {
+      justify-content: space-between;
+      width: 100%;
     }
 
     .servicesCard .headerWOImg {
@@ -159,9 +170,15 @@
     padding: 0;
     text-align: left;
     align-items: flex-start;
+    margin-top: 28px;
+    padding-bottom: 16px;
 
     h3 {
       width: 50%;
+    }
+
+    p {
+      margin: 0;
     }
   }
 }
@@ -170,7 +187,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 85px;
+  text-align: center;
+
+  @include laptop {
+    text-align: unset;
+  }
 
   button {
     display: block;
@@ -182,5 +204,9 @@
   flex-direction: column;
   h3 {
     margin-bottom: 8px;
+  }
+
+  @include laptop {
+    max-width: 225px;
   }
 }

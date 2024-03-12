@@ -37,8 +37,13 @@ export default function Products() {
     {
       topHeader: 'Usługi',
       topPhoto: null,
-      topParagraph:
-        'Sprawdź nasze usługi. Wypełnij formularz ofertowy na naszej stronie.',
+      topParagraph: (
+        <>
+          Sprawdź nasze usługi.
+          <br />
+          Wypełnij formularz ofertowy na naszej stronie.
+        </>
+      ),
       topButton: 'Formularz',
       bottomHeader: 'Usługi',
       bottomText:
@@ -57,7 +62,8 @@ export default function Products() {
                 <div>
                   <h3>{card.topHeader}</h3>
                   <Image src={card.topPhoto} alt="Section photo" />
-                  <Button disabled={false} content={card.topButton} size="XL" />
+                  {/* <Button disabled={false} content={card.topButton} size="XL" /> */}
+                  <div data-role="flex-helper"></div>
                 </div>
               ) : (
                 <div className={styles.servicesCard}>
@@ -74,7 +80,7 @@ export default function Products() {
               )}
             </div>
             <div className={styles.cardBottom}>
-              <h3>{card.bottomHeader}</h3>
+              {/* <h3>{card.bottomHeader}</h3> */}
               <p>{card.bottomText}</p>
             </div>
           </div>

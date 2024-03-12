@@ -11,6 +11,12 @@
     display: none;
   }
 
+  .container > button {
+    display: block;
+    margin: 40px auto 0;
+    width: fit-content;
+  }
+
   @include laptop {
     flex-direction: row;
 
@@ -24,6 +30,10 @@
 
     button {
       display: block;
+    }
+
+    .container > button {
+      display: none;
     }
   }
 
@@ -146,6 +156,10 @@
     height: 100%;
     width: 100%;
     scale: 1;
+  }
+
+  ul + a {
+    text-wrap: nowrap;
   }
 }
 
