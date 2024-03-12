@@ -3,9 +3,10 @@ import { PiBookOpen } from 'react-icons/pi'
 import { Drill } from 'lucide-react'
 import Image from 'next/image'
 import catalog from '../../../../public/imgs/BAL_catalog.webp'
-import suszarnia from '../../../../public/imgs/suszarnia.png'
+// import suszarnia from '../../../../public/imgs/suszarnia.svg'
 import styles from './CatalogTools.module.scss'
 import { Link } from '@/navigation'
+import Button from '@/components/button/Button'
 
 export default function CatalogTools() {
   return (
@@ -17,10 +18,12 @@ export default function CatalogTools() {
           </div>
           <h2>Przejrzyj nasz katalog</h2>
           <p>Dowiedz się więcej o naszych maszynach dzięki katalogowi.</p>
+          <Button disabled={false} size="XL" content="Pobierz katalog" />
         </div>
         <div className={styles.imgContainer}>
           <Image src={catalog} alt="Catalog photo" />
         </div>
+        {/* <Button disabled={false} size="XL" content="Pobierz katalog" /> */}
       </div>
       <div className={styles.container}>
         <div className={styles.containerText}>
@@ -37,9 +40,11 @@ export default function CatalogTools() {
         </div>
         <div className={styles.imgContainer}>
           <Image
-            src={suszarnia}
+            src="/imgs/suszarnia.svg"
             alt="Tool photo"
             className={styles.toolPhoto}
+            width={400}
+            height={200}
           />
         </div>
       </div>

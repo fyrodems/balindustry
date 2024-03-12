@@ -7,7 +7,7 @@
   }
 }
 
-@mixin phone {
+@mixin phone-landscape {
   @media only screen and (min-width: $breakpoint-s) {
     @content;
   }

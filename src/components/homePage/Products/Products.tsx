@@ -48,7 +48,7 @@ export default function Products() {
 
   return (
     <section className={styles.products}>
-      <h2>Nasze produkty</h2>
+      <h2></h2>
       <div className={styles.productsContainer}>
         {sectionCards.map((card) => (
           <div key={card.topHeader} className={styles.card}>

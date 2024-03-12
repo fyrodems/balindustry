@@ -13,7 +13,7 @@
   padding-top: 80px;
   padding-bottom: 20px;
 
-  @include phone {
+  @include phone-landscape {
     padding: 0 60px;
     padding-top: 80px;
     padding-bottom: 20px;
