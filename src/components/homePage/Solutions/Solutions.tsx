@@ -1,5 +1,5 @@
 import styles from './Solutions.module.scss'
-import Button from '@/components/common/button/Button'
+import Button from '@/components/common/Button'
 
 export default function Solutions() {
   return (

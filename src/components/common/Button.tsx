@@ -16,10 +16,10 @@ export const Button: React.FC<ButtonProps> = ({
   primary = true,
 }) => {
   const sizeToClassName = {
-    XS: 'px-14 py-4 text-sm',
-    M: 'px-16 py-3 text-base',
-    L: 'px-20 py-5 text-base',
-    XL: 'px-24 py-6 text-lg',
+    XS: 'px-6 py-1 text-sm',
+    M: 'px-10 py-3 text-base',
+    L: 'px-12 py-4 text-base',
+    XL: 'px-14 py-4 text-lg',
   }
 
   return (
@@ -28,7 +28,7 @@ export const Button: React.FC<ButtonProps> = ({
       className={cn(
         className,
         'flex cursor-pointer items-center justify-center rounded-lg font-medium text-white transition duration-300',
-        primary ?? 'bg-button hover:bg-button-hover',
+        primary && 'bg-button hover:bg-button-hover',
         size ? sizeToClassName[size] : sizeToClassName.M
       )}
     >

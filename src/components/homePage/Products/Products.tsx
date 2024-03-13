@@ -3,7 +3,7 @@ import magazyn from '../../../../public/products/magazyn.png'
 import waterjet from '../../../../public/products/waterjet.png'
 import cela from '../../../../public/products/twin_one_axis.png'
 import styles from './Products.module.scss'
-import Button from '@/components/common/button/Button'
+import Button from '@/components/common/Button'
 
 export default function Products() {
   const sectionCards = [
@@ -75,6 +75,7 @@ export default function Products() {
                     disabled={false}
                     content="Dowiedz się więcej"
                     size="XL"
+                    primary
                   />
                 </div>
               )}
