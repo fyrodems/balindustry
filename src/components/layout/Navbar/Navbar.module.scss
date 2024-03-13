@@ -8,14 +8,11 @@
   top: 0;
   z-index: 2;
   width: 100%;
+  min-height: 70px;
   padding: 0 38px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: $white;
   background-color: $navbar-bg;
-  img {
-    height: 100%;
-    width: 60px;
-  }
 }

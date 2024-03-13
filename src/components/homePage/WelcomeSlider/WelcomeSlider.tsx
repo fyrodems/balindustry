@@ -78,7 +78,12 @@ export default function WelcomeSlider() {
             <div className={styles.slideContainer}>
               <h1>{slide.header}</h1>
               <p>{slide.text}</p>
-              <Button content={slide.buttonText} disabled={false} size="M" />
+              <Button
+                className="bg-main-orange cursor-pointer select-none items-center rounded-sm px-5 py-1.5 text-sm transition-all hover:bg-orange-400"
+                content={slide.buttonText}
+                disabled={false}
+                primary={false}
+              />
             </div>
           </SwiperSlide>
         ))}

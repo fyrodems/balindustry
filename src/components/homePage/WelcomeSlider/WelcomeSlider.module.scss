@@ -56,15 +56,6 @@
   height: 100%;
   cursor: pointer;
 
-  button {
-    background-color: $welcome-slider-button;
-  }
-
-  button:hover {
-    background-color: $welcome-slider-button-hover;
-    color: $text-dark-color;
-  }
-
   @include laptop {
     margin: auto;
     max-width: 1000px;
