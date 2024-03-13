@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import { FaLinkedinIn, FaInstagram, FaTwitter } from 'react-icons/fa'
 import { Instagram, Linkedin } from 'lucide-react'
-import logo from '../../../public/logos/BalIndustryLogoOrange.png'
 import styles from './Footer.module.scss'
 
 export default function Footer() {
@@ -30,7 +29,12 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.logoContainer}>
-        <Image src={logo} alt="Logo" />
+        <Image
+          src="/logos/BalIndustryLogoOrange.png"
+          alt="Logo"
+          width={80}
+          height={40}
+        />
       </div>
       <div className={styles.menuContainer}>
         {menus.map((menu) => (

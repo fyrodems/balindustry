@@ -8,7 +8,7 @@ import Image from 'next/image'
 // import bg from './backgrounds/welcomeSlideBG.svg'
 import styles from './WelcomeSlider.module.scss'
 import './swiperStyles.scss'
-import Button from '@/components/button/Button'
+import Button from '@/components/common/button/Button'
 
 export default function WelcomeSlider() {
   const slidesContent = [

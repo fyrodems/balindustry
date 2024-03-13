@@ -6,7 +6,7 @@ import catalog from '../../../../public/imgs/BAL_catalog.webp'
 // import suszarnia from '../../../../public/imgs/suszarnia.svg'
 import styles from './CatalogTools.module.scss'
 import { Link } from '@/navigation'
-import Button from '@/components/button/Button'
+import Button from '@/components/common/button/Button'
 
 export default function CatalogTools() {
   return (

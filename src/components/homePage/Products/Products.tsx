@@ -3,7 +3,7 @@ import magazyn from '../../../../public/products/magazyn.png'
 import waterjet from '../../../../public/products/waterjet.png'
 import cela from '../../../../public/products/twin_one_axis.png'
 import styles from './Products.module.scss'
-import Button from '@/components/button/Button'
+import Button from '@/components/common/button/Button'
 
 export default function Products() {
   const sectionCards = [
