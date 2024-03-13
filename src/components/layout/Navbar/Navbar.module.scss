@@ -1,0 +1,21 @@
+@import '@/app/styles/colors';
+@import '@/app/styles/diff';
+@import '@/app/styles/fontSizes';
+@import '@/app/styles/mixins';
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  padding: 0 38px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $white;
+  background-color: $navbar-bg;
+  img {
+    height: 100%;
+    width: 60px;
+  }
+}

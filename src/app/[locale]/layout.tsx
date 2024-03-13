@@ -4,7 +4,7 @@ import { NextIntlClientProvider, useLocale } from 'next-intl'
 import { Inter } from 'next/font/google'
 import { register } from 'swiper/element/bundle'
 import '../globals.scss'
-// import Navbar from '@/components/layout/navbar/Navbar'
+import Navbar from '@/components/layout/navbar/Navbar'
 import Footer from '@/components/layout/footer/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -36,7 +36,7 @@ export default async function RootLayout({ children }: Props) {
     <html lang={locale}>
       <body className={inter.className}>
         <NextIntlClientProvider locale={locale} messages={messages}>
-          {/* <Navbar /> */}
+          <Navbar />
           {children}
           <Footer />
         </NextIntlClientProvider>
