@@ -1,7 +1,7 @@
 import Image from 'next/image'
-import magazyn from '../../../../public/products/magazyn.png'
-import waterjet from '../../../../public/products/waterjet.png'
-import cela from '../../../../public/products/twin_one_axis.png'
+import magazyn from '../../../../public/mainPageProducts/magazyn.png'
+import waterjet from '../../../../public/mainPageProducts/waterjet.png'
+import cela from '../../../../public/mainPageProducts/twin_one_axis.png'
 import styles from './Products.module.scss'
 import Button from '@/components/common/Button'
 
@@ -14,7 +14,7 @@ export default function Products() {
       topButton: 'Formularz',
       bottomHeader: 'Robotyzacja i automatyzacja',
       bottomText:
-        'Poznaj ofertę produktową skierowaną do przedsiębiorstw każdej wielkości',
+        'Jesteś ciekaw, co sprawia, że nasi klienci darzą nas takim zaufaniem? Przyjrzyj się rozwiązaniom, z których korzystamy.',
     },
     {
       topHeader: 'Park maszynowy',
@@ -23,16 +23,16 @@ export default function Products() {
       topButton: 'Formularz',
       bottomHeader: 'Park maszynowy',
       bottomText:
-        'Sprawdź sprzęt, na którym pracujemy i dowiedz się, dlaczego jesteśmy najlepsi',
+        'Sprawdź sprzęt, na którym pracujemy i dowiedz się, dlaczego jesteśmy najlepsi!',
     },
     {
-      topHeader: 'Rozwiązania',
+      topHeader: 'Produkty',
       topPhoto: magazyn,
       topParagraph: null,
       topButton: 'Formularz',
       bottomHeader: 'Rozwiązania',
       bottomText:
-        'Jesteś ciekaw, co sprawia, że nasi klienci darzą nas takim zaufaniem? Przyjrzyj się rozwiązaniom, z których korzystamy',
+        'Poznaj ofertę produktową skierowaną do przedsiębiorstw każdej wielkości!',
     },
     {
       topHeader: 'Usługi',
