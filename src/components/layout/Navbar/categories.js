@@ -1,5 +1,8 @@
 export const categories = [
   {
+    name: 'O firmie',
+  },
+  {
     name: 'Robotyzacja i automatyzacja',
     subcategories: [
       {
@@ -7,13 +10,17 @@ export const categories = [
         items: [
           { name: 'Stanowisko Single', image: '/navbarProducts/single.svg' },
           { name: 'Stanowisko Dual', image: '/navbarProducts/placeholder.svg' },
+          {
+            name: 'Stanowisko Twin One-axis',
+            image: '/navbarProducts/placeholder.svg',
+          },
         ],
       },
       {
-        name: 'Automatyzacja maszyn i urządzeń',
+        name: '',
         items: [
           {
-            name: 'Automatyzacja maszyn',
+            name: 'Automatyzacja maszyn i urządzeń',
             image: '/navbarProducts/automatyzacja.svg',
           },
         ],
@@ -90,7 +97,7 @@ export const categories = [
         ],
       },
       {
-        name: 'Spawalnictwo5',
+        name: 'Spawalnictwo',
         items: [
           { name: 'ALW-1200' },
           { name: 'Flex Cobot Esab' },
