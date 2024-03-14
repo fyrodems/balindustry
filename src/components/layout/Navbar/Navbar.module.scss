@@ -1,3 +1,60 @@
 .popover {
-  // width: 100vw;
+  width: 100vw;
+  padding: 30px 0;
+
+  .gridWrapper {
+    display: grid;
+    width: 700px;
+    margin: 0 auto;
+    min-width: fit-content;
+  }
+
+  [role='menuitem'] {
+    cursor: pointer;
+  }
+}
+
+.popover.robotics {
+  .gridWrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  [role='menuitem'] {
+    width: 325px;
+    margin: 10px 0;
+
+    img {
+      margin-right: 10px;
+    }
+
+    span {
+      font-weight: 500;
+    }
+  }
+}
+
+.popover.machines {
+  .gridWrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+    > div {
+      width: 270px;
+      margin: 0 15px;
+    }
+  }
+}
+
+.popover.products {
+  .gridWrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+  [role='menuitem'] {
+    width: 325px;
+    max-height: 92px;
+  }
+
+  img {
+    margin-right: 10px;
+  }
 }
