@@ -1,14 +1,13 @@
 // import type { Metadata } from 'next'
 import { getTranslations } from 'next-intl/server'
 import { NextIntlClientProvider, useLocale } from 'next-intl'
-import { Inter, Syne } from 'next/font/google'
+import { Inter } from 'next/font/google'
 import { register } from 'swiper/element/bundle'
 import '../globals.scss'
 import Navbar from '@/components/layout/navbar/Navbar'
 import Footer from '@/components/layout/footer/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
-const syne = Syne({ subsets: ['latin'] })
 register()
 
 export async function generateMetadata() {
@@ -35,7 +34,7 @@ export default async function RootLayout({ children }: Props) {
 
   return (
     <html lang={locale}>
-      <body className={(syne.className, inter.className)}>
+      <body className={inter.className}>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Navbar />
           {children}
