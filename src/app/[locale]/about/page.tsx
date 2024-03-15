@@ -1,3 +1,4 @@
+import AboutBalIndustry from '@/components/about/AboutBalIndustry/AboutBalIndustry'
 import Statistics from '@/components/about/Statistics'
 import PageTitle from '@/components/common/PageTitle'
 import Partners from '@/components/homePage/Partners/Partners'
@@ -13,8 +14,10 @@ const About = () => {
         produkty inwestowaliśmy w rozwój parku maszynowego, celem zwiększenia
         wydajności oraz jakości naszych produktów.
       </p>
-      <Partners />
+      <AboutBalIndustry />
+
       <Statistics />
+      <Partners />
     </main>
   )
 }

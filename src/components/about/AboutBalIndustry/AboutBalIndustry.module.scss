@@ -1,0 +1,83 @@
+@import '@/app/styles/mixins';
+
+.container {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 60px auto;
+  max-width: 1400px;
+
+  @include laptop {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  h3 {
+    color: #030211;
+    font-size: 30px;
+    font-weight: 500;
+    margin: 10px 0;
+  }
+
+  p {
+    max-width: 452px;
+    text-wrap: pretty;
+  }
+
+  img {
+    margin: 0 auto;
+  }
+
+  .about {
+    margin-bottom: 60px;
+
+    div {
+      width: fit-content;
+      margin: 0 auto;
+      border-radius: 8px;
+      border: 1px solid #030211;
+      padding: 30px;
+      margin-bottom: 30px;
+
+      @include laptop {
+        border: none;
+        margin: 0;
+      }
+    }
+  }
+
+  .aboutDetails {
+    display: flex;
+    width: 488px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    flex-shrink: 0;
+    margin: 0 auto;
+
+    @include laptop {
+      margin: 0;
+    }
+
+    > div {
+      padding: 30px;
+    }
+    &__1 {
+      color: #fff;
+      border-radius: 8px;
+      border: 2px solid #030211;
+      background: #231f20;
+
+      h3 {
+        color: #fff;
+      }
+    }
+
+    &__2,
+    &__3 {
+      border-radius: 8px;
+      border: 1px solid #030211;
+    }
+  }
+}

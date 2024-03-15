@@ -57,7 +57,7 @@ function Counter({
 
 const Statistics: React.FC = () => {
   return (
-    <div className='flex flex-wrap text-center px-[20px] justify-evenly my-[80px] gap-[40px]'>
+    <div className='flex flex-wrap text-center px-[20px] justify-evenly mt-[110px] mb-[80px] gap-[40px]'>
       <Counter from={0} to={26} content={'Lat na rynku'} />
       <Counter from={0} to={110} content={'Skończonych projektów'} />
       <Counter
