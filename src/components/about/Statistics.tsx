@@ -1,3 +1,5 @@
+'use client'
+
 import { animate, AnimationControls } from 'framer-motion'
 import React, { useEffect, useRef } from 'react'
 
@@ -39,8 +41,15 @@ function Counter({
   }, [from, to])
 
   return (
-    <div>
-      <p ref={nodeRef}>{additionalContent}</p>
+    <div className='flex flex-col justify-center w-[205px]'>
+      <p
+        className={
+          'text-stroke-3 text-[80px] font-bold text-white [text-shadow:-1px_-1px_0_black,_1px_-1px_0_black,_-1px_1px_0_black,_1px_1px_0_black]'
+        }
+        ref={nodeRef}
+      >
+        0 {additionalContent}
+      </p>
       <p>{content}</p>
     </div>
   )
@@ -48,7 +57,7 @@ function Counter({
 
 const Statistics: React.FC = () => {
   return (
-    <div>
+    <div className='flex flex-wrap text-center px-[20px] justify-evenly my-[80px] gap-[40px]'>
       <Counter from={0} to={26} content={'Lat na rynku'} />
       <Counter from={0} to={110} content={'Skończonych projektów'} />
       <Counter
