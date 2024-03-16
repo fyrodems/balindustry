@@ -49,7 +49,7 @@
 
   .aboutDetails {
     display: flex;
-    width: 488px;
+    max-width: 488px;
     flex-direction: column;
     align-items: flex-start;
     gap: 30px;
