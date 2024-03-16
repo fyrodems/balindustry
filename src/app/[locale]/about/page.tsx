@@ -9,7 +9,7 @@ const About = () => {
     <>
       <main>
         <PageTitle content="O firmie" />
-        <p className="mx-auto mb-[80px] max-w-[1100px] px-[20px] text-center">
+        <p className="mx-auto mb-[100px] max-w-[1100px] px-[20px] text-center">
           Nasza firma istnieje na rynku od 1998 roku. Szybko rozwijaliśmy się
           jako zakład produkujący wiele produktów o różnym przeznaczeniu. Wraz z
           wzrostem zapotrzebowania na rynku na oferowane przez naszą firmę

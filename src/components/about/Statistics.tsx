@@ -41,7 +41,7 @@ function Counter({
   }, [from, to])
 
   return (
-    <div className='flex flex-col justify-center w-[205px]'>
+    <div className="flex w-[205px] flex-col justify-center">
       <p
         className={
           'text-stroke-3 text-[80px] font-bold text-white [text-shadow:-1px_-1px_0_black,_1px_-1px_0_black,_-1px_1px_0_black,_1px_1px_0_black]'
@@ -57,7 +57,7 @@ function Counter({
 
 const Statistics: React.FC = () => {
   return (
-    <div className='flex flex-wrap text-center px-[20px] justify-evenly mt-[110px] mb-[80px] gap-[40px]'>
+    <div className="m-[150px] flex flex-wrap justify-evenly gap-[40px] px-[20px] text-center">
       <Counter from={0} to={26} content={'Lat na rynku'} />
       <Counter from={0} to={110} content={'Skończonych projektów'} />
       <Counter
