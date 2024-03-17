@@ -13,17 +13,19 @@ import Products from '@/components/homePage/Products/Products'
 
 export default function Home() {
   return (
-    <main className={styles.main}>
+    <>
       <WelcomeSlider />
-      <div className={styles.contentWrapper}>
-        {/* <PopularOffers /> */}
-        {/* <RoboticStations /> */}
-        <Solutions />
-        <Portfolio />
-        <CatalogTools />
-        <Partners />
-        <Products />
-      </div>
-    </main>
+      <main className={styles.main}>
+        <div className={styles.contentWrapper}>
+          {/* <PopularOffers /> */}
+          {/* <RoboticStations /> */}
+          <Solutions />
+          <Portfolio />
+          <CatalogTools />
+          <Partners />
+          <Products />
+        </div>
+      </main>
+    </>
   )
 }
