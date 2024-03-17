@@ -11,20 +11,25 @@ import {
   MenubarTrigger,
 } from '@/components/ui/menubar'
 import { cn } from '@/libs/utils'
+import { useLocale } from 'next-intl'
 
 const DesktopNavbar = () => {
+  const locale = useLocale() as 'fr' | 'en' | 'pl' | 'de'
+
   return (
     <div className="fixed top-0 z-[2] flex min-h-[70px] w-full items-center justify-between bg-navbar px-[38px] py-0 text-white transition-all ">
-      <Image
-        src={'/logos/BALIndustryLogoWhite.svg'}
-        alt={'logo'}
-        width={60}
-        height={32}
-      />
+      <Link href="/" locale={locale}>
+        <Image
+          src={'/logos/BALIndustryLogoWhite.svg'}
+          alt={'logo'}
+          width={60}
+          height={32}
+        />
+      </Link>
       <Menubar>
         <MenubarMenu>
           <MenubarTrigger>
-            <Link href={''}>O firmie</Link>
+            <Link href={'about'}>O firmie</Link>
           </MenubarTrigger>
         </MenubarMenu>
 

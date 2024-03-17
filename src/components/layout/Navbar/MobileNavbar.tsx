@@ -10,19 +10,25 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion'
 import { ScrollArea } from '@/components/ui/scroll-area'
+import Link from 'next/link'
+import { useLocale } from 'next-intl'
 
 const MobileNavbar: React.FC<{
   isDropdownOpen: boolean
   setDropdownOpen: Dispatch<SetStateAction<boolean>>
 }> = ({ isDropdownOpen, setDropdownOpen }) => {
+  const locale = useLocale() as 'fr' | 'en' | 'pl' | 'de'
+
   return (
     <div className="fixed top-0 z-[2] flex min-h-[70px] w-full items-center justify-between bg-navbar px-[38px] py-0 text-white transition-all ">
-      <Image
-        src={'/logos/BALIndustryLogoWhite.svg'}
-        alt={'logo'}
-        width={60}
-        height={32}
-      />
+      <Link href="/" locale={locale}>
+        <Image
+          src={'/logos/BALIndustryLogoWhite.svg'}
+          alt={'logo'}
+          width={60}
+          height={32}
+        />
+      </Link>
       <Hamburger toggled={isDropdownOpen} size={26} toggle={setDropdownOpen} />
 
       <AnimatePresence>
@@ -32,19 +38,22 @@ const MobileNavbar: React.FC<{
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.2 }}
-            className="shadow-4xl fixed left-0 right-0 top-[3.5rem] bg-navbar p-5 pt-0"
+            className="shadow-4xl fixed left-0 right-0 top-[3.5rem] bg-navbar p-5 pt-0 max-h-[100vh]"
           >
             <Accordion type="multiple" className="w-full">
               <ScrollArea className="h-[100vh] pt-5">
                 <ul className="grid gap-2">
-                  <motion.li>
-                    <AccordionItem
-                      className="pb-4 pt-0 font-medium"
-                      value="ble"
-                    >
-                      {categories[0].name}
-                    </AccordionItem>
-                  </motion.li>
+                  <Link locale={locale} href={`/about`}>
+                    <motion.li>
+                      <AccordionItem
+                        className="pb-4 pt-0 font-medium"
+                        value="ble"
+                        onClick={() => setDropdownOpen((prev) => !prev)}
+                      >
+                        {categories[0].name}
+                      </AccordionItem>
+                    </motion.li>
+                  </Link>
                   {categories.map((category, idx) =>
                     category.subcategories ? (
                       <motion.li
@@ -69,7 +78,13 @@ const MobileNavbar: React.FC<{
                                   value={`${category.name} ${idx}`}
                                 >
                                   {subcat.name === '' ? (
-                                    <AccordionItem className="pb-4 pt-0 font-normal !text-orange-500">
+                                    <AccordionItem
+                                      className="pb-4 pt-0 font-normal !text-orange-500"
+                                      value={subcat.items[0].name}
+                                      onClick={() =>
+                                        setDropdownOpen((prev) => !prev)
+                                      }
+                                    >
                                       {subcat.items[0].name}
                                     </AccordionItem>
                                   ) : (
@@ -78,7 +93,12 @@ const MobileNavbar: React.FC<{
                                         {subcat.name}
                                       </AccordionTrigger>
                                       {subcat.items.map((item, idx) => (
-                                        <AccordionContent key={idx}>
+                                        <AccordionContent
+                                          key={idx}
+                                          onClick={() =>
+                                            setDropdownOpen((prev) => !prev)
+                                          }
+                                        >
                                           {item.name}
                                         </AccordionContent>
                                       ))}
