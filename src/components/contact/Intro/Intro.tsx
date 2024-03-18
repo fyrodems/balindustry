@@ -26,7 +26,7 @@ const Intro = () => {
       </div>
 
       <div className="flex flex-col">
-        <h3 className="text-[28px] font-bold text-gray-950">
+        <h3 className="text-[28px] font-bold text-gray-950 mt-8">
           Skontaktuj się z nami bezpośrednio!
         </h3>
         <DirectContact
