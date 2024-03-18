@@ -1,5 +1,6 @@
 import PageTitle from '@/components/common/PageTitle'
 import styles from './page.module.scss'
+import Advantages from '@/components/automation/Advantages/Advantages'
 
 const Automation = () => {
   return (
@@ -8,7 +9,7 @@ const Automation = () => {
         <div className={styles.pageTitle__wrapper}>
           <PageTitle content="Automatyzacja maszyn i urządzeń" />
         </div>
-        <p className="mx-auto mb-[100px] max-w-[1100px] px-[20px] text-center">
+        <p className="mx-auto mb-[100px] max-w-[1100px] px-[20px] text-center ">
           Modernizacja maszyn i urządzeń pod kątem automatyzacji to proces
           wprowadzania nowoczesnych technologii i rozwiązań do istniejących
           maszyn i urządzeń w celu zwiększenia ich poziomu automatyzacji i
@@ -16,6 +17,7 @@ const Automation = () => {
           komponentów lub systemów w istniejących urządzeniach, aby umożliwić im
           pełne lub częściowe samodzielne funkcjonowanie.
         </p>
+        <Advantages/>
       </main>
     </>
   )
