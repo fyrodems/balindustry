@@ -1,0 +1,14 @@
+@import '@/app/styles/mixins';
+
+.pageTitle__wrapper {
+  padding: 0 20px;
+
+  h2 {
+    font-size: 32px;
+    text-wrap: balance;
+
+    @include laptop {
+      font-size: 50px;
+    }
+  }
+}
