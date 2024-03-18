@@ -38,10 +38,10 @@ const MobileNavbar: React.FC<{
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.2 }}
-            className="shadow-4xl fixed left-0 right-0 top-[3.5rem] bg-navbar p-5 pt-0 max-h-[100vh]"
+            className="shadow-4xl fixed left-0 right-0 top-[3.5rem] max-h-[95vh] bg-navbar p-[38px] pt-2 pr-[55px]"
           >
             <Accordion type="multiple" className="w-full">
-              <ScrollArea className="h-[100vh] pt-5">
+              <ScrollArea className="h-[95vh] pb-8 pt-5">
                 <ul className="grid gap-2">
                   <Link locale={locale} href={`/about`}>
                     <motion.li>
@@ -122,6 +122,17 @@ const MobileNavbar: React.FC<{
                       </motion.li>
                     ) : null
                   )}
+                  <Link locale={locale} href={`/contact`}>
+                    <motion.li>
+                      <AccordionItem
+                        className="pb-4 pt-0 font-medium"
+                        value="ble"
+                        onClick={() => setDropdownOpen((prev) => !prev)}
+                      >
+                        Kontakt
+                      </AccordionItem>
+                    </motion.li>
+                  </Link>
                 </ul>
               </ScrollArea>
             </Accordion>
