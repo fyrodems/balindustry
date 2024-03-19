@@ -1,6 +1,5 @@
 import PageTitle from '@/components/common/PageTitle'
 import Intro from '@/components/contact/Intro/Intro'
-import styles from './page.module.scss'
 import ContactForm from '@/components/contact/ContactForm/ContactForm'
 
 const Contact = () => {
@@ -13,10 +12,9 @@ const Contact = () => {
           poniższego formularza, aby skontaktować się z nami. Postaramy się
           odpowiedzieć jak najszybciej.
         </p>
-        <div className={styles.formWrapper}>
+        <div className="laptop:grid-cols-[40% 60%] mx-auto my-0 grid max-w-[1300px] grid-cols-[1fr]">
           <Intro />
           <ContactForm />
-          <div></div>
         </div>
       </main>
     </>

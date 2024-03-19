@@ -9,11 +9,36 @@ module.exports = {
   ],
   prefix: '',
   theme: {
+    screens: {
+      sm: '640px',
+      // => @media (min-width: 640px) { ... }
+
+      md: '768px', // phone-landscape
+      // => @media (min-width: 768px) { ... }
+      laptop: '993px',
+
+      lg: '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      xl: '1280px',
+      // => @media (min-width: 1280px) { ... }
+
+      '2xl': '1536px',
+      // => @media (min-width: 1536px) { ... }
+    },
     container: {
       center: true,
       padding: '2rem',
       screens: {
-        '2xl': '1400px',
+        mobile: '320px',
+        'phone-landscape': '577px',
+        tablet: '769px',
+        laptop: '993px',
+        desktop: '1201px',
+        'desktop-large': '1551px',
+
+        /* custom */
+        '2xl': '1536px',
       },
     },
     extend: {
