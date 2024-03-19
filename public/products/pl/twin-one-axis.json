@@ -1,0 +1,103 @@
+{
+  "basic-data": {
+    "pathID": "twin-one-axis",
+    "name": "Stanowisko Twin One-axis",
+    "additional-name": "Robot Gofa 15000, UR5/UR 12",
+    "description": "To nowoczesne stanowisko spawalnicze oferuje podwójną wydajność i elastyczność w procesie spawania. Wyposażone w dwie stacje robocze, umożliwia pracę na dwóch stanowiskach, co przekłada się na zwiększenie efektywności produkcji."
+  },
+  "params": [
+    {
+      "name": "Pole robocze",
+      "value": "800x1200mm"
+    },
+    {
+      "name": "Źródło światła",
+      "value": "LED"
+    },
+    {
+      "name": "Źródło spawalniczne",
+      "value": "Fronius / ESAB"
+    },
+    {
+      "name": "Pozycjoner",
+      "value": "Jednoosiowy < 300 kg"
+    }
+  ],
+  "main-characteristics": [
+    {
+      "title": "",
+      "content": "",
+      "image": ""
+    },
+    {
+      "title": "",
+      "content": "",
+      "image": ""
+    },
+    {
+      "title": "",
+      "content": "",
+      "image": ""
+    },
+    {
+      "title": "",
+      "content": "",
+      "image": ""
+    },
+    {
+      "title": "",
+      "content": "",
+      "image": ""
+    },
+    {
+      "title": "",
+      "content": "",
+      "image": ""
+    }
+  ],
+  "specification": {
+    "gvw": "3500",
+    "load": "2305",
+    "area": "8500x2100",
+    "weight": "1195",
+    "dimensions": "10090 X 2100 X 847",
+    "axles": "3",
+    "axlesType": "Hamowne",
+    "wheels": "13\""
+  },
+  "drawings": {
+    "front": "front",
+    "profile": "profile",
+    "top": "top"
+  },
+  "standard": [
+    "Konstrukcja cynkowana\u00A0ogniowo",
+    "Podłoga ze sklejki wodoodpornej",
+    "Rampy załadunkowe wykonane ze stali ocynkowanej chowane pod\u00A0platformą",
+    "Uchwyty do mocowania ładunku zamontowane w podłodze",
+    "Koło podporowe",
+    "Kliny blokujące koło",
+    "Oświetlenie LED"
+  ],
+  "optional": [
+    "Elementy malowane\u00A0proszkowo",
+    "Wypełnienie aluminiowe",
+    "Skrzynka narzędziowa",
+    "Automatyczne koło podporowe",
+    "Wciągarka ręczna KNOTT",
+    "Wciągarka elektryczna",
+    "Oświetlenie tylne z dynamicznym kierunkowskazem",
+    "Rampy załadunkowe wykonane z aluminium chowane pod platformą",
+    "Stabilizator toru jazdy (AKS)"
+  ],
+  "images": {
+    "galvanized": [
+      "r1",
+      "r2",
+      "r2_ramps",
+      "r3",
+      "r4",
+      "r5"
+    ]
+  }
+}

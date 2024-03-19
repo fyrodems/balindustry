@@ -1,23 +1,25 @@
-import { useQuery } from "@tanstack/react-query";
-import { ProductData } from "./types";
+/* eslint-disable @typescript-eslint/no-unsafe-call */
+/* eslint-disable @typescript-eslint/no-unsafe-return */
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
+
+import { useQuery } from '@tanstack/react-query'
+// import { ProductData } from "./types";
 
 const useProductData = ({ locale, id }: { locale: string; id: string }) => {
-  const { data, isLoading, error, isPaused } = useQuery<ProductData>(
-    ["productById", id],
+  const { data, isLoading, error, isPaused } = useQuery(
+    ['productById', id],
     async () => {
-      const response = await fetch(
-        `/assets/trailers/details/${locale}/${id}.json`
-      );
-      const data = await response.json();
-      return data;
+      const response = await fetch(`/products/${locale}/${id}.json`)
+      const data = await response.json()
+      return data
     },
     {
-      staleTime: 600000,
+      staleTime: 600_000,
       retry: 1,
     }
-  );
+  )
 
-  return { data, isLoading, error, isPaused };
-};
+  return { data, isLoading, error, isPaused }
+}
 
-export default useProductData;
+export default useProductData

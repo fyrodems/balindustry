@@ -7,6 +7,7 @@ import '../globals.scss'
 import Navbar from '@/components/layout/navbar/Navbar'
 import Footer from '@/components/layout/footer/Footer'
 import { Toaster } from '@/components/ui/toaster'
+import { TanstackWrapper } from './TanstackWrapper'
 
 const inter = Inter({ subsets: ['latin'] })
 register()
@@ -38,7 +39,7 @@ export default async function RootLayout({ children }: Props) {
       <body className={inter.className}>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Navbar />
-          {children}
+          <TanstackWrapper>{children}</TanstackWrapper>
           <Toaster />
           <Footer />
         </NextIntlClientProvider>
