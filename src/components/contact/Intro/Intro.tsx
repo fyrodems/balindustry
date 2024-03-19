@@ -40,12 +40,12 @@ const Intro: React.FC = () => {
           Skontaktuj się z nami bezpośrednio!
         </h3>
         <DirectContact
-          icon="/contact/mail.svg"
+          icon="/images/contact/mail.svg"
           title={'Email'}
           content={'kontakt@balindustry.com'}
         />
         <DirectContact
-          icon="/contact/phone.svg"
+          icon="/images/contact/phone.svg"
           title={'Telefon'}
           content={'123 123 123'}
         />

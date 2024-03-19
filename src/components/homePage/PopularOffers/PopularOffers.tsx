@@ -7,7 +7,7 @@ import { Pagination, Navigation, Autoplay } from 'swiper/modules'
 import Image from 'next/image'
 import { useRef, useCallback } from 'react'
 import { FaArrowDown } from 'react-icons/fa6'
-import photo from '../../../../public/mainPageProducts/twin_one_axis.png'
+import photo from '../../../../public/images/mainPageProducts/twin_one_axis.png'
 import styles from './PopularOffers.module.scss'
 import useWindowDimensions from '@/hooks/useWindowDimensions'
 

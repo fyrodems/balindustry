@@ -30,7 +30,7 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={styles.logoContainer}>
         <Image
-          src="/logos/BalIndustryLogoOrange.png"
+          src="/images/logos/BalIndustryLogoOrange.png"
           alt="Logo"
           width={80}
           height={40}

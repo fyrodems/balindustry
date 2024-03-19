@@ -2,7 +2,7 @@ import { PiBookOpen } from 'react-icons/pi'
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { Drill } from 'lucide-react'
 import Image from 'next/image'
-import catalog from '../../../../public/imgs/BAL_catalog.webp'
+import catalog from '../../../../public/images/imgs/BAL_catalog.webp'
 // import suszarnia from '../../../../public/imgs/suszarnia.svg'
 import styles from './CatalogTools.module.scss'
 import { Link } from '@/navigation'
@@ -42,7 +42,7 @@ export default function CatalogTools() {
         </div>
         <div className={styles.imgContainer}>
           <Image
-            src="/imgs/suszarnia.svg"
+            src="/images/imgs/suszarnia.svg"
             alt="Tool photo"
             className={styles.toolPhoto}
             width={400}

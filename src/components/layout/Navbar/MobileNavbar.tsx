@@ -24,7 +24,7 @@ const MobileNavbar: React.FC<{
     <div className="fixed top-0 z-[2] flex min-h-[70px] w-full items-center justify-between bg-navbar px-[38px] py-0 text-white transition-all ">
       <Link href="/" locale={locale}>
         <Image
-          src={'/logos/BALIndustryLogoWhite.svg'}
+          src={'/images/logos/BALIndustryLogoWhite.svg'}
           alt={'logo'}
           width={60}
           height={32}

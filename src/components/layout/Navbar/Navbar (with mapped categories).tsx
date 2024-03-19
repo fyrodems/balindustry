@@ -16,7 +16,7 @@ const Navbar = () => {
   return (
     <div className="@apply top-0; sticky z-[2] flex min-h-[70px] w-full items-center justify-between bg-navbar px-[38px] py-0 text-white transition-all ">
       <Image
-        src={'/logos/BALIndustryLogoWhite.svg'}
+        src={'/images/logos/BALIndustryLogoWhite.svg'}
         alt={'logo'}
         width={60}
         height={32}
@@ -49,7 +49,7 @@ const Navbar = () => {
                     <MenubarItem key={itemIndex}>
                       {item.image && (
                         <Image
-                          src={item?.image}
+                          // src={item?.image}
                           alt={item.name}
                           width={80}
                           height={80}

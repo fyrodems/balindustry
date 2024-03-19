@@ -62,7 +62,7 @@ export default function WelcomeSlider() {
   return (
     <div className={styles.welcomeSlider}>
       <Image
-        src="/backgrounds/welcomeSlideBG2.svg"
+        src="/images/backgrounds/welcomeSlideBG2.svg"
         alt="Background"
         width={5000}
         height={0}
@@ -79,7 +79,7 @@ export default function WelcomeSlider() {
               <h1>{slide.header}</h1>
               <p>{slide.text}</p>
               <Button
-                className="bg-main-orange cursor-pointer select-none items-center rounded-sm px-5 py-1.5 text-sm transition-all hover:bg-orange-400"
+                className="cursor-pointer select-none items-center rounded-sm bg-main-orange px-5 py-1.5 text-sm transition-all hover:bg-orange-400"
                 content={slide.buttonText}
                 disabled={false}
                 primary={false}

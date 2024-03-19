@@ -21,27 +21,27 @@ const CompanyAdvantages: React.FC = () => {
     <div className="place-center grid bg-stone-800 px-[30px] py-[150px]">
       <div className="mx-auto inline-flex w-full max-w-[1300px] flex-wrap items-center justify-start gap-24">
         <Advantage
-          icon={'/advantages/advantage1.svg'}
+          icon={'/images/advantages/advantage1.svg'}
           title="Kreatywność"
           content="High-end digital experiences. Created  the heart Manhattan, we are a should human team driving force."
         />
         <Advantage
-          icon={'/advantages/advantage2.svg'}
+          icon={'/images/advantages/advantage2.svg'}
           title="Praca zespołowa"
           content="High-end digital experiences. Created  the heart Manhattan, we are a should human team driving force."
         />
         <Advantage
-          icon={'/advantages/advantage3.svg'}
+          icon={'/images/advantages/advantage3.svg'}
           title="Pomysłowość"
           content="High-end digital experiences. Created  the heart Manhattan, we are a should human team driving force."
         />
         <Advantage
-          icon={'/advantages/advantage4.svg'}
+          icon={'/images/advantages/advantage4.svg'}
           title="Jakość"
           content="High-end digital experiences. Created  the heart Manhattan, we are a should human team driving force."
         />
         <Advantage
-          icon={'/advantages/advantage5.svg'}
+          icon={'/images/advantages/advantage5.svg'}
           title="Nowoczesne zastosowania"
           content="High-end digital experiences. Created  the heart Manhattan, we are a should human team driving force."
         />

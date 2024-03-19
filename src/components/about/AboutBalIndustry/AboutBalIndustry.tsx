@@ -6,18 +6,18 @@ const AboutBalIndustry = () => {
     <div className={styles.container}>
       <div className={styles.about}>
         <div>
-        <h3>Dlaczego Balindustry?</h3>
-        <p>
-          Specjalizujemy się w dostosowywaniu spersonalizowanych rozwiązań
-          automatyzacyjnych do potrzeb różnych branż. Nasza firma odnosi
-          sukcesywnie kolejne triumfy w realizacji projektów oraz budowaniu
-          globalnych partnerstw. Razem, dążymy do podniesienia efektywności oraz
-          automatyzacji w Twojej firmie.
-        </p>
+          <h3>Dlaczego Balindustry?</h3>
+          <p>
+            Specjalizujemy się w dostosowywaniu spersonalizowanych rozwiązań
+            automatyzacyjnych do potrzeb różnych branż. Nasza firma odnosi
+            sukcesywnie kolejne triumfy w realizacji projektów oraz budowaniu
+            globalnych partnerstw. Razem, dążymy do podniesienia efektywności
+            oraz automatyzacji w Twojej firmie.
+          </p>
         </div>
-        
+
         <Image
-          src="/imgs/suszarnia.svg"
+          src="/images/imgs/suszarnia.svg"
           alt="suszarnia"
           width={650}
           height={390}

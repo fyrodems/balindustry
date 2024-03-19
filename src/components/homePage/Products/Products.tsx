@@ -1,7 +1,7 @@
 import Image from 'next/image'
-import magazyn from '../../../../public/mainPageProducts/magazyn.png'
-import waterjet from '../../../../public/mainPageProducts/waterjet.png'
-import cela from '../../../../public/mainPageProducts/twin_one_axis.png'
+import magazyn from '../../../../public/images/mainPageProducts/magazyn.png'
+import waterjet from '../../../../public/images/mainPageProducts/waterjet.png'
+import cela from '../../../../public/images/mainPageProducts/twin_one_axis.png'
 import styles from './Products.module.scss'
 import Button from '@/components/common/Button'
 
