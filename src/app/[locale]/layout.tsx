@@ -6,6 +6,7 @@ import { register } from 'swiper/element/bundle'
 import '../globals.scss'
 import Navbar from '@/components/layout/navbar/Navbar'
 import Footer from '@/components/layout/footer/Footer'
+import { Toaster } from '@/components/ui/toaster'
 
 const inter = Inter({ subsets: ['latin'] })
 register()
@@ -38,6 +39,7 @@ export default async function RootLayout({ children }: Props) {
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Navbar />
           {children}
+          <Toaster />
           <Footer />
         </NextIntlClientProvider>
       </body>

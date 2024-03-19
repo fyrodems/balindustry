@@ -1,6 +1,7 @@
 import PageTitle from '@/components/common/PageTitle'
 import Intro from '@/components/contact/Intro/Intro'
 import styles from './page.module.scss'
+import ContactForm from '@/components/contact/ContactForm/ContactForm'
 
 const Contact = () => {
   return (
@@ -14,6 +15,7 @@ const Contact = () => {
         </p>
         <div className={styles.formWrapper}>
           <Intro />
+          <ContactForm />
           <div></div>
         </div>
       </main>
