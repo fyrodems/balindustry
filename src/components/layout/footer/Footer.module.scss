@@ -99,6 +99,10 @@
     display: flex;
     gap: 24px;
     align-items: center;
+
+    li {
+      text-wrap: balance;
+    }
   }
 }
 

@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { useLocale } from 'next-intl'
 import { MainCategory } from './MainCategory'
 import { SubCategoryLabel } from './SubCategoryLabel'
 import styles from './Navbar.module.scss'
@@ -11,7 +12,6 @@ import {
   MenubarTrigger,
 } from '@/components/ui/menubar'
 import { cn } from '@/libs/utils'
-import { useLocale } from 'next-intl'
 
 const DesktopNavbar = () => {
   const locale = useLocale() as 'fr' | 'en' | 'pl' | 'de'
@@ -29,7 +29,7 @@ const DesktopNavbar = () => {
       <Menubar>
         <MenubarMenu>
           <MenubarTrigger>
-            <Link href={'about'}>O firmie</Link>
+            <Link href={`/about`}>O firmie</Link>
           </MenubarTrigger>
         </MenubarMenu>
 

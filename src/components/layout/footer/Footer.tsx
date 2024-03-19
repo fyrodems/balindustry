@@ -56,8 +56,6 @@ export default function Footer() {
         </ul>
         <div className={styles.socials}>
           <FaInstagram />
-          <Instagram />
-          <Linkedin />
           <FaLinkedinIn />
           <FaTwitter />
         </div>
