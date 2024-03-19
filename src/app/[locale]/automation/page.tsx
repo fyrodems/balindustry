@@ -1,6 +1,6 @@
-import PageTitle from '@/components/common/PageTitle'
 import styles from './page.module.scss'
-import Advantages from '@/components/automation/Advantages/Advantages'
+import PageTitle from '@/components/common/PageTitle'
+import Advantages from '@/components/automation/Advantages'
 
 const Automation = () => {
   return (
@@ -17,7 +17,7 @@ const Automation = () => {
           komponentów lub systemów w istniejących urządzeniach, aby umożliwić im
           pełne lub częściowe samodzielne funkcjonowanie.
         </p>
-        <Advantages/>
+        <Advantages />
       </main>
     </>
   )

@@ -1,5 +1,5 @@
 import AboutBalIndustry from '@/components/about/AboutBalIndustry/AboutBalIndustry'
-import CompanyAdvantages from '@/components/about/CompanyAdvantages/CompanyAdvantages'
+import CompanyAdvantages from '@/components/about/CompanyAdvantages'
 import Statistics from '@/components/about/Statistics'
 import PageTitle from '@/components/common/PageTitle'
 import Partners from '@/components/homePage/Partners/Partners'

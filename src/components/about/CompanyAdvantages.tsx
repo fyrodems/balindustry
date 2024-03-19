@@ -1,6 +1,12 @@
 import Image from 'next/image'
 
-const Advantage = ({ icon, title, content }) => {
+interface AdvantageProps {
+  icon: string
+  title: string
+  content: string
+}
+
+const Advantage: React.FC<AdvantageProps> = ({ icon, title, content }) => {
   return (
     <div className="flex w-[330px] flex-col gap-[16px] text-white">
       <Image src={icon} alt={title} width={70} height={70} />
@@ -10,7 +16,7 @@ const Advantage = ({ icon, title, content }) => {
   )
 }
 
-const CompanyAdvantages = () => {
+const CompanyAdvantages: React.FC = () => {
   return (
     <div className="place-center grid bg-stone-800 px-[30px] py-[150px]">
       <div className="mx-auto inline-flex w-full max-w-[1300px] flex-wrap items-center justify-start gap-24">

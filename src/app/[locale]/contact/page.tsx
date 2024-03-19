@@ -12,7 +12,7 @@ const Contact = () => {
           poniższego formularza, aby skontaktować się z nami. Postaramy się
           odpowiedzieć jak najszybciej.
         </p>
-        <div className="laptop:grid-cols-[40% 60%] mx-auto my-0 grid max-w-[1300px] grid-cols-[1fr]">
+        <div className="laptop:grid-cols-[40%_60%] mx-auto my-0 grid max-w-[1300px] grid-cols-[1fr]">
           <Intro />
           <ContactForm />
         </div>
