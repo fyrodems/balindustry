@@ -10,7 +10,6 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion'
 import { ScrollArea } from '@/components/ui/scroll-area'
-// import Link from 'next/link'
 import { useLocale } from 'next-intl'
 import { Link } from '@/navigation'
 
@@ -18,11 +17,9 @@ const MobileNavbar: React.FC<{
   isDropdownOpen: boolean
   setDropdownOpen: Dispatch<SetStateAction<boolean>>
 }> = ({ isDropdownOpen, setDropdownOpen }) => {
-  const locale = useLocale() as 'fr' | 'en' | 'pl' | 'de'
-
   return (
     <div className="fixed top-0 z-[2] flex min-h-[70px] w-full items-center justify-between bg-navbar px-[38px] py-0 text-white transition-all ">
-      <Link href="/" locale={locale}>
+      <Link href="/">
         <Image
           src={'/images/logos/BALIndustryLogoWhite.svg'}
           alt={'logo'}
@@ -44,7 +41,7 @@ const MobileNavbar: React.FC<{
             <Accordion type="multiple" className="w-full">
               <ScrollArea className="h-[95vh] pb-8 pt-5">
                 <ul className="grid gap-2">
-                  <Link href={`/${locale}/about`}>
+                  <Link href={categories[0].link}>
                     <motion.li>
                       <AccordionItem
                         className="pb-4 pt-0 font-medium"
@@ -79,29 +76,33 @@ const MobileNavbar: React.FC<{
                                   value={`${category.name} ${idx}`}
                                 >
                                   {subcat.name === '' ? (
-                                    <AccordionItem
-                                      className="pb-4 pt-0 font-normal !text-orange-500"
-                                      value={subcat.items[0].name}
-                                      onClick={() =>
-                                        setDropdownOpen((prev) => !prev)
-                                      }
-                                    >
-                                      {subcat.items[0].name}
-                                    </AccordionItem>
+                                    <Link href={subcat.items[0].link}>
+                                      <AccordionItem
+                                        className="pb-4 pt-0 font-normal !text-orange-500"
+                                        value={subcat.items[0].name}
+                                        onClick={() =>
+                                          setDropdownOpen((prev) => !prev)
+                                        }
+                                      >
+                                        {subcat.items[0].name}
+                                      </AccordionItem>
+                                    </Link>
                                   ) : (
                                     <>
                                       <AccordionTrigger className="font-normal !text-orange-500">
                                         {subcat.name}
                                       </AccordionTrigger>
                                       {subcat.items.map((item, idx) => (
-                                        <AccordionContent
-                                          key={idx}
-                                          onClick={() =>
-                                            setDropdownOpen((prev) => !prev)
-                                          }
-                                        >
-                                          {item.name}
-                                        </AccordionContent>
+                                        <Link href={item.link}>
+                                          <AccordionContent
+                                            key={idx}
+                                            onClick={() =>
+                                              setDropdownOpen((prev) => !prev)
+                                            }
+                                          >
+                                            {item.name}
+                                          </AccordionContent>
+                                        </Link>
                                       ))}
                                     </>
                                   )}
@@ -110,27 +111,17 @@ const MobileNavbar: React.FC<{
                             })}
                           </AccordionContent>
                         </AccordionItem>
-                        {/* <a
-          onClick={() => setDropdownOpen((prev) => !prev)}
-          className={
-            'flex w-full items-center justify-between rounded-xl p-5'
-          }
-          href={route.href}
-        >
-          <span className="flex gap-1 text-lg">{route.title}</span>
-          <Icon className="text-xl" />
-        </a> */}
                       </motion.li>
                     ) : null
                   )}
-                  <Link locale={locale} href={`/contact`}>
+                  <Link href={categories[categories.length - 1].link}>
                     <motion.li>
                       <AccordionItem
                         className="pb-4 pt-0 font-medium"
                         value="ble"
                         onClick={() => setDropdownOpen((prev) => !prev)}
                       >
-                        Kontakt
+                        {categories[categories.length - 1].name}
                       </AccordionItem>
                     </motion.li>
                   </Link>

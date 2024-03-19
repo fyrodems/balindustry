@@ -1,6 +1,7 @@
 export const categories = [
   {
     name: 'O firmie',
+    link: '/about',
   },
   {
     name: 'Robotyzacja i automatyzacja',
@@ -8,11 +9,20 @@ export const categories = [
       {
         name: 'Stanowisko zrobotyzowane',
         items: [
-          { name: 'Stanowisko Single', image: '/navbarProducts/single.svg' },
-          { name: 'Stanowisko Dual', image: '/navbarProducts/placeholder.svg' },
+          {
+            name: 'Stanowisko Single',
+            image: '/navbarProducts/single.svg',
+            link: '/product/single',
+          },
+          {
+            name: 'Stanowisko Dual',
+            image: '/navbarProducts/placeholder.svg',
+            link: '/product/dual',
+          },
           {
             name: 'Stanowisko Twin One-axis',
             image: '/navbarProducts/placeholder.svg',
+            link: '/product/twin-one-axis',
           },
         ],
       },
@@ -22,6 +32,7 @@ export const categories = [
           {
             name: 'Automatyzacja maszyn i urządzeń',
             image: '/navbarProducts/automatyzacja.svg',
+            link: '/automation',
           },
         ],
       },
@@ -33,33 +44,41 @@ export const categories = [
       {
         name: 'Dział obróbki metalowej',
         items: [
-          { name: 'Waterjet' },
-          { name: 'TruPunch 5000 | TRUMPF' },
-          { name: 'TrueLaser Tube 7000 fiber' },
-          { name: 'TrueLaser 3030 fiber | TRUMPF' },
-          { name: 'Stanowisko gięcia' },
-          { name: 'ARC D600' },
-          { name: 'ARC B250' },
-          { name: 'ARC Trackmotion 2t' },
+          { name: 'Waterjet', link: '/product/waterjet1' },
+          { name: 'TruPunch 5000 | TRUMPF', link: '/product/trupunch-5000' },
+          {
+            name: 'TrueLaser Tube 7000 fiber',
+            link: '/product/truelaser-7000',
+          },
+          {
+            name: 'TrueLaser 3030 fiber | TRUMPF',
+            link: '/product/truelaser-3030',
+          },
+          { name: 'Stanowisko gięcia', link: '/product/bending-station' },
+          { name: 'ARC D600', link: '/product/arc-d600' },
+          { name: 'ARC B250', link: '/product/arc-b250' },
+          { name: 'ARC Trackmotion 2t', link: '/product/arc-trackmotion-2t' },
         ],
       },
       {
         name: 'Dział obróbki CNC',
         items: [
-          { name: 'CLX 350' },
-          { name: 'DMU 75 monoBLOCK' },
-          { name: 'DMU 210 P' },
-          { name: 'SPRINT 3215' },
-          { name: 'M1' },
-          { name: 'Waterjet' },
-          { name: 'LH' },
-          { name: '5 osiowe CNC' },
-          { name: 'NLX 2500' },
+          { name: 'CLX 350', link: '/product/clx-350' },
+          { name: 'DMU 75 monoBLOCK', link: '/product/dmu-75-monoblock' },
+          { name: 'DMU 210 P', link: '/product/dmu-210-p' },
+          { name: 'SPRINT 3215', link: '/product/sprint-3215' },
+          { name: 'M1', link: '/product/m1' },
+          { name: 'Waterjet', link: '/product/waterjet2' },
+          { name: 'LH', link: '/product/lh' },
+          { name: '5 osiowe CNC', link: '/product/5-axis-cnc' },
+          { name: 'NLX 2500', link: '/product/nlx-2500' },
         ],
       },
       {
         name: 'Lakiernie',
-        items: [{ name: 'Lakiernie mokre i proszkowe' }],
+        items: [
+          { name: 'Lakiernie mokre i proszkowe', link: '/product/paintshops' },
+        ],
       },
     ],
   },
@@ -72,6 +91,7 @@ export const categories = [
           {
             name: 'Obróbka powierzchni',
             image: '/navbarProducts/placeholder.svg',
+            link: '/product/surface-treatment',
           },
         ],
       },
@@ -81,33 +101,46 @@ export const categories = [
           {
             name: 'Magazyn pionowy blach',
             image: '/navbarProducts/placeholder.svg',
+            link: '/product/vertical-warehouse',
           },
         ],
       },
       {
         name: '',
         items: [
-          { name: 'Piece komorowe', image: '/navbarProducts/placeholder.svg' },
+          {
+            name: 'Piece komorowe',
+            image: '/navbarProducts/placeholder.svg',
+            link: '/product/furnace',
+          },
         ],
       },
       {
         name: '',
         items: [
-          { name: 'Lakiernie', image: '/navbarProducts/placeholder.svg' },
+          {
+            name: 'Lakiernie',
+            image: '/navbarProducts/placeholder.svg',
+            link: '/product/paintshops2',
+          },
         ],
       },
       {
         name: 'Spawalnictwo',
         items: [
-          { name: 'ALW-1200' },
-          { name: 'Flex Cobot Esab' },
-          { name: 'Flex Cobot Fronius' },
+          { name: 'ALW-1200', link: '/product/alw-1200' },
+          { name: 'Flex Cobot Esab', link: '/product/flex-esab' },
+          { name: 'Flex Cobot Fronius', link: '/product/flex-fronius' },
         ],
       },
     ],
   },
+  // {
+  //   name: 'Usługi',
+  //   subcategories: [],
+  // },
   {
-    name: 'Usługi',
-    subcategories: [],
+    name: 'Kontakt',
+    link: '/contact',
   },
 ]
