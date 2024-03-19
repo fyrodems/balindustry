@@ -9,6 +9,7 @@
 
     "n/file-extension-in-import": "off",
     "import/extensions": "off",
+    "import/no-extraneous-dependencies": "off",
 
     "unicorn/filename-case": "off",
     "unicorn/prevent-abbreviations": "off",
