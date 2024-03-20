@@ -1,8 +1,11 @@
 'use client'
 
-import PageTitle from '@/components/common/PageTitle'
+import Carousel from '@/components/product/Carousel/Carousel'
 import { Content } from './content'
+import { type UseProductDataResult } from './types'
 import useProductData from './useProductData'
+import PageTitle from '@/components/common/PageTitle'
+import Presentation from '@/components/product/Presentation/Presentation'
 
 export default function ProductPage({
   params,
@@ -11,10 +14,11 @@ export default function ProductPage({
 }) {
   const { id, locale } = params
 
-  const { data, isLoading, error, isPaused } = useProductData({
-    locale,
-    id,
-  })
+  const { data, isLoading, error, isPaused }: UseProductDataResult =
+    useProductData({
+      locale,
+      id,
+    })
 
   /*   if (isPaused) {
     return (
@@ -39,16 +43,30 @@ export default function ProductPage({
       </p>
     )
   }
+  */
 
   if (!data) {
-    return <p>{t('Data is not available')}</p>
-  } */
+    return <span>Dane niedostępne</span>
+  }
 
   console.log(data)
 
+  const {
+    basic_data,
+    floating_CTA,
+    images,
+    parameters,
+    main_characteristics,
+    specification,
+  } = data
+
   return (
     <>
-      <PageTitle content={params.id} />
+      <PageTitle content={''} />
+      {/* <Carousel images={images} /> */}
+      <main>
+        <Presentation data={data} />
+      </main>
     </>
   )
 }

@@ -1,34 +1,52 @@
+export interface BasicData {
+  pathID: string
+  name: string
+  additional_name: string
+  description: string
+}
+
+export interface FloatingCTA {
+  title: string
+  image: string
+  content: string
+  button: string
+  form: string
+  qr: string
+  ar: string
+}
+
+export interface Parameter {
+  name: string
+  value: string
+}
+
+export interface MainCharacteristic {
+  title: string
+  content: string
+  image: string
+}
+
+export interface Specification {
+  name: string
+  param: string
+}
+
 export interface ProductData {
-  data: {
-    pathID: string;
-    pdfGalvanized: string;
-    pdfPowdered: string;
-    name: string;
-    category: keyof Messages["products"]["heading"];
-    path: string;
-    family: string;
-    tags: keyof Messages["product"][];
-  };
-  specification: {
-    gvw: string;
-    load: string;
-    area: string;
-    weight: string;
-    dimensions: string;
-    axles: string;
-    axlesType: string;
-    wheels: string;
-  };
-  drawings: {
-    profile: string;
-    front: string;
-    top: string;
-  };
-  standard: string[];
-  optional: string[];
-  images: {
-    galvanized: string[];
-    powdered: string[];
-    filled: string[];
-  };
+  basic_data: BasicData
+  floating_CTA: FloatingCTA
+  images: string[]
+  parameters: Parameter[]
+  main_characteristics: MainCharacteristic[]
+  specification: Specification[]
+}
+
+export interface ProductDataProps {
+  data: ProductData
+}
+
+export interface UseProductDataResult {
+  data: ProductData
+  isLoading: boolean
+  error: Error | null
+  isPaused: boolean
 }

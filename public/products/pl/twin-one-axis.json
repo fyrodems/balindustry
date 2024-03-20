@@ -1,23 +1,26 @@
 {
-  "basic-data": {
+  "basic_data": {
     "pathID": "twin-one-axis",
     "name": "Stanowisko Twin One-axis",
-    "additional-name": "Robot Gofa 15000, UR5/UR 12",
-    "description": "To nowoczesne stanowisko spawalnicze oferuje podwójną wydajność i elastyczność w procesie spawania. Wyposażone w dwie stacje robocze, umożliwia pracę na dwóch stanowiskach, co przekłada się na zwiększenie efektywności produkcji."
+    "additional_name": "Robot Gofa 15000, UR5/UR 12",
+    "description": "To nowoczesne stanowisko spawalnicze oferuje podwójną wydajność i elastyczność\u00A0w procesie spawania. Wyposażone w dwie stacje robocze, umożliwia pracę na dwóch stanowiskach, co przekłada się na zwiększenie efektywności produkcji."
   },
-  "floatingCTA": {
+  "floating_CTA": {
     "title": "",
-    "image": "/products/images/main-floatingCTA.svg",
-    "content": "Zeskanuj kod QR,aby zobaczyć w rzeczywistościrozszerzonej AR",
-    "button": "Zapytaj o wycenę"
+    "image": "/products/images/twin-one-axis/main-floatingCTA.svg",
+    "content": "Zeskanuj kod QR,aby zobaczyć w rzeczywistości rozszerzonej AR",
+    "button": "Zapytaj o wycenę",
+    "form": "/forms/form",
+    "qp": "",
+    "ar": ""
   },
   "images": [
-    "/products/images/carousel1.svg",
-    "/products/images/carousel2.svg",
-    "/products/images/carousel3.svg",
-    "/products/images/carousel4.svg"
+    "/products/images/twin-one-axis/carousel1.svg",
+    "/products/images/twin-one-axis/carousel2.svg",
+    "/products/images/twin-one-axis/carousel3.svg",
+    "/products/images/twin-one-axis/carousel4.svg"
   ],
-  "params": [
+  "parameters": [
     {
       "name": "Pole robocze",
       "value": "800x1200mm"
@@ -32,24 +35,24 @@
     },
     {
       "name": "Pozycjoner",
-      "value": "Jednoosiowy < 300 kg"
+      "value": "Jednoosiowy 300 kg"
     }
   ],
-  "main-characteristics": [
+  "main_characteristics": [
     {
       "title": "Zaawansowane sterowanie",
       "content": "Cały układ sterowania oparty jest na najnowszym sterowniku PLC S7-1500, który stanowi mózg operacyjny stanowiska. Sterownik ten, będąc nie tylko sterownikiem logicznym, ale także technologicznym, posiada zdolność do wykonywania skomplikowanych obliczeń w celu jak najoptymalniejszego sterowania procesem spawania. W połączeniu z wyspą ET200 SP, sterownik zapewnia pełną kontrolę nad wszystkimi aspektami stanowiska, umożliwiając optymalne wykorzystanie zasobów oraz zapewniając wysoką jakość i efektywność procesu spawania.",
-      "image": "/products/images/main-characteristics1.svg"
+      "image": "/products/images/twin-one-axis/main-characteristics1.svg"
     },
     {
       "title": "Pozycjonery jednoosiowe",
       "content": "Pozycjonery umożliwiają precyzyjne obracanie spawanego elementu o zadany kąt w trakcie procesu spawania. Dzięki zastosowaniu serwonapędów Siemens serii S210, sterownik PLC S7-1500 może dokładnie kontrolować ruch i pozycję pozycjonerów, co pozwala na skuteczne dostosowanie elementu do optymalnej pozycji podczas spawania. Ta integracja zapewnia nie tylko wysoką precyzję i jakość spawania, ale także elastyczność w dostosowywaniu procesu do różnych rodzajów elementów i wymagań produkcji.",
-      "image": "/products/images/main-characteristics2.svg"
+      "image": "/products/images/twin-one-axis/main-characteristics2.svg"
     },
     {
       "title": "Elektrycznie sterowana frontowa osłona",
       "content": "Sterowana elektrycznie frontowa osłona zapewnia nie tylko łatwy dostęp do wnętrza stacji, ale także dodatkową ochronę dla personelu. Dzięki możliwości elektrycznego sterowania, osłona może być szybko i precyzyjnie otwierana i zamykana, co zwiększa wygodę obsługi.",
-      "image": "/products/images/main-characteristics3.svg"
+      "image": "/products/images/twin-one-axis/main-characteristics3.svg"
     },
     {
       "title": "Wizualizacja procesu",
