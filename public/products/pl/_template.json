@@ -3,7 +3,8 @@
     "pathID": "",
     "name": "",
     "additional_name": "",
-    "description": ""
+    "description": "",
+    "with_data": false
   },
   "floating_CTA": {
     "title": "",

@@ -8,27 +8,32 @@ import {
   TableHeader,
   TableRow,
 } from '@/components/ui/table'
+import { cn } from '@/libs/utils'
 
 const Specification: React.FC<SpecificationProps> = ({ data }) => {
+  console.log(data)
   return (
     <div className="mx-[20px]">
       <Table>
-        {/* <TableCaption>A list of your recent invoices.</TableCaption> */}
-        <TableHeader>
+        <TableHeader className="bg-stone-800">
           <TableRow>
-            <TableHead className="w-[100px]">Invoice</TableHead>
-            <TableHead>Status</TableHead>
-            <TableHead>Method</TableHead>
-            <TableHead className="text-right">Amount</TableHead>
+            <TableHead className="border-r-[1px] text-center !text-white">
+              Opis
+            </TableHead>
+            <TableHead className="border-l-[1px] text-center !text-white">
+              Parametr
+            </TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>
-          <TableRow>
-            <TableCell className="font-medium">INV001</TableCell>
-            <TableCell>Paid</TableCell>
-            <TableCell>Credit Card</TableCell>
-            <TableCell className="text-right">$250.00</TableCell>
-          </TableRow>
+          {data.map((parametr, i) => {
+            return (
+              <TableRow key={i} className={cn(i % 2 === 0 && 'bg-stone-300')}>
+                <TableCell>{parametr.name}</TableCell>
+                <TableCell className="text-right">{parametr.param}</TableCell>
+              </TableRow>
+            )
+          })}
         </TableBody>
       </Table>
     </div>

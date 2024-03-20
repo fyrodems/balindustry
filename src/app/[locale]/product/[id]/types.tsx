@@ -3,6 +3,7 @@ export interface BasicData {
   name: string
   additional_name: string
   description: string
+  with_data: boolean
 }
 
 export interface FloatingCTA {

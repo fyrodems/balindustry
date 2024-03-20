@@ -68,8 +68,12 @@ export default function ProductPage({
         <div className="laptop:grid-cols-[70%_30%] laptop:grid 2xl:grid-cols-[80%_20%]">
           <div>
             <Presentation data={data} />
-            <MainCharacteristics data={main_characteristics} />
-            <Specification data={specification} />
+            {basic_data.with_data && (
+              <>
+                <MainCharacteristics data={main_characteristics} />
+                <Specification data={specification} />
+              </>
+            )}
           </div>
           <div className="laptop:block hidden">
             <FloatingCTA data={floating_CTA} />
