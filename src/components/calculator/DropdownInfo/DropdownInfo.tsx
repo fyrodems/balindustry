@@ -65,11 +65,11 @@ export const DropdownInfo = () => {
       </AccordionItem>
       <AccordionItem value={'item-2'} className={styles.dropdownWrapper}>
         <AccordionTrigger className={styles.dropdownHeader}>
-          W jakim formacie powinny być pliki?
+          Na co należy zwrócić uwagę?
         </AccordionTrigger>
         <AccordionContent className={styles.accordionContent}>
           <div className={styles.dropdownContent}>
-            Kalkulator przyjmuje pliki z następującymi rozszerzeniami:
+            Należy wziąć pod uwagę następujące punkty:
             <ul className={styles.dropdownContentList}>
               <li>w pliku powinien znajdować się tylko kontur cięcia</li>
               <li>w jednym pliku może być tylko jedna część</li>
