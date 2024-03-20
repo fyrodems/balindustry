@@ -65,7 +65,12 @@ export default function ProductPage({
       <PageTitle content={''} />
       {/* <Carousel images={images} /> */}
       <main>
-        <Presentation data={data} />
+        <div className="laptop:grid-cols-[80%_20%] laptop:grid">
+          <div>
+            <Presentation data={data} />
+          </div>
+          <div className="laptop:block hidden">floating_CTA</div>
+        </div>
       </main>
     </>
   )
