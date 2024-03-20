@@ -50,6 +50,9 @@ export interface FloatingCTAProps {
 export interface MainCharacteristicsProps {
   data: MainCharacteristic[]
 }
+export interface SpecificationProps {
+  data: Specification[]
+}
 
 export interface UseProductDataResult {
   data: ProductData

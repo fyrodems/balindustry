@@ -6,6 +6,7 @@ import PageTitle from '@/components/common/PageTitle'
 import Presentation from '@/components/product/Presentation/Presentation'
 import FloatingCTA from '@/components/product/FloatingCTA/FloatingCTA'
 import MainCharacteristics from '@/components/product/MainCharacteristics/MainCharacteristics'
+import Specification from '@/components/product/Specification/Specification'
 
 export default function ProductPage({
   params,
@@ -68,6 +69,7 @@ export default function ProductPage({
           <div>
             <Presentation data={data} />
             <MainCharacteristics data={main_characteristics} />
+            <Specification data={specification} />
           </div>
           <div className="laptop:block hidden">
             <FloatingCTA data={floating_CTA} />

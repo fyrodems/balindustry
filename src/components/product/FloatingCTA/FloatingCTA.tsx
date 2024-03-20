@@ -7,6 +7,7 @@ const FloatingCTA: React.FC<FloatingCTAProps> = ({ data }) => {
   const { title, image, content, button, form, qr, ar } = data
 
   /* !!! do uzupełnienia??? ar na mobile */
+  /* !!! ograniczenie żeby nie wjeżdżał na footer */
 
   return (
     <div
