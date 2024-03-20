@@ -1,0 +1,39 @@
+{
+  "basic_data": {
+    "pathID": "",
+    "name": "",
+    "additional_name": "",
+    "description": ""
+  },
+  "floating_CTA": {
+    "title": "",
+    "image": "",
+    "content": "",
+    "button": "",
+    "form": "",
+    "qp": "",
+    "ar": ""
+  },
+  "images": [
+    ""
+  ],
+  "parameters": [
+    {
+      "name": "",
+      "value": ""
+    }
+  ],
+  "main_characteristics": [
+    {
+      "title": "",
+      "content": "",
+      "image": ""
+    }
+  ],
+  "specification": [
+    {
+      "name": "",
+      "param": ""
+    }
+  ]
+}

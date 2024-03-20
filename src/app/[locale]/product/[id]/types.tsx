@@ -43,6 +43,9 @@ export interface ProductData {
 export interface ProductDataProps {
   data: ProductData
 }
+export interface FloatingCTAProps {
+  data: FloatingCTA
+}
 
 export interface UseProductDataResult {
   data: ProductData

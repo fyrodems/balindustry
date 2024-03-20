@@ -6,6 +6,7 @@ import { type UseProductDataResult } from './types'
 import useProductData from './useProductData'
 import PageTitle from '@/components/common/PageTitle'
 import Presentation from '@/components/product/Presentation/Presentation'
+import FloatingCTA from '@/components/product/FloatingCTA/FloatingCTA'
 
 export default function ProductPage({
   params,
@@ -65,11 +66,13 @@ export default function ProductPage({
       <PageTitle content={''} />
       {/* <Carousel images={images} /> */}
       <main>
-        <div className="laptop:grid-cols-[80%_20%] laptop:grid">
+        <div className="laptop:grid-cols-[70%_30%] laptop:grid 2xl:grid-cols-[80%_20%]">
           <div>
             <Presentation data={data} />
           </div>
-          <div className="laptop:block hidden">floating_CTA</div>
+          <div className="laptop:block hidden">
+            <FloatingCTA data={floating_CTA} />
+          </div>
         </div>
       </main>
     </>

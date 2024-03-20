@@ -6,9 +6,9 @@
     "description": "To nowoczesne stanowisko spawalnicze oferuje podwójną wydajność i elastyczność\u00A0w procesie spawania. Wyposażone w dwie stacje robocze, umożliwia pracę na dwóch stanowiskach, co przekłada się na zwiększenie efektywności produkcji."
   },
   "floating_CTA": {
-    "title": "",
-    "image": "/products/images/twin-one-axis/main-floatingCTA.svg",
-    "content": "Zeskanuj kod QR,aby zobaczyć w rzeczywistości rozszerzonej AR",
+    "title": "Twin One-axis",
+    "image": "/products/images/twin-one-axis/floatingCTA.svg",
+    "content": "Zeskanuj kod QR, aby zobaczyć w rzeczywistości rozszerzonej AR",
     "button": "Zapytaj o wycenę",
     "form": "/forms/form",
     "qp": "",

@@ -17,9 +17,9 @@ const DesktopPresentation: React.FC<ProductDataProps> = ({ data }) => {
   const { basic_data, images, parameters } = data
 
   return (
-    <div className="mb-14 grid grid-cols-[50%_50%] gap-4">
+    <div className="mb-14 grid grid-cols-[50%_50%]">
       <Carousel images={images} />
-      <div className="rounded border border-zinc-100 p-4">
+      <div className="rounded border border-zinc-200 p-4">
         <div className="mx-auto w-11/12">
           <h2 className="text-[25px] font-medium">{basic_data.name}</h2>
           <h3 className="text-sm font-extralight">
