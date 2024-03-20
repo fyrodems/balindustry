@@ -47,6 +47,10 @@ export interface FloatingCTAProps {
   data: FloatingCTA
 }
 
+export interface MainCharacteristicsProps {
+  data: MainCharacteristic[]
+}
+
 export interface UseProductDataResult {
   data: ProductData
   isLoading: boolean

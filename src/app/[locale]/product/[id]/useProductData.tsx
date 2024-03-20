@@ -3,7 +3,6 @@
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 
 import { useQuery } from '@tanstack/react-query'
-// import { ProductData } from "./types";
 
 const useProductData = ({ locale, id }: { locale: string; id: string }) => {
   const { data, isLoading, error, isPaused } = useQuery(
