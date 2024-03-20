@@ -3,7 +3,7 @@ import { type MainCharacteristicsProps } from '@/app/[locale]/product/[id]/types
 const MainCharacteristics: React.FC<MainCharacteristicsProps> = ({ data }) => {
   /* !!! dodać akordeon główny */
   return (
-    <div>
+    <div id="characteristics">
       {data.map((characteristic, i) => (
         <div key={i} className="laptop:my-[100px] mx-[20px] my-[60px]">
           <h2 className="text-xl font-bold text-black">

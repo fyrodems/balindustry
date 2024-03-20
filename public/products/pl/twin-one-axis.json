@@ -4,7 +4,7 @@
     "name": "Stanowisko Twin One-axis",
     "additional_name": "Robot Gofa 15000, UR5/UR 12",
     "description": "To nowoczesne stanowisko spawalnicze oferuje podwójną wydajność i elastyczność\u00A0w procesie spawania. Wyposażone w dwie stacje robocze, umożliwia pracę na dwóch stanowiskach, co przekłada się na zwiększenie efektywności produkcji.",
-"with_data": true  
+    "with_data": true
   },
   "floating_CTA": {
     "title": "Twin One-axis",
@@ -107,6 +107,28 @@
     {
       "name": "System bezpieczeństwa",
       "param": "spełniający normy bezpieczeństwa"
+    }
+  ],
+  "additional_products": [
+    {
+      "name": "",
+      "image": "",
+      "link": ""
+    },
+    {
+      "name": "",
+      "image": "",
+      "link": ""
+    },
+    {
+      "name": "",
+      "image": "",
+      "link": ""
+    },
+    {
+      "name": "",
+      "image": "",
+      "link": ""
     }
   ]
 }

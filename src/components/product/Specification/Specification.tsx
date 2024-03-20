@@ -13,7 +13,7 @@ import { cn } from '@/libs/utils'
 const Specification: React.FC<SpecificationProps> = ({ data }) => {
   console.log(data)
   return (
-    <div className="mx-[20px]">
+    <div className="mx-[20px]" id="specification">
       <Table>
         <TableHeader className="bg-stone-800">
           <TableRow>

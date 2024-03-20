@@ -7,6 +7,8 @@ import Presentation from '@/components/product/Presentation/Presentation'
 import FloatingCTA from '@/components/product/FloatingCTA/FloatingCTA'
 import MainCharacteristics from '@/components/product/MainCharacteristics/MainCharacteristics'
 import Specification from '@/components/product/Specification/Specification'
+import CrossSellCarousel from '@/components/product/CrossSellCarousel/CrossSellCarousel'
+import { Link } from '@/navigation'
 
 export default function ProductPage({
   params,
@@ -59,6 +61,7 @@ export default function ProductPage({
     parameters,
     main_characteristics,
     specification,
+    additional_products,
   } = data
 
   return (
@@ -70,10 +73,18 @@ export default function ProductPage({
             <Presentation data={data} />
             {basic_data.with_data && (
               <>
+                <div className="laptop:flex mx-[20px] hidden justify-around bg-zinc-800 p-4 px-10 text-white">
+                  <Link href="#characteristics">Cechy</Link>
+                  <div className="h-[20px] w-[1px] bg-white"></div>
+                  <Link href="#specification">Od producenta</Link>
+                  <div className="h-[20px] w-[1px] bg-white"></div>
+                  <Link href="#carousel">Podobne produkty</Link>
+                </div>
                 <MainCharacteristics data={main_characteristics} />
                 <Specification data={specification} />
               </>
             )}
+            <CrossSellCarousel data={additional_products} />
           </div>
           <div className="laptop:block hidden">
             <FloatingCTA data={floating_CTA} />

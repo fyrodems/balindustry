@@ -32,6 +32,12 @@ export interface Specification {
   param: string
 }
 
+export interface AdditionalProducts {
+  name: string
+  image: string
+  link: string
+}
+
 export interface ProductData {
   basic_data: BasicData
   floating_CTA: FloatingCTA
@@ -39,6 +45,7 @@ export interface ProductData {
   parameters: Parameter[]
   main_characteristics: MainCharacteristic[]
   specification: Specification[]
+  additional_products: AdditionalProducts[]
 }
 
 export interface ProductDataProps {
@@ -53,6 +60,10 @@ export interface MainCharacteristicsProps {
 }
 export interface SpecificationProps {
   data: Specification[]
+}
+
+export interface CrossSellCarouselProps {
+  data: AdditionalProducts[]
 }
 
 export interface UseProductDataResult {
