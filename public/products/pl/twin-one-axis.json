@@ -25,70 +25,77 @@
   ],
   "main-characteristics": [
     {
-      "title": "",
-      "content": "",
+      "title": "Zaawansowane sterowanie",
+      "content": "Cały układ sterowania oparty jest na najnowszym sterowniku PLC S7-1500, który stanowi mózg operacyjny stanowiska. Sterownik ten, będąc nie tylko sterownikiem logicznym, ale także technologicznym, posiada zdolność do wykonywania skomplikowanych obliczeń w celu jak najoptymalniejszego sterowania procesem spawania. W połączeniu z wyspą ET200 SP, sterownik zapewnia pełną kontrolę nad wszystkimi aspektami stanowiska, umożliwiając optymalne wykorzystanie zasobów oraz zapewniając wysoką jakość i efektywność procesu spawania.",
       "image": ""
     },
     {
-      "title": "",
-      "content": "",
+      "title": "Pozycjonery jednoosiowe",
+      "content": "Pozycjonery umożliwiają precyzyjne obracanie spawanego elementu o zadany kąt w trakcie procesu spawania. Dzięki zastosowaniu serwonapędów Siemens serii S210, sterownik PLC S7-1500 może dokładnie kontrolować ruch i pozycję pozycjonerów, co pozwala na skuteczne dostosowanie elementu do optymalnej pozycji podczas spawania. Ta integracja zapewnia nie tylko wysoką precyzję i jakość spawania, ale także elastyczność w dostosowywaniu procesu do różnych rodzajów elementów i wymagań produkcji.",
       "image": ""
     },
     {
-      "title": "",
-      "content": "",
+      "title": "Elektrycznie sterowana frontowa osłona",
+      "content": "Sterowana elektrycznie frontowa osłona zapewnia nie tylko łatwy dostęp do wnętrza stacji, ale także dodatkową ochronę dla personelu. Dzięki możliwości elektrycznego sterowania, osłona może być szybko i precyzyjnie otwierana i zamykana, co zwiększa wygodę obsługi.",
       "image": ""
     },
     {
-      "title": "",
-      "content": "",
+      "title": "Wizualizacja procesu",
+      "content": "5-cio calowy panel HMI Siemens Unified dostarcza operatorowi intuicyjnej wizualizacji procesu spawania. Pozwala to na szybką identyfikację ewentualnych problemów oraz bieżące monitorowanie parametrów pracy.",
       "image": ""
     },
     {
-      "title": "",
-      "content": "",
+      "title": "Stacja czyszczenia palnika oraz kalibracji punktu TCP robota",
+      "content": "Cela wyposażona została w specjalnie zaprojektowana stację czyszczenia palnika oraz kalibrację punktu TCP robota, gwarantującą optymalne warunki pracy i precyzyjne spawanie.",
       "image": ""
     },
     {
-      "title": "",
-      "content": "",
+      "title": "Układ bezpieczeństwa",
+      "content": "System bezpieczeństwa oparty na sterowniku Fail-Safe Siemensa zapewnia kompleksową ochronę dla personelu pracującego przy stanowisku.",
       "image": ""
     }
   ],
-  "specification": {
-    "gvw": "3500",
-    "load": "2305",
-    "area": "8500x2100",
-    "weight": "1195",
-    "dimensions": "10090 X 2100 X 847",
-    "axles": "3",
-    "axlesType": "Hamowne",
-    "wheels": "13\""
-  },
-  "drawings": {
-    "front": "front",
-    "profile": "profile",
-    "top": "top"
-  },
-  "standard": [
-    "Konstrukcja cynkowana\u00A0ogniowo",
-    "Podłoga ze sklejki wodoodpornej",
-    "Rampy załadunkowe wykonane ze stali ocynkowanej chowane pod\u00A0platformą",
-    "Uchwyty do mocowania ładunku zamontowane w podłodze",
-    "Koło podporowe",
-    "Kliny blokujące koło",
-    "Oświetlenie LED"
-  ],
-  "optional": [
-    "Elementy malowane\u00A0proszkowo",
-    "Wypełnienie aluminiowe",
-    "Skrzynka narzędziowa",
-    "Automatyczne koło podporowe",
-    "Wciągarka ręczna KNOTT",
-    "Wciągarka elektryczna",
-    "Oświetlenie tylne z dynamicznym kierunkowskazem",
-    "Rampy załadunkowe wykonane z aluminium chowane pod platformą",
-    "Stabilizator toru jazdy (AKS)"
+  "specification": [
+    {
+      "name": "Tor jezdny z robotem z przejazdem",
+      "param": "2,5m"
+    },
+    {
+      "name": "Źródła spawalnicze",
+      "param": "Mig/Mag ; Laser"
+    },
+    {
+      "name": "Tor jezdny z robotem z przejazdem",
+      "param": "2,5m"
+    },
+    {
+      "name": "Elektrycznie sterowana",
+      "param": "Elektrycznie sterowana"
+    },
+    {
+      "name": "Sterowanie",
+      "param": "sterownik Siemens"
+    },
+    {
+      "name": "Obrotniki do spawania",
+      "param": "Nośność 300kg"
+    },
+    {
+      "name": "Dwa pola robocze o wymiarach",
+      "param": "1250x1000 mm"
+    },
+    {
+      "name": "Dodatkowe wyposażenie",
+      "param": "Możliwość przenoszenie stanowiska"
+    },
+    {
+      "name": "Sterowanie pozycjonerów",
+      "param": "zintegrowane z kontrolerem robota"
+    },
+    {
+      "name": "System bezpieczeństwa",
+      "param": "spełniający normy bezpieczeństwa"
+    }
   ],
   "images": {
     "galvanized": [
