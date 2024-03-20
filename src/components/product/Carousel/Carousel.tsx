@@ -6,7 +6,6 @@ import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import Image from 'next/image'
 import 'react-inner-image-zoom/lib/InnerImageZoom/styles.min.css'
-import styles from './Carousel.module.scss'
 
 const Carousel: React.FC<{ images: string[] }> = ({ images }) => {
   const [nav1, setNav1] = useState()
@@ -33,14 +32,14 @@ const Carousel: React.FC<{ images: string[] }> = ({ images }) => {
     className: 'productCarousel',
   }
   return (
-    <div className={styles.container}>
-      <div className={styles.carousel}>
+    <div className="mx-auto mb-[30px] mt-2.5 flex h-full w-[90%] flex-col gap-4">
+      <div className="h-auto w-full max-w-[715px]">
         <Slider arrows={false} asNavFor={nav2} ref={slider1}>
           {images.map((image, index) => (
             <div key={index}>
-              <div className={styles.image__container}>
+              <div className="mx-2.5 aspect-[1.8/1] h-full max-w-[715px]">
                 <Image
-                  className={styles.image}
+                  className="aspect-[1.8/1] h-full w-full max-w-[715px] rounded-md"
                   src={image}
                   alt=""
                   width={464}
@@ -51,13 +50,13 @@ const Carousel: React.FC<{ images: string[] }> = ({ images }) => {
           ))}
         </Slider>
       </div>
-      <div className={styles.carousel__secondary}>
+      <div className="h-auto w-full max-w-[350px]">
         <Slider {...settings}>
           {images.map((image, index) => (
             <div key={index}>
-              <div className={styles.image__container__secondary}>
+              <div className="mx-2.5 aspect-[1.8/1] h-full rounded-md">
                 <Image
-                  className={styles.image__secondary}
+                  className="aspect-[1.8/1] h-full w-full rounded-md"
                   src={image}
                   width={190}
                   height={92}
