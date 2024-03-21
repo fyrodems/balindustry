@@ -29,7 +29,7 @@ const MobilePresentation: React.FC<ProductDataProps> = ({ data }) => {
       </div>
       {images.length === 1 ? (
         <Image
-          className="my-[30px] mr-[40px] aspect-[1.8/1] h-fit w-full max-w-[715px] rounded-md"
+          className="mx-auto my-[30px] aspect-[1.8/1] h-fit w-full max-w-[715px] rounded-md"
           src={images[0]}
           alt=""
           width={464}
