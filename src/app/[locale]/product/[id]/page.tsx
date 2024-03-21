@@ -57,8 +57,6 @@ export default function ProductPage({
   const {
     basic_data,
     floating_CTA,
-    images,
-    parameters,
     main_characteristics,
     specification,
     additional_products,
@@ -73,10 +71,10 @@ export default function ProductPage({
             <Presentation data={data} />
             {basic_data.with_data && (
               <>
-                <div className="laptop:flex mx-[20px] hidden justify-around bg-zinc-800 p-4 px-10 text-white">
-                  <Link href="#characteristics">Cechy</Link>
+                <div className="laptop:flex mx-[20px] mr-0 hidden justify-around bg-zinc-800 p-4 px-10 text-white">
+                  <Link href="#characteristics">Główne cechy</Link>
                   <div className="h-[20px] w-[1px] bg-white"></div>
-                  <Link href="#specification">Od producenta</Link>
+                  <Link href="#specification">Parametry</Link>
                   <div className="h-[20px] w-[1px] bg-white"></div>
                   <Link href="#carousel">Podobne produkty</Link>
                 </div>

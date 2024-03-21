@@ -44,7 +44,7 @@ export const categories = [
       {
         name: 'Dział obróbki metalowej',
         items: [
-          { name: 'Waterjet', link: '/product/waterjet1' },
+          { name: 'Waterjet', link: '/product/waterjet' },
           { name: 'TruPunch 5000 | TRUMPF', link: '/product/trupunch-5000' },
           {
             name: 'TrueLaser Tube 7000 fiber',
@@ -68,7 +68,7 @@ export const categories = [
           { name: 'DMU 210 P', link: '/product/dmu-210-p' },
           { name: 'SPRINT 3215', link: '/product/sprint-3215' },
           { name: 'M1', link: '/product/m1' },
-          { name: 'Waterjet', link: '/product/waterjet2' },
+          { name: 'Waterjet', link: '/product/waterjet' },
           { name: 'LH', link: '/product/lh' },
           { name: '5 osiowe CNC', link: '/product/5-axis-cnc' },
           { name: 'NLX 2500', link: '/product/nlx-2500' },

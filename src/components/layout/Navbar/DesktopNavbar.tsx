@@ -100,7 +100,7 @@ const DesktopNavbar = () => {
             <div className={styles.gridWrapper}>
               <div>
                 <SubCategoryLabel content={'Dział obróbki metalowej'} />
-                <Link href="/product/waterjet1">
+                <Link href="/product/waterjet">
                   <MenubarItem>Waterjet</MenubarItem>
                 </Link>
                 <Link href="/product/trupunch-5000">
@@ -142,7 +142,7 @@ const DesktopNavbar = () => {
                 <Link href="/product/m1">
                   <MenubarItem>M1</MenubarItem>
                 </Link>
-                <Link href="/product/waterjet2">
+                <Link href="/product/waterjet">
                   <MenubarItem>Waterjet</MenubarItem>
                 </Link>
                 <Link href="/product/lh">
@@ -232,7 +232,6 @@ const DesktopNavbar = () => {
             </div>
           </MenubarContent>
         </MenubarMenu>
-
       </Menubar>
 
       <Menubar>
