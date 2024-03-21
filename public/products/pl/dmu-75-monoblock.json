@@ -1,0 +1,51 @@
+{
+  "basic_data": {
+    "pathID": "dmu-75-monoblock",
+    "name": "DMU 75 monoBLOCK",
+    "additional_name": "Materiał do obróbki: Stal, Stal nierdzewna, Aluminium, Żeliwo, Metale kolorowe, Tworzywo sztuczne",
+    "description": "DMU 75 monoBLOCK to wysokowydajne centrum obróbcze, stosowane przede wszystkim w przemyśle metalowym. Posiada ono możliwość obróbki zarówno frezarskiej, jak i tokarskiej. Dzięki swojej kompaktowej konstrukcji oraz zaawansowanym funkcjom automatyki, DMU 75 monoBLOCK jest popularnym wyborem w branży inżynieryjnej.",
+    "with_data": true
+  },
+  "floating_CTA": {
+    "title": "",
+    "image": "",
+    "content": "",
+    "button": "",
+    "form": "",
+    "qp": "",
+    "ar": ""
+  },
+  "images": [
+    ""
+  ],
+  "parameters": [
+    {
+      "name": "",
+      "value": ""
+    }
+  ],
+  "main_characteristics": [
+    {
+      "title": "",
+      "content": [
+        ""
+      ],
+      "image": ""
+    }
+  ],
+  "specification": [
+    {
+      "name": "",
+      "param": [
+        ""
+      ]
+    }
+  ],
+  "additional_products": [
+    {
+      "name": "",
+      "image": "",
+      "link": ""
+    }
+  ]
+}
