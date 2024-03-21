@@ -1,0 +1,162 @@
+{
+  "basic_data": {
+    "pathID": "clx-350",
+    "name": "CLX 350",
+    "additional_name": "Materiał do obróbki: Stal, Stal nierdzewna, Aluminium, Żeliwo, Metale kolorowe, Tworzywo stuczne",
+    "description": "CLX 350 to zaawansowana tokarko-frezarka, redefiniująca standardy uniwersalnej obróbki tokarskiej. Zapewnia niezrównane możliwości dostosowania do indywidualnych potrzeb użytkownika, gwarantując wszechstronność, precyzję i efektywność, niezależnie od materiału czy złożoności projektu.",
+    "with_data": true
+  },
+  "floating_CTA": {
+    "title": "CNC CLX 350",
+    "image": "/products/images/clx-350/carousel1.svg",
+    "content": "",
+    "button": "Zapytaj o wycenę",
+    "form": "",
+    "qp": "",
+    "ar": ""
+  },
+  "images": [
+    "/products/images/clx-350/carousel1.svg"
+  ],
+  "parameters": [
+    {
+      "name": "Maks. przesuwy w osi X",
+      "value": "185 mm"
+    },
+    {
+      "name": "Maks. długość obrabianego przedmiotu",
+      "value": "530 mm"
+    },
+    {
+      "name": "Maks. przesuwy w osi Y",
+      "value": "80 mm"
+    },
+    {
+      "name": "Maks. średnica wewnętrzna rury zaciskowej",
+      "value": "65 mm"
+    },
+    {
+      "name": "Maks. przesuwy w osi Z",
+      "value": "540 mm"
+    },
+    {
+      "name": "Maks. średnica detalu",
+      "value": "320 mm"
+    }
+  ],
+  "main_characteristics": [
+    {
+      "title": "Zaawansowana obróbka elementów dzięki wrzecionu przechwytującemu i osi Y",
+      "content": [
+        "Dynamiczny napęd wrzeciona oraz zintegrowane motowrzeciono o wysokiej mocy dla maksymalnej efektywności obróbki. Dodatkowo, możliwość obróbki tylnej strony dzięki synchronicznemu wrzecionu ISM 36. Oś Y umożliwiająca przesunięcie ± 40 mm dla precyzyjnej obróbki frezarskiej oraz kompleksowej pracy na powierzchniach bocznych."
+      ],
+      "image": "/products/images/clx-350/main-characteristics1.svg"
+    },
+    {
+      "title": "Zwiększona produktywność podczas obróbki dzięki automatycznemu podajnikowi prętów",
+      "content": [
+        "Standardowy przelot pręta o średnicy 51 mm (opcja do średnicy 65 mm). Dostępny chwytak do obsługi elementów o wymiarach 65 mm x 200 mm i wadze 3 kg na życzenie. Interfejs robota opcjonalny, zgodny z standardem DMG MORI, kompatybilny z większością podajników prętów."
+      ],
+      "image": "/products/images/clx-350/main-characteristics2.svg"
+    },
+    {
+      "title": "Większa wydajność przy obróbce dzięki podajnikowi prętów",
+      "content": [
+        "Standardowy otwór na pręt o średnicy 51 mm (opcja do 65 mm). Dostępny chwytak do obsługi elementów o wymiarach 65 mm x 200 mm i wadze 3 kg na życzenie. Opcjonalny interfejs robota zgodny ze standardem DMG MORI, umożliwiający współpracę z większością podajników prętów."
+      ],
+      "image": ""
+    },
+    {
+      "title": "Solidna budowa z przestronną strefą roboczą, idealna do obróbki nietypowych detal.",
+      "content": [
+        "Obróbka elementów o średnicy maksymalnej 320 mm, z możliwością przesunięcia w osi Z na odległość do 540 mm. Kompaktowa konstrukcja zapewniająca minimalną powierzchnię ustawczą wynoszącą 5,0 m²."
+      ],
+      "image": ""
+    },
+    {
+      "title": "Systemy sterowania trójwymiarowe z wyjątkowym 19-calowym panelu dotykowym SLIMline SIEMENS lub 19-calowym panelu dotykowym dla FANUC",
+      "content": [
+        "Panel sterowania SIEMENS o przekątnej 19 cali z kolorowym ekranem i obsługą wielodotykową w DMG MORI SLIMline, zapewniający intuicyjne programowanie i łatwą obsługę.",
+        "Panel sterowania FANUC o przekątnej 19 cali z kolorowym ekranem dotykowym w DMG MORI SLIMline, umożliwiający symulację 3D oraz łatwą weryfikację konturu.",
+        "DMG MORI SMARTkey: Personalizacja z dodatkową pamięcią 8 GB, zapewniająca dostosowane do potrzeb użytkownika funkcje."
+      ],
+      "image": ""
+    }
+  ],
+  "specification": [
+    {
+      "name": "Napęd wrzeciona",
+      "param": [
+        "Moc: 16,5 kW (40% DC)",
+        "Moment obrotowy: 168 Nm (40% DC)",
+        "Maks. obroty: 5000 obr./min"
+      ]
+    },
+    {
+      "name": "Wrzeciono synchroniczne ISM 36",
+      "param": [
+        "Moc: 16,2 kW (40% DC)",
+        "Moment obrotowy: 62 Nm (40% DC)",
+        "Maks. obroty: 5000 obr./min",
+        "Możliwość obróbki tylnej strony"
+      ]
+    },
+    {
+      "name": "Oś Y",
+      "param": [
+        "Zakres przesuwu: ±40 mm"
+      ]
+    },
+    {
+      "name": "Podajnik prętów",
+      "param": [
+        "Standardowy: ø51 mm",
+        "Opcjonalny: ø65 mm"
+      ]
+    },
+    {
+      "name": "Opcjonalny chwytacz części",
+      "param": [
+        "Do elementów o wymiarach: ø65 x 200 mm, waga: 3 kg"
+      ]
+    },
+    {
+      "name": "Opcjonalny interfejs robota",
+      "param": [
+        "Zgodny ze standardem DMG MORI, kompatybilny z większością podajników prętów"
+      ]
+    },
+    {
+      "name": "Konstrukcja",
+      "param": [
+        "Kompaktowa z dużym obszarem roboczym do obróbki niestandardowych części"
+      ]
+    },
+    {
+      "name": "Obróbka części",
+      "param": [
+        "Średnica do 320 mm",
+        "Przesuw w osi Z: 540 mm"
+      ]
+    },
+    {
+      "name": "Powierzchnia ustawcza",
+      "param": [
+        "5,0 m²"
+      ]
+    },
+    {
+      "name": "Sterowania 3D",
+      "param": [
+        "DMG MORI SLIMline 19-calowy, kolorowy, wielodotykowy panel sterowania SIEMENS dla intuicyjnego programowania i łatwej obsługi"
+      ]
+    }
+  ],
+  "additional_products": [
+    {
+      "name": "",
+      "image": "",
+      "link": ""
+    }
+  ]
+}

@@ -12,6 +12,7 @@ const Carousel: React.FC<{ images: string[] }> = ({ images }) => {
   const [nav2, setNav2] = useState()
   const slider1 = useRef(null)
   const slider2 = useRef(null)
+  console.log(images)
 
   useEffect(() => {
     if (slider1.current && slider2.current) {
@@ -24,7 +25,7 @@ const Carousel: React.FC<{ images: string[] }> = ({ images }) => {
     arrows: true,
     focusOnSelect: true,
     dots: false,
-    slidesToShow: 3,
+    slidesToShow: 2,
     slidesToScroll: 1,
     swipeToSlide: true,
     asNavFor: nav1,

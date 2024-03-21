@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { type SpecificationProps } from '@/app/[locale]/product/[id]/types'
 import { cn } from '@/libs/utils'
 import {
@@ -17,29 +16,22 @@ import {
 } from '@/components/ui/accordion'
 
 const Specification: React.FC<SpecificationProps> = ({ data }) => {
-  const [open, setOpen] = useState<boolean>(true)
-
   return (
-    <div className="mx-[20px]" id="specification">
-      <Accordion type="single" collapsible value={open ? 'open' : 'closed'}>
+    <div className="mx-[20px] mb-[60px] mt-[20px]" id="specification">
+      <Accordion type="single" collapsible defaultValue="open">
         <AccordionItem value="open">
-          <AccordionTrigger
-            onClick={() => {
-              setOpen((prev) => !prev)
-            }}
-            className="mb-[40px] border-0 border-b-[2px] border-solid border-stone-300 text-[26px] font-bold text-stone-800"
-          >
+          <AccordionTrigger className="mb-[40px] border-0 border-b-[2px] border-solid border-stone-300 text-[26px] font-bold text-stone-800">
             Parametry
           </AccordionTrigger>
           <AccordionContent className="ml-[40px] cursor-default">
             <Table>
-              <TableHeader className="bg-stone-800">
-                <TableRow>
-                  <TableHead className="border-r-[1px] text-center !text-white">
-                    Opis
+              <TableHeader className=" bg-stone-800">
+                <TableRow className="grid grid-cols-[40%_60%]">
+                  <TableHead className="grid place-items-center border-r-[1px] text-center !text-white">
+                    Cecha
                   </TableHead>
-                  <TableHead className="border-l-[1px] text-center !text-white">
-                    Parametr
+                  <TableHead className="grid place-items-center border-l-[1px] text-center !text-white">
+                    Opis
                   </TableHead>
                 </TableRow>
               </TableHeader>
@@ -48,12 +40,27 @@ const Specification: React.FC<SpecificationProps> = ({ data }) => {
                   return (
                     <TableRow
                       key={i}
-                      className={cn(i % 2 === 0 && 'bg-stone-300')}
+                      className={cn(
+                        i % 2 === 0 && 'bg-stone-300',
+                        'grid grid-cols-[40%_60%]'
+                      )}
                     >
                       <TableCell>{parametr.name}</TableCell>
-                      <TableCell className="text-right">
-                        {parametr.param}
-                      </TableCell>
+                      {/* <TableCell className="">{parametr.param}</TableCell>
+                       */}
+                      {parametr.param.length === 1 ? (
+                        <TableCell className="">{parametr.param[0]}</TableCell>
+                      ) : (
+                        <ul className="flex flex-col">
+                          {parametr.param.map((param, i) => {
+                            return (
+                              <li key={i} className=" my-1 ml-6 list-disc pl-2">
+                                {param}
+                              </li>
+                            )
+                          })}
+                        </ul>
+                      )}
                     </TableRow>
                   )
                 })}
@@ -67,3 +74,33 @@ const Specification: React.FC<SpecificationProps> = ({ data }) => {
 }
 
 export default Specification
+
+/* 
+
+
+
+
+
+    {parametr.param.length === 1 ? (
+                                <TableCell className="">{parametr.param[0]}</TableCell>
+
+                ) : (
+                  <ul className="flex flex-col">
+                    {parametr.param.map((param, i) => {
+                      return (
+                        <li key={i} className=" my-3 ml-6 list-disc pl-2">
+                          {param}
+                        </li>
+                      )
+                    })}
+                  </ul>
+                )}
+
+
+
+
+
+
+
+
+*/

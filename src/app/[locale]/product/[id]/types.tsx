@@ -23,13 +23,13 @@ export interface Parameter {
 
 export interface MainCharacteristic {
   title: string
-  content: string
+  content: string[]
   image: string
 }
 
 export interface Specification {
   name: string
-  param: string
+  param: string[]
 }
 
 export interface AdditionalProducts {

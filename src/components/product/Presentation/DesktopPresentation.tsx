@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Carousel from '../Carousel/Carousel'
 import { type ProductDataProps } from '@/app/[locale]/product/[id]/types'
 
@@ -6,7 +7,7 @@ const Parameter: React.FC<{ name: string; value: string }> = ({
   value,
 }) => {
   return (
-    <div className="flex flex-col justify-center">
+    <div className="flex flex-col justify-between text-balance">
       <span className="font-bold">{name}</span>
       <span>{value}</span>
     </div>
@@ -18,7 +19,17 @@ const DesktopPresentation: React.FC<ProductDataProps> = ({ data }) => {
 
   return (
     <div className="mb-14 grid grid-cols-[50%_50%]">
-      <Carousel images={images} />
+      {images.length === 1 ? (
+        <Image
+          className="mr-[40px] aspect-[1.8/1] h-fit w-full max-w-[715px] rounded-md"
+          src={images[0]}
+          alt=""
+          width={464}
+          height={245}
+        />
+      ) : (
+        <Carousel images={images} />
+      )}
       <div className="rounded border border-zinc-200 p-4">
         <div className="mx-auto w-11/12">
           <h2 className="text-[25px] font-medium">{basic_data.name}</h2>
