@@ -23,7 +23,7 @@ const Specification: React.FC<SpecificationProps> = ({ data }) => {
           <AccordionTrigger className="mb-[40px] border-0 border-b-[2px] border-solid border-stone-300 text-[26px] font-bold text-stone-800">
             Parametry
           </AccordionTrigger>
-          <AccordionContent className="ml-[40px] cursor-default">
+          <AccordionContent className="laptop:ml-[40px] cursor-default">
             <Table>
               <TableHeader className=" bg-stone-800">
                 <TableRow className="grid grid-cols-[40%_60%]">

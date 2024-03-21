@@ -17,7 +17,10 @@ const MainCharacteristics: React.FC<MainCharacteristicsProps> = ({ data }) => {
           </AccordionTrigger>
           <AccordionContent className="cursor-default">
             {data.map((characteristic, i) => (
-              <div key={i} className="laptop:mb-[100px] my-[60px] ml-[40px]">
+              <div
+                key={i}
+                className="laptop:mb-[100px] laptop:ml-[40px] my-[60px]"
+              >
                 <h2 className="text-balance text-xl font-bold text-black">
                   {characteristic.title}
                 </h2>

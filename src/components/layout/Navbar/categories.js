@@ -66,7 +66,7 @@ export const categories = [
           { name: 'CLX 350', link: '/product/clx-350' },
           { name: 'DMU 75 monoBLOCK', link: '/product/dmu-75-monoblock' },
           { name: 'DMU 210 P', link: '/product/dmu-210-p' },
-          { name: 'SPRINT 3215', link: '/product/sprint-3215' },
+          { name: 'SPRINT 32I5', link: '/product/sprint-32I5' },
           { name: 'M1', link: '/product/m1' },
           { name: 'Waterjet', link: '/product/waterjet' },
           { name: 'LH', link: '/product/lh' },

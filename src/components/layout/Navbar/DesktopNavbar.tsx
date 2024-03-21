@@ -136,8 +136,8 @@ const DesktopNavbar = () => {
                 <Link href="/product/dmu-210-p">
                   <MenubarItem>DMU 210 P</MenubarItem>
                 </Link>
-                <Link href="/product/sprint-3215">
-                  <MenubarItem>SPRINT 3215</MenubarItem>
+                <Link href="/product/sprint-32I5">
+                  <MenubarItem>SPRINT 32I5</MenubarItem>
                 </Link>
                 <Link href="/product/m1">
                   <MenubarItem>M1</MenubarItem>
