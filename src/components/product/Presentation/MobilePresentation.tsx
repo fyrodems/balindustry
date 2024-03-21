@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Carousel from '../Carousel/Carousel'
 import Button from '@/components/common/Button'
 import { type ProductDataProps } from '@/app/[locale]/product/[id]/types'
@@ -26,8 +27,18 @@ const MobilePresentation: React.FC<ProductDataProps> = ({ data }) => {
           {basic_data.additional_name}
         </h3>
       </div>
+      {images.length === 1 ? (
+        <Image
+          className="my-[30px] mr-[40px] aspect-[1.8/1] h-fit w-full max-w-[715px] rounded-md"
+          src={images[0]}
+          alt=""
+          width={464}
+          height={245}
+        />
+      ) : (
+        <Carousel images={images} />
+      )}
 
-      <Carousel images={images} />
       <p className="mx-auto my-10 mt-4 w-11/12 max-w-[800px]">
         {basic_data.description}
       </p>

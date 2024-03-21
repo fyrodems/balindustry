@@ -6,6 +6,9 @@
     "description": "",
     "with_data": false
   },
+  "images": [
+    ""
+  ],
   "floating_CTA": {
     "title": "",
     "image": "",
@@ -15,9 +18,6 @@
     "qp": "",
     "ar": ""
   },
-  "images": [
-    ""
-  ],
   "parameters": [
     {
       "name": "",
