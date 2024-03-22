@@ -1,0 +1,131 @@
+{
+  "basic_data": {
+    "pathID": "m1",
+    "name": "M1",
+    "additional_name": "Materiał do obróbki: Stal, Stal nierdzewna, Aluminium, Żeliwo, Metale kolorowe, Tworzywo sztuczne",
+    "description": "Dzięki innowacyjnej konstrukcji oraz zaawansowanym technologiom, obrabiarki z serii M1 są cenione za wysoką jakość wykonania i zdolność do elastycznego dostosowania się do zróżnicowanych zadań produkcyjnych.",
+    "with_data": true
+  },
+  "images": [
+    "/products/images/m1/carousel1.svg"
+  ],
+  "floating_CTA": {
+    "title": "M1",
+    "image": "/products/images/m1/floatingCTA.svg",
+    "content": "",
+    "button": "Zapytaj o wycenę",
+    "form": "",
+    "qp": "",
+    "ar": ""
+  },
+  "parameters": [
+    {
+      "name": "Maks. przesuwy w osi X",
+      "value": "550 mm"
+    },
+    {
+      "name": "Maks. szer. obrabianego przedmiotu",
+      "value": "650 mm"
+    },
+    {
+      "name": "Maks. przesuwy w osi Y",
+      "value": "550 mm"
+    },
+    {
+      "name": "Maks. wys. obrabianego przedmiotu",
+      "value": "615 mm"
+    },
+    {
+      "name": "Maks. przesuwy w osi Z",
+      "value": "550 mm"
+    },
+    {
+      "name": "Maks. ciężar detalu",
+      "value": "600 kg"
+    }
+  ],
+  "main_characteristics": [
+    {
+      "title": "Wyjątkowa Sztywność Zapewniająca Wydajną Obróbkę i Wysoką Jakość Powierzchni",
+      "content": [
+        "Dzięki wyjątkowej sztywności M1 nasza obrabiarka umożliwia nie tylko wydajną obróbkę, ale także zapewnia wysoką jakość obrabianej powierzchni. Ta unikalna cecha gwarantuje stabilność procesu obróbkowego, przekładając się na doskonałe efekty w produkcji części oraz uzyskiwanie precyzyjnych detali bez kompromisów."
+      ],
+      "image": "/products/images/m1/mainCharacteristics1.svg"
+    },
+    {
+      "title": "Konstrukcja Wrzeciona Inline z Ogromnym Doświadczeniem Światowym",
+      "content": [
+        "Nasza sprawdzona konstrukcja wrzeciona inline to ponad 3.000 zainstalowanych egzemplarzy na całym świecie, świadczących o niezawodności i długoletniej wydajności. Dzięki dużej pojemności cieplnej komponentów, nasza obrabiarka gwarantuje stabilność termiczną, co jest kluczowe dla utrzymania precyzji i jakości w trakcie procesu obróbki."
+      ],
+      "image": "/products/images/m1/mainCharacteristics2.svg"
+    },
+    {
+      "title": "Optymalna Przestrzeń Robocza",
+      "content": [
+        "Nasza maszyna oferuje optymalną przestrzeń roboczą połączoną z kompaktową konstrukcją, co umożliwia wydajną obróbkę nawet na niewielkiej powierzchni posadowienia. Stół o wymiarach 850 x 650 mm i maksymalnym obciążeniu 600 kg charakteryzuje się wysoką sztywnością, zapewniając stabilność i precyzję podczas procesu obróbki."
+      ],
+      "image": ""
+    }
+  ],
+  "specification": [
+    {
+      "name": "Masywne, monolityczne łoże",
+      "param": [
+        "zapewnia wysoką stabilność termiczną",
+        "masa: 2 400 kg"
+      ]
+    },
+    {
+      "name": "Nieruchomy stół z rowkami T-owymi",
+      "param": [
+        "1 × 18H7",
+        "5 × 18H12"
+      ]
+    },
+    {
+      "name": "Szeroki rozstaw prowadnic",
+      "param": [
+        "580 mm w osi X / przejazd 550 mm",
+        "560 mm w osi Y / przejazd 550 mm",
+        "260 mm w osi Z / przejazd 510 mm"
+      ]
+    },
+    {
+      "name": "Obróbka prętów",
+      "param": [
+        "Średnica do: 32 (38) mm"
+      ]
+    },
+    {
+      "name": "Wrzeciono inline",
+      "param": [
+        "Prędkość obrotowa: 10.000 obr./min lub 12.000 obr./min"
+      ]
+    },
+    {
+      "name": "Wewnętrzne doprowadzenie chłodziwa (wersja PRO)",
+      "param": [
+        "20 bar"
+      ]
+    },
+    {
+      "name": "24-pozycyjny magazyn narzędzi",
+      "param": [
+        "Z podwójnym chwytakiem"
+      ]
+    },
+    {
+      "name": "Łatwe poziomowanie",
+      "param": [
+        "Na 3 stopach + 2 dodatkowe stopy zwiększające sztywność dynamiczną obrabiarki"
+      ]
+    }
+  ],
+  "additional_products": [
+    {
+      "name": "",
+      "image": "",
+      "link": ""
+    }
+  ]
+}
