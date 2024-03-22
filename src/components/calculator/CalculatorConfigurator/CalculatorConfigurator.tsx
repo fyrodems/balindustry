@@ -3,6 +3,7 @@ import CalculatorImagePreview from '../CalculatorImagePreview/CalculatorImagePre
 import CalculatorModelSelectors from '../CalculatorModelSelectors/CalculatorModelSelectors'
 import CalculatorPriceItemsList from '../CalculatorPriceItemsList/CalculatorPriceItemsList'
 import ConfiguratorFilesList from '../ConfiguratorFilesList/ConfiguratorFilesList'
+import styles from './CalculatorConfigurator.module.scss'
 
 function CalculatorConfigurator({ data, filesArray, setFilesArray }) {
   return (
@@ -11,7 +12,7 @@ function CalculatorConfigurator({ data, filesArray, setFilesArray }) {
         filesArray={filesArray}
         setFilesArray={setFilesArray}
       />
-      <div className="calculatorConfigurator__wrapper">
+      <div className={styles.chosenModelWrapper}>
         <CalculatorImagePreview />
         <CalculatorModelSelectors />
       </div>

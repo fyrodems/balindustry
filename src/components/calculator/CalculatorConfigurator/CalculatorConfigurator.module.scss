@@ -1,0 +1,12 @@
+@import '@/app/styles/mixins';
+
+.chosenModelWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include tablet {
+    flex-direction: row;
+  }
+}

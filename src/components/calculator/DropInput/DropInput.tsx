@@ -10,19 +10,11 @@ interface DropInputProps {
   callback?: (e: any) => void
   filesArray: File[]
   setFilesArray: (value: File[]) => void
-  pageData: string
-  data: string
 }
 
-const DropInput: React.FC<DropInputProps> = ({
-  filesArray = [],
-  setFilesArray,
-  pageData,
-  data,
-}) => {
+const DropInput: React.FC<DropInputProps> = ({ filesArray, setFilesArray }) => {
   const { backendConnector } = useContext(DataContext)
   const [acceptConditionMet, setAcceptConditionMet] = useState(true)
-
   const [isMobile, setIsMobile] = useState(false)
   const windowDimensions = useWindowDimensions()
 
@@ -41,21 +33,23 @@ const DropInput: React.FC<DropInputProps> = ({
 
     // Check if the accept condition is met
     const allowedExtensions = new Set(['.dxf', '.stp'])
-    const files = e.target.files
-    let validFiles = true
-    for (const file of files) {
-      const fileExtension = file.name.split('.').pop().toLowerCase()
-      if (!allowedExtensions.has(`.${fileExtension}`)) {
-        validFiles = false
-        break
-      }
-    }
+    const files = (e.target as HTMLInputElement).files
 
-    setAcceptConditionMet(validFiles)
-    if (validFiles) {
-      const files = e.target.files
-      setFilesArray(Array.from(files))
-      backendConnector({ filesArray: Array.from(files), isReady: true })
+    let validFiles = true
+    if (files) {
+      for (const file of Array.from(files)) {
+        const fileExtension = file.name.split('.').pop()?.toLocaleLowerCase()
+        if (!allowedExtensions.has(`.${fileExtension}`)) {
+          validFiles = false
+          break
+        }
+      }
+
+      setAcceptConditionMet(validFiles)
+      if (validFiles) {
+        setFilesArray(Array.from(files))
+        backendConnector({ filesArray: Array.from(files), isReady: true })
+      }
     }
   }
 
@@ -75,7 +69,7 @@ const DropInput: React.FC<DropInputProps> = ({
         <form onSubmit={onFormSubmit}>
           <div ref={labelRef} className={styles.chooseFilesWrapper}>
             <label htmlFor="calcDropInput" className={styles.chooseFilesLabel}>
-              <Image src={arrowIcon} alt="Upload file" />
+              <Image src={arrowIcon as string} alt="Upload file" />
               <span>Wybierz pliki</span>
             </label>
             {isMobile ? null : (
@@ -94,18 +88,16 @@ const DropInput: React.FC<DropInputProps> = ({
               multiple={true}
               required={true}
               onClick={(e) => {
-                e.target.value = null
+                ;(e.target as HTMLInputElement).value = ''
               }}
             />
           </div>
-          {!acceptConditionMet && <p>{pageData.validationError}</p>}
+          {!acceptConditionMet && (
+            <p className={styles.wrongFileExtension}>
+              Nieprawidłowy rodzaj pliku
+            </p>
+          )}
         </form>
-
-        <button
-          className={'calcDropInput__clearListButton'}
-          /*          content={<img src={x} alt="Delete file" />} */
-          /*  callback={() => setFilesArray([])} */
-        ></button>
       </div>
     </div>
   )

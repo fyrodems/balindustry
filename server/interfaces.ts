@@ -481,7 +481,7 @@ export interface DxfFile {
     }>
   }>
 }
-export interface ReturnData {
+export interface FileData {
   fileName: string
   fileContent: DxfFile
   path: string
@@ -489,9 +489,9 @@ export interface ReturnData {
   totalLength: string
   arrayLength: Array<{ type: string; length: number; elements?: number[] }>
   modelJson: null
-  quantity: number
-  material: null
-  thickness: null
+  quantity: number | null
+  material: string | null
+  thickness: number | null
   density: null
   isReady: boolean
   totalArea: number

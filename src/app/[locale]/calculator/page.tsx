@@ -39,7 +39,6 @@ export const Calculator = () => {
                   <DropInput
                     filesArray={filesArray}
                     setFilesArray={setFilesArray}
-                    data={data}
                   />
                 </div>
               </div>

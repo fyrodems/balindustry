@@ -8,7 +8,7 @@ import { line } from './entity/line'
 import { polyline } from './entity/polyline'
 import { circle } from './entity/circle'
 import { spline } from './entity/spline'
-import { DxfFile, type File, type ReturnData } from './interfaces'
+import { DxfFile, type File, type FileData } from './interfaces'
 import { units } from './units'
 // import { ellipse } from './entity/ellipse.ts'
 
@@ -75,7 +75,7 @@ export const dxfParse = {
      * @param {*} arrReturnData - tablica z obiektami
      * @returns
      */
-  parse(file: File, arrReturnData: ReturnData[]) {
+  parse(file: File, arrReturnData: FileData[]) {
     const pathNewFile = 'uploads/' + file.name.replace('dxf', 'svg')
     // Parsowanie pliku
     const dxf = this.parseFile(file)

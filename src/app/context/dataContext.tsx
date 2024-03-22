@@ -1,8 +1,9 @@
 import { createContext, useEffect, useState } from 'react'
 import useFilesData from '../../hooks/useFilesData'
+import { type FileData } from '../../../server/interfaces'
 
 export interface FileContextType {
-  data: null
+  data: FileData[] | null
   backendConnector: ({
     filesArray,
     isReady,
@@ -17,9 +18,9 @@ export interface FileContextType {
     key,
     value,
   }: {
-    index: any
-    key: any
-    value: any
+    index: number
+    key: 'thickness' | 'material' | 'quantity'
+    value: number | null
   }) => void
 }
 
@@ -29,7 +30,7 @@ const DataContextProvider: React.FC<{ children: React.ReactNode }> = ({
   children,
 }) => {
   const [uploadedFiles, setUploadedFiles] = useState<File[] | null>(null)
-  const [modelsData, setModelsData] = useState([])
+  const [modelsData, setModelsData] = useState<FileData[] | null>([])
   const { data, error, isLoading, setData } = useFilesData(uploadedFiles)
 
   useEffect(() => {
@@ -54,10 +55,23 @@ const DataContextProvider: React.FC<{ children: React.ReactNode }> = ({
    * @param {index, key, value}
    */
 
-  const updateData = ({ index, key, value }) => {
-    const newArray = [...modelsData]
-    newArray[index][key] = value
-    setModelsData(newArray)
+  const updateData = ({
+    index,
+    key,
+    value,
+  }: {
+    index: number
+    key: 'thickness' | 'material' | 'quantity'
+    value: number | string | null
+  }) => {
+    if (modelsData) {
+      const newArray = [...modelsData]
+      const model = newArray[index]
+      if (key === 'thickness') model.thickness = Number(value)
+      if (key === 'material') model.material = value?.toString() ?? null
+      if (key === 'quantity') model.quantity = Number(value)
+      setModelsData(newArray)
+    }
   }
 
   const value = { data, backendConnector, error, isLoading, updateData }

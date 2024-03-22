@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react'
+import { type FileData } from '../../server/interfaces'
 
-const useFilesData = (files: File[]) => {
-  const [data, setData] = useState(null)
+const useFilesData = (files: File[] | null) => {
+  const [data, setData] = useState<FileData[] | null>(null)
   const [error, setError] = useState('')
   const [isLoading, setIsLoading] = useState(false)
 
@@ -23,13 +24,13 @@ const useFilesData = (files: File[]) => {
 
             setIsLoading(true)
             if (res.status === 200) {
-              const results = await res.json()
+              const results = (await res.json()) as FileData[]
               setData(results)
 
               setIsLoading(false)
             }
           } catch (error_) {
-            setError(error_)
+            setError(error_ as string)
           }
         }
 

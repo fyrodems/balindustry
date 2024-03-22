@@ -10,7 +10,6 @@ const queryClient = new QueryClient()
 
 export const TanstackWrapper = ({ children }: Props) => (
   <QueryClientProvider client={queryClient}>
-    {' '}
     <DataContextProvider>{children} </DataContextProvider>
   </QueryClientProvider>
 )
