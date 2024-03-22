@@ -16,7 +16,7 @@ export const TextField = ({
 }: TextFieldProps) => {
   return (
     <>
-      <Label className="mt-8 grid w-full items-center gap-4 text-base font-bold sm:text-xl">
+      <Label className="mt-8 grid w-full items-center gap-4 text-base font-bold sm:text-lg">
         {label}
         <div className="relative w-full font-normal">
           <Input

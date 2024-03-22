@@ -1,6 +1,6 @@
 import PageTitle from '@/components/common/PageTitle'
 import Intro from '@/components/contact/Intro/Intro'
-import ContactForm from '@/components/contact/ContactForm/ContactForm'
+import { Form } from '@/components/forms/form'
 
 const Contact = () => {
   return (
@@ -12,9 +12,9 @@ const Contact = () => {
           poniższego formularza, aby skontaktować się z nami. Postaramy się
           odpowiedzieć jak najszybciej.
         </p>
-        <div className="laptop:grid-cols-[40%_60%] mx-auto my-0 grid max-w-[1300px] grid-cols-[1fr]">
+        <div className="mx-auto my-0 grid max-w-[1300px] grid-cols-[1fr] laptop:grid-cols-[40%_60%]">
           <Intro />
-          <ContactForm />
+          <Form />
         </div>
       </main>
     </>

@@ -12,7 +12,7 @@ export const TextareaField = ({
   return (
     <div className="relative grid w-full items-center gap-4">
       <Label
-        className="mt-8 text-base font-bold sm:text-xl"
+        className="mt-8 text-base font-bold sm:text-lg"
         htmlFor={fieldName}
       >
         Twoja wiadomość *

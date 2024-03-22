@@ -13,7 +13,6 @@ export const validateAllFalse: ValidateAllFalseTypes = (
   const isAllFalse = variants.every(
     ({ label }: { label: string }) => watch(label) === false
   )
-  console.log(isAllFalse)
   setErrorInfo(isAllFalse ? 'Proszę wybrać przynajmniej jedną opcję' : '')
   return isAllFalse
 }
@@ -45,4 +44,13 @@ export const handleKeyDown: HandleKeyDownProps = (e, setError) => {
 export const handleNumberInput: HandleInputProps = (e) => {
   const rawValue = e.target.value.replace(/[^\d+]/g, '')
   e.target.value = rawValue
+}
+
+export const handleAnchorScroll = () => {
+  const elem = document.getElementById('form')
+  if (elem?.offsetTop !== undefined) {
+    window.scrollTo({
+      top: elem?.offsetTop - 200,
+    })
+  }
 }

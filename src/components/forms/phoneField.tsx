@@ -8,7 +8,7 @@ export const PhoneField = ({ register, errors }: PhoneFieldProps) => {
   const [error, setError] = useState<string>('')
 
   return (
-    <Label className="mt-8 grid w-full items-center gap-4 text-base font-bold sm:text-xl">
+    <Label className="mt-8 grid w-full items-center gap-4 text-base font-bold sm:text-lg">
       Numer telefonu *
       <div className="relative w-full font-normal">
         <Input

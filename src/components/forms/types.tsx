@@ -1,3 +1,4 @@
+import { Dispatch, SetStateAction } from 'react'
 import {
   Control,
   FieldErrors,
@@ -90,4 +91,9 @@ export interface PhoneFieldProps {
 
 export interface HandleInputProps {
   (e: React.ChangeEvent<HTMLInputElement>): void
+}
+
+export interface DropZoneProps {
+  file: File | null
+  setFile: Dispatch<SetStateAction<File | null>>
 }
