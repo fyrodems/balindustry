@@ -1,17 +1,17 @@
-module.exports = {
+export const units = {
   /**
    * Przypisanie odpowiednich jednostek na podstawie parametru przekazanego z header pliku
    * @param {*} insunits - przekazany parametr z header pliku
    * @returns
    */
-  getUnitFromHeader: function (insunits) {
-    let unitsName = '';
-    let arrayUnitSize = [
+  getUnitFromHeader(insunits: number) {
+    let unitsName = ''
+    const arrayUnitSize = [
       { id: 0, name: 'brak jednostek' },
       { id: 1, name: 'cal' },
       { id: 2, name: 'ft' },
       { id: 3, name: 'mile' },
-      { id: 4, name: ' mm' },
+      { id: 4, name: 'mm' },
       { id: 5, name: 'cm' },
       { id: 6, name: 'm' },
       { id: 7, name: 'km' },
@@ -28,13 +28,14 @@ module.exports = {
       { id: 18, name: 'jednostki astronomiczne' },
       { id: 19, name: 'lata świetlne' },
       { id: 20, name: 'parseki' },
-    ];
+    ]
 
-    for (let index in arrayUnitSize) {
-      if (arrayUnitSize[index].id === insunits) {
-        unitsName = arrayUnitSize[index].name;
+    for (const unit of arrayUnitSize) {
+      if (unit.id === insunits) {
+        unitsName = unit.name
       }
     }
-    return unitsName;
+
+    return unitsName
   },
-};
+}

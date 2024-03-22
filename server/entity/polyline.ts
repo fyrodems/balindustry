@@ -1,57 +1,61 @@
-/* eslint-disable unicorn/prefer-modern-math-apis */
-interface Vertice {
-  type: string
-  handle: string
-  ownerHandle: string
-  layer: string
-  bulge: number
-  x: number
-  y: number
-  z: number
-}
+import {
+  type ArrayAllLength,
+  type Entity,
+  type Vertice,
+  type Segment,
+} from './interfaces'
 
-interface Entity {
-  type: string
-  vertices: Vertice[]
-  handle: string
-  ownerHandle: string
-  layer: string
-  shape: boolean
-  includesCurveFitVertices: boolean
-  includesSplineFitVertices: boolean
-  is3dPolyline: boolean
-  is3dPolygonMesh: boolean
-  is3dPolygonMeshClosed: boolean
-  isPolyfaceMesh: boolean
-  hasContinuousLinetypePattern: boolean
-}
+// interface Vertice {
+//   type: string
+//   handle: string
+//   ownerHandle: string
+//   layer: string
+//   bulge: number
+//   x: number
+//   y: number
+//   z: number
+// }
 
-interface ArrayAllLength {
-  type: string
-  length: number
-  elements: number[]
-}
+// interface Entity {
+//   type: string
+//   vertices: Vertice[]
+//   handle: string
+//   ownerHandle: string
+//   layer: string
+//   shape: boolean
+//   includesCurveFitVertices: boolean
+//   includesSplineFitVertices: boolean
+//   is3dPolyline: boolean
+//   is3dPolygonMesh: boolean
+//   is3dPolygonMeshClosed: boolean
+//   isPolyfaceMesh: boolean
+//   hasContinuousLinetypePattern: boolean
+// }
 
-interface Segment {
-  vertices: {
-    startPoint: {
-      x: number
-      y: number
-    }
-    endPoint: {
-      x: number
-      y: number
-    }
-  }
-  length: number
-  bulge?: number
-}
+// interface ArrayAllLength {
+//   type: string
+//   length: number
+//   elements: number[]
+// }
+
+// interface Segment {
+//   vertices: {
+//     startPoint: {
+//       x: number
+//       y: number
+//     }
+//     endPoint: {
+//       x: number
+//       y: number
+//     }
+//   }
+//   length: number
+//   bulge?: number
+// }
 
 export const polyline = {
   // Wyliczanie długości
   getLength(entity: Entity, arrayAllLength: ArrayAllLength[]) {
-    console.log('sisisi')
-    console.log(arrayAllLength)
     const polyLineArr = []
     let totalLength = 0
     const vertices = entity.vertices
@@ -103,7 +107,7 @@ export const polyline = {
   calculateArcLength(bulge: number, length: number) {
     const halfLength = length / 2
     const sagitta = bulge * halfLength
-    const counterRec = Math.sqrt(halfLength ** 2 + sagitta ** 2)
+    const counterRec = Math.hypot(halfLength, sagitta)
     const alpha = this.toDegrees(Math.asin(sagitta / counterRec))
     const theta = 4 * alpha
     const beta = Math.cos(this.toRadians(180 - (90 + theta / 2)))
@@ -128,7 +132,7 @@ export const polyline = {
               y: this.round(vertices[0].y),
             },
           },
-          length: this.round(Math.sqrt(dx * dx + dy * dy)),
+          length: this.round(Math.hypot(dx, dy)),
         })
       } else {
         const dx = vertices[i].x - vertices[i + 1].x
@@ -144,7 +148,7 @@ export const polyline = {
               y: this.round(vertices[i + 1].y),
             },
           },
-          length: this.round(Math.sqrt(dx * dx + dy * dy)),
+          length: this.round(Math.hypot(dx, dy)),
         })
       }
     }
@@ -194,7 +198,7 @@ export const polyline = {
       for (let i = 1; i < polyline.length - 1; i++) {
         const [x1, y1] = polyline[i]
         const [x2, y2] = polyline[i + 1]
-        const base = Math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2)
+        const base = Math.hypot(x2 - x1, y2 - y1)
         let height = 0
         if (base !== 0) {
           height =

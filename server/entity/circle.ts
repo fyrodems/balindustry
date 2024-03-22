@@ -1,40 +1,42 @@
-interface ArrayAllLength {
-  type: string
-  length: number
-}
+import { type ArrayAllLength, type Entity } from './interfaces'
 
-interface Vertice {
-  type: string
-  handle: string
-  ownerHandle: string
-  layer: string
-  bulge: number
-  x: number
-  y: number
-  z: number
-}
+// interface ArrayAllLength {
+//   type: string
+//   length: number
+// }
 
-interface Entity {
-  type: string
-  vertices: Vertice[]
-  handle: string
-  ownerHandle: string
-  layer: string
-  shape: boolean
-  includesCurveFitVertices: boolean
-  includesSplineFitVertices: boolean
-  is3dPolyline: boolean
-  is3dPolygonMesh: boolean
-  is3dPolygonMeshClosed: boolean
-  isPolyfaceMesh: boolean
-  hasContinuousLinetypePattern: boolean
-  radius: number
-  center: {
-    x: number
-    y: number
-    z: number
-  }
-}
+// interface Vertice {
+//   type: string
+//   handle: string
+//   ownerHandle: string
+//   layer: string
+//   bulge: number
+//   x: number
+//   y: number
+//   z: number
+// }
+
+// interface Entity {
+//   type: string
+//   vertices: Vertice[]
+//   handle: string
+//   ownerHandle: string
+//   layer: string
+//   shape: boolean
+//   includesCurveFitVertices: boolean
+//   includesSplineFitVertices: boolean
+//   is3dPolyline: boolean
+//   is3dPolygonMesh: boolean
+//   is3dPolygonMeshClosed: boolean
+//   isPolyfaceMesh: boolean
+//   hasContinuousLinetypePattern: boolean
+//   radius: number
+//   center: {
+//     x: number
+//     y: number
+//     z: number
+//   }
+// }
 
 export const circle = {
   /**
