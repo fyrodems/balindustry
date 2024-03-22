@@ -1,12 +1,13 @@
 import { cn } from '@/libs/utils'
 
 interface ButtonProps {
-  content: string
   disabled?: boolean
   size?: 'XL' | 'L' | 'M' | 'XS' | null
   className?: string
   primary?: boolean
   onClick: () => void
+  content?: string
+  children?: React.ReactNode
 }
 
 export const Button: React.FC<ButtonProps> = ({
@@ -16,6 +17,7 @@ export const Button: React.FC<ButtonProps> = ({
   className,
   primary = true,
   onClick,
+  children,
 }) => {
   const sizeToClassName = {
     XS: 'px-6 py-1 text-sm',
@@ -36,6 +38,7 @@ export const Button: React.FC<ButtonProps> = ({
       )}
     >
       {content}
+      {children}
     </button>
   )
 }

@@ -22,7 +22,6 @@ const DropInput: React.FC<DropInputProps> = ({
 }) => {
   const { backendConnector } = useContext(DataContext)
   const [acceptConditionMet, setAcceptConditionMet] = useState(true)
-  /*  const { inputLabelMobile, inputLabelDesktop, inputLabelExtension } = pageData */
 
   const [isMobile, setIsMobile] = useState(false)
   const windowDimensions = useWindowDimensions()
@@ -41,16 +40,17 @@ const DropInput: React.FC<DropInputProps> = ({
     e.preventDefault()
 
     // Check if the accept condition is met
-    const allowedExtensions = ['.dxf', '.stp']
+    const allowedExtensions = new Set(['.dxf', '.stp'])
     const files = e.target.files
     let validFiles = true
-    for (let i = 0; i < files.length; i++) {
-      const fileExtension = files[i].name.split('.').pop().toLowerCase()
-      if (!allowedExtensions.includes(`.${fileExtension}`)) {
+    for (const file of files) {
+      const fileExtension = file.name.split('.').pop().toLowerCase()
+      if (!allowedExtensions.has(`.${fileExtension}`)) {
         validFiles = false
         break
       }
     }
+
     setAcceptConditionMet(validFiles)
     if (validFiles) {
       const files = e.target.files
@@ -71,14 +71,6 @@ const DropInput: React.FC<DropInputProps> = ({
 
   return (
     <div className={styles.dropInput}>
-      {/*   //   to niżej wchodzi jak mamy pliki i drugi widok */}
-      {/*  {data !== null && data !== undefined && data !== [] ? (
-        <FilesList
-          pageData={pageData}
-          filesArray={filesArray}
-          setFilesArray={setFilesArray}
-        />
-      ) : null} */}
       <div className={styles.formWrapper}>
         <form onSubmit={onFormSubmit}>
           <div ref={labelRef} className={styles.chooseFilesWrapper}>

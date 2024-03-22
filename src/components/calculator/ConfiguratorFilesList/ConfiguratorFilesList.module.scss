@@ -1,0 +1,51 @@
+@import '@/app/styles/colors';
+
+.filesList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 10px;
+}
+
+.fileWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid $language-selector-empty-border;
+  border-radius: 6px;
+  padding: 10px 20px;
+  width: 100%;
+  max-width: 970px;
+  margin: 7px 0;
+}
+
+.deleteFileButton {
+  color: $text-dark-color;
+  padding: 0;
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.addFilesButton {
+  background: transparent;
+  color: $orange;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 17px;
+  border: 2px solid $language-selector-empty-bg;
+  border-radius: 6px;
+  padding: 17px 25px;
+  width: 100%;
+  max-width: 320px;
+  box-shadow: 0px 8.24px 24.72px -8.24px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  margin-top: 15px;
+  margin-bottom: 60px;
+}

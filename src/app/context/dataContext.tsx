@@ -31,7 +31,7 @@ const DataContextProvider: React.FC<{ children: React.ReactNode }> = ({
   const [uploadedFiles, setUploadedFiles] = useState<File[] | null>(null)
   const [modelsData, setModelsData] = useState([])
   const { data, error, isLoading, setData } = useFilesData(uploadedFiles)
-  console.log('data context')
+
   useEffect(() => {
     setModelsData(data)
   }, [data])
@@ -53,6 +53,7 @@ const DataContextProvider: React.FC<{ children: React.ReactNode }> = ({
    * Nadpisuje wartości dla każdego z załadowych plików. Przyjmuje indeks, klucz do zmiany i nową wartość
    * @param {index, key, value}
    */
+
   const updateData = ({ index, key, value }) => {
     const newArray = [...modelsData]
     newArray[index][key] = value

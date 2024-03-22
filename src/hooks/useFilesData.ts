@@ -4,7 +4,6 @@ const useFilesData = (files: File[]) => {
   const [data, setData] = useState(null)
   const [error, setError] = useState('')
   const [isLoading, setIsLoading] = useState(false)
-  console.log('use files data')
 
   useEffect(() => {
     ;(async () => {
