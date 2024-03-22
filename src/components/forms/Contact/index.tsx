@@ -15,7 +15,7 @@ export const Contact = ({ person, mail, phone }: ContactProps) => {
         </h3>
         <p className="text-sm sm:text-base">
           <span className="text-base font-semibold sm:text-xl">{person}</span>{' '}
-          Key Account Manager.
+          Key&nbsp;Account&nbsp;Manager.
         </p>
       </div>
       <div className="mx-auto my-4 flex w-full max-w-[250px] flex-col justify-center gap-12 text-left">
