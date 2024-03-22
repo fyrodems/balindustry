@@ -13,7 +13,7 @@ interface DropInputProps {
 }
 
 const DropInput: React.FC<DropInputProps> = ({ filesArray, setFilesArray }) => {
-  const { backendConnector } = useContext(DataContext)
+  const contextData = useContext(DataContext)
   const [acceptConditionMet, setAcceptConditionMet] = useState(true)
   const [isMobile, setIsMobile] = useState(false)
   const windowDimensions = useWindowDimensions()
@@ -48,7 +48,10 @@ const DropInput: React.FC<DropInputProps> = ({ filesArray, setFilesArray }) => {
       setAcceptConditionMet(validFiles)
       if (validFiles) {
         setFilesArray(Array.from(files))
-        backendConnector({ filesArray: Array.from(files), isReady: true })
+        contextData?.backendConnector({
+          filesArray: Array.from(files),
+          isReady: true,
+        })
       }
     }
   }
@@ -59,9 +62,9 @@ const DropInput: React.FC<DropInputProps> = ({ filesArray, setFilesArray }) => {
 
   useEffect(() => {
     if (filesArray.length === 0) {
-      backendConnector({ filesArray: [], isReady: false })
+      contextData?.backendConnector({ filesArray: [], isReady: false })
     }
-  }, [filesArray, backendConnector])
+  }, [filesArray, contextData])
 
   return (
     <div className={styles.dropInput}>

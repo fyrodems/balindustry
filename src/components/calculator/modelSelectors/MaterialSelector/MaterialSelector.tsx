@@ -1,12 +1,12 @@
 import { DataContext } from '../../../../app/context/dataContext'
 import { SelectedContext } from '../../../../app/context/selectedContext'
-import { useState, useContext, useEffect, useRef } from 'react'
+import { useState, useContext, useEffect } from 'react'
 import materials from '../../materials.json'
 
-const Material = ({ onSelectMaterialChange }) => {
-  const { updateData, data } = useContext(DataContext)
-  const { index } = useContext(SelectedContext)
-  const { material } = data[index]
+const Material = () => {
+  const contextData = useContext(DataContext)
+  const selectedModel = useContext(SelectedContext)
+  const { material } = contextData?.data[selectedModel.index]
 
   const list = materials.map((el) => el.name)
 
@@ -18,9 +18,25 @@ const Material = ({ onSelectMaterialChange }) => {
     return null
   }
 
+  const handleMaterialChange = (selectedMaterial) => {
+    const defaultThick =
+      materials.find((el) => el.name === selectedMaterial)?.defaultThickness ||
+      null
+    contextData?.updateData({
+      index: selectedModel.index,
+      key: 'material',
+      value: selectedMaterial,
+    })
+    contextData?.updateData({
+      index: selectedModel.index,
+      key: 'thickness',
+      value: defaultThick,
+    })
+  }
+
   const handleChange = (e) => {
     const selectedMaterial = e.target.value
-    onSelectMaterialChange(selectedMaterial)
+    handleMaterialChange(selectedMaterial)
   }
 
   useEffect(() => {
@@ -29,7 +45,11 @@ const Material = ({ onSelectMaterialChange }) => {
       setInputValue('')
     } else {
       setInputValue(material)
-      updateData({ index: index, key: 'thickness', value: defaultThick })
+      contextData?.updateData({
+        index: selectedModel.index,
+        key: 'thickness',
+        value: defaultThick,
+      })
     }
     // eslint-disable-next-line
   }, [material])

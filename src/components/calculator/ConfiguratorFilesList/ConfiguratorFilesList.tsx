@@ -1,4 +1,4 @@
-import { useContext, useState } from 'react'
+import { type Dispatch, type SetStateAction, useContext, useState } from 'react'
 import Image from 'next/image'
 import { X } from 'lucide-react'
 import { DataContext } from '../../../app/context/dataContext'
@@ -7,18 +7,38 @@ import arrowIcon from '../../../../public/icons/arrowUp.svg'
 import styles from './ConfiguratorFilesList.module.scss'
 import Button from '@/components/common/Button'
 
-const ConfiguratorFilesList = ({ filesArray, setFilesArray }) => {
-  const [selectedIndex, setSelectedIndex] = useState(0)
-  const { index, changeIndex } = useContext(SelectedContext)
-  const { data, updateData } = useContext(DataContext)
+interface CalculatorConfiguratorProps {
+  filesArray: File[]
+  setFilesArray: Dispatch<SetStateAction<File[]>>
+}
 
-  /*   const model = data[index] */
+const ConfiguratorFilesList: React.FC<CalculatorConfiguratorProps> = ({
+  filesArray,
+  setFilesArray,
+}) => {
+  const [selectedIndex, setSelectedIndex] = useState(0)
+  const selectedContext = useContext(SelectedContext)
+  const contextData = useContext(DataContext)
+
+  const model = contextData.data[selectedContext.index]
 
   const handleClick = (e) => {
-    updateData({ index: index, key: 'quantity', value: null })
-    updateData({ index: index, key: 'material', value: null })
-    updateData({ index: index, key: 'thickness', value: null })
-    changeIndex(+e.target.id)
+    contextData?.updateData({
+      index: selectedContext?.index,
+      key: 'quantity',
+      value: null,
+    })
+    contextData?.updateData({
+      index: selectedContext?.index,
+      key: 'material',
+      value: null,
+    })
+    contextData?.updateData({
+      index: selectedContext?.index,
+      key: 'thickness',
+      value: null,
+    })
+    selectedContext?.changeIndex(+e.target.id)
     model.isReady = false
 
     // Warunek sprawdzający czy wszystkie dane są załadowane
@@ -50,12 +70,12 @@ const ConfiguratorFilesList = ({ filesArray, setFilesArray }) => {
               primary={false}
               size="XS"
               onClick={() => {
-                /*  setFilesArray((filesArray) =>
+                setFilesArray((filesArray) =>
                   filesArray.filter(
                     (file) => filesArray.indexOf(file) !== index
                   )
                 )
-                if (index > 0) changeIndex(index - 1) */
+                if (index > 0) changeIndex(index - 1)
               }}
             >
               <X />
@@ -69,15 +89,16 @@ const ConfiguratorFilesList = ({ filesArray, setFilesArray }) => {
         primary={false}
         size="L"
         onClick={() => {
-          /*  setFilesArray((filesArray) =>
-                  filesArray.filter(
-                    (file) => filesArray.indexOf(file) !== index
-                  )
-                )
-                if (index > 0) changeIndex(index - 1) */
+          setFilesArray((filesArray) =>
+            filesArray.filter(
+              (file) => filesArray.indexOf(file) !== selectedContext.index
+            )
+          )
+          if (selectedContext.index > 0) changeIndex(selectedContext.index - 1)
         }}
       >
-        <Image src={arrowIcon} alt="Upload file" /> Dodaj pliki do wyceny
+        <Image src={arrowIcon as string} alt="Upload file" /> Dodaj pliki do
+        wyceny
       </Button>
     </div>
   )

@@ -5,15 +5,24 @@ import { SelectedContext } from '../../../app/context/selectedContext'
 import styles from './CalculatorImagePreview.module.scss'
 
 const CalculatorImagePreview = () => {
-  const { data } = useContext(DataContext)
-  const { index } = useContext(SelectedContext)
-  const selectedModel = data[index]
+  const contextData = useContext(DataContext)
+  const selectedContext = useContext(SelectedContext)
+  const allModels = contextData?.data
+  let url = null
+  let selectedModel = null
+  if (allModels) {
+    selectedModel = allModels[selectedContext?.index ?? 0]
 
-  const url = 'https://www.balindustry.com/api/' + selectedModel.path
+    url = 'https://www.balindustry.com/api/' + selectedModel.path
+  }
 
   return (
     <div className={styles.imgWrapper}>
-      <Image src={url} alt={selectedModel.fileName} fill={true} />
+      {url && selectedModel ? (
+        <Image src={url} alt={selectedModel.fileName} fill={true} />
+      ) : (
+        <div>Niestety, podgląd pliku nie jest możliwy</div>
+      )}
     </div>
   )
 }

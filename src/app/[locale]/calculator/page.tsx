@@ -9,9 +9,9 @@ import CalculatorConfigurator from '@/components/calculator/CalculatorConfigurat
 import SelectedContextProvider from '@/app/context/selectedContext'
 
 export const Calculator = () => {
-  let { data } = useContext(DataContext)
+  const contextData = useContext(DataContext)
   const [filesArray, setFilesArray] = useState<File[]>([])
-  console.log(data)
+  console.log(contextData?.data)
   console.log(filesArray)
   return (
     <main className={styles.wrapper}>
@@ -23,7 +23,7 @@ export const Calculator = () => {
       </div>
       <div className={styles.mainContent}>
         <SelectedContextProvider>
-          {data !== null && filesArray.length > 0 ? (
+          {contextData?.data !== null && filesArray.length > 0 ? (
             <CalculatorConfigurator
               filesArray={filesArray}
               setFilesArray={setFilesArray}

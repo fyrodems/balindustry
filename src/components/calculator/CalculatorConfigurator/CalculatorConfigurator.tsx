@@ -1,3 +1,4 @@
+import { type Dispatch, type SetStateAction } from 'react'
 import CalculatedModelDetails from '../CalculatedModelDetails/CalculatedModelDetails'
 import CalculatorImagePreview from '../CalculatorImagePreview/CalculatorImagePreview'
 import CalculatorModelSelectors from '../CalculatorModelSelectors/CalculatorModelSelectors'
@@ -5,7 +6,15 @@ import CalculatorPriceItemsList from '../CalculatorPriceItemsList/CalculatorPric
 import ConfiguratorFilesList from '../ConfiguratorFilesList/ConfiguratorFilesList'
 import styles from './CalculatorConfigurator.module.scss'
 
-function CalculatorConfigurator({ data, filesArray, setFilesArray }) {
+interface CalculatorConfiguratorProps {
+  filesArray: File[]
+  setFilesArray: Dispatch<SetStateAction<File[]>>
+}
+
+const CalculatorConfigurator: React.FC<CalculatorConfiguratorProps> = ({
+  filesArray,
+  setFilesArray,
+}) => {
   return (
     <div>
       <ConfiguratorFilesList

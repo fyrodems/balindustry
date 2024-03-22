@@ -3,7 +3,7 @@ import { DataContext } from '../../../../app/context/dataContext'
 import { SelectedContext } from '../../../../app/context/selectedContext'
 import materials from '../../materials.json'
 
-const Thickness = ({ pageData }) => {
+const Thickness = () => {
   const [thicknessArr, setThicknessArr] = useState([])
   const [density, setDensity] = useState()
   const { data, updateData } = useContext(DataContext)

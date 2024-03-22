@@ -3,7 +3,7 @@ import { DataContext } from '../../../../app/context/dataContext'
 import { SelectedContext } from '../../../../app/context/selectedContext'
 import { Input } from '@/components/ui/input'
 
-const Quantity = ({ pageData }) => {
+const Quantity = () => {
   const [num, setNum] = useState('')
   const { data, updateData } = useContext(DataContext)
   const { index } = useContext(SelectedContext)
