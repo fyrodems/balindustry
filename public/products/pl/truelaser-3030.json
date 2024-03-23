@@ -1,0 +1,111 @@
+{
+  "basic_data": {
+    "pathID": "truelaser-3030",
+    "name": "TrueLaser 3030 fiber | TRUMPH",
+    "additional_name": "Materiał do obróbki: Stal, Stal nierdzewna, Aluminium, Żeliwo, Metale kolorowe",
+    "description": "Zapewnia opłacalne cięcie blachy o różnych grubościach, wykorzystując laser na ciele stałym TruDisk oraz technologię BrightLine fiber do osiągnięcia najwyższej jakości krawędzi i zwiększenia produktywności.",
+    "with_data": true
+  },
+  "images": [
+    "/products/images/truelaser-3030/carousel1.svg"
+  ],
+  "floating_CTA": {
+    "title": "TrueLaser 3030 fiber | TRUMPH",
+    "image": "/products/images/truelaser-3030/floatingCTA.svg",
+    "content": "",
+    "button": "Zapytaj o wycenę",
+    "form": "",
+    "qp": "",
+    "ar": ""
+  },
+  "parameters": [
+    {
+      "name": "Stół roboczy",
+      "value": "3000 x 1500 mm"
+    },
+    {
+      "name": "Moc lasera",
+      "value": "3000 W - 8000 W"
+    },
+    {
+      "name": "Maks. prędkość",
+      "value": "170 m/min"
+    },
+    {
+      "name": "Maks. ciężar detalu",
+      "value": "1100 kg"
+    }
+  ],
+  "main_characteristics": [
+    {
+      "title": "Innowacyjne podejście do niezawodności procesu cięcia laserowego",
+      "content": [
+        "Technologia nanopołączeń wykorzystywana w procesie cięcia laserowego umożliwia łączenie elementów z ażurem za pomocą małego punktu zatrzymania w dolnej części szczeliny cięcia, co skutecznie zapobiega przechylaniu się elementów i minimalizuje naruszenia konturu. Dzięki temu procesowi można ciaśniej układać elementy i efektywniej wykorzystywać zasoby, co przekłada się na większą produktywność w obróbce arkuszy."
+      ],
+      "image": ""
+    },
+    {
+      "title": "Porównanie nanopołączeń i mikropołączeń w procesie obróbki elementów",
+      "content": [
+        "Nanopołączenia i mikropołączenia stanowią dwie różne metody mocowania elementów w procesie obróbki. Nanopołączenia charakteryzują się niezawodnością procesu, oszczędnością zasobów oraz wyższą produktywnością dzięki minimalnemu zamocowaniu w ażurze, co umożliwia łatwiejszy demontaż detali i eliminuje potrzebę dodatkowej obróbki w wielu przypadkach. Z kolei mikropołączenia mocują element na całej grubości blachy, co zapewnia niezawodność procesu, jednak widoczne naruszenia konturu często wymagają dodatkowej ręcznej obróbki, zwłaszcza przy cienkich blachach, co może skomplikować odbiór detali."
+      ],
+      "image": ""
+    },
+    {
+      "title": "Wydajne rozwiązanie do sortowania detali z blachy - Part Station",
+      "content": [
+        "Part Station to innowacyjne rozwiązanie umożliwiające szybkie i skuteczne sortowanie detali z blachy. Dzięki zastosowaniu separatora detali oraz mikropołączeń lub nanopołączeń, detale są oddzielane od blachy bez ryzyka zarysowań, co pozwala zaoszczędzić nawet do 80% czasu pracy. Następnie, oddzielone detale są sortowane przez Part Station do różnych skrzynek zgodnie z ustaloną kolejnością. Mobilna konstrukcja z zintegrowanymi kółkami umożliwia łatwe i elastyczne wykorzystanie Part Station w hali produkcyjnej."
+      ],
+      "image": ""
+    }
+  ],
+  "specification": [
+    {
+      "name": "Stół roboczy",
+      "param": [
+        "3000 x 1500 mm"
+      ]
+    },
+    {
+      "name": "Moc lasera",
+      "param": [
+        "3000 W - 8000 W"
+      ]
+    },
+    {
+      "name": "Maks. prędkość",
+      "param": [
+        "170 m/min"
+      ]
+    },
+    {
+      "name": "Maks. ciężar detalu",
+      "param": [
+        "1100 kg"
+      ]
+    },
+    {
+      "name": "Masa maszyny podstawowej",
+      "param": [
+        "11700 kg"
+      ]
+    },
+    {
+      "name": "Maks. grubość materiału",
+      "param": [
+        "stal konstrukcyjna - 25 mm",
+        "stal szlachetna - 30 mm",
+        "aluminium - 25 mm",
+        "miedź - 12,7 mm",
+        "mosiądz - 10 mm"
+      ]
+    }
+  ],
+  "additional_products": [
+    {
+      "name": "",
+      "image": "",
+      "link": ""
+    }
+  ]
+}
