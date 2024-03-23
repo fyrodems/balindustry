@@ -1,0 +1,107 @@
+{
+  "basic_data": {
+    "pathID": "truelaser-7000",
+    "name": "TruLaser Tube 7000 fiber",
+    "additional_name": "Materiał do obróbki: Stal, Stal nierdzewna, Aluminium, Żeliwo, Metale kolorowe",
+    "description": "Wszechstronny laser, który zapewnia szybką i elastyczną obróbkę, dzięki czemu osiąga wysoką produktywność, a jego otwarta koncepcja gwarantuje optymalną dostępność i efektywność, nawet przy obróbce pojedynczych detali, wspierana przez interfejs Central Link z myślą o Przemysłu 4.0.",
+    "with_data": true
+  },
+  "images": [
+    "/products/images/truelaser-7000/carousel1.svg"
+  ],
+  "floating_CTA": {
+    "title": "TruLaser Tube 7000 fiber",
+    "image": "/products/images/truelaser-7000/floatingCTA.svg",
+    "content": "",
+    "button": "Zapytaj o wycenę",
+    "form": "",
+    "qp": "",
+    "ar": ""
+  },
+  "parameters": [
+    {
+      "name": "Maks. moc lasera",
+      "value": "4000 W"
+    },
+    {
+      "name": "Maks. dł. boku detalu",
+      "value": "220 mm"
+    },
+    {
+      "name": "Maks. dł. okręgu opisanego detalu",
+      "value": "254 mm"
+    },
+    {
+      "name": "Maks. ciężar detalu",
+      "value": "40 kg/m"
+    }
+  ],
+  "main_characteristics": [
+    {
+      "title": "Optymalne bezpieczeństwo i dostępność",
+      "content": [
+        "Innowacyjna koncepcja maszyny wraz z inteligentną osłoną wiązki promieniowania zapewniają idealne połączenie maksymalnego bezpieczeństwa oraz optymalnej dostępności dla operatora, umożliwiając wydajne załadunek pojedynczych rur i pobieranie detali na ergonomicznej wysokości roboczej."
+      ],
+      "image": "/products/images/truelaser-7000/mainCharacteristics1.svg"
+    },
+    {
+      "title": "Efektywność cięcia z RapidCut",
+      "content": [
+        "RapidCut zwiększa wydajność cięcia laserowego na ciele stałym, umożliwiając szybkie posuwy nawet przy drobnych konturach. W szczególności przy cienkich materiałach przekłada się to na dodatkową produktywność."
+      ],
+      "image": "/products/images/truelaser-7000/mainCharacteristics2.svg"
+    },
+    {
+      "title": "Rozszerzony zespół technologiczny dla precyzyjnej obróbki gwintów",
+      "content": [
+        "Dzięki kompleksowemu pakietowi technologicznemu obejmującemu nie tylko gwintowanie, ale także inne metody obróbki, takie jak wiercenie termiczne czy wiercenie spiralne, możliwe jest ich zintegrowanie w jednej maszynie. Automatyzacja procesu minimalizuje nakład pracy oraz ryzyko popełnienia błędów, co przekłada się na wyższą precyzję i efektywność produkcji."
+      ],
+      "image": ""
+    }
+  ],
+  "specification": [
+    {
+      "name": "Maks. średnicza zewnętrzna",
+      "param": [
+        "254 mm"
+      ]
+    },
+    {
+      "name": "Maks. siła wykrawania",
+      "param": [
+        "220 kN"
+      ]
+    },
+    {
+      "name": "Maks. dł. surowca do automatycznego załadunku",
+      "param": [
+        "LOADMASTER TUBE 6,5 M - 6500 mm",
+        "LOADMASTER TUBE 9,2 M - 9200 mm",
+        "LOADMASTER TUBE 12,5 M - 12500 mm"
+      ]
+    },
+    {
+      "name": "Maks. masa odcinka",
+      "param": [
+        "40 kg/m"
+      ]
+    },
+    {
+      "name": "Maks. grubość materiału",
+      "param": [
+        "stal konstrukcyjna - 10 mm",
+        "stal szlachetna - 6 mm",
+        "aluminium - 6 mm",
+        "miedź - 5 mm",
+        "mosiądz - 5 mm"
+      ]
+    }
+  ],
+  "additional_products": [
+    {
+      "name": "",
+      "image": "",
+      "link": ""
+    }
+  ]
+}

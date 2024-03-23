@@ -9,7 +9,7 @@ const Parameter: React.FC<{ name: string; value: string }> = ({
   value,
 }) => {
   return (
-    <div className="flex flex-col items-center justify-center text-center ">
+    <div className="flex flex-col items-center justify-between text-center ">
       <span className="font-bold">{name}</span>
       <span>{value}</span>
     </div>

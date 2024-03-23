@@ -20,13 +20,15 @@ const DesktopPresentation: React.FC<ProductDataProps> = ({ data }) => {
   return (
     <div className="mb-14 grid grid-cols-[50%_50%]">
       {images.length === 1 ? (
-        <Image
-          className="mr-[40px] aspect-[1.8/1] h-fit w-full max-w-[715px] rounded-md"
-          src={images[0]}
-          alt=""
-          width={464}
-          height={245}
-        />
+        <div className="p-8">
+          <Image
+            className="mr-[40px] aspect-[1.8/1] h-fit w-full max-w-[715px] rounded-md"
+            src={images[0]}
+            alt=""
+            width={464}
+            height={245}
+          />
+        </div>
       ) : (
         <Carousel images={images} />
       )}
