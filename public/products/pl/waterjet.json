@@ -1,0 +1,110 @@
+{
+  "basic_data": {
+    "pathID": "waterjet",
+    "name": "Primus Waterjet INTERMAC",
+    "additional_name": "Materiał do obróbki: Stal, Stal nierdzewna, Aluminium, Żeliwo, Metale kolorowe, Tworzywo sztuczne, Marmur, Szkło",
+    "description": "Maszyna ta znajduje zastosowanie w branży kamieniarskiej do produkcji elementów wzorów, znaków firmowych, mebli i dekoracji z kamienia, ceramiki oraz innych materiałów, takich jak drewno, stal, szkło. Jest opłacalnym narzędziem zarówno dla produkcji jednostkowej, jak i masowej.",
+    "with_data": true
+  },
+  "images": [
+    "/products/images/waterjet/carousel1.svg"
+  ],
+  "floating_CTA": {
+    "title": "Primus Waterjet INTERMAC",
+    "image": "/products/images/waterjet/floatingCTA.svg",
+    "content": "",
+    "button": "Zapytaj o wycenę",
+    "form": "",
+    "qp": "",
+    "ar": ""
+  },
+  "parameters": [
+    {
+      "name": "Wymiary maszyny",
+      "value": "3900 x 6500 mm"
+    },
+    {
+      "name": "Moc pompy",
+      "value": "22-100kW"
+    },
+    {
+      "name": "Stół roboczy",
+      "value": "1860 x 4000 mm"
+    },
+    {
+      "name": "Ciśnienie",
+      "value": "420 MPa"
+    },
+    {
+      "name": "Wymiar maks. płyty",
+      "value": "1000kg/m"
+    }
+  ],
+  "main_characteristics": [
+    {
+      "title": "Wielofunkcyjne Centrum Obróbcze z Stołem 4000x1860 mm",
+      "content": [
+        " Primus 322 oferuje stoł roboczy o wymiarach 4000x1860 mm, umożliwiający obróbkę materiału o grubości do 250 mm (3 osie) lub 200 mm (5 osi). Konstrukcja ze stali nierdzewnej zapewnia stabilność i trwałość, a efektywne wykorzystanie ścierniwa pozwala na wysoką wydajność przy obniżeniu kosztów pracy. Dodatkowo, maszyna wyposażona jest w 200 l zbiornik na ścierniwo i wodę z systemem automatycznego dozowania i czyszczenia, zapewniającym płynność pracy i eliminującym zatory."
+      ],
+      "image": ""
+    },
+    {
+      "title": "Primus z Systemem Operacyjnym Windows",
+      "content": [
+        "Primus wyróżnia się zaawansowanym systemem sterowania, który obejmuje komputer PC z systemem operacyjnym Windows. Dzięki temu można nie tylko obsługiwać maszynę, ale także przygotowywać projekty w aplikacji CAD/CAM. Dodatkowo, standardowo maszyna jest wyposażona w modem i funkcję teleserwisu umożliwiającą zdalny dostęp do urządzenia w celu aktualizacji i diagnostyki. Bezpieczeństwo podczas pracy zapewniają fotokomórki, które wyłączają maszynę w przypadku przekroczenia bariery wokół pola roboczego."
+      ],
+      "image": ""
+    }
+  ],
+  "specification": [
+    {
+      "name": "Typ maszyny",
+      "param": [
+        "3 lub 5-cio osiowe centrum obróbcze do cięcia hydro-ściernego"
+      ]
+    },
+    {
+      "name": "Pompa",
+      "param": [
+        "Wyposażona w pompę BHDT"
+      ]
+    },
+    {
+      "name": "Materiał konstrukcji",
+      "param": [
+        "Struktura nośna i korpus wykonane ze stali nierdzewnej"
+      ]
+    },
+    {
+      "name": "Sterowanie",
+      "param": [
+        "Sterowanie przy pomocy I-cam 3D"
+      ]
+    },
+    {
+      "name": "System ścierniwa",
+      "param": [
+        "Ciśnieniowy system przepływu ścierniwa"
+      ]
+    },
+    {
+      "name": "Wzmocnienie ciśnienia",
+      "param": [
+        "Wzmacniacz strugi ciśnienia"
+      ]
+    },
+    {
+      "name": "Ciśnienie nominalne",
+      "param": [
+        "420 MPa"
+      ]
+    }
+  ],
+  "additional_products": [
+    {
+      "name": "",
+      "image": "",
+      "link": ""
+    }
+  ]
+}
