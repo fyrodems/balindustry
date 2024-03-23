@@ -51,15 +51,20 @@ const Specification: React.FC<SpecificationProps> = ({ data }) => {
                       {parametr.param.length === 1 ? (
                         <TableCell className="">{parametr.param[0]}</TableCell>
                       ) : (
-                        <ul className="flex flex-col">
-                          {parametr.param.map((param, i) => {
-                            return (
-                              <li key={i} className=" my-1 ml-6 list-disc pl-2">
-                                {param}
-                              </li>
-                            )
-                          })}
-                        </ul>
+                        <TableCell className="pl-0">
+                          <ul className="flex flex-col">
+                            {parametr.param.map((param, i) => {
+                              return (
+                                <li
+                                  key={i}
+                                  className=" my-1 ml-6 list-disc pl-2"
+                                >
+                                  {param}
+                                </li>
+                              )
+                            })}
+                          </ul>
+                        </TableCell>
                       )}
                     </TableRow>
                   )
