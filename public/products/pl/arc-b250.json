@@ -1,0 +1,71 @@
+{
+  "basic_data": {
+    "pathID": "arc-b250",
+    "name": "ARC B250",
+    "additional_name": "",
+    "description": "ABB oferuje kompleksową gamę pozycjonerów przedmiotów, które umożliwiają w pełni zsynchronizowane ruchy robota podczas programowania oraz w trakcie operacji.",
+    "with_data": false
+  },
+  "images": [
+    "/products/images/arc-b250/carousel1.svg"
+  ],
+  "floating_CTA": {
+    "title": "ARC B250",
+    "image": "/products/images/arc-b250/floatingCTA.svg",
+    "content": "",
+    "button": "Zapytaj o wycenę",
+    "form": "",
+    "qp": "",
+    "ar": ""
+  },
+  "parameters": [
+    {
+      "name": "Pozycjoner",
+      "value": "IRBP B-250"
+    },
+    {
+      "name": "Źródło spawalnicze",
+      "value": "Fronius"
+    },
+    {
+      "name": "Maks. wysokość",
+      "value": "900 mm"
+    },
+    {
+      "name": "Nosność",
+      "value": "250 kg"
+    },
+    {
+      "name": "Maks. średnica przestrzeni roboczej",
+      "value": "1180 mm"
+    },
+    {
+      "name": "Spawalny materiał",
+      "value": "Stal czarna nierdzewna"
+    }
+  ],
+  "main_characteristics": [
+    {
+      "title": "",
+      "content": [
+        ""
+      ],
+      "image": ""
+    }
+  ],
+  "specification": [
+    {
+      "name": "",
+      "param": [
+        ""
+      ]
+    }
+  ],
+  "additional_products": [
+    {
+      "name": "",
+      "image": "",
+      "link": ""
+    }
+  ]
+}

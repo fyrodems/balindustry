@@ -1,0 +1,71 @@
+{
+  "basic_data": {
+    "pathID": "arc-d600",
+    "name": "ARC D600",
+    "additional_name": "",
+    "description": "",
+    "with_data": false
+  },
+  "images": [
+    "/products/images/arc-d600/carousel1.svg"
+  ],
+  "floating_CTA": {
+    "title": "ARC D600",
+    "image": "/products/images/arc-d600/floatingCTA.svg",
+    "content": "",
+    "button": "Zapytaj o wycenę",
+    "form": "",
+    "qp": "",
+    "ar": ""
+  },
+  "parameters": [
+    {
+      "name": "Pozycjoner",
+      "value": "IRBP D-600"
+    },
+    {
+      "name": "Źródło spawalnicze",
+      "value": "Fronius"
+    },
+    {
+      "name": "Nosność",
+      "value": "600 kg"
+    },
+    {
+      "name": "Maks. długość",
+      "value": "2000 mm"
+    },
+    {
+      "name": "Przy loadmaster tube 9,2m",
+      "value": "9200 mm"
+    },
+    {
+      "name": "Spowalniany materiał",
+      "value": "Stal czarna nierdzewna"
+    }
+  ],
+  "main_characteristics": [
+    {
+      "title": "",
+      "content": [
+        ""
+      ],
+      "image": ""
+    }
+  ],
+  "specification": [
+    {
+      "name": "",
+      "param": [
+        ""
+      ]
+    }
+  ],
+  "additional_products": [
+    {
+      "name": "",
+      "image": "",
+      "link": ""
+    }
+  ]
+}
