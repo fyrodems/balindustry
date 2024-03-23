@@ -12,7 +12,6 @@ const Carousel: React.FC<{ images: string[] }> = ({ images }) => {
   const [nav2, setNav2] = useState()
   const slider1 = useRef(null)
   const slider2 = useRef(null)
-  console.log(images)
 
   useEffect(() => {
     if (slider1.current && slider2.current) {

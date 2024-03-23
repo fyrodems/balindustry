@@ -1,7 +1,7 @@
 import DesktopPresentation from './DesktopPresentation'
 import MobilePresentation from './MobilePresentation'
 import { type ProductDataProps } from '@/app/[locale]/product/[id]/types'
-import useWindowDimensions from '@/hooks/useWindowDimensions'
+import useWindowDimensions from '@/utils/useWindowDimensions'
 
 const Presentation: React.FC<ProductDataProps> = ({ data }) => {
   const { width } = useWindowDimensions()

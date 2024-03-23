@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { useLocale } from 'next-intl'
 import Carousel from '../Carousel/Carousel'
 import Button from '@/components/common/Button'
 import { type ProductDataProps } from '@/app/[locale]/product/[id]/types'
@@ -18,6 +19,7 @@ const Parameter: React.FC<{ name: string; value: string }> = ({
 
 const MobilePresentation: React.FC<ProductDataProps> = ({ data }) => {
   const { basic_data, floating_CTA, images, parameters } = data
+  const locale = useLocale()
 
   return (
     <>
@@ -52,10 +54,16 @@ const MobilePresentation: React.FC<ProductDataProps> = ({ data }) => {
       <Link className="mx-[auto] block max-w-[320px]" href={floating_CTA.form}>
         <Button className="mx-2 w-full" content={floating_CTA.button} />
       </Link>
-      {/* !!! do poprawki */}
+      {/* !!! do sprawdzenia czy działa */}
       {floating_CTA.ar !== '' && (
-        <Link href={floating_CTA.form}>
-          <Button className="w-full" content={floating_CTA.button} />
+        <Link
+          className="mx-[auto] block max-w-[320px]"
+          href={`${window.location.protocol}//${window.location.host}/${locale}/${floating_CTA.ar}`}
+        >
+          <Button
+            className="mx-2 my-6 w-full"
+            content={'Zobacz w rzeczywistości rozszerzonej AR'}
+          />
         </Link>
       )}
     </>

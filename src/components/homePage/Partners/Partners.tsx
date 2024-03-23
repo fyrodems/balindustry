@@ -12,7 +12,7 @@ import siegmundLogo from '../../../../public/images/partners/Logo_siegmund.png'
 import siemensLogo from '../../../../public/images/partners/Siemens_logo.svg'
 import universalRobotsLogo from '../../../../public/images/partners/Universal_robots_logo.svg'
 import styles from './Partners.module.scss'
-import useWindowDimensions from '@/hooks/useWindowDimensions'
+import useWindowDimensions from '@/utils/useWindowDimensions'
 
 export default function Partners() {
   const windowDimensions = useWindowDimensions()

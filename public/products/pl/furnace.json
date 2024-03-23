@@ -1,0 +1,51 @@
+{
+  "basic_data": {
+    "pathID": "furnace",
+    "name": "Piece komorowe",
+    "additional_name": "",
+    "description": "Piec służy do różnych rodzajów obróbki cieplanej wsadu w temperaturach od 900°C do 1260°C. W piecach z wysuwanym trzonem możemy również ustawić równomierny rozkład temperatury.",
+    "with_data": false
+  },
+  "images": [
+    "/products/images/furnace/carousel1.svg"
+  ],
+  "floating_CTA": {
+    "title": "Piece komorowe",
+    "image": "",
+    "content": "Zeskanuj kod QR, aby zobaczyć w rzeczywistości rozszerzonej AR",
+    "button": "Zapytaj o wycenę",
+    "form": "",
+    "qp": "",
+    "ar": "QRView/PIEC"
+  },
+  "parameters": [
+    {
+      "name": "",
+      "value": ""
+    }
+  ],
+  "main_characteristics": [
+    {
+      "title": "",
+      "content": [
+        ""
+      ],
+      "image": ""
+    }
+  ],
+  "specification": [
+    {
+      "name": "",
+      "param": [
+        ""
+      ]
+    }
+  ],
+  "additional_products": [
+    {
+      "name": "",
+      "image": "",
+      "link": ""
+    }
+  ]
+}
