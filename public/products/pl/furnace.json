@@ -20,8 +20,20 @@
   },
   "parameters": [
     {
-      "name": "",
-      "value": ""
+      "name": "Trzony jezdne",
+      "value": "2"
+    },
+    {
+      "name": "Moc",
+      "value": "140kW"
+    },
+    {
+      "name": "Wymiary wewnętrzne (mm)",
+      "value": "1850 x 900 x 3600"
+    },
+    {
+      "name": "Wymiary zewnętrzne (mm)",
+      "value": "3100 x 3400 x 14000"
     }
   ],
   "main_characteristics": [

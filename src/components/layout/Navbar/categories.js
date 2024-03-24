@@ -74,12 +74,12 @@ export const categories = [
           { name: 'NLX 2500', link: '/product/nlx-2500' },
         ],
       },
-      {
+      /* {
         name: 'Lakiernie',
         items: [
-          { name: 'Lakiernie mokre i proszkowe', link: '/product/paintshops' },
+          { name: 'Lakiernie mokre i proszkowe', link: '/product(usługi)/paintshops' },
         ],
-      },
+      }, */
     ],
   },
   {
@@ -121,7 +121,7 @@ export const categories = [
           {
             name: 'Lakiernie',
             image: '/navbarProducts/placeholder.svg',
-            link: '/product/paintshops2',
+            link: '/product/paintshops',
           },
         ],
       },

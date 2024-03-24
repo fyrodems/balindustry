@@ -155,12 +155,12 @@ const DesktopNavbar = () => {
                   <MenubarItem>NLX 2500</MenubarItem>
                 </Link>
               </div>
-              <div>
+              {/* <div>
                 <SubCategoryLabel content={'Lakiernie'} />
-                <Link href="/product/paintshops">
+                <Link href="/product(usługi)/paintshops">
                   <MenubarItem>Lakiernie mokre i proszkowe</MenubarItem>
                 </Link>
-              </div>
+              </div> */}
             </div>
           </MenubarContent>
         </MenubarMenu>
@@ -217,7 +217,7 @@ const DesktopNavbar = () => {
                   <span>Piece komorowe</span>
                 </MenubarItem>
               </Link>
-              <Link href="/product/paintshops2">
+              <Link href="/product/paintshops">
                 <MenubarItem>
                   <Image
                     src={'/images/navbarProducts/placeholder.svg'}
