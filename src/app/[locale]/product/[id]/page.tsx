@@ -39,12 +39,16 @@ export default function ProductPage({
     </p>
   )
 
-  if (isPaused || error) {
+  if (isPaused) {
     return <ErrorMessage />
   }
 
   if (isLoading && !data) {
     return <Loader />
+  }
+
+  if (error) {
+    return <ErrorMessage />
   }
 
   if (!data) {

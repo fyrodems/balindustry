@@ -119,7 +119,7 @@ export const categories = [
         name: '',
         items: [
           {
-            name: 'Lakiernie',
+            name: 'Montaż lakierni',
             image: '/navbarProducts/placeholder.svg',
             link: '/product/paintshops-installation',
           },

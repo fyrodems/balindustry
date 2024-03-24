@@ -226,7 +226,7 @@ const DesktopNavbar = () => {
                     height={80}
                   />
 
-                  <span>Lakiernie</span>
+                  <span>Montaż lakierni</span>
                 </MenubarItem>
               </Link>
             </div>
