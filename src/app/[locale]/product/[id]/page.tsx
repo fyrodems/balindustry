@@ -8,7 +8,8 @@ import FloatingCTA from '@/components/product/FloatingCTA/FloatingCTA'
 import MainCharacteristics from '@/components/product/MainCharacteristics/MainCharacteristics'
 import Specification from '@/components/product/Specification/Specification'
 import CrossSellCarousel from '@/components/product/CrossSellCarousel/CrossSellCarousel'
-import { Link } from '@/navigation'
+import DetailsNavigation from '@/components/product/DetailsNavigation/DetailsNavigation'
+import WarehouseSpecification from '@/components/product/Specification/WarehouseSpecification'
 
 export default function ProductPage({
   params,
@@ -60,6 +61,8 @@ export default function ProductPage({
     main_characteristics,
     specification,
     additional_products,
+    metal_sheets,
+    pallets_elements,
   } = data
 
   return (
@@ -71,19 +74,23 @@ export default function ProductPage({
             <Presentation data={data} />
             {basic_data.with_data && (
               <>
-                <div className="laptop:flex mx-[20px] mr-0 hidden justify-around bg-zinc-800 p-4 px-10 text-white">
-                  <Link href="#characteristics">Główne cechy</Link>
-                  <div className="h-[20px] w-[1px] bg-white"></div>
-                  <Link href="#specification">Parametry</Link>
-                  <div className="h-[20px] w-[1px] bg-white"></div>
-                  <Link href="#carousel">Podobne produkty</Link>
-                </div>
+                <DetailsNavigation />
                 <MainCharacteristics data={main_characteristics} />
                 <Specification data={specification} />
               </>
             )}
             {basic_data.pathID === 'paintshops-installation' && (
               <MainCharacteristics data={main_characteristics} />
+            )}
+            {basic_data.pathID === 'vertical-warehouse' && (
+              <>
+                <DetailsNavigation />
+                <MainCharacteristics data={main_characteristics} />
+                <WarehouseSpecification
+                  metal={metal_sheets}
+                  pallets={pallets_elements}
+                />
+              </>
             )}
             <CrossSellCarousel data={additional_products} />
           </div>

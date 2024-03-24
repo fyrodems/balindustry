@@ -38,6 +38,18 @@ export interface AdditionalProducts {
   link: string
 }
 
+export interface MetalSheetsWarehouse {
+  size: string
+  mass: string
+  drawers: string
+}
+
+export interface PalletsElementsWarehouse {
+  size: string
+  mass: string
+  drawers: string
+}
+
 export interface ProductData {
   basic_data: BasicData
   floating_CTA: FloatingCTA
@@ -46,6 +58,8 @@ export interface ProductData {
   main_characteristics: MainCharacteristic[]
   specification: Specification[]
   additional_products: AdditionalProducts[]
+  metal_sheets?: MetalSheetsWarehouse[]
+  pallets_elements?: PalletsElementsWarehouse[]
 }
 
 export interface ProductDataProps {
@@ -64,6 +78,11 @@ export interface SpecificationProps {
 
 export interface CrossSellCarouselProps {
   data: AdditionalProducts[]
+}
+
+export interface WarehouseSpecificationProps {
+  metal: MetalSheetsWarehouse[]
+  pallets: PalletsElementsWarehouse[]
 }
 
 export interface UseProductDataResult {
