@@ -45,7 +45,9 @@ const MobileNavbar: React.FC<{
                       <AccordionItem
                         className="pb-4 pt-0 font-medium"
                         value="ble"
-                        onClick={() => setDropdownOpen((prev) => !prev)}
+                        onClick={() => {
+                          setDropdownOpen((prev) => !prev)
+                        }}
                       >
                         {categories[0].name}
                       </AccordionItem>
@@ -117,7 +119,9 @@ const MobileNavbar: React.FC<{
                       <AccordionItem
                         className="pb-4 pt-0 font-medium"
                         value="ble"
-                        onClick={() => setDropdownOpen((prev) => !prev)}
+                        onClick={() => {
+                          setDropdownOpen((prev) => !prev)
+                        }}
                       >
                         {categories[categories.length - 1].name}
                       </AccordionItem>

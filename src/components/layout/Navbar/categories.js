@@ -135,10 +135,41 @@ export const categories = [
       },
     ],
   },
-  // {
-  //   name: 'Usługi',
-  //   subcategories: [],
-  // },
+  {
+    name: 'Usługi',
+    subcategories: [
+      {
+        name: '',
+        items: [
+          {
+            name: 'Wycena cięcia',
+            image: '',
+            link: '', // !!! do uzupełnienia
+          },
+        ],
+      },
+      {
+        name: '',
+        items: [
+          {
+            name: 'Malowanie proszkowe i na mokro',
+            image: '',
+            link: '', // !!! do uzupełnienia
+          },
+        ],
+      },
+      {
+        name: '',
+        items: [
+          {
+            name: 'Formularz ofertowy',
+            image: '',
+            link: '', // !!! do uzupełnienia
+          },
+        ],
+      },
+    ],
+  },
   {
     name: 'Kontakt',
     link: '/contact',

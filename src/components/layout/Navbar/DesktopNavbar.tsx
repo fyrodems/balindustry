@@ -53,8 +53,8 @@ const DesktopNavbar = () => {
               <Link href="/product/twin-one-axis">
                 <MenubarItem className={styles.menubarItem}>
                   <Image
-                    src={'/images/navbarProducts/placeholder.svg'}
-                    alt={'single'}
+                    src={'/images/navbarProducts/twin-one-axis.svg'}
+                    alt={'twin-one-axis'}
                     width={80}
                     height={80}
                   />
@@ -67,8 +67,8 @@ const DesktopNavbar = () => {
               <Link href="/product/dual">
                 <MenubarItem className={styles.menubarItem}>
                   <Image
-                    src={'/images/navbarProducts/placeholder.svg'}
-                    alt={'single'}
+                    src={'/images/navbarProducts/dual.svg'}
+                    alt={'dual'}
                     width={80}
                     height={80}
                   />
@@ -172,8 +172,8 @@ const DesktopNavbar = () => {
               <Link href="/product/surface-treatment">
                 <MenubarItem>
                   <Image
-                    src={'/images/navbarProducts/placeholder.svg'}
-                    alt={'single'}
+                    src={'/images/navbarProducts/surface-treatment.svg'}
+                    alt={'surface-treatment'}
                     width={80}
                     height={80}
                   />
@@ -184,8 +184,8 @@ const DesktopNavbar = () => {
               <Link href="/product/vertical-warehouse">
                 <MenubarItem>
                   <Image
-                    src={'/images/navbarProducts/placeholder.svg'}
-                    alt={'single'}
+                    src={'/images/navbarProducts/vertical-warehouse.svg'}
+                    alt={'vertical-warehouse'}
                     width={80}
                     height={80}
                   />
@@ -208,8 +208,8 @@ const DesktopNavbar = () => {
               <Link href="/product/furnace">
                 <MenubarItem>
                   <Image
-                    src={'/images/navbarProducts/placeholder.svg'}
-                    alt={'single'}
+                    src={'/images/navbarProducts/furnace.svg'}
+                    alt={'furnace'}
                     width={80}
                     height={80}
                   />
@@ -220,13 +220,55 @@ const DesktopNavbar = () => {
               <Link href="/product/paintshops-installation">
                 <MenubarItem>
                   <Image
-                    src={'/images/navbarProducts/placeholder.svg'}
-                    alt={'single'}
+                    src={'/images/navbarProducts/paintshops-installation.svg'}
+                    alt={'paintshops-installation'}
                     width={80}
                     height={80}
                   />
 
                   <span>Lakiernie</span>
+                </MenubarItem>
+              </Link>
+            </div>
+          </MenubarContent>
+        </MenubarMenu>
+
+        {/* !!! zdjęcia do uzupełnienia */}
+        <MenubarMenu>
+          <MainCategory content="Usługi" />
+          <MenubarContent className={cn(styles.popover, styles.services)}>
+            <div className={styles.gridWrapper}>
+              <Link href="/product/surface-treatment">
+                <MenubarItem>
+                  <Image
+                    src={'/images/navbarProducts/placeholder.svg'}
+                    alt={'single'}
+                    width={80}
+                    height={80}
+                  />
+                  <span>Wycena cięcia</span>
+                </MenubarItem>
+              </Link>
+              <Link href="/product/surface-treatment">
+                <MenubarItem>
+                  <Image
+                    src={'/images/navbarProducts/placeholder.svg'}
+                    alt={'single'}
+                    width={80}
+                    height={80}
+                  />
+                  <span>Malowanie proszkowe i na mokro</span>
+                </MenubarItem>
+              </Link>
+              <Link href="/product/surface-treatment">
+                <MenubarItem>
+                  <Image
+                    src={'/images/navbarProducts/placeholder.svg'}
+                    alt={'single'}
+                    width={80}
+                    height={80}
+                  />
+                  <span>Formularz ofertowy</span>
                 </MenubarItem>
               </Link>
             </div>

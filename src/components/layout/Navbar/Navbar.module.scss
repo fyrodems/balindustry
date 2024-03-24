@@ -29,6 +29,7 @@
 
     span {
       font-weight: 500;
+      text-wrap: balance;
     }
   }
 }
@@ -51,6 +52,22 @@
 
   [role='menuitem'] {
     width: 325px;
+    max-height: 92px;
+  }
+
+  img {
+    margin-right: 10px;
+  }
+}
+
+.popover.services {
+  .gridWrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+  [role='menuitem'] {
+    width: 250px;
     max-height: 92px;
   }
 
