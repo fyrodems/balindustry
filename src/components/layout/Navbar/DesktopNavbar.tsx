@@ -217,7 +217,7 @@ const DesktopNavbar = () => {
                   <span>Piece komorowe</span>
                 </MenubarItem>
               </Link>
-              <Link href="/product/paintshops">
+              <Link href="/product/paintshops-installation">
                 <MenubarItem>
                   <Image
                     src={'/images/navbarProducts/placeholder.svg'}

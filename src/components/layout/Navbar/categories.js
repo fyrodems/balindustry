@@ -121,7 +121,7 @@ export const categories = [
           {
             name: 'Lakiernie',
             image: '/navbarProducts/placeholder.svg',
-            link: '/product/paintshops',
+            link: '/product/paintshops-installation',
           },
         ],
       },

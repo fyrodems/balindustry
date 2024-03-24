@@ -32,7 +32,7 @@ const DesktopPresentation: React.FC<ProductDataProps> = ({ data }) => {
       ) : (
         <Carousel images={images} />
       )}
-      <div className="rounded border border-zinc-200 p-4">
+      <div className="h-fit rounded border border-zinc-200 p-4">
         <div className="mx-auto w-11/12">
           <h2 className="text-[25px] font-medium">{basic_data.name}</h2>
           <h3 className="text-sm font-extralight">

@@ -82,6 +82,9 @@ export default function ProductPage({
                 <Specification data={specification} />
               </>
             )}
+            {basic_data.pathID === 'paintshops-installation' && (
+              <MainCharacteristics data={main_characteristics} />
+            )}
             <CrossSellCarousel data={additional_products} />
           </div>
           <div className="laptop:block hidden">

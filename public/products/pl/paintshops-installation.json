@@ -1,0 +1,54 @@
+{
+  "basic_data": {
+    "pathID": "paintshops-installation",
+    "name": "Montaż lakierni",
+    "additional_name": "",
+    "description": "Lakiernie projektujemy pod wymogi każdego klienta. Dopasowujemy wymiary lakierni do potrzeb klienta pod kątem każdego parametru pracy projektowanej lakierni.",
+    "with_data": false
+  },
+  "images": [
+    "/products/images/paintshops-installation/carousel1.svg",
+    "/products/images/paintshops-installation/carousel2.svg",
+    "/products/images/paintshops-installation/carousel3.svg",
+    "/products/images/paintshops-installation/floatingCTA.svg"
+  ],
+  "floating_CTA": {
+    "title": "Lakiernia",
+    "image": "/products/images/paintshops-installation/floatingCTA.svg",
+    "content": "",
+    "button": "Zapytaj o wycenę",
+    "form": "",
+    "qp": "",
+    "ar": ""
+  },
+  "parameters": [
+    {
+      "name": "",
+      "value": ""
+    }
+  ],
+  "main_characteristics": [
+    {
+      "title": "Indywidualne rozwiązania z wykorzystaniem najnowocześniejszych technologii",
+      "content": [
+        "Nasza firma zajmuje się projektowaniem oraz wykonywaniem kompleksowo lakierni proszkowych oraz mokrych. Wykonujemy na zlecenie klienta projekty pod klucz, dopasowane do miejsca jakim dysponuje klient oraz gabarytów detali. Współpracujemy w zakresie kabin do lakierowania oraz podzespołów do lakiernie z renomowanymi producentami światowymi. Dysponujemy na etapie projektowych zespołem wykwalifikowanych konstruktorów i projektantów. Posiadamy bardzo dobrze wyposażony park maszynowy pod kątem produkcji oraz duże zaplecze techniczne wykorzystywane w procesie produkcji i montażu. Oferujemy projekty z wykorzystaniem najnowocześniejszych technologii wykorzystujących skanery do analizy lakierowanych elementów i dopasowania ruchów pistoletów nakładających proszek do kształtu detali."
+      ],
+      "image": ""
+    }
+  ],
+  "specification": [
+    {
+      "name": "",
+      "param": [
+        ""
+      ]
+    }
+  ],
+  "additional_products": [
+    {
+      "name": "",
+      "image": "",
+      "link": ""
+    }
+  ]
+}
