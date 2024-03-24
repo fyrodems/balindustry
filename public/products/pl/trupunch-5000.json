@@ -14,7 +14,7 @@
     "image": "/products/images/trupunch-5000/floatingCTA.svg",
     "content": "",
     "button": "Zapytaj o wycenę",
-    "form": "",
+    "form": "/forms/",
     "qp": "",
     "ar": ""
   },
@@ -110,9 +110,29 @@
   ],
   "additional_products": [
     {
-      "name": "",
-      "image": "",
-      "link": ""
+      "name": "ARC D600",
+      "image": "/products/images/arc-d600/carousel1.svg",
+      "link": "/product/arc-d600"
+    },
+    {
+      "name": "ARC Trackmotion 2t",
+      "image": "/products/images/arc-trackmotion-2t/carousel1.svg",
+      "link": "/product/arc-trackmotion-2t"
+    },
+    {
+      "name": "5-cio osiowe CNC",
+      "image": "/products/images/5-axis-cnc/carousel1.svg",
+      "link": "/product/5-axis-cnc"
+    },
+    {
+      "name": "TruPunch 5000 | TRUMPH",
+      "image": "/products/images/trupunch-5000/carousel1.svg",
+      "link": "/product/trupunch-5000"
+    },
+    {
+      "name": "Stanowisko Twin One-axis",
+      "image": "/products/images/twin-one-axis/carousel1.svg",
+      "link": "/product/twin-one-axis"
     }
   ]
 }

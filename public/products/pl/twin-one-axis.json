@@ -11,7 +11,7 @@
     "image": "/products/images/twin-one-axis/floatingCTA.svg",
     "content": "",
     "button": "Zapytaj o wycenę",
-    "form": "/forms/form",
+    "form": "/forms/",
     "qp": "",
     "ar": ""
   },
@@ -142,21 +142,7 @@
     }
   ],
   "additional_products": [
-    {
-      "name": "",
-      "image": "",
-      "link": ""
-    },
-    {
-      "name": "",
-      "image": "",
-      "link": ""
-    },
-    {
-      "name": "",
-      "image": "",
-      "link": ""
-    },
+    /* !!! do uzupełnienia jak będą pozostałe cele */
     {
       "name": "",
       "image": "",

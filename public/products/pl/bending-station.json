@@ -17,7 +17,7 @@
     "image": "/products/images/bending-station/floatingCTA.svg",
     "content": "",
     "button": "Zapytaj o wycenę",
-    "form": "",
+    "form": "/forms/",
     "qp": "",
     "ar": ""
   },
@@ -58,9 +58,29 @@
   ],
   "additional_products": [
     {
-      "name": "",
-      "image": "",
-      "link": ""
+      "name": "TrueLaser 3030 fiber | TRUMPH",
+      "image": "/products/images/truelaser-3030/carousel1.svg",
+      "link": "/product/truelaser-3030"
+    },
+    {
+      "name": "TruLaser Tube 7000 fiber",
+      "image": "/products/images/truelaser-7000/carousel1.svg",
+      "link": "/product/truelaser-7000"
+    },
+    {
+      "name": "5-cio osiowe CNC",
+      "image": "/products/images/5-axis-cnc/carousel1.svg",
+      "link": "/product/5-axis-cnc"
+    },
+    {
+      "name": "TruPunch 5000 | TRUMPH",
+      "image": "/products/images/trupunch-5000/carousel1.svg",
+      "link": "/product/trupunch-5000"
+    },
+    {
+      "name": "Primus Waterjet INTERMAC",
+      "image": "/products/images/waterjet/carousel1.svg",
+      "link": "/product/waterjet"
     }
   ]
 }

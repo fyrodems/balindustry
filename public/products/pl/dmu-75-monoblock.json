@@ -14,7 +14,7 @@
     "image": "/products/images/dmu-75-monoblock/floatingCTA.svg",
     "content": "",
     "button": "Zapytaj o wycenę",
-    "form": "",
+    "form": "/forms/",
     "qp": "",
     "ar": ""
   },
@@ -131,9 +131,29 @@
   ],
   "additional_products": [
     {
-      "name": "",
-      "image": "",
-      "link": ""
+      "name": "DMU 75 monoBLOCK",
+      "image": "/products/images/dmu-75-monoblock/carousel1.svg",
+      "link": "/product/dmu-75-monoblock"
+    },
+    {
+      "name": "M1",
+      "image": "/products/images/m1/carousel1.svg",
+      "link": "/product/m1"
+    },
+    {
+      "name": "SPRINT 32I5",
+      "image": "/products/images/sprint-32I5/carousel1.svg",
+      "link": "/product/sprint-32I5"
+    },
+    {
+      "name": "Obróbka powierzchni",
+      "image": "/products/images/surface-treatment/carousel1.svg",
+      "link": "/product/surface-treatment"
+    },
+    {
+      "name": "CLX 350",
+      "image": "/products/images/clx-350/carousel1.svg",
+      "link": "/product/clx-350"
     }
   ]
 }

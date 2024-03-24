@@ -14,7 +14,7 @@
     "image": "",
     "content": "Zeskanuj kod QR, aby zobaczyć w rzeczywistości rozszerzonej AR",
     "button": "Zapytaj o wycenę",
-    "form": "",
+    "form": "/forms/",
     "qp": "",
     "ar": "QRView/MAGAZYN"
   },
@@ -43,9 +43,29 @@
   ],
   "additional_products": [
     {
-      "name": "",
-      "image": "",
-      "link": ""
+      "name": "Stanowisko Twin One-axis",
+      "image": "/products/images/twin-one-axis/carousel1.svg",
+      "link": "/product/twin-one-axis"
+    },
+    {
+      "name": "Obróbka powierzchni",
+      "image": "/products/images/surface-treatment/carousel1.svg",
+      "link": "/product/surface-treatment"
+    },
+    {
+      "name": "Montaż lakierni",
+      "image": "/products/images/paintshops-installation/carousel1.svg",
+      "link": "/product/paintshops-installation"
+    },
+    {
+      "name": "Piece komorowe",
+      "image": "/products/images/furnace/carousel1.svg",
+      "link": "/product/furnace"
+    },
+    {
+      "name": "Stanowisko gięcia",
+      "image": "/products/images/bending-station/carousel1.svg",
+      "link": "/product/bending-station"
     }
   ],
   "metal_sheets": [

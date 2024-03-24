@@ -14,7 +14,7 @@
     "image": "/products/images/arc-b250/floatingCTA.svg",
     "content": "",
     "button": "Zapytaj o wycenę",
-    "form": "",
+    "form": "/forms/",
     "qp": "",
     "ar": ""
   },
@@ -63,9 +63,29 @@
   ],
   "additional_products": [
     {
-      "name": "",
-      "image": "",
-      "link": ""
+      "name": "ARC D600",
+      "image": "/products/images/arc-d600/carousel1.svg",
+      "link": "/product/arc-d600"
+    },
+    {
+      "name": "ARC Trackmotion 2t",
+      "image": "/products/images/arc-trackmotion-2t/carousel1.svg",
+      "link": "/product/arc-trackmotion-2t"
+    },
+    {
+      "name": "M1",
+      "image": "/products/images/m1/carousel1.svg",
+      "link": "/product/m1"
+    },
+    {
+      "name": "NLX 2500",
+      "image": "/products/images/nlx-2500/carousel1.svg",
+      "link": "/product/nlx-2500"
+    },
+    {
+      "name": "5-cio osiowe CNC",
+      "image": "/products/images/5-axis-cnc/carousel1.svg",
+      "link": "/product/5-axis-cnc"
     }
   ]
 }

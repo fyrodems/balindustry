@@ -14,7 +14,7 @@
     "image": "/products/images/truelaser-3030/floatingCTA.svg",
     "content": "",
     "button": "Zapytaj o wycenę",
-    "form": "",
+    "form": "/forms/",
     "qp": "",
     "ar": ""
   },
@@ -103,9 +103,29 @@
   ],
   "additional_products": [
     {
-      "name": "",
-      "image": "",
-      "link": ""
+      "name": "TruLaser Tube 7000 fiber",
+      "image": "/products/images/truelaser-7000/carousel1.svg",
+      "link": "/product/truelaser-7000"
+    },
+    {
+      "name": "TruPunch 5000 | TRUMPH",
+      "image": "/products/images/trupunch-5000/carousel1.svg",
+      "link": "/product/trupunch-5000"
+    },
+    {
+      "name": "Stanowisko gięcia",
+      "image": "/products/images/bending-station/carousel1.svg",
+      "link": "/product/bending-station"
+    },
+    {
+      "name": "NLX 2500",
+      "image": "/products/images/nlx-2500/carousel1.svg",
+      "link": "/product/nlx-2500"
+    },
+    {
+      "name": "ARC D600",
+      "image": "/products/images/arc-d600/carousel1.svg",
+      "link": "/product/arc-d600"
     }
   ]
 }

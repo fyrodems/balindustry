@@ -14,7 +14,7 @@
     "image": "",
     "content": "Zeskanuj kod QR, aby zobaczyć w rzeczywistości rozszerzonej AR",
     "button": "Zapytaj o wycenę",
-    "form": "",
+    "form": "/forms/",
     "qp": "",
     "ar": "QRView/PIEC"
   },
@@ -55,9 +55,29 @@
   ],
   "additional_products": [
     {
-      "name": "",
-      "image": "",
-      "link": ""
+      "name": "5-cio osiowe CNC",
+      "image": "/products/images/5-axis-cnc/carousel1.svg",
+      "link": "/product/5-axis-cnc"
+    },
+    {
+      "name": "TruPunch 5000 | TRUMPH",
+      "image": "/products/images/trupunch-5000/carousel1.svg",
+      "link": "/product/trupunch-5000"
+    },
+    {
+      "name": "Stanowisko Twin One-axis",
+      "image": "/products/images/twin-one-axis/carousel1.svg",
+      "link": "/product/twin-one-axis"
+    },
+    {
+      "name": "Montaż lakierni",
+      "image": "/products/images/paintshops-installation/carousel1.svg",
+      "link": "/product/paintshops-installation"
+    },
+    {
+      "name": "Primus Waterjet INTERMAC",
+      "image": "/products/images/waterjet/carousel1.svg",
+      "link": "/product/waterjet"
     }
   ]
 }

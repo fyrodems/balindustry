@@ -13,18 +13,22 @@ const Product: React.FC<{
 }> = ({ name, image, link }) => {
   return (
     <div className="flex h-full max-h-[330px] flex-col justify-between">
-      <div className="h-[200px]">
-        <Image
-          src={image}
-          alt={name}
-          width={464}
-          height={245}
-          className="h-full w-full"
-        />
+      <div className="h-[200px] p-4">
+        <Link href={link}>
+          <Image
+            src={image}
+            alt={name}
+            width={464}
+            height={245}
+            className="block h-full w-full"
+          />
+        </Link>
       </div>
-      <span className="my-4 inline-block min-h-[50px] w-full text-center font-bold">
-        {name}
-      </span>
+      <Link href={link}>
+        <span className="my-4 inline-block min-h-[50px] w-full text-center font-bold">
+          {name}
+        </span>
+      </Link>
     </div>
   )
 }
@@ -39,7 +43,7 @@ const CrossSellCarousel: React.FC<CrossSellCarouselProps> = ({ data }) => {
     infinite: true,
     autoplay: true,
     speed: 500,
-    autoplaySpeed: 2500,
+    autoplaySpeed: 3000,
     pauseOnHover: false,
     responsive: [
       {

@@ -14,7 +14,7 @@
     "image": "/products/images/arc-d600/floatingCTA.svg",
     "content": "",
     "button": "Zapytaj o wycenę",
-    "form": "",
+    "form": "/forms/",
     "qp": "",
     "ar": ""
   },
@@ -63,9 +63,29 @@
   ],
   "additional_products": [
     {
-      "name": "",
-      "image": "",
-      "link": ""
+      "name": "5-cio osiowe CNC",
+      "image": "/products/images/5-axis-cnc/carousel1.svg",
+      "link": "/product/5-axis-cnc"
+    },
+    {
+      "name": "ARC B250",
+      "image": "/products/images/arc-b250/carousel1.svg",
+      "link": "/product/arc-b250"
+    },
+    {
+      "name": "ARC Trackmotion 2t",
+      "image": "/products/images/arc-trackmotion-2t/carousel1.svg",
+      "link": "/product/arc-trackmotion-2t"
+    },
+    {
+      "name": "SPRINT 32I5",
+      "image": "/products/images/sprint-32I5/carousel1.svg",
+      "link": "/product/sprint-32I5"
+    },
+    {
+      "name": "Obróbka powierzchni",
+      "image": "/products/images/surface-treatment/carousel1.svg",
+      "link": "/product/surface-treatment"
     }
   ]
 }
