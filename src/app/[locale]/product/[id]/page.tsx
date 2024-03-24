@@ -10,6 +10,7 @@ import Specification from '@/components/product/Specification/Specification'
 import CrossSellCarousel from '@/components/product/CrossSellCarousel/CrossSellCarousel'
 import DetailsNavigation from '@/components/product/DetailsNavigation/DetailsNavigation'
 import WarehouseSpecification from '@/components/product/Specification/WarehouseSpecification'
+import Loader from '@/components/common/Loader'
 
 export default function ProductPage({
   params,
@@ -24,33 +25,30 @@ export default function ProductPage({
       id,
     })
 
-  /*   if (isPaused) {
-    return (
-      <p>
-        {t("Data couldn't be downloaded")}
-        <br />
-        {t('Check your internet connection')}
-      </p>
-    )
+  const ErrorMessage = () => (
+    <p className="grid min-h-[93vh] place-items-center text-center">
+      Nie możemy pobrać danych
+      <br />
+      Sprawdź swoje połączenie internetowe
+    </p>
+  )
+
+  const UnavailableMessage = () => (
+    <p className="grid min-h-[93vh] place-items-center text-center">
+      Dane niedostępne
+    </p>
+  )
+
+  if (isPaused || error) {
+    return <ErrorMessage />
   }
 
   if (isLoading && !data) {
     return <Loader />
   }
 
-  if (error) {
-    return (
-      <p>
-        {t("Data couldn't be downloaded")}
-        <br />
-        {t('Please try again later')}
-      </p>
-    )
-  }
-  */
-
   if (!data) {
-    return <span>Dane niedostępne</span>
+    return <UnavailableMessage />
   }
 
   console.log(data)
