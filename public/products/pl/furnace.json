@@ -14,7 +14,7 @@
     "image": "",
     "content": "Zeskanuj kod QR, aby zobaczyć w rzeczywistości rozszerzonej AR",
     "button": "Zapytaj o wycenę",
-    "form": "/forms/",
+    "form": "/forms/furnaces",
     "qp": "",
     "ar": "QRView/PIEC"
   },
