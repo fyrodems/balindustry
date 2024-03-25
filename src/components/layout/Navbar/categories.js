@@ -154,7 +154,7 @@ export const categories = [
           {
             name: 'Malowanie proszkowe i na mokro',
             image: '',
-            link: '', // !!! do uzupełnienia
+            link: 'service-paintshop', // !!! do uzupełnienia
           },
         ],
       },

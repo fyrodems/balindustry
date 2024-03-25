@@ -1,7 +1,7 @@
 'use client'
 
-import { type UseProductDataResult } from './types'
-import useProductData from './useProductData'
+import { type UseProductDataResult } from '../types'
+import useProductData from '../useProductData'
 import PageTitle from '@/components/common/PageTitle'
 import Presentation from '@/components/product/Presentation/Presentation'
 import FloatingCTA from '@/components/product/FloatingCTA/FloatingCTA'
@@ -11,6 +11,7 @@ import CrossSellCarousel from '@/components/product/CrossSellCarousel/CrossSellC
 import DetailsNavigation from '@/components/product/DetailsNavigation/DetailsNavigation'
 import WarehouseSpecification from '@/components/product/Specification/WarehouseSpecification'
 import Loader from '@/components/common/Loader'
+import PaintshopsFloatingCTA from '@/components/product/FloatingCTA/PaintshopsFloatingCTA'
 
 export default function ProductPage({
   params,
@@ -69,41 +70,59 @@ export default function ProductPage({
     <>
       <PageTitle content={''} />
       <main>
-        <div className="laptop:grid laptop:grid-cols-[70%_30%] 2xl:grid-cols-[80%_20%]">
-          <div>
-            <Presentation data={data} />
-            {basic_data.with_data && (
-              <>
-                <DetailsNavigation characteristics specification />
+        {basic_data.pathID === 'service-paintshop' ? (
+          <>
+            <PageTitle content={basic_data.name} />
+            <p className="mx-auto -mt-8 mb-[60px] w-11/12 max-w-[1100px] text-balance text-center text-sm sm:-mt-4 sm:text-base">
+              {basic_data.description}
+            </p>
+            <div className="laptop:grid laptop:grid-cols-[60%_40%] 2xl:grid-cols-[80%_20%]">
+              <div>
                 <MainCharacteristics data={main_characteristics} />
-                <Specification data={specification} />
-              </>
-            )}
-            {basic_data.pathID === 'paintshops-installation' && (
-              <MainCharacteristics data={main_characteristics} />
-            )}
-            {basic_data.pathID === 'vertical-warehouse' && (
-              <>
-                <DetailsNavigation characteristics specification />
+                <CrossSellCarousel data={additional_products} />
+              </div>
+              <div className="hidden laptop:block [&>div]:top-[400px]">
+                <PaintshopsFloatingCTA data={floating_CTA} />
+              </div>
+            </div>
+          </>
+        ) : (
+          <div className="laptop:grid laptop:grid-cols-[70%_30%] 2xl:grid-cols-[80%_20%]">
+            <div>
+              <Presentation data={data} />
+              {basic_data.with_data && (
+                <>
+                  <DetailsNavigation characteristics specification />
+                  <MainCharacteristics data={main_characteristics} />
+                  <Specification data={specification} />
+                </>
+              )}
+              {basic_data.pathID === 'paintshops-installation' && (
                 <MainCharacteristics data={main_characteristics} />
-                <WarehouseSpecification
-                  metal={metal_sheets}
-                  pallets={pallets_elements}
-                />
-              </>
-            )}
-            {basic_data.pathID === 'lh' && (
-              <>
-                <DetailsNavigation characteristics />
-                <MainCharacteristics data={main_characteristics} />
-              </>
-            )}
-            <CrossSellCarousel data={additional_products} />
+              )}
+              {basic_data.pathID === 'vertical-warehouse' && (
+                <>
+                  <DetailsNavigation characteristics specification />
+                  <MainCharacteristics data={main_characteristics} />
+                  <WarehouseSpecification
+                    metal={metal_sheets}
+                    pallets={pallets_elements}
+                  />
+                </>
+              )}
+              {basic_data.pathID === 'lh' && (
+                <>
+                  <DetailsNavigation characteristics />
+                  <MainCharacteristics data={main_characteristics} />
+                </>
+              )}
+              <CrossSellCarousel data={additional_products} />
+            </div>
+            <div className="hidden laptop:block">
+              <FloatingCTA data={floating_CTA} />
+            </div>
           </div>
-          <div className="hidden laptop:block">
-            <FloatingCTA data={floating_CTA} />
-          </div>
-        </div>
+        )}
       </main>
     </>
   )

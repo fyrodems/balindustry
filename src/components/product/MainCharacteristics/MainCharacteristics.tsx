@@ -5,7 +5,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion'
-import { type MainCharacteristicsProps } from '@/app/[locale]/product/[id]/types'
+import { type MainCharacteristicsProps } from '@/app/[locale]/product/types'
 
 const MainCharacteristics: React.FC<MainCharacteristicsProps> = ({ data }) => {
   return (
@@ -19,7 +19,7 @@ const MainCharacteristics: React.FC<MainCharacteristicsProps> = ({ data }) => {
             {data.map((characteristic, i) => (
               <div
                 key={i}
-                className="laptop:mb-[100px] laptop:ml-[40px] my-[60px]"
+                className="my-[60px] laptop:mb-[100px] laptop:ml-[40px]"
               >
                 <h2 className="text-balance text-xl font-bold text-black">
                   {characteristic.title}

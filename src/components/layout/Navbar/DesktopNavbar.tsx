@@ -260,7 +260,7 @@ const DesktopNavbar = () => {
                   <span>Wycena cięcia</span>
                 </MenubarItem>
               </Link>
-              <Link href="/product/surface-treatment">
+              <Link href="/product/service-paintshop">
                 <MenubarItem>
                   <Image
                     src={'/images/navbarProducts/service-paintshop.svg'}

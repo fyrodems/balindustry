@@ -1,5 +1,5 @@
 import { cn } from '@/libs/utils'
-import { type WarehouseSpecificationProps } from '@/app/[locale]/product/[id]/types'
+import { type WarehouseSpecificationProps } from '@/app/[locale]/product/types'
 import {
   Table,
   TableBody,
@@ -27,7 +27,7 @@ const WarehouseSpecification: React.FC<WarehouseSpecificationProps> = ({
             Parametry
           </AccordionTrigger>
 
-          <AccordionContent className="laptop:ml-[40px] cursor-default">
+          <AccordionContent className="cursor-default laptop:ml-[40px]">
             <h2 className="my-6 text-balance text-xl font-bold text-black">
               Magazyn na arkusze blach
             </h2>

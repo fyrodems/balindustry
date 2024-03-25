@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Carousel from '../Carousel/Carousel'
-import { type ProductDataProps } from '@/app/[locale]/product/[id]/types'
+import { type ProductDataProps } from '@/app/[locale]/product/types'
 
 const Parameter: React.FC<{ name: string; value: string }> = ({
   name,

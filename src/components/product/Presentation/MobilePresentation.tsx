@@ -2,7 +2,7 @@ import Image from 'next/image'
 import { useLocale } from 'next-intl'
 import Carousel from '../Carousel/Carousel'
 import Button from '@/components/common/Button'
-import { type ProductDataProps } from '@/app/[locale]/product/[id]/types'
+import { type ProductDataProps } from '@/app/[locale]/product/types'
 import { Link } from '@/navigation'
 
 const Parameter: React.FC<{ name: string; value: string }> = ({

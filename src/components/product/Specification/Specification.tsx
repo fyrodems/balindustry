@@ -1,4 +1,4 @@
-import { type SpecificationProps } from '@/app/[locale]/product/[id]/types'
+import { type SpecificationProps } from '@/app/[locale]/product/types'
 import { cn } from '@/libs/utils'
 import {
   Table,
@@ -23,7 +23,7 @@ const Specification: React.FC<SpecificationProps> = ({ data }) => {
           <AccordionTrigger className="mb-[40px] border-0 border-b-[2px] border-solid border-stone-300 text-[26px] font-bold text-stone-800">
             Parametry
           </AccordionTrigger>
-          <AccordionContent className="laptop:ml-[40px] cursor-default">
+          <AccordionContent className="cursor-default laptop:ml-[40px]">
             <Table>
               <TableHeader className=" bg-stone-800">
                 <TableRow className="grid grid-cols-[40%_60%]">
