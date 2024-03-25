@@ -1,0 +1,118 @@
+{
+  "basic_data": {
+    "pathID": "dual",
+    "name": "Stanowisko Dual",
+    "additional_name": "",
+    "description": "Cela GoFa Dual to zaawansowane stanowisko spawalnicze, które zostało zaprojektowane z myślą o maksymalnej wydajności i bezpieczeństwie w procesie spawania. Posiadając dwie stacje spawalnicze, umożliwia pracę na dwóch stanowiskach, co zwiększa elastyczność produkcji. ",
+    "with_data": true
+  },
+  "images": [
+    "/products/images/dual/carousel1.svg",
+    "/products/images/dual/carousel2.png",
+    "/products/images/dual/carousel3.png",
+    "/products/images/dual/carousel4.png",
+    "/products/images/dual/carousel5.png",
+    "/products/images/dual/carousel6.png",
+    "/products/images/dual/carousel7.png",
+    "/products/images/dual/carousel8.png",
+    "/products/images/dual/carousel9.png"
+  ],
+  "floating_CTA": {
+    "title": "Stanowisko Dual",
+    "image": "/products/images/dual/floatingCTA.svg",
+    "content": "",
+    "button": "Zapytaj o wycenę",
+    "form": "/forms/robotic-stations",
+    "qp": "",
+    "ar": ""
+  },
+  "parameters": [
+    {
+      "name": "",
+      "value": ""
+    }
+  ],
+  "main_characteristics": [
+    {
+      "title": "Źródło Spawalnicze Fronius lub ESAB",
+      "content": [
+        "Użytkownik ma możliwość wyboru między źródłami spawalniczymi renomowanych firm: Fronius lub ESAB, co zapewnia elastyczność i dostosowanie do różnych potrzeb spawalniczych. "
+      ],
+      "image": ""
+    },
+    {
+      "title": "Tor jezdny z serwonapędem",
+      "content": [
+        "Cela jest wyposażona w tor jezdny, na którym zamontowany jest robot. Za napęd tego systemu odpowiada serwonapęd marki HIWIN, zapewniający płynne i precyzyjne przemieszczanie się robota po stanowisku. "
+      ],
+      "image": "/products/images/dual/mainCharacteristics1.png"
+    },
+    {
+      "title": "Możliwość pracy na dwóch stanowiskach",
+      "content": [
+        "Cela umożliwia pracę na dwóch stanowiskach, jednak spawanie odbywa się na jednym stanowisku w danym momencie. Taka konfiguracja zapewnia elastyczność produkcji, pozwalając na równoczesne przygotowywanie dwóch różnych zestawów lub zmniejszenie czasu przestoju. "
+      ],
+      "image": ""
+    },
+    {
+      "title": "Frontowe drzwi sterowane pneumatycznie",
+      "content": [
+        "Wygodne pneumatyczne drzwi z przodu stanowiska ułatwiają dostęp i obsługę, zapewniając płynność operacji."
+      ],
+      "image": ""
+    }
+  ],
+  "specification": [
+    {
+      "name": "Robot",
+      "param": [
+        "Gofa 15000, UR 5 / UR 10"
+      ]
+    },
+    {
+      "name": "Źródło spawalnicze",
+      "param": [
+        "Fronius / ESAB"
+      ]
+    },
+    {
+      "name": "Źródło światła",
+      "param": [
+        "LED"
+      ]
+    },
+    {
+      "name": "Pole robocze",
+      "param": [
+        "800 x 1200 mm *2"
+      ]
+    }
+  ],
+  "additional_products": [
+    {
+      "name": "Stanowisko Single",
+      "image": "/products/images/single/carousel1.svg",
+      "link": "/product/single"
+    },
+    {
+      "name": "ALW 1200 - Automatic Linear Welder",
+      "image": "/products/images/alw-1200/carousel1.png",
+      "link": "/product/alw-1200"
+    },
+    {
+      "name": "Montaż lakierni",
+      "image": "/products/images/paintshops-installation/carousel1.svg",
+      "link": "/product/paintshops-installation"
+    },
+    {
+      "name": "5-cio osiowe CNC",
+      "image": "/products/images/5-axis-cnc/carousel1.svg",
+      "link": "/product/5-axis-cnc"
+    },
+    {
+      "name": "Stanowisko Twin One-axis",
+      "image": "/products/images/twin-one-axis/carousel1.svg",
+      "link": "/product/twin-one-axis"
+    }
+  ]
+}

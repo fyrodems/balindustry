@@ -55,8 +55,6 @@ export default function ProductPage({
     return <UnavailableMessage />
   }
 
-  console.log(data)
-
   const {
     basic_data,
     floating_CTA,
@@ -71,12 +69,12 @@ export default function ProductPage({
     <>
       <PageTitle content={''} />
       <main>
-        <div className="laptop:grid-cols-[70%_30%] laptop:grid 2xl:grid-cols-[80%_20%]">
+        <div className="laptop:grid laptop:grid-cols-[70%_30%] 2xl:grid-cols-[80%_20%]">
           <div>
             <Presentation data={data} />
             {basic_data.with_data && (
               <>
-                <DetailsNavigation />
+                <DetailsNavigation characteristics specification />
                 <MainCharacteristics data={main_characteristics} />
                 <Specification data={specification} />
               </>
@@ -86,7 +84,7 @@ export default function ProductPage({
             )}
             {basic_data.pathID === 'vertical-warehouse' && (
               <>
-                <DetailsNavigation />
+                <DetailsNavigation characteristics specification />
                 <MainCharacteristics data={main_characteristics} />
                 <WarehouseSpecification
                   metal={metal_sheets}
@@ -94,9 +92,15 @@ export default function ProductPage({
                 />
               </>
             )}
+            {basic_data.pathID === 'lh' && (
+              <>
+                <DetailsNavigation characteristics />
+                <MainCharacteristics data={main_characteristics} />
+              </>
+            )}
             <CrossSellCarousel data={additional_products} />
           </div>
-          <div className="laptop:block hidden">
+          <div className="hidden laptop:block">
             <FloatingCTA data={floating_CTA} />
           </div>
         </div>

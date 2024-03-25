@@ -98,5 +98,35 @@
     "name": "Primus Waterjet INTERMAC",
     "image": "/products/images/waterjet/carousel1.svg",
     "link": "/product/waterjet"
+  },
+  {
+    "name": "LH",
+    "image": "/products/images/lh/carousel1.svg",
+    "link": "/product/lh"
+  },
+  {
+    "name": "Stanowisko Single",
+    "image": "/products/images/single/carousel1.svg",
+    "link": "/product/single"
+  },
+  {
+    "name": "Stanowisko Dual",
+    "image": "/products/images/dual/carousel1.svg",
+    "link": "/product/dual"
+  },
+  {
+    "name": "ALW 1200 - Automatic Linear Welder",
+    "image": "/products/images/alw-1200/carousel1.png",
+    "link": "/product/alw-1200"
+  },
+  {
+    "name": "Flex Cobot Esab",
+    "image": "/products/images/flex-esab/carousel1.png",
+    "link": "/product/flex-esab"
+  },
+  {
+    "name": "Flex Cobot Fronius",
+    "image": "/products/images/flex-fronius/carousel1.png",
+    "link": "/product/flex-fronius"
   }
 ]

@@ -1,0 +1,110 @@
+{
+  "basic_data": {
+    "pathID": "flex-fronius",
+    "name": "Flex Cobot Fronius",
+    "additional_name": "",
+    "description": "Uniwersalny zestaw do spawania zrobotyzowane przy zastosowaniu robotów współpracujących gotowych do pracy z detalami o różnych wielkościach.",
+    "with_data": true
+  },
+  "images": [
+    "/products/images/flex-fronius/carousel1.png",
+    "/products/images/flex-fronius/carousel2.png",
+    "/products/images/flex-fronius/carousel3.png",
+    "/products/images/flex-fronius/carousel4.png",
+    "/products/images/flex-fronius/carousel5.png"
+  ],
+  "floating_CTA": {
+    "title": "Flex Cobot Fronius",
+    "image": "/products/images/flex-fronius/carousel1.png",
+    "content": "",
+    "button": "Zapytaj o wycenę",
+    "form": "/forms/robotic-stations",
+    "qp": "",
+    "ar": ""
+  },
+  "parameters": [
+    {
+      "name": "",
+      "value": ""
+    }
+  ],
+  "main_characteristics": [
+    {
+      "title": "Łatwość użycia",
+      "content": [
+        "Łatwe w użyciu oprogramowanie oparte na aplikacji umożliwia natychmiastowy dostęp do programowania części, analizy dla zwiększenia powtarzalności i czasu pracy oraz monitorowanie wydajności."
+      ],
+      "image": "/products/images/flex-fronius/carousel5.png"
+    },
+    {
+      "title": "Innowacyjna funkcjonalność",
+      "content": [
+        "Zaawansowana funkcjonalność pulsacyjna zmniejsza ilość ciepła wprowadzanego do materiału i minimalizuje zachlapania, poprawiając wydajność poprzez zmniejszenie ilości pracy powtórnej, oszczędzając czas i koszty."
+      ],
+      "image": ""
+    }
+  ],
+  "specification": [
+    {
+      "name": "Stół roboczy",
+      "param": [
+        "800x1000 mm",
+        "1000x1000 mm",
+        "1200x1200 mm"
+      ]
+    },
+    {
+      "name": "Metoda spawania",
+      "param": [
+        "MIG/MAG"
+      ]
+    },
+    {
+      "name": "Zasieg robota współpracującego",
+      "param": [
+        "0,9 m"
+      ]
+    },
+    {
+      "name": "Możliwość zmiany narzędzie do wykonywania takich prac jak",
+      "param": [
+        "przenoszenie",
+        "montaż",
+        "szlifowanie"
+      ]
+    },
+    {
+      "name": "Adaptery do montażu robotów",
+      "param": [
+        "ABB oraz UR"
+      ]
+    }
+  ],
+  "additional_products": [
+    {
+      "name": "Flex Cobot Esab",
+      "image": "/products/images/flex-esab/carousel1.png",
+      "link": "/product/flex-esab"
+    },
+    {
+      "name": "ALW 1200 - Automatic Linear Welder",
+      "image": "/products/images/alw-1200/carousel1.png",
+      "link": "/product/alw-1200"
+    },
+    {
+      "name": "DMU 210 P",
+      "image": "/products/images/dmu-210-p/carousel1.svg",
+      "link": "/product/dmu-210-p"
+    },
+    {
+      "name": "ARC B250",
+      "image": "/products/images/arc-b250/carousel1.svg",
+      "link": "/product/arc-b250"
+    },
+    {
+      "name": "SPRINT 32I5",
+      "image": "/products/images/sprint-32I5/carousel1.svg",
+      "link": "/product/sprint-32I5"
+    }
+  ]
+}

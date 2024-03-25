@@ -1,0 +1,115 @@
+{
+  "basic_data": {
+    "pathID": "flex-esab",
+    "name": "Flex Cobot Esab",
+    "additional_name": "",
+    "description": "Cobots są przeznaczone dla spawaczy, a nie programistów, dzięki oprogramowaniu opartemu na aplikacji, które jest proste i intuicyjne. Łącząc najlepszą na rynku ramię UR, ciężki źródło zasilania pulsacyjnego Aristo 500ix do spawania w warunkach przemysłowych oraz zasilacz drutu RobustFeed U82, ESAB Cobot to idealne rozwiązanie zapewniające doskonałą podawalność materiału i wydajność łuku.",
+    "with_data": true
+  },
+  "images": [
+    "/products/images/flex-esab/carousel1.png",
+    "/products/images/flex-esab/carousel2.png",
+    "/products/images/flex-esab/carousel3.png",
+    "/products/images/flex-esab/carousel4.png"
+  ],
+  "floating_CTA": {
+    "title": "Flex Cobot Esab",
+    "image": "/products/images/flex-esab/carousel1.png",
+    "content": "",
+    "button": "Zapytaj o wycenę",
+    "form": "/forms/robotic-stations",
+    "qp": "",
+    "ar": ""
+  },
+  "parameters": [
+    {
+      "name": "",
+      "value": ""
+    }
+  ],
+  "main_characteristics": [
+    {
+      "title": "Łatwość użycia",
+      "content": [
+        "Łatwe w użyciu oprogramowanie oparte na aplikacji umożliwia natychmiastowy dostęp do programowania części, analizy dla zwiększenia powtarzalności i czasu pracy oraz monitorowanie wydajności."
+      ],
+      "image": "/products/images/flex-esab/carousel4.png"
+    },
+    {
+      "title": "Innowacyjna funkcjonalność",
+      "content": [
+        "Zaawansowana funkcjonalność pulsacyjna zmniejsza ilość ciepła wprowadzanego do materiału i minimalizuje zachlapania, poprawiając wydajność poprzez zmniejszenie ilości pracy powtórnej, oszczędzając czas i koszty."
+      ],
+      "image": ""
+    }
+  ],
+  "specification": [
+    {
+      "name": "Źródło spawalnicze",
+      "param": [
+        "ESAB Aristo 500ix"
+      ]
+    },
+    {
+      "name": "Stół roboczy",
+      "param": [
+        "800x1000 mm",
+        "1000x1000 mm",
+        "1200x1200 mm"
+      ]
+    },
+    {
+      "name": "Metoda spawania",
+      "param": [
+        "MIG/MAG"
+      ]
+    },
+    {
+      "name": "Zasięg robota",
+      "param": [
+        "0,9m"
+      ]
+    },
+    {
+      "name": "System",
+      "param": [
+        "16/28"
+      ]
+    },
+    {
+      "name": "Alternatywne zastosowania",
+      "param": [
+        "przenoszenie",
+        "montaż",
+        "szlifowanie"
+      ]
+    }
+  ],
+  "additional_products": [
+    {
+      "name": "Flex Cobot Fronius",
+      "image": "/products/images/flex-fronius/carousel1.png",
+      "link": "/product/flex-fronius"
+    },
+    {
+      "name": "ALW 1200 - Automatic Linear Welder",
+      "image": "/products/images/alw-1200/carousel1.png",
+      "link": "/product/alw-1200"
+    },
+    {
+      "name": "DMU 210 P",
+      "image": "/products/images/dmu-210-p/carousel1.svg",
+      "link": "/product/dmu-210-p"
+    },
+    {
+      "name": "5-cio osiowe CNC",
+      "image": "/products/images/5-axis-cnc/carousel1.svg",
+      "link": "/product/5-axis-cnc"
+    },
+    {
+      "name": "M1",
+      "image": "/products/images/m1/carousel1.svg",
+      "link": "/product/m1"
+    }
+  ]
+}
