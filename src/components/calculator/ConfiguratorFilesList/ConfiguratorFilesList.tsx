@@ -1,15 +1,31 @@
 import { type Dispatch, type SetStateAction, useContext, useState } from 'react'
-import Image from 'next/image'
 import { X } from 'lucide-react'
+import { type IDxf } from 'dxf-parser'
 import { DataContext } from '../../../app/context/dataContext'
 import { SelectedContext } from '../../../app/context/selectedContext'
-import arrowIcon from '../../../../public/icons/arrowUp.svg'
+import DropInput from '../DropInput/DropInput'
 import styles from './ConfiguratorFilesList.module.scss'
 import Button from '@/components/common/Button'
 
 interface CalculatorConfiguratorProps {
   filesArray: File[]
   setFilesArray: Dispatch<SetStateAction<File[]>>
+}
+
+interface Model {
+  fileName: string
+  fileContent: IDxf
+  path: string
+  units: string
+  totalLength: string
+  arrayLength: Array<{ type: string; length: number; elements?: number[] }>
+  modelJson: null
+  quantity: number | null
+  material: string | null
+  thickness: number | null
+  density: number | null
+  isReady: boolean
+  totalArea: number
 }
 
 const ConfiguratorFilesList: React.FC<CalculatorConfiguratorProps> = ({
@@ -21,28 +37,36 @@ const ConfiguratorFilesList: React.FC<CalculatorConfiguratorProps> = ({
   const contextData = useContext(DataContext)
 
   const allModels = contextData?.data
-  let selectedModel = null
+  let selectedModel: Model | null = null
   if (allModels) {
     selectedModel = allModels[selectedContext?.index ?? 0]
   }
 
-  const handleClick = (e) => {
-    contextData?.updateData({
-      index: selectedContext?.index,
-      key: 'quantity',
-      value: null,
-    })
-    contextData?.updateData({
-      index: selectedContext?.index,
-      key: 'material',
-      value: null,
-    })
-    contextData?.updateData({
-      index: selectedContext?.index,
-      key: 'thickness',
-      value: null,
-    })
-    selectedContext?.changeIndex(+e.target.id)
+  const handleClick = (e: React.SyntheticEvent) => {
+    if (!selectedModel) {
+      return
+    }
+
+    if (selectedContext?.index) {
+      contextData?.updateData({
+        index: selectedContext.index,
+        key: 'quantity',
+        value: null,
+      })
+      contextData?.updateData({
+        index: selectedContext.index,
+        key: 'material',
+        value: null,
+      })
+      contextData?.updateData({
+        index: selectedContext.index,
+        key: 'thickness',
+        value: null,
+      })
+    }
+
+    console.log(selectedIndex)
+    selectedContext?.changeIndex(Number((e.target as HTMLParagraphElement).id))
     selectedModel.isReady = false
 
     // Warunek sprawdzający czy wszystkie dane są załadowane
@@ -53,7 +77,8 @@ const ConfiguratorFilesList: React.FC<CalculatorConfiguratorProps> = ({
     ) {
       selectedModel.isReady = true
     }
-    setSelectedIndex(+e.target.id)
+
+    setSelectedIndex(+Number((e.target as HTMLParagraphElement).id))
   }
 
   return (
@@ -62,7 +87,7 @@ const ConfiguratorFilesList: React.FC<CalculatorConfiguratorProps> = ({
         return (
           <div key={file.name} className={styles.fileWrapper}>
             <p
-              id={index}
+              id={index.toString()}
               onClick={handleClick}
               className={index === selectedIndex ? styles.active : ''}
             >
@@ -79,7 +104,7 @@ const ConfiguratorFilesList: React.FC<CalculatorConfiguratorProps> = ({
                     (file) => filesArray.indexOf(file) !== index
                   )
                 )
-                if (index > 0) changeIndex(index - 1)
+                if (index > 0) selectedContext?.changeIndex(index - 1)
               }}
             >
               <X />
@@ -87,23 +112,7 @@ const ConfiguratorFilesList: React.FC<CalculatorConfiguratorProps> = ({
           </div>
         )
       })}
-      <Button
-        disabled={false}
-        className={styles.addFilesButton}
-        primary={false}
-        size="L"
-        onClick={() => {
-          setFilesArray((filesArray) =>
-            filesArray.filter(
-              (file) => filesArray.indexOf(file) !== selectedContext.index
-            )
-          )
-          if (selectedContext.index > 0) changeIndex(selectedContext.index - 1)
-        }}
-      >
-        <Image src={arrowIcon as string} alt="Upload file" /> Dodaj pliki do
-        wyceny
-      </Button>
+      <DropInput filesArray={filesArray} setFilesArray={setFilesArray} />
     </div>
   )
 }

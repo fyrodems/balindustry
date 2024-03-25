@@ -30,10 +30,10 @@ export async function POST(req: NextRequest) {
       switch (file.name.split('.')[1]) {
         case 'dxf':
           arrReturnData = dxfParse.parse(fileWithPath, arrReturnData)
-          console.log(arrReturnData)
           break
         case 'stp':
-          arrReturnData = stpParse.parse(fileWithPath, arrReturnData)
+          // poniższa linia wywala błąd
+          // arrReturnData = stpParse.parse(fileWithPath, arrReturnData)
           break
         default:
           break

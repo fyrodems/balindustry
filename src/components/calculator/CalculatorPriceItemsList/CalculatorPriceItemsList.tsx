@@ -163,7 +163,6 @@ const CalculatorPriceItemsList = ({ filesArray, setFilesArray }) => {
     }
   }
 
-  console.log(selectedItems)
   return (
     <div>
       {/*  <CalcModalBox

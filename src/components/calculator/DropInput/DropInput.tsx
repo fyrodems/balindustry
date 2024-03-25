@@ -67,15 +67,21 @@ const DropInput: React.FC<DropInputProps> = ({ filesArray, setFilesArray }) => {
   }, [filesArray, contextData])
 
   return (
-    <div className={styles.dropInput}>
+    <div
+      className={`${filesArray.length > 0 ? styles.addMoreFiles : styles.dropInput}`}
+    >
       <div className={styles.formWrapper}>
         <form onSubmit={onFormSubmit}>
           <div ref={labelRef} className={styles.chooseFilesWrapper}>
             <label htmlFor="calcDropInput" className={styles.chooseFilesLabel}>
               <Image src={arrowIcon as string} alt="Upload file" />
-              <span>Wybierz pliki</span>
+              <span>
+                {filesArray.length > 0
+                  ? 'Dodaj pliki do wyceny'
+                  : 'Wybierz pliki'}
+              </span>
             </label>
-            {isMobile ? null : (
+            {isMobile || filesArray.length > 0 ? null : (
               <div>
                 <span>lub</span>
                 <span>przeciągnij i upuść je tutaj. Max. 8MB</span>

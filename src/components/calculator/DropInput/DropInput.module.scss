@@ -11,6 +11,25 @@
   padding: 20px 45px;
   cursor: pointer;
   position: relative;
+
+  .chooseFilesLabel {
+    color: $orange;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 17px;
+    border: 2px solid $language-selector-empty-bg;
+    border-radius: 66px;
+    padding: 25px 33px;
+    max-width: 230px;
+    box-shadow: 0px 8.24px 24.72px -8.24px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+
+    @include tablet {
+      border-radius: 6px;
+    }
+  }
 }
 
 .dropInput:hover {
@@ -19,22 +38,31 @@
   }
 }
 
-.chooseFilesLabel {
-  color: $orange;
-  font-weight: 500;
+.addMoreFiles {
   display: flex;
-  align-items: center;
   justify-content: center;
-  gap: 17px;
-  border: 2px solid $language-selector-empty-bg;
-  border-radius: 66px;
-  padding: 25px 33px;
-  max-width: 230px;
-  box-shadow: 0px 8.24px 24.72px -8.24px rgba(0, 0, 0, 0.12);
+  align-items: center;
+  border-radius: 6px;
+  border-radius: 6px;
+  padding: 20px 45px;
   cursor: pointer;
+  position: relative;
+  margin-top: 15px;
+  margin-bottom: 60px;
 
-  @include tablet {
+  .chooseFilesLabel {
+    color: $orange;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 17px;
+    border: 2px solid $language-selector-empty-bg;
     border-radius: 6px;
+    padding: 17px 25px;
+    max-width: 320px;
+    box-shadow: 0px 8.24px 24.72px -8.24px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
   }
 }
 
