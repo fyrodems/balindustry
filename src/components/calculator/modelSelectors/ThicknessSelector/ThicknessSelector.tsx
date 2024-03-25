@@ -1,40 +1,58 @@
-import { useState, useContext, useEffect, useRef } from 'react'
-import { DataContext } from '../../../../app/context/dataContext'
-import { SelectedContext } from '../../../../app/context/selectedContext'
+import { useState, useEffect, useRef } from 'react'
+import { type FileContextType } from '../../../../app/context/dataContext'
+import { type SelectedFileContextType } from '../../../../app/context/selectedContext'
 import materials from '../../materials.json'
-import { Label } from '@/components/ui/label'
 import styles from './ThicknessSelector.module.scss'
+import { Label } from '@/components/ui/label'
 
-const Thickness = () => {
-  const [thicknessArr, setThicknessArr] = useState([])
-  const [density, setDensity] = useState()
-  const { data, updateData } = useContext(DataContext)
-  const { index } = useContext(SelectedContext)
-  const { material, thickness } = data[index]
+interface ThicknessProps {
+  contextData: FileContextType
+  selectedModel: SelectedFileContextType
+}
+
+const Thickness: React.FC<ThicknessProps> = ({
+  contextData,
+  selectedModel,
+}) => {
+  const [thicknessArr, setThicknessArr] = useState<number[]>([])
+  const [density, setDensity] = useState<number>()
+
+  let material: string | null = null
+  let thickness: number | null = null
+  if (contextData.data) {
+    material = contextData.data[selectedModel.index].material
+    thickness = contextData.data[selectedModel.index].thickness
+  }
+
   const selectRef = useRef(null)
-  const language = localStorage.getItem('BAL_language')
 
   // Load all thicknesses for the selected material
   useEffect(() => {
-    materials.forEach((el) => {
-      if (el['name' + language] === material) {
+    for (const el of materials) {
+      if (el.name === material) {
         setThicknessArr(el.thickness)
         setDensity(el.density)
       }
-    })
-  }, [material, language])
+    }
+  }, [material])
 
-  const handleThicknessSelect = (e) => {
+  const handleThicknessSelect = (e: React.SyntheticEvent) => {
     e.stopPropagation()
-    console.log('sisiisis')
-    console.log(density)
-    updateData({ index: index, key: 'thickness', value: e.target.value })
-    updateData({ index: index, key: 'density', value: density })
+    contextData.updateData({
+      index: selectedModel.index,
+      key: 'thickness',
+      value: (e.target as HTMLOptionElement).value,
+    })
+    contextData.updateData({
+      index: selectedModel.index,
+      key: 'density',
+      value: density ?? null,
+    })
   }
 
-  useEffect(() => {
-    selectRef.current.value = thickness || ''
-  }, [thickness])
+  /*   useEffect(() => {
+    selectRef.current.value = thickness ?? ''
+  }, [thickness]) */
 
   return (
     <div className={styles.thicknessSelector}>
@@ -53,7 +71,7 @@ const Thickness = () => {
             <option
               key={index}
               value={thicknessElement}
-              className={thicknessElement === +thickness ? 'active' : ''}
+              className={thicknessElement === Number(thickness) ? 'active' : ''}
             >
               {thicknessElement}
             </option>

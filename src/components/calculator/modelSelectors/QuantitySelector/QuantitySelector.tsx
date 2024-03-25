@@ -1,37 +1,59 @@
-import { useState, useContext, useEffect } from 'react'
-import { DataContext } from '../../../../app/context/dataContext'
-import { SelectedContext } from '../../../../app/context/selectedContext'
+import { useState, useEffect } from 'react'
+import { type FileContextType } from '../../../../app/context/dataContext'
+import { type SelectedFileContextType } from '../../../../app/context/selectedContext'
+import { type FileData } from '../../../../../server/interfaces'
+import styles from './QuantitySelector.module.scss'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
-import styles from './QuantitySelector.module.scss'
 
-const Quantity = () => {
-  const [num, setNum] = useState(1)
-  const { data, updateData } = useContext(DataContext)
-  const { index } = useContext(SelectedContext)
+interface QuantityProps {
+  contextData: FileContextType
+  selectedModel: SelectedFileContextType
+}
 
-  const model = data[index]
+const Quantity: React.FC<QuantityProps> = ({ contextData, selectedModel }) => {
+  const [num, setNum] = useState<number>(1)
 
-  const handleChange = ({ target }) => {
-    const regex = /^(?!0)[0-9\b]+$/
+  /*   const model = contextData.data[selectedModel.index]
+   */
+
+  let model: FileData | null = null
+
+  if (contextData.data) {
+    model = contextData.data[selectedModel.index]
+  }
+
+  const handleChange = ({ target }: { target: HTMLInputElement }) => {
+    const regex = /^(?!0)[\d\b]+$/
     if (regex.test(target.value)) {
-      setNum(target.value)
-      updateData({ index: index, key: 'quantity', value: target.value })
+      setNum(Number(target.value))
+      contextData.updateData({
+        index: selectedModel.index,
+        key: 'quantity',
+        value: target.value,
+      })
     } else {
-      setNum('')
-      updateData({ index: index, key: 'quantity', value: 0 })
+      setNum(1)
+      contextData.updateData({
+        index: selectedModel.index,
+        key: 'quantity',
+        value: 0,
+      })
     }
   }
 
   // Initialize the num state based on model.quantity and model.material
   useEffect(() => {
-    if (model.material !== null) {
-      setNum(model.quantity || 1)
+    if (model) {
+      if (model.material !== null) {
+        setNum(model.quantity ?? 1)
+      }
+
+      if (model.material === null) {
+        setNum(model.quantity ?? 1)
+      }
     }
-    if (model.material === null) {
-      setNum(model.quantity || 1)
-    }
-  }, [model.material, model.quantity])
+  }, [model?.material, model?.quantity])
 
   return (
     <div className={styles.quantitySelector}>
@@ -42,7 +64,9 @@ const Quantity = () => {
         name="quantity"
         type="number"
         placeholder={'Podaj docelową liczbę sztuk'}
-        onChange={({ target }) => handleChange({ target })}
+        onChange={({ target }) => {
+          handleChange({ target })
+        }}
         value={num}
         className={styles.input}
       />

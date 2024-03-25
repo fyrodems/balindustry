@@ -1,64 +1,53 @@
-import { DataContext } from '../../../../app/context/dataContext'
-import { SelectedContext } from '../../../../app/context/selectedContext'
-import { useState, useContext, useEffect } from 'react'
+import { useState, useEffect } from 'react'
+import { type FileContextType } from '../../../../app/context/dataContext'
+import { type SelectedFileContextType } from '../../../../app/context/selectedContext'
 import materials from '../../materials.json'
-import { Label } from '@/components/ui/label'
 import styles from './MaterialSelector.module.scss'
+import { Label } from '@/components/ui/label'
 
-const Material = () => {
-  const contextData = useContext(DataContext)
-  const selectedModel = useContext(SelectedContext)
+interface MaterialProps {
+  contextData: FileContextType
+  selectedModel: SelectedFileContextType
+}
 
-  if (!contextData?.data || !selectedModel) {
-    throw new Error('coś pooszłoo nie tak')
+const Material: React.FC<MaterialProps> = ({ contextData, selectedModel }) => {
+  let material: string | null = null
+  if (contextData.data) {
+    material = contextData.data[selectedModel.index].material
   }
-
-  const { material } = contextData.data[selectedModel.index]
 
   const list = materials.map((el) => el.name)
 
-  const defaultThickness = (material) => {
-    const defaultMaterial = materials.find((el) => el.name === material)
-    if (defaultMaterial) {
-      return defaultMaterial.defaultThickness
-    }
-    return null
-  }
-
-  const handleMaterialChange = (selectedMaterial) => {
-    const defaultThick =
-      materials.find((el) => el.name === selectedMaterial)?.defaultThickness ||
-      null
-    contextData?.updateData({
+  const handleMaterialChange = (selectedMaterial: string) => {
+    const defaultThick = null
+    contextData.updateData({
       index: selectedModel.index,
       key: 'material',
       value: selectedMaterial,
     })
-    contextData?.updateData({
+    contextData.updateData({
       index: selectedModel.index,
       key: 'thickness',
       value: defaultThick,
     })
   }
 
-  const handleChange = (e) => {
-    const selectedMaterial = e.target.value
+  const handleChange = (e: React.SyntheticEvent) => {
+    const selectedMaterial = (e.target as HTMLOptionElement).value
     handleMaterialChange(selectedMaterial)
   }
 
   useEffect(() => {
-    const defaultThick = defaultThickness(material)
     if (material === null) {
       setInputValue('')
     } else {
       setInputValue(material)
-      contextData?.updateData({
+      contextData.updateData({
         index: selectedModel.index,
         key: 'thickness',
-        value: defaultThick,
+        value: null,
       })
     }
-    // eslint-disable-next-line
   }, [material])
 
   const [inputValue, setInputValue] = useState('')
@@ -78,7 +67,6 @@ const Material = () => {
       <select
         id="materialsList"
         className={styles.selector}
-        options={list}
         value={inputValue}
         onChange={handleChange}
       >

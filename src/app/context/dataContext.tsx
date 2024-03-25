@@ -19,8 +19,8 @@ export interface FileContextType {
     value,
   }: {
     index: number
-    key: 'thickness' | 'material' | 'quantity'
-    value: number | null
+    key: 'thickness' | 'material' | 'quantity' | 'density'
+    value: number | string | null
   }) => void
 }
 
