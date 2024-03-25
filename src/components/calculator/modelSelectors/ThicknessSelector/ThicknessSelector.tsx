@@ -49,11 +49,11 @@ const Thickness: React.FC<ThicknessProps> = ({
       value: density ?? null,
     })
   }
-
-  /*   useEffect(() => {
+  /* 
+  useEffect(() => {
     selectRef.current.value = thickness ?? ''
-  }, [thickness]) */
-
+  }, [thickness])
+ */
   return (
     <div className={styles.thicknessSelector}>
       <Label className={styles.label} htmlFor="thicknessList">

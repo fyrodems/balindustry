@@ -1,19 +1,36 @@
-import { useState, useContext } from 'react'
+import { useContext } from 'react'
 import { DataContext } from '../../../app/context/dataContext'
 import { SelectedContext } from '../../../app/context/selectedContext'
+import { type FileData } from '../../../../server/interfaces'
 import styles from './CalculatedModelDetails.module.scss'
 
-const displayLength = ({ selectedModel, roundedTotalLength, isMM }) => {
+const displayLength = ({
+  selectedModel,
+  roundedTotalLength,
+  isMM,
+}: {
+  selectedModel: FileData
+  roundedTotalLength: number
+  isMM: boolean
+}) => {
   if (selectedModel.totalLength) {
     return isMM
       ? ` ${roundedTotalLength}${selectedModel.units}`
       : ` ${(roundedTotalLength * 0.001).toFixed(3)} m`
-  } else {
-    return 'Brak wartości'
   }
+
+  return 'Brak wartości'
 }
 
-const displayTotalArea = ({ selectedModel, roundedTotalArea, isMM }) => {
+const displayTotalArea = ({
+  selectedModel,
+  roundedTotalArea,
+  isMM,
+}: {
+  selectedModel: FileData
+  roundedTotalArea: number
+  isMM: boolean
+}) => {
   if (selectedModel.totalArea) {
     return (
       <span>
@@ -23,37 +40,48 @@ const displayTotalArea = ({ selectedModel, roundedTotalArea, isMM }) => {
         {<sup>2</sup>}
       </span>
     )
-  } else {
-    return 'Brak wartości'
   }
+
+  return 'Brak wartości'
 }
 
-const displayMass = ({ mass, roundedMass, isMM }) => {
+const displayMass = ({
+  mass,
+  roundedMass,
+  isMM,
+}: {
+  mass: number
+  roundedMass: number
+  isMM: boolean
+}) => {
   if (mass) {
     return isMM ? `${roundedMass * 1000} g` : `${roundedMass} kg`
-  } else {
-    return 'Brak wartości'
   }
+
+  return 'Brak wartości'
 }
 
-const CalculatedModelDetails = ({ pageData }) => {
-  const { data } = useContext(DataContext)
-  const { index } = useContext(SelectedContext)
-  const selectedModel = data[index]
+const CalculatedModelDetails = () => {
+  const contextData = useContext(DataContext)
+  const selectedContext = useContext(SelectedContext)
 
-  const [isMM, setIsMM] = useState(true)
+  let mass = 0
 
-  // zamiana na metry
-  const thickness = selectedModel.thickness / 1000
-  const volume = (selectedModel.totalArea / 1000000) * thickness
-  const mass = volume * (selectedModel.density * 1000)
+  let selectedModel: FileData | null = null
+  if (contextData?.data && selectedContext) {
+    selectedModel = contextData.data[selectedContext.index]
 
-  const round = (value) => Math.round(value * 1000) / 1000
-  const roundedTotalLength = round(selectedModel.totalLength)
-  const roundedTotalArea = round(selectedModel.totalArea)
+    // obliczanie masy
+    const thickness = (selectedModel.thickness ?? 0) / 1000
+    const volume = ((selectedModel.totalArea ?? 0) / 1_000_000) * thickness
+    mass = volume * ((selectedModel.density ?? 0) * 1000)
+  }
+
+  const round = (value: number) => Math.round(value * 1000) / 1000
+  const roundedTotalLength = round(Number(selectedModel?.totalLength ?? 0))
+  const roundedTotalArea = round(selectedModel?.totalArea ?? 0)
   const roundedMass = round(mass)
 
-  console.log(selectedModel)
   return (
     <div>
       <h4 className={styles.header}>Wartości dla pojedynczej sztuki</h4>
@@ -64,23 +92,27 @@ const CalculatedModelDetails = ({ pageData }) => {
             <span className={styles.dataLabel}>
               Długość cięcia laserem:&nbsp;
             </span>
-            {displayLength({
-              selectedModel,
-              roundedTotalLength,
-              isMM,
-            })}
+            {selectedModel
+              ? displayLength({
+                  selectedModel,
+                  roundedTotalLength,
+                  isMM: true,
+                })
+              : 'Brak wartości'}
           </div>
           <div>
             <span className={styles.dataLabel}>Pole:&nbsp;</span>
-            {displayTotalArea({
-              selectedModel,
-              roundedTotalArea,
-              isMM,
-            })}
+            {selectedModel
+              ? displayTotalArea({
+                  selectedModel,
+                  roundedTotalArea,
+                  isMM: true,
+                })
+              : 'Brak wartości'}
           </div>
           <div>
             <span className={styles.dataLabel}>Masa:&nbsp;</span>
-            {displayMass({ mass, roundedMass, isMM })}
+            {displayMass({ mass, roundedMass, isMM: true })}
           </div>
         </div>
         <div className={styles.detailsContainer}>
@@ -89,19 +121,23 @@ const CalculatedModelDetails = ({ pageData }) => {
             <span className={styles.dataLabel}>
               Długość cięcia laserem:&nbsp;
             </span>
-            {displayLength({
-              selectedModel,
-              roundedTotalLength,
-              isMM: false,
-            })}
+            {selectedModel
+              ? displayLength({
+                  selectedModel,
+                  roundedTotalLength,
+                  isMM: false,
+                })
+              : 'Brak wartości'}
           </div>
           <div>
             <span className={styles.dataLabel}>Pole:&nbsp;</span>
-            {displayTotalArea({
-              selectedModel,
-              roundedTotalArea,
-              isMM: false,
-            })}
+            {selectedModel
+              ? displayTotalArea({
+                  selectedModel,
+                  roundedTotalArea,
+                  isMM: false,
+                })
+              : 'Brak wartości'}
           </div>
           <div>
             <span className={styles.dataLabel}>Masa:&nbsp;</span>

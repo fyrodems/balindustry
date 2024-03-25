@@ -65,7 +65,6 @@ const ConfiguratorFilesList: React.FC<CalculatorConfiguratorProps> = ({
       })
     }
 
-    console.log(selectedIndex)
     selectedContext?.changeIndex(Number((e.target as HTMLParagraphElement).id))
     selectedModel.isReady = false
 
