@@ -1,49 +1,38 @@
+import { useState, useContext } from 'react'
 import { DataContext } from '../../../app/context/dataContext'
 import { SelectedContext } from '../../../app/context/selectedContext'
-import { useState, useContext } from 'react'
-/* import SectionTitle from '../../atoms/SectionTitle/SectionTitle'
-import Button from '../../atoms/Button/Button' */
+import styles from './CalculatedModelDetails.module.scss'
 
-const displayLength = ({
-  selectedModel,
-  roundedTotalLength,
-  isMM,
-  pageData,
-}) => {
+const displayLength = ({ selectedModel, roundedTotalLength, isMM }) => {
   if (selectedModel.totalLength) {
     return isMM
       ? ` ${roundedTotalLength}${selectedModel.units}`
       : ` ${(roundedTotalLength * 0.001).toFixed(3)} m`
   } else {
-    return pageData.fileData.noData
+    return 'Brak wartości'
   }
 }
 
-const displayTotalArea = ({
-  selectedModel,
-  roundedTotalArea,
-  isMM,
-  pageData,
-}) => {
+const displayTotalArea = ({ selectedModel, roundedTotalArea, isMM }) => {
   if (selectedModel.totalArea) {
     return (
-      <div>
+      <span>
         {isMM
           ? `${roundedTotalArea}${selectedModel.units}`
           : `${(roundedTotalArea * 0.000_001).toFixed(3)} m`}
         {<sup>2</sup>}
-      </div>
+      </span>
     )
   } else {
-    return pageData.fileData.noData
+    return 'Brak wartości'
   }
 }
 
-const displayMass = ({ mass, roundedMass, isMM, pageData }) => {
+const displayMass = ({ mass, roundedMass, isMM }) => {
   if (mass) {
     return isMM ? `${roundedMass * 1000} g` : `${roundedMass} kg`
   } else {
-    return pageData.fileData.noData
+    return 'Brak wartości'
   }
 }
 
@@ -64,57 +53,59 @@ const CalculatedModelDetails = ({ pageData }) => {
   const roundedTotalArea = round(selectedModel.totalArea)
   const roundedMass = round(mass)
 
+  console.log(selectedModel)
   return (
-    <div className="calculatedModelDetails">
-      {/*    <SectionTitle title={pageData.fileHeaders.singleItemData} /> */}
-      <div className="calculatedModelDetails__controls">
-        {/*   <Button
-          type="button"
-          name="set meters"
-          isAnimated={false}
-          isDefault={false}
-          className={`calculatedModelDetails__button ${isMM ? '' : 'calculatedModelDetails__button--selected'}`}
-          content={pageData.buttons.unitM}
-          callback={() => setIsMM(false)}
-        /> */}
-        {/*   <Button
-          type="button"
-          name="set mm"
-          isAnimated={false}
-          isDefault={false}
-          className={`calculatedModelDetails__button ${isMM ? 'calculatedModelDetails__button--selected' : ''}`}
-          content={pageData.buttons.unitMM}
-          callback={() => setIsMM(true)}
-        /> */}
-      </div>
-
-      <div>
-        <div>
-          <div>pageData.fileData.cutLength:&nbsp;</div>
-          <div className="calculatedModelDetails__value">
-            {/*  {displayLength({
+    <div>
+      <h4 className={styles.header}>Wartości dla pojedynczej sztuki</h4>
+      <div className={styles.calculatedModelDetails}>
+        <div className={styles.detailsContainer}>
+          <p>Dane w milimetrach:</p>
+          <div>
+            <span className={styles.dataLabel}>
+              Długość cięcia laserem:&nbsp;
+            </span>
+            {displayLength({
               selectedModel,
               roundedTotalLength,
               isMM,
-              pageData,
-            })} */}
+            })}
           </div>
-        </div>
-        <div>
-          <div>pageData.fileData.totalArea:&nbsp;</div>
           <div>
-            {/*   {displayTotalArea({
+            <span className={styles.dataLabel}>Pole:&nbsp;</span>
+            {displayTotalArea({
               selectedModel,
               roundedTotalArea,
               isMM,
-              pageData,
-            })} */}
+            })}
+          </div>
+          <div>
+            <span className={styles.dataLabel}>Masa:&nbsp;</span>
+            {displayMass({ mass, roundedMass, isMM })}
           </div>
         </div>
-        <div>
-          <div>pageData.fileData.mass:&nbsp;</div>
+        <div className={styles.detailsContainer}>
+          <p>Dane w metrach:</p>
           <div>
-            {/* {displayMass({ mass, roundedMass, isMM, pageData })} */}
+            <span className={styles.dataLabel}>
+              Długość cięcia laserem:&nbsp;
+            </span>
+            {displayLength({
+              selectedModel,
+              roundedTotalLength,
+              isMM: false,
+            })}
+          </div>
+          <div>
+            <span className={styles.dataLabel}>Pole:&nbsp;</span>
+            {displayTotalArea({
+              selectedModel,
+              roundedTotalArea,
+              isMM: false,
+            })}
+          </div>
+          <div>
+            <span className={styles.dataLabel}>Masa:&nbsp;</span>
+            {displayMass({ mass, roundedMass, isMM: false })}
           </div>
         </div>
       </div>

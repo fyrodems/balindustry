@@ -1,3 +1,5 @@
+import { type IDxf } from 'dxf-parser'
+
 export interface File {
   size: number
   type: string
@@ -483,7 +485,7 @@ export interface DxfFile {
 }
 export interface FileData {
   fileName: string
-  fileContent: DxfFile
+  fileContent: IDxf
   path: string
   units: string
   totalLength: string
@@ -492,7 +494,7 @@ export interface FileData {
   quantity: number | null
   material: string | null
   thickness: number | null
-  density: null
+  density: number | null
   isReady: boolean
   totalArea: number
 }

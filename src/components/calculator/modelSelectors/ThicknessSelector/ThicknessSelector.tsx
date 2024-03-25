@@ -26,6 +26,8 @@ const Thickness = () => {
 
   const handleThicknessSelect = (e) => {
     e.stopPropagation()
+    console.log('sisiisis')
+    console.log(density)
     updateData({ index: index, key: 'thickness', value: e.target.value })
     updateData({ index: index, key: 'density', value: density })
   }

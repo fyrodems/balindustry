@@ -1,61 +1,9 @@
-import {
-  type ArrayAllLength,
-  type Entity,
-  type Vertice,
-  type Segment,
-} from './interfaces'
-
-// interface Vertice {
-//   type: string
-//   handle: string
-//   ownerHandle: string
-//   layer: string
-//   bulge: number
-//   x: number
-//   y: number
-//   z: number
-// }
-
-// interface Entity {
-//   type: string
-//   vertices: Vertice[]
-//   handle: string
-//   ownerHandle: string
-//   layer: string
-//   shape: boolean
-//   includesCurveFitVertices: boolean
-//   includesSplineFitVertices: boolean
-//   is3dPolyline: boolean
-//   is3dPolygonMesh: boolean
-//   is3dPolygonMeshClosed: boolean
-//   isPolyfaceMesh: boolean
-//   hasContinuousLinetypePattern: boolean
-// }
-
-// interface ArrayAllLength {
-//   type: string
-//   length: number
-//   elements: number[]
-// }
-
-// interface Segment {
-//   vertices: {
-//     startPoint: {
-//       x: number
-//       y: number
-//     }
-//     endPoint: {
-//       x: number
-//       y: number
-//     }
-//   }
-//   length: number
-//   bulge?: number
-// }
+import { type IEntity } from 'dxf-parser'
+import { type ArrayAllLength, type Vertice, type Segment } from './interfaces'
 
 export const polyline = {
   // Wyliczanie długości
-  getLength(entity: Entity, arrayAllLength: ArrayAllLength[]) {
+  getLength(entity: IEntity, arrayAllLength: ArrayAllLength[]) {
     const polyLineArr = []
     let totalLength = 0
     const vertices = entity.vertices

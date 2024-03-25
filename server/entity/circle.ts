@@ -1,42 +1,5 @@
-import { type ArrayAllLength, type Entity } from './interfaces'
-
-// interface ArrayAllLength {
-//   type: string
-//   length: number
-// }
-
-// interface Vertice {
-//   type: string
-//   handle: string
-//   ownerHandle: string
-//   layer: string
-//   bulge: number
-//   x: number
-//   y: number
-//   z: number
-// }
-
-// interface Entity {
-//   type: string
-//   vertices: Vertice[]
-//   handle: string
-//   ownerHandle: string
-//   layer: string
-//   shape: boolean
-//   includesCurveFitVertices: boolean
-//   includesSplineFitVertices: boolean
-//   is3dPolyline: boolean
-//   is3dPolygonMesh: boolean
-//   is3dPolygonMeshClosed: boolean
-//   isPolyfaceMesh: boolean
-//   hasContinuousLinetypePattern: boolean
-//   radius: number
-//   center: {
-//     x: number
-//     y: number
-//     z: number
-//   }
-// }
+import { type IEntity } from 'dxf-parser'
+import { type ArrayAllLength } from './interfaces'
 
 export const circle = {
   /**
@@ -45,7 +8,7 @@ export const circle = {
    * @param {*} arrayAllLength -tablica z długościami potrzebne do wyświetlenia
    * @returns
    */
-  getLength(entity: Entity, arrayAllLength: ArrayAllLength[]) {
+  getLength(entity: IEntity, arrayAllLength: ArrayAllLength[]) {
     const totalLength = 2 * Math.PI * entity.radius
     arrayAllLength.push({ type: entity.type, length: totalLength })
     return totalLength

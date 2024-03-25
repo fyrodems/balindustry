@@ -10,8 +10,9 @@ import x from '../../../assets/icons/x-square.svg'
 import SectionTitle from '../../atoms/SectionTitle/SectionTitle'
 /* import { apiLink } from '../../../apiData' */
 import CalculatorImagePreview from '../CalculatorImagePreview/CalculatorImagePreview'
+import { Button } from '@/components/common/Button'
 
-const CalculatorPriceItemsList = ({ filesArray, setFilesArray, pageData }) => {
+const CalculatorPriceItemsList = ({ filesArray, setFilesArray }) => {
   const { data, updateData } = useContext(DataContext)
   const { index } = useContext(SelectedContext)
   const [selectedItems, setSelectedItems] = useState([])
@@ -19,6 +20,22 @@ const CalculatorPriceItemsList = ({ filesArray, setFilesArray, pageData }) => {
   const [modalType, setModalType] = useState()
   const [clientMail, setClientMail] = useState('')
   const [clientName, setClientName] = useState('')
+
+  const formatFileName = (file) =>
+    file
+      .split('.')[0]
+      .replace('â', '-')
+      .replace('Ä', 'ą')
+      .replace('Ä', 'ć')
+      .replace('Ä', 'ę')
+      .replace('Å', 'ł')
+      .replace('Å', 'ń')
+      .replace('Ã³', 'ó')
+      .replace('Å', 'ś')
+      .replace('Åº', 'ź')
+      .replace('Å¼', 'ż')
+      .replace('Å', 'ł')
+      .toUpperCase()
 
   const sendRequest = async () => {
     let files = []
@@ -87,6 +104,7 @@ const CalculatorPriceItemsList = ({ filesArray, setFilesArray, pageData }) => {
   }
 
   const addNewConfiguration = () => {
+    console.log(data[index])
     if (
       data[index].fileName &&
       data[index].quantity &&
@@ -109,7 +127,7 @@ const CalculatorPriceItemsList = ({ filesArray, setFilesArray, pageData }) => {
         setSelectedItems([
           ...selectedItems,
           {
-            name: /* formatFileName(data[index].fileName) */ 'fdgsihbdjfhgjbg',
+            name: formatFileName(data[index].fileName),
             quantity: data[index].quantity,
             thickness: data[index].thickness,
             material: data[index].material,
@@ -145,8 +163,9 @@ const CalculatorPriceItemsList = ({ filesArray, setFilesArray, pageData }) => {
     }
   }
 
+  console.log(selectedItems)
   return (
-    <div className="calcPriceItemsList">
+    <div>
       {/*  <CalcModalBox
         openModal={openModal}
         setOpenModal={setOpenModal}
@@ -154,17 +173,16 @@ const CalculatorPriceItemsList = ({ filesArray, setFilesArray, pageData }) => {
         pageData={pageData}
         type={modalType}
       /> */}
-      {/*  <Button
+      <Button
         className="calcPriceItemsList__button"
-        callback={addNewConfiguration}
-        content={pageData.buttons.add}
-      /> */}
+        onClick={addNewConfiguration}
+        content={'Dodaj do wyceny'}
+      />
       <>
         {selectedItems.length === 0 ? (
           <></>
         ) : (
           <>
-            {/*   <SectionTitle title={pageData.fileHeaders.selectedConfigurations} /> */}
             <div className="calcPriceItemsList__container">
               {selectedItems.map((item, index) => (
                 <div key={index} className="calcPriceItemsList__itemRow">
@@ -182,15 +200,9 @@ const CalculatorPriceItemsList = ({ filesArray, setFilesArray, pageData }) => {
                         {item.name}
                       </div>
                       <div className="calcPriceItemsList__itemDetails">
-                        <span>
-                          {pageData.fileData.material}: {item.material}
-                        </span>
-                        <span>
-                          {pageData.fileData.thickness}: {item.thickness} mm
-                        </span>
-                        <span>
-                          {pageData.fileData.quantity}: {item.quantity}
-                        </span>
+                        <span>Materiał: {item.material}</span>
+                        <span>Grubość: {item.thickness} mm</span>
+                        <span>Liczba: {item.quantity}</span>
                       </div>
                     </div>
                   </div>

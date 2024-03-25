@@ -1,18 +1,20 @@
-const fs = require('fs')
-const occtimportjs = require('occt-import-js')()
-const THREE = require('three')
-const NodeThreeExporter = require('@injectit/threejs-nodejs-exporters')
+import fs from 'node:fs'
+import THREE from 'three'
+import NodeThreeExporter from '@injectit/threejs-nodejs-exporters'
+import occt from 'occt-import-js'
+
+const occtimportjs = occt()
 
 occtimportjs.then((occt) => {
-  let targetObject = new THREE.Object3D()
-  let fileUrl = './1.stp'
-  let fileContent = fs.readFileSync(fileUrl)
-  let result = occt.ReadStepFile(fileContent, null)
+  const targetObject = new THREE.Object3D()
+  const fileUrl = './1.stp'
+  const fileContent = fs.readFileSync(fileUrl)
+  const result = occt.ReadStepFile(fileContent, null)
 
   let object
   // process the geometries of the result
-  for (let resultMesh of result.meshes) {
-    let geometry = new THREE.BufferGeometry()
+  for (const resultMesh of result.meshes) {
+    const geometry = new THREE.BufferGeometry()
 
     geometry.setAttribute(
       'position',
@@ -24,6 +26,7 @@ occtimportjs.then((occt) => {
         new THREE.Float32BufferAttribute(resultMesh.attributes.normal.array, 3)
       )
     }
+
     const index = Uint32Array.from(resultMesh.index.array)
     geometry.setIndex(new THREE.BufferAttribute(index, 1))
 
@@ -59,17 +62,17 @@ occtimportjs.then((occt) => {
   }
 })
 
-module.exports = {
-  parse: function (file, arrReturnData) {
+export const stpParse = {
+  parse(file, arrReturnData) {
     occtimportjs.then((occt) => {
-      let fileContent = fs.readFileSync(file.path),
-        result = occt.ReadStepFile(fileContent, null),
-        edges,
-        object,
-        line,
-        material = null
+      const fileContent = fs.readFileSync(file.path)
+      const result = occt.ReadStepFile(fileContent, null)
+      let edges
+      let object
+      let line
+      let material = null
       // process the geometries of the result
-      for (let resultMesh of result.meshes) {
+      for (const resultMesh of result.meshes) {
         let geometry = new THREE.BufferGeometry()
 
         geometry.setAttribute(
@@ -134,6 +137,7 @@ module.exports = {
         })
       })
     })
+
     return arrReturnData
   },
 }

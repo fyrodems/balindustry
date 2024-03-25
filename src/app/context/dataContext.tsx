@@ -61,7 +61,7 @@ const DataContextProvider: React.FC<{ children: React.ReactNode }> = ({
     value,
   }: {
     index: number
-    key: 'thickness' | 'material' | 'quantity'
+    key: 'thickness' | 'material' | 'quantity' | 'density'
     value: number | string | null
   }) => {
     if (modelsData) {
@@ -70,6 +70,7 @@ const DataContextProvider: React.FC<{ children: React.ReactNode }> = ({
       if (key === 'thickness') model.thickness = Number(value)
       if (key === 'material') model.material = value?.toString() ?? null
       if (key === 'quantity') model.quantity = Number(value)
+      if (key === 'density') model.density = Number(value)
       setModelsData(newArray)
     }
   }

@@ -1,17 +1,18 @@
 /* eslint-disable unicorn/switch-case-braces */
 import { writeFile } from 'node:fs/promises'
 import path from 'node:path'
+import process from 'node:process'
 import { type NextRequest, NextResponse } from 'next/server'
-// import { ellipse } from '../../../../server/entity/ellipse.ts'
-// import stpParse from '../../../../server/stpParse'
+import { stpParse } from '../../../../server/stpParse'
 import { dxfParse } from '../../../../server/dxfParse'
+import { type FileData } from '../../../../server/interfaces'
 
 export async function POST(req: NextRequest) {
   const formData = await req.formData()
 
   const files = formData.getAll('files') as File[]
 
-  let arrReturnData = []
+  let arrReturnData: FileData[] = []
   if (files.length > 0) {
     for await (const file of files) {
       const buffer = Buffer.from(await file.arrayBuffer())
@@ -29,9 +30,10 @@ export async function POST(req: NextRequest) {
       switch (file.name.split('.')[1]) {
         case 'dxf':
           arrReturnData = dxfParse.parse(fileWithPath, arrReturnData)
+          console.log(arrReturnData)
           break
         case 'stp':
-          //   arrReturnData = stpParse.parse(req.files[a], arrReturnData)
+          arrReturnData = stpParse.parse(fileWithPath, arrReturnData)
           break
         default:
           break
