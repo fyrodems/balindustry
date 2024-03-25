@@ -54,7 +54,7 @@ const MobilePresentation: React.FC<ProductDataProps> = ({ data }) => {
       <Link className="mx-[auto] block max-w-[320px]" href={floating_CTA.form}>
         <Button className="mx-2 w-full" content={floating_CTA.button} />
       </Link>
-      {/* !!! do sprawdzenia czy działa */}
+      {/* !!! do sprawdzenia czy ar działa */}
       {floating_CTA.ar !== '' && (
         <Link
           className="mx-[auto] block max-w-[320px]"

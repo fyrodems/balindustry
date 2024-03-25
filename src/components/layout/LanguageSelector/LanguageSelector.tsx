@@ -115,7 +115,7 @@ export const LanguageSelector: React.FC = () => {
  */
 'use client'
 
-import React, { useState, useRef, useEffect } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import { useLocale } from 'next-intl'
 import Image from 'next/image'
 import styles from './LanguageSelector.module.scss'
