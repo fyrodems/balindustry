@@ -233,15 +233,26 @@ const DesktopNavbar = () => {
           </MenubarContent>
         </MenubarMenu>
 
-        {/* !!! zdjęcia do uzupełnienia */}
+        {/* !!! linki do uzupełnienia */}
         <MenubarMenu>
           <MainCategory content="Usługi" />
           <MenubarContent className={cn(styles.popover, styles.services)}>
             <div className={styles.gridWrapper}>
-              <Link href="/product/surface-treatment">
+              <Link href="/">
                 <MenubarItem>
                   <Image
-                    src={'/images/navbarProducts/placeholder.svg'}
+                    src={'/images/navbarProducts/form-offer.svg'}
+                    alt={'single'}
+                    width={80}
+                    height={80}
+                  />
+                  <span>Formularz ofertowy</span>
+                </MenubarItem>
+              </Link>
+              <Link href="/">
+                <MenubarItem>
+                  <Image
+                    src={'/images/navbarProducts/calc.svg'}
                     alt={'single'}
                     width={80}
                     height={80}
@@ -252,23 +263,12 @@ const DesktopNavbar = () => {
               <Link href="/product/surface-treatment">
                 <MenubarItem>
                   <Image
-                    src={'/images/navbarProducts/placeholder.svg'}
+                    src={'/images/navbarProducts/service-paintshop.svg'}
                     alt={'single'}
                     width={80}
                     height={80}
                   />
                   <span>Malowanie proszkowe i na mokro</span>
-                </MenubarItem>
-              </Link>
-              <Link href="/product/surface-treatment">
-                <MenubarItem>
-                  <Image
-                    src={'/images/navbarProducts/placeholder.svg'}
-                    alt={'single'}
-                    width={80}
-                    height={80}
-                  />
-                  <span>Formularz ofertowy</span>
                 </MenubarItem>
               </Link>
             </div>
