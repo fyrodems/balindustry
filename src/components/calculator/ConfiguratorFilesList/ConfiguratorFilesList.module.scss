@@ -19,6 +19,7 @@
   width: 100%;
   max-width: 970px;
   margin: 7px 0;
+  cursor: pointer;
 }
 
 .deleteFileButton {
@@ -48,4 +49,8 @@
   cursor: pointer;
   margin-top: 15px;
   margin-bottom: 60px;
+}
+
+.active {
+  font-weight: 600;
 }

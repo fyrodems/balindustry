@@ -20,7 +20,11 @@ const ConfiguratorFilesList: React.FC<CalculatorConfiguratorProps> = ({
   const selectedContext = useContext(SelectedContext)
   const contextData = useContext(DataContext)
 
-  const model = contextData.data[selectedContext.index]
+  const allModels = contextData?.data
+  let selectedModel = null
+  if (allModels) {
+    selectedModel = allModels[selectedContext?.index ?? 0]
+  }
 
   const handleClick = (e) => {
     contextData?.updateData({
@@ -39,15 +43,15 @@ const ConfiguratorFilesList: React.FC<CalculatorConfiguratorProps> = ({
       value: null,
     })
     selectedContext?.changeIndex(+e.target.id)
-    model.isReady = false
+    selectedModel.isReady = false
 
     // Warunek sprawdzający czy wszystkie dane są załadowane
     if (
-      model.thickness !== null &&
-      model.quantity !== null &&
-      model.material !== null
+      selectedModel.thickness !== null &&
+      selectedModel.quantity !== null &&
+      selectedModel.material !== null
     ) {
-      model.isReady = true
+      selectedModel.isReady = true
     }
     setSelectedIndex(+e.target.id)
   }
@@ -60,7 +64,7 @@ const ConfiguratorFilesList: React.FC<CalculatorConfiguratorProps> = ({
             <p
               id={index}
               onClick={handleClick}
-              className={index === selectedIndex ? 'active' : null}
+              className={index === selectedIndex ? styles.active : ''}
             >
               {file.name}
             </p>

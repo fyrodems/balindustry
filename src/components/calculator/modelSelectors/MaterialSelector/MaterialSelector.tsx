@@ -2,11 +2,18 @@ import { DataContext } from '../../../../app/context/dataContext'
 import { SelectedContext } from '../../../../app/context/selectedContext'
 import { useState, useContext, useEffect } from 'react'
 import materials from '../../materials.json'
+import { Label } from '@/components/ui/label'
+import styles from './MaterialSelector.module.scss'
 
 const Material = () => {
   const contextData = useContext(DataContext)
   const selectedModel = useContext(SelectedContext)
-  const { material } = contextData?.data[selectedModel.index]
+
+  if (!contextData?.data || !selectedModel) {
+    throw new Error('coś pooszłoo nie tak')
+  }
+
+  const { material } = contextData.data[selectedModel.index]
 
   const list = materials.map((el) => el.name)
 
@@ -64,14 +71,18 @@ const Material = () => {
     )
   })
   return (
-    <div>
+    <div className={styles.materialSelector}>
+      <Label className={styles.label} htmlFor="materialsList">
+        Materiał
+      </Label>
       <select
         id="materialsList"
+        className={styles.selector}
         options={list}
         value={inputValue}
         onChange={handleChange}
       >
-        <option value="">Materiał:</option>
+        <option value="">Wybierz z listy materiał</option>
         {materialsList}
       </select>
     </div>

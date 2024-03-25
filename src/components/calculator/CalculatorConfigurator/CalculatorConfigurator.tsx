@@ -5,6 +5,7 @@ import CalculatorModelSelectors from '../CalculatorModelSelectors/CalculatorMode
 import CalculatorPriceItemsList from '../CalculatorPriceItemsList/CalculatorPriceItemsList'
 import ConfiguratorFilesList from '../ConfiguratorFilesList/ConfiguratorFilesList'
 import styles from './CalculatorConfigurator.module.scss'
+import Button from '@/components/common/Button'
 
 interface CalculatorConfiguratorProps {
   filesArray: File[]
@@ -25,6 +26,11 @@ const CalculatorConfigurator: React.FC<CalculatorConfiguratorProps> = ({
         <CalculatorImagePreview />
         <CalculatorModelSelectors />
       </div>
+      <Button
+        content="Dodaj do zapytania"
+        onClick={() => {}}
+        className={styles.button}
+      />
       <CalculatedModelDetails />
 
       <CalculatorPriceItemsList

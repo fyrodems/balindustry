@@ -1,0 +1,16 @@
+@import '@/app/styles/mixins';
+
+.calculatorModelSelectors {
+  margin-top: 2rem;
+  width: 100%;
+
+  @include tablet {
+    margin-top: 0;
+  }
+}
+
+.selectorsWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}

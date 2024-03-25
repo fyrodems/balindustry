@@ -4,9 +4,22 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: normal;
 
   @include tablet {
     flex-direction: row;
+    gap: 70px;
+  }
+}
+
+.button {
+  margin: 1rem 0;
+  width: 100%;
+  margin-top: 37px;
+
+  @include tablet {
+    max-width: 220px;
+    padding: 12px 20px;
+    margin-left: auto;
   }
 }

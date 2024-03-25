@@ -2,6 +2,8 @@ import { useState, useContext, useEffect, useRef } from 'react'
 import { DataContext } from '../../../../app/context/dataContext'
 import { SelectedContext } from '../../../../app/context/selectedContext'
 import materials from '../../materials.json'
+import { Label } from '@/components/ui/label'
+import styles from './ThicknessSelector.module.scss'
 
 const Thickness = () => {
   const [thicknessArr, setThicknessArr] = useState([])
@@ -33,9 +35,17 @@ const Thickness = () => {
   }, [thickness])
 
   return (
-    <div>
-      <select ref={selectRef} onChange={handleThicknessSelect}>
-        <option value="">Grubość [mm]:</option>
+    <div className={styles.thicknessSelector}>
+      <Label className={styles.label} htmlFor="thicknessList">
+        Grubość [mm]
+      </Label>
+      <select
+        ref={selectRef}
+        onChange={handleThicknessSelect}
+        id="thicknessList"
+        className={styles.selector}
+      >
+        <option value="">Podaj grubość materiału do cięcia</option>
         {material &&
           thicknessArr.map((thicknessElement, index) => (
             <option

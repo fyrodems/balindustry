@@ -2,9 +2,11 @@ import { useState, useContext, useEffect } from 'react'
 import { DataContext } from '../../../../app/context/dataContext'
 import { SelectedContext } from '../../../../app/context/selectedContext'
 import { Input } from '@/components/ui/input'
+import { Label } from '@/components/ui/label'
+import styles from './QuantitySelector.module.scss'
 
 const Quantity = () => {
-  const [num, setNum] = useState('')
+  const [num, setNum] = useState(1)
   const { data, updateData } = useContext(DataContext)
   const { index } = useContext(SelectedContext)
 
@@ -24,26 +26,27 @@ const Quantity = () => {
   // Initialize the num state based on model.quantity and model.material
   useEffect(() => {
     if (model.material !== null) {
-      /*  setNum('');
-      } else {  */
-      setNum(model.quantity || '')
+      setNum(model.quantity || 1)
     }
     if (model.material === null) {
-      setNum(model.quantity || '')
+      setNum(model.quantity || 1)
     }
   }, [model.material, model.quantity])
 
   return (
-    // <Input
-    //   /*       classForInput="calcModelSelectors__quantity"
-    //     name="quantity" */
-    //   type="number"
-    //   /*       pattern="[0-9]*" */
-    //   placeholder={1} /* {pageData.fileData.quantity} */
-    //   setValueOnChange={({ target }) => handleChange({ target })}
-    //   value={num}
-    // />
-    <div>tutuaj input number!</div>
+    <div className={styles.quantitySelector}>
+      <Label className={styles.label} htmlFor="quantity">
+        Liczba sztuk
+      </Label>
+      <Input
+        name="quantity"
+        type="number"
+        placeholder={'Podaj docelową liczbę sztuk'}
+        onChange={({ target }) => handleChange({ target })}
+        value={num}
+        className={styles.input}
+      />
+    </div>
   )
 }
 
