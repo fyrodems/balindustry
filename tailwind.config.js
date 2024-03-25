@@ -43,6 +43,7 @@ module.exports = {
     },
     extend: {
       colors: {
+        grafit: "hsla(0, 0%, 0%, 0.302)",
         button: 'var(--button)',
         'button-hover': 'var(--button-foreground)',
         navbar: 'hsl(var(--navbar))',

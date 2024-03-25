@@ -1,20 +1,20 @@
 import PageTitle from '@/components/common/PageTitle'
 import Intro from '@/components/contact/Intro/Intro'
-import ContactForm from '@/components/contact/ContactForm/ContactForm'
+import { Form } from '@/components/forms/form'
 
 const Contact = () => {
   return (
     <>
       <main>
         <PageTitle content="Formularz kontaktowy" />
-        <p className="mx-auto mb-[60px] max-w-[1100px] text-balance px-[20px] text-center">
-          Dziękujemy za zainteresowanie naszą firmą! Prosimy o wypełnienie
-          poniższego formularza, aby skontaktować się z nami. Postaramy się
-          odpowiedzieć jak najszybciej.
+        <p className="mx-auto -mt-8 mb-[60px] w-11/12 max-w-[1100px] text-balance text-center text-sm sm:-mt-4 sm:text-base">
+          Dziękujemy za zainteresowanie naszą firmą! Prosimy o&nbsp;wypełnienie
+          poniższego formularza, aby skontaktować się z&nbsp;nami. Postaramy się
+          odpowiedzieć jak&nbsp;najszybciej.
         </p>
-        <div className="laptop:grid-cols-[40%_60%] mx-auto my-0 grid max-w-[1300px] grid-cols-[1fr]">
+        <div className="mx-auto my-0 grid w-11/12 max-w-[1300px] grid-cols-[1fr] laptop:grid-cols-[40%_60%]">
           <Intro />
-          <ContactForm />
+          <Form className="mt-0 laptop:-mt-5" />
         </div>
       </main>
     </>
