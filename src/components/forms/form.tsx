@@ -3,6 +3,7 @@
 import { Fragment, useState } from 'react'
 import { useForm, FieldValues } from 'react-hook-form'
 import { usePathname } from 'next/navigation'
+import { cn } from '@/libs/utils'
 import {
   handleAnchorScroll,
   validateAllFalse,
@@ -23,7 +24,7 @@ import { PhoneField } from '@/components/forms/phoneField'
 import { DropZone } from '@/components/forms/dropZone'
 import { sendForm } from '@/components/forms/sendForm'
 
-export const Form = () => {
+export const Form = ({ className }: { className?: string }) => {
   const {
     register,
     handleSubmit,
@@ -58,7 +59,7 @@ export const Form = () => {
         noValidate
         autoComplete="off"
         id="form"
-        className="mx-auto mt-12 w-11/12 max-w-[700px]"
+        className={cn('mx-auto mt-12 w-11/12 max-w-[700px]', className)}
       >
         <div className="flex flex-col gap-4">
           {radioFieldsSection.map(
