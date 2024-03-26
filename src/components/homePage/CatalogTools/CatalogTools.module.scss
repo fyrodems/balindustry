@@ -7,11 +7,11 @@
   flex-direction: column;
   gap: 25px;
 
-  button {
+ a button {
     display: none;
   }
 
-  .container > button {
+  .container > a button {
     display: block;
     margin: 40px auto 0;
     width: fit-content;
@@ -28,11 +28,11 @@
       flex: 1;
     }
 
-    button {
+    a button {
       display: block;
     }
 
-    .container > button {
+    .container > a button {
       display: none;
     }
   }

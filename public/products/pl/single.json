@@ -1,0 +1,112 @@
+{
+  "basic_data": {
+    "pathID": "single",
+    "name": "Stanowisko Single",
+    "additional_name": "",
+    "description": "Najnowsza cela spawalnicza zmienia przemysł dzięki innowacyjnym sterowaniu i nowoczesnym rozwiązaniom bezpieczeństwa. Wyposażona w kolaboracyjnego robota, maszyna zapewnia precyzję, niezawodność i bezpieczeństwo podczas prac spawalniczych.",
+    "with_data": true
+  },
+  "images": [
+    "/products/images/single/carousel1.svg",
+    "/products/images/single/carousel2.png",
+    "/products/images/single/carousel3.png"
+  ],
+  "floating_CTA": {
+    "title": "Stanowisko Single",
+    "image": "/products/images/single/floatingCTA.webp",
+    "content": "",
+    "button": "Zapytaj o wycenę",
+    "form": "/forms/robotic-stations",
+    "qp": "",
+    "ar": ""
+  },
+  "parameters": [
+    {
+      "name": "",
+      "value": ""
+    }
+  ],
+  "main_characteristics": [
+    {
+      "title": "Sterowanie poprzez kontroler robota",
+      "content": [
+        "Maszyna jest wyposażona w kontroler robota, który umożliwia precyzyjne sterowanie każdym aspektem jej działania. Dzięki temu użytkownicy mogą łatwo dostosować parametry pracy do swoich potrzeb. "
+      ],
+      "image": "/products/images/single/mainCharacteristics1.png"
+    },
+    {
+      "title": "Pneumatyczne sterowanie frontowe drzwi",
+      "content": [
+        "Wygodne pneumatyczne drzwi z przodu maszyny ułatwiają dostęp i obsługę. Sterowanie nimi odbywa się poprzez kontroler robota, co zapewnia płynność operacji i eliminuje konieczność ręcznego otwierania i zamykania. "
+      ],
+      "image": ""
+    },
+    {
+      "title": "Zbilansowane czujniki Safety",
+      "content": [
+        "Maszyna wyposażona jest w zbliżeniowe czujniki safety, które zapewniają dodatkową warstwę ochrony przed niebezpieczeństwami. Dzięki zbilansowanej detekcji możliwe jest szybkie reagowanie na ewentualne zagrożenia i minimalizacja ryzyka dla personelu. "
+      ],
+      "image": ""
+    },
+    {
+      "title": "Dwa źródła spawalnicze",
+      "content": [
+        "Cela spawalnicza umożliwia wykorzystanie dwóch źródeł spawalniczych renomowanych firm: Fronius oraz ESAB, co daje użytkownikom większą elastyczność i możliwość dostosowania się do różnorodnych wymagań i preferencji. "
+      ],
+      "image": ""
+    }
+  ],
+  "specification": [
+    {
+      "name": "Robot",
+      "param": [
+        "Gofa 15000, UR 5 / UR 10"
+      ]
+    },
+    {
+      "name": "Źródło spawalnicze",
+      "param": [
+        "Fronius / ESAB"
+      ]
+    },
+    {
+      "name": "Źródło światła",
+      "param": [
+        "LED"
+      ]
+    },
+    {
+      "name": "Pole robocze",
+      "param": [
+        "800 x 1200 mm"
+      ]
+    }
+  ],
+  "additional_products": [
+    {
+      "name": "Stanowisko Dual",
+      "image": "/products/images/dual/carousel1.svg",
+      "link": "/product/dual"
+    },
+    {
+      "name": "ALW 1200 - Automatic Linear Welder",
+      "image": "/products/images/alw-1200/carousel1.png",
+      "link": "/product/alw-1200"
+    },
+    {
+      "name": "Flex Cobot Esab",
+      "image": "/products/images/flex-esab/carousel1.png",
+      "link": "/product/flex-esab"
+    },
+    {
+      "name": "LH",
+      "image": "/products/images/lh/carousel1.svg",
+      "link": "/product/lh"
+    },
+    {
+      "name": "Stanowisko Twin One-axis",
+      "image": "/products/images/twin-one-axis/carousel1.svg",
+      "link": "/product/twin-one-axis"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "basic_data": {
+    "pathID": "lh",
+    "name": "LH",
+    "additional_name": "Współrzędnościowa maszyna pomiarowa",
+    "description": "Nowoczesna maszyna pomiarowa, łącząca doskonałą inżynierię mechaniczną z inteligentnym oprogramowaniem. Zapewnia niezawodność, łatwość obsługi oraz elastyczność, wsparta kompleksowym pakietem serwisowym.",
+    "with_data": false
+  },
+  "images": [
+    "/products/images/lh/carousel1.svg"
+  ],
+  "floating_CTA": {
+    "title": "Maszyna pomiarowa",
+    "image": "/products/images/lh/floatingCTA.svg",
+    "content": "",
+    "button": "Zapytaj o wycenę",
+    "form": "/contact",
+    "qp": "",
+    "ar": ""
+  },
+  "parameters": [
+    {
+      "name": "Max przesuwy w osi X",
+      "value": "550 mm"
+    },
+    {
+      "name": "Max wys. detalu",
+      "value": "615 mm"
+    },
+    {
+      "name": "Max przesuwy w osi Y",
+      "value": "550 mm"
+    },
+    {
+      "name": "Max dł. detalu",
+      "value": "850 mm"
+    },
+    {
+      "name": "Max przesuwy w osi Z",
+      "value": "510 mm"
+    },
+    {
+      "name": "Max szer. detalu",
+      "value": "650 mm"
+    }
+  ],
+  "main_characteristics": [
+    {
+      "title": "Doskonałość w precyzji i wydajności",
+      "content": [
+        "Maszyny pomiarowe LH to gwarancja funkcjonalności, efektywności i łatwości obsługi. Ich sukces opiera się na kompleksowej koncepcji, łączącej doskonałą inżynierię mechaniczną, inteligentne oprogramowanie oraz różnorodne opcje akcesoriów i usług. Te stabilne, niezawodne i dynamiczne urządzenia są uniwersalnym narzędziem pomiarowym, doskonale sprawdzającym się w różnych dziedzinach. Wraz z najnowszą generacją bramowych maszyn pomiarowych z pneumatycznymi łożyskami."
+      ],
+      "image": ""
+    },
+    {
+      "title": "Wszechstronne zastosowania bramowych maszyn pomiarowych LH",
+      "content": [
+        "Bramowe maszyny pomiarowe LH to doskonałe narzędzia do zastosowań wymagających wysokiej dokładności i szybkiej prędkości pomiarów. Są one powszechnie wykorzystywane w różnych sektorach przemysłu, od zegarmistrzostwa po produkcję dużych silników, gdzie szczegóły mają kluczowe znaczenie. Dzięki konfigurowalnej osi Y, maszyny te mogą być dostosowywane do pomiaru długich i specjalistycznych wymiarów, zgodnie z potrzebami klienta."
+      ],
+      "image": ""
+    }
+  ],
+  "specification": [
+    {
+      "name": "",
+      "param": [
+        ""
+      ]
+    }
+  ],
+  "additional_products": [
+    {
+      "name": "Flex Cobot Esab",
+      "image": "/products/images/flex-esab/carousel1.png",
+      "link": "/product/flex-esab"
+    },
+    {
+      "name": "SPRINT 32I5",
+      "image": "/products/images/sprint-32I5/carousel1.svg",
+      "link": "/product/sprint-32I5"
+    },
+    {
+      "name": "Obróbka powierzchni",
+      "image": "/products/images/surface-treatment/carousel1.svg",
+      "link": "/product/surface-treatment"
+    },
+    {
+      "name": "TruPunch 5000 | TRUMPH",
+      "image": "/products/images/trupunch-5000/carousel1.svg",
+      "link": "/product/trupunch-5000"
+    },
+    {
+      "name": "Stanowisko gięcia",
+      "image": "/products/images/bending-station/carousel1.svg",
+      "link": "/product/bending-station"
+    }
+  ]
+}

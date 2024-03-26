@@ -10,7 +10,6 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion'
 import { ScrollArea } from '@/components/ui/scroll-area'
-import { useLocale } from 'next-intl'
 import { Link } from '@/navigation'
 
 const MobileNavbar: React.FC<{
@@ -46,7 +45,9 @@ const MobileNavbar: React.FC<{
                       <AccordionItem
                         className="pb-4 pt-0 font-medium"
                         value="ble"
-                        onClick={() => setDropdownOpen((prev) => !prev)}
+                        onClick={() => {
+                          setDropdownOpen((prev) => !prev)
+                        }}
                       >
                         {categories[0].name}
                       </AccordionItem>
@@ -80,9 +81,9 @@ const MobileNavbar: React.FC<{
                                       <AccordionItem
                                         className="pb-4 pt-0 font-normal !text-orange-500"
                                         value={subcat.items[0].name}
-                                        onClick={() =>
+                                        onClick={() => {
                                           setDropdownOpen((prev) => !prev)
-                                        }
+                                        }}
                                       >
                                         {subcat.items[0].name}
                                       </AccordionItem>
@@ -93,12 +94,11 @@ const MobileNavbar: React.FC<{
                                         {subcat.name}
                                       </AccordionTrigger>
                                       {subcat.items.map((item, idx) => (
-                                        <Link href={item.link}>
+                                        <Link href={item.link} key={idx}>
                                           <AccordionContent
-                                            key={idx}
-                                            onClick={() =>
+                                            onClick={() => {
                                               setDropdownOpen((prev) => !prev)
-                                            }
+                                            }}
                                           >
                                             {item.name}
                                           </AccordionContent>
@@ -119,7 +119,9 @@ const MobileNavbar: React.FC<{
                       <AccordionItem
                         className="pb-4 pt-0 font-medium"
                         value="ble"
-                        onClick={() => setDropdownOpen((prev) => !prev)}
+                        onClick={() => {
+                          setDropdownOpen((prev) => !prev)
+                        }}
                       >
                         {categories[categories.length - 1].name}
                       </AccordionItem>

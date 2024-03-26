@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from 'react'
 import { useLocale } from 'next-intl'
 import DesktopNavbar from './DesktopNavbar'
 import MobileNavbar from './MobileNavbar'
-import useWindowDimensions from '@/hooks/useWindowDimensions'
+import useWindowDimensions from '@/utils/useWindowDimensions'
 
 const Navbar = () => {
   const dropdownReference = useRef<HTMLDivElement | null>(null)

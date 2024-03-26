@@ -1,0 +1,97 @@
+{
+  "basic_data": {
+    "pathID": "service-paintshop",
+    "name": "Malowanie proszkowe i na mokro",
+    "additional_name": "",
+    "description": "Oferujemy precyzyjne i profesjonalne usługi malowania proszkowego dla różnorodnych powierzchni metalowych. Nasza firma specjalizuje się w lakierowaniu proszkowym oraz malowaniu na mokro, obsługując zarówno duże, wielkogabarytowe przedmioty, jak i małe detale. Niezależnie od rozmiaru czy złożoności, gwarantujemy wysoką jakość wykonania i perfekcyjne wykończenie każdego projektu. Zaufaj naszemu doświadczeniu i precyzji, aby Twoje wyroby zyskały trwałą i estetyczną powłokę malarską.",
+    "with_data": false
+  },
+  "images": [
+    ""
+  ],
+  "floating_CTA": {
+    "title": "Malowanie proszkowe i na mokro",
+    "image": "/products/images/paintshops-installation/floatingCTA.svg",
+    "content": "",
+    "button": "Zapytaj o wycenę",
+    "form": "/contact",
+    "qp": "",
+    "ar": ""
+  },
+  "parameters": [
+    {
+      "name": "",
+      "value": ""
+    }
+  ],
+  "main_characteristics": [
+    {
+      "title": "Dlaczego warto postawić na malowanie proszkowe?",
+      "content": [
+        "Malowanie proszkowe to jedna z najbardziej popularnych metod nakładania farbyna konstrukcje metalowe, z uwagi na swoją wydajność i efektywność."
+      ],
+      "image": "/products/images/service-paintshop/mainCharacteristics1.svg"
+    },
+    {
+      "title": "Cechy malowania proszkowego:",
+      "content": [
+        "Ekologiczność: Proces malowania proszkowego nie wymaga stosowania toksycznych dla środowiska rozpuszczalników ani rozcieńczalników",
+        "Ochrona przed korozją: Powłoki malowania proszkowego skutecznie zabezpieczają powierzchnię metalową przed korozją",
+        "Minimalizacja strat materiału: Farba w postaci proszku jest precyzyjnie aplikowana na powierzchnię, co minimalizuje odpady i redukuje koszty produkcji",
+        "Gruba i równomierna powłoka: Gęsta warstwa farby niweluje wszelkie niedoskonałości materiału, zapewniając estetyczny i trwały efekt końcowy"
+      ],
+      "image": "/products/images/service-paintshop/mainCharacteristics2.svg"
+    },
+    {
+      "title": "Dlaczego warto postawić na malowanie proszkowe?",
+      "content": [
+        "Malowanie na mokro zapewnia wyjątkowo gładkie i równomierne wykończenie, co przekłada się na estetyczny i profesjonalny wygląd produktów. Dodatkowo, ta metoda pozwala na precyzyjne dopasowanie koloru farby, co jest kluczowe w projektach wymagających dokładnego odwzorowania odcienia. Ponadto, malowanie na mokro charakteryzuje się szybszym schnięciem farby w porównaniu z malowaniem proszkowym, co skraca czas produkcji i zwiększa efektywność procesu malowania."
+      ],
+      "image": ""
+    },
+    {
+      "title": "Cechy malowania na mokro:",
+      "content": [
+        "Gładkie wykończenie: Technika malowania na mokro pozwala uzyskać bardzo gładką powierzchnię, co często jest trudniejsze do osiągnięcia przy malowaniu proszkowym.",
+        "Wyższa odporność na warunki atmosferyczne: Dzięki zastosowaniu odpowiednich lakierów, malowanie na mokro może zapewnić wyższą odporność na warunki atmosferyczne, w tym na promieniowanie UV, wilgoć i zmiany temperatury.",
+        "Zwiększona trwałość: Lakierowanie na mokro może zapewnić trwalszą powłokę w porównaniu z niektórymi innymi metodami malowania, co sprawia, że produkty są bardziej odporne na zarysowania i uszkodzenia mechaniczne."
+      ],
+      "image": ""
+    }
+  ],
+  "specification": [
+    {
+      "name": "",
+      "param": [
+        ""
+      ]
+    }
+  ],
+  "additional_products": [
+    {
+      "name": "Montaż lakierni",
+      "image": "/products/images/paintshops-installation/carousel1.svg",
+      "link": "/product/paintshops-installation"
+    },
+    {
+      "name": "Primus Waterjet INTERMAC",
+      "image": "/products/images/waterjet/carousel1.svg",
+      "link": "/product/waterjet"
+    },
+    {
+      "name": "Obróbka powierzchni",
+      "image": "/products/images/surface-treatment/carousel1.svg",
+      "link": "/product/surface-treatment"
+    },
+    {
+      "name": "Stanowisko Dual",
+      "image": "/products/images/dual/carousel1.svg",
+      "link": "/product/dual"
+    },
+    {
+      "name": "TruLaser Tube 7000 fiber",
+      "image": "/products/images/truelaser-7000/carousel1.svg",
+      "link": "/product/truelaser-7000"
+    }
+  ]
+}

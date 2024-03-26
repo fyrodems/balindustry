@@ -1,0 +1,141 @@
+{
+  "basic_data": {
+    "pathID": "nlx-2500",
+    "name": "NLX 2500",
+    "additional_name": "Materiał do obróbki: Stal, Stal nierdzewna, Aluminium, Żeliwo, Metale kolorowe, Tworzywo sztuczne",
+    "description": "Zaawansowana obrabiarka tokarska, zaprojektowana dla osiągnięcia najwyższej wydajności w obróbce części. Maszyna umożliwia szybkie i efektywne wykonywanie różnorodnych operacji tokarskich, zapewniając optymalne wyniki produkcyjne.",
+    "with_data": true
+  },
+  "images": [
+    "/products/images/nlx-2500/carousel1.svg"
+  ],
+  "floating_CTA": {
+    "title": "NLX 2500",
+    "image": "/products/images/nlx-2500/floatingCTA.svg",
+    "content": "",
+    "button": "Zapytaj o wycenę",
+    "form": "/contact",
+    "qp": "",
+    "ar": ""
+  },
+  "parameters": [
+    {
+      "name": "Maks. przesuwy w osi X",
+      "value": "260 mm"
+    },
+    {
+      "name": "Maks. śr. wewn. rury zaciskowej",
+      "value": "90 mm"
+    },
+    {
+      "name": "Maks. przesuwy w osi Y",
+      "value": "100 mm"
+    },
+    {
+      "name": "Maks. dł. obrabianego przedmiotu",
+      "value": "1255 mm"
+    },
+    {
+      "name": "Maks. przesuwy w osi Z",
+      "value": "1345 mm"
+    },
+    {
+      "name": "Maks. średnica detalu",
+      "value": "366 mm"
+    }
+  ],
+  "main_characteristics": [
+    {
+      "title": "Głowica Rewolwerowa z BMT",
+      "content": [
+        "Nasza najnowsza obrabiarka frezarska jest wyposażona w innowacyjną głowicę rewolwerową z BMT (wbudowaną napędzaną głowicę rewolwerową), umożliwiającą wysokoobrotowe obrabiarki narzędziowe o prędkości do 10 000 obr./min. Dzięki temu, zapewniamy precyzyjną i efektywną obróbkę części, dostosowaną do najnowszych standardów przemysłowych."
+      ],
+      "image": "/products/images/nlx-2500/main-characteristics1.svg"
+    },
+    {
+      "title": "Innowacyjna Obrabiarka z Szybką Wymianą Głowicy Rewolwerowej",
+      "content": [
+        "Nasza nowoczesna obrabiarka oferuje wysoką precyzję dzięki precyzyjnie kontrolowanemu rozmieszczeniu termicznemu, zapewniając optymalne warunki pracy. Dodatkowo, opcjonalna funkcja szybkiej wymiany głowicy rewolwerowej umożliwia jeszcze bardziej efektywną produkcję, zapewniając elastyczność i wydajność w obróbce części."
+      ],
+      "image": "/products/images/nlx-2500/main-characteristics2.svg"
+    },
+    {
+      "title": "Ustawienia i Wizualizacja Efektów Oszczędzania Energii",
+      "content": [
+        "Nasza platforma skupia się na efektywnym oszczędzaniu energii poprzez precyzyjne ustawienia oraz wizualizację, umożliwiając użytkownikom monitorowanie i optymalizację zużycia energii. Dzięki temu, zapewniamy środowisku przyjazne rozwiązania i redukcję kosztów operacyjnych przy jednoczesnym utrzymaniu wysokiej wydajności i funkcjonalności."
+      ],
+      "image": ""
+    }
+  ],
+  "specification": [
+    {
+      "name": "Głowica",
+      "param": [
+        "Głowica rewolwerowa z BMT"
+      ]
+    },
+    {
+      "name": "Wysokoobrotowe wrzeciono narzędziowe",
+      "param": [
+        "Prędkość obrotowa: 10 000 obr./min"
+      ]
+    },
+    {
+      "name": "SWISSTYPEkit",
+      "param": [
+        "Do toczenia krótkich i długich części na jednej obrabiarce"
+      ]
+    },
+    {
+      "name": "Precyzyjnie kontrolowane rozmieszczenie termiczne",
+      "param": [
+        "Zapewnienie dokładnej kontroli nad rozmieszczeniem termicznym"
+      ]
+    },
+    {
+      "name": "Szybka wymiana głowicy rewolwerowej",
+      "param": [
+        "Opcjonalna funkcja zapewniająca precyzyjną i szybką wymianę głowicy rewolwerowej"
+      ]
+    },
+    {
+      "name": "Ustawienie oszczędzania energii",
+      "param": [
+        "System pozwalający na efektywne ustawienie oszczędzania energii"
+      ]
+    },
+    {
+      "name": "Wizualizacja efektu oszczędzania energii",
+      "param": [
+        "Narzędzie wizualne umożliwiające monitorowanie i wizualizację efektów oszczędzania energii"
+      ]
+    }
+  ],
+  "additional_products": [
+    {
+      "name": "SPRINT 32I5",
+      "image": "/products/images/sprint-32I5/carousel1.svg",
+      "link": "/product/sprint-32I5"
+    },
+    {
+      "name": "DMU 75 monoBLOCK",
+      "image": "/products/images/dmu-75-monoblock/carousel1.svg",
+      "link": "/product/dmu-75-monoblock"
+    },
+    {
+      "name": "DMU 210 P",
+      "image": "/products/images/dmu-210-p/carousel1.svg",
+      "link": "/product/dmu-210-p"
+    },
+    {
+      "name": "5-cio osiowe CNC",
+      "image": "/products/images/5-axis-cnc/carousel1.svg",
+      "link": "/product/5-axis-cnc"
+    },
+    {
+      "name": "Primus Waterjet INTERMAC",
+      "image": "/products/images/waterjet/carousel1.svg",
+      "link": "/product/waterjet"
+    }
+  ]
+}

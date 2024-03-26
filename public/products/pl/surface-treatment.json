@@ -1,0 +1,108 @@
+{
+  "basic_data": {
+    "pathID": "surface-treatment",
+    "name": "Obróbka powierzchni",
+    "additional_name": "",
+    "description": "Urządzenie używane do wykończania powierzchni poprzez usuwanie nierówności i nadawanie gładkiego, matowego wykończenia za pomocą ruchomej szczotki lub tarczy.",
+    "with_data": true
+  },
+  "images": [
+    "/products/images/surface-treatment/carousel1.svg"
+  ],
+  "floating_CTA": {
+    "title": "Satyniarka",
+    "image": "",
+    "content": "Zeskanuj kod QR, aby zobaczyć w rzeczywistości rozszerzonej AR",
+    "button": "Zapytaj o wycenę",
+    "form": "/forms/satin",
+    "qp": "",
+    "ar": "QRView/SATYNIARKA"
+  },
+  "parameters": [
+    {
+      "name": "Gabaryt",
+      "value": "480 mm"
+    },
+    {
+      "name": "Silniki",
+      "value": "5,5 kW"
+    },
+    {
+      "name": "Maks wys. obrabianego przedmiotu",
+      "value": "300 mm"
+    },
+    {
+      "name": "Maks dł. obrabianego przedmiotu",
+      "value": "1200 mm"
+    }
+  ],
+  "specification": [
+    {
+      "name": "Gabaryt",
+      "param": [
+        "480 mm"
+      ]
+    },
+    {
+      "name": "Silniki",
+      "param": [
+        "5,5 kW"
+      ]
+    },
+    {
+      "name": "Maks wys. obrabianego przedmiotu",
+      "param": [
+        "300 mm"
+      ]
+    },
+    {
+      "name": "Maks dł. obrabianego przedmiotu",
+      "param": [
+        "1200 mm"
+      ]
+    }
+  ],
+  "main_characteristics": [
+    {
+      "title": "Satynowanie, gratowanie i zatapianie krawędzi",
+      "content": [
+        "Dzięki innowacyjnym technologiom i precyzyjnemu wykonaniu, nasze maszyny gwarantują efektywność i profesjonalizm w każdym zastosowaniu. Skorzystaj z naszych rozwiązań, aby uzyskać idealnie przygotowane powierzchnie do dalszej obróbki lub wykończenia, spełniając najwyższe standardy branżowe."
+      ],
+      "image": ""
+    },
+    {
+      "title": "Satyniarka wyposażona w trzy moduły, które mogą wykonywać różne rodzaje obróbki",
+      "content": [
+        "Pas ścierny o szerokości 480 mm, ściernice garnkowe oraz wał do satynowania powierzchni. Dzięki temu urządzeniu możliwe jest szybkie i efektywne przygotowanie powierzchni do lakierowania lub pomalowania, zapewniając profesjonalny i estetyczny efekt końcowy."
+      ],
+      "image": ""
+    }
+  ],
+  "additional_products": [
+    {
+      "name": "Primus Waterjet INTERMAC",
+      "image": "/products/images/waterjet/carousel1.svg",
+      "link": "/product/waterjet"
+    },
+    {
+      "name": "Stanowisko Twin One-axis",
+      "image": "/products/images/twin-one-axis/carousel1.svg",
+      "link": "/product/twin-one-axis"
+    },
+    {
+      "name": "SPRINT 32I5",
+      "image": "/products/images/sprint-32I5/carousel1.svg",
+      "link": "/product/sprint-32I5"
+    },
+    {
+      "name": "Obróbka powierzchni",
+      "image": "/products/images/surface-treatment/carousel1.svg",
+      "link": "/product/surface-treatment"
+    },
+    {
+      "name": "5-cio osiowe CNC",
+      "image": "/products/images/5-axis-cnc/carousel1.svg",
+      "link": "/product/5-axis-cnc"
+    }
+  ]
+}

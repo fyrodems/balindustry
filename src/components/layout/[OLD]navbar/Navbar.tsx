@@ -10,7 +10,7 @@ import { LanguageSelector } from '../LanguageSelector/LanguageSelector'
 import styles from './Navbar.module.scss'
 import Hamburger from './hamburger/Hamburger'
 import HamburgerMenu from './hamburgerMenu/HamburgerMenu'
-import useWindowDimensions from '@/hooks/useWindowDimensions'
+import useWindowDimensions from '@/utils/useWindowDimensions'
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)

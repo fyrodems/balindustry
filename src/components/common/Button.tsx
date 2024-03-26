@@ -5,9 +5,9 @@ interface ButtonProps {
   size?: 'XL' | 'L' | 'M' | 'XS' | null
   className?: string
   primary?: boolean
-  onClick: () => void
   content?: string
   children?: React.ReactNode
+  onClick?: () => void
 }
 
 export const Button: React.FC<ButtonProps> = ({

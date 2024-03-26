@@ -17,6 +17,7 @@ body {
   cursor: default;
   box-sizing: border-box;
   color: $text-dark-color;
+  scroll-behavior: smooth;
 }
 
 button {
