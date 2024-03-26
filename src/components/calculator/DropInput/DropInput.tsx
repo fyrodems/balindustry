@@ -4,7 +4,7 @@ import Image from 'next/image'
 import arrowIcon from '../../../../public/icons/arrowUp.svg'
 import { DataContext } from '../../../app/context/dataContext'
 import styles from './DropInput.module.scss'
-import useWindowDimensions from '@/hooks/useWindowDimensions'
+import useWindowDimensions from '@/utils/useWindowDimensions'
 
 interface DropInputProps {
   callback?: (e: any) => void

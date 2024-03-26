@@ -138,40 +138,48 @@ const CalculatorPriceItemsList: React.FC<CalculatorPriceItemsListProps> = ({
               {selectedItems.map((item, index) => (
                 <div key={index}>
                   <div className={styles.itemWrapper}>
-                    <div className={styles.numImgWrapper}>
-                      {index + 1}.
-                      <CalculatorImagePreview />
-                    </div>
-                    <div className={styles.detailsWrapper}>
-                      <div className={styles.detailName}>{item.name}</div>
-                      <div>
-                        <p>
-                          <span className={styles.detailName}>Materiał: </span>
-                          {item.material}
-                        </p>
-                        <p>
-                          <span className={styles.detailName}>Grubość:</span>{' '}
-                          {item.thickness} mm
-                        </p>
-                        <p>
-                          <span className={styles.detailName}>Liczba:</span>
-                          {item.quantity}
-                        </p>
+                    <div className={styles.dataWrapper}>
+                      <div className={styles.imgWrapper}>
+                        <CalculatorImagePreview />
+                      </div>
+                      <div className={styles.detailsWrapper}>
+                        <div className={styles.detailName}>{item.name}</div>
+                        <div>
+                          <p>
+                            <span className={styles.detailName}>
+                              Materiał:{' '}
+                            </span>
+                            {item.material}
+                          </p>
+                          <p>
+                            <span className={styles.detailName}>Grubość: </span>
+                            {item.thickness} mm
+                          </p>
+                          <p>
+                            <span className={styles.detailName}>
+                              Liczba sztuk:{' '}
+                            </span>
+                            {item.quantity}
+                          </p>
+                        </div>
                       </div>
                     </div>
-                  </div>
-
-                  <Button
-                    onClick={() => {
-                      setSelectedItems((selectedItem) =>
-                        selectedItem.filter(
-                          (item) => selectedItem.indexOf(item) !== index
+                    <Button
+                      disabled={false}
+                      className={styles.deleteFileButton}
+                      primary={false}
+                      size="XS"
+                      onClick={() => {
+                        setSelectedItems((selectedItem) =>
+                          selectedItem.filter(
+                            (item) => selectedItem.indexOf(item) !== index
+                          )
                         )
-                      )
-                    }}
-                  >
-                    <X />
-                  </Button>
+                      }}
+                    >
+                      <X />
+                    </Button>
+                  </div>
                 </div>
               ))}
             </div>
