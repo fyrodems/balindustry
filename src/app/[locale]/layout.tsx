@@ -8,9 +8,10 @@ import { Inter } from 'next/font/google'
 import { register } from 'swiper/element/bundle'
 import '../globals.scss'
 import { TanstackWrapper } from './TanstackWrapper'
-import Navbar from '@/components/layout/navbar/Navbar'
+import Navbar from '@/components/layout/Navbar/Navbar'
 import Footer from '@/components/layout/footer/Footer'
 import { Toaster } from '@/components/ui/toaster'
+import { notFound } from 'next/navigation'
 
 const inter = Inter({ subsets: ['latin'] })
 register()
