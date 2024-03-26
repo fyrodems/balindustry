@@ -50,3 +50,60 @@
     flex-direction: row;
   }
 }
+
+.sectionTitle {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 25px 0;
+}
+
+.inputWrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  flex-direction: column;
+
+  input {
+    width: 100%;
+    max-width: 450px;
+  }
+
+  @include tablet {
+    flex-direction: row;
+    gap: 75px;
+  }
+}
+
+.labelInput {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 450px;
+  gap: 10px;
+
+  label {
+    font-weight: 400;
+    font-size: 16px;
+  }
+}
+
+.contactWrapper {
+  width: 100%;
+}
+
+.sendOfferButton {
+  margin-top: 30px;
+  width: 100%;
+
+  @include tablet {
+    max-width: 220px;
+    margin-left: auto;
+  }
+}
+
+.priceItemsListWrapper {
+  max-width: 970px;
+  margin: auto;
+}

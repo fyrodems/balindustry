@@ -83,7 +83,7 @@ const CalculatedModelDetails = () => {
   const roundedMass = round(mass)
 
   return (
-    <div>
+    <div className={styles.calculatedModelDetailsWrapper}>
       <h4 className={styles.header}>Wartości dla pojedynczej sztuki</h4>
       <div className={styles.calculatedModelDetails}>
         <div className={styles.detailsContainer}>

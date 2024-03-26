@@ -3,16 +3,20 @@ import axios from 'axios'
 import { X } from 'lucide-react'
 import CalculatorImagePreview from '../../CalculatorImagePreview/CalculatorImagePreview'
 import CalculatorModalBox from '../../CalculatorModalBox/CalculatorModalBox'
+import styles from './CalculatorPriceItemsList.module.scss'
 import { Button } from '@/components/common/Button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
-import styles from './CalculatorPriceItemsList.module.scss'
 
 interface CalculatorPriceItemsListProps {
   filesArray: File[]
   setFilesArray: Dispatch<SetStateAction<File[]>>
   selectedItems: SelectedItem[]
   setSelectedItems: Dispatch<SetStateAction<SelectedItem[]>>
+  isModalOpen: boolean
+  setIsModalOpen: Dispatch<SetStateAction<boolean>>
+  modalType: string
+  setModalType: Dispatch<SetStateAction<string>>
 }
 
 interface SelectedItem {
@@ -27,9 +31,11 @@ const CalculatorPriceItemsList: React.FC<CalculatorPriceItemsListProps> = ({
   setFilesArray,
   selectedItems,
   setSelectedItems,
+  isModalOpen,
+  setIsModalOpen,
+  modalType,
+  setModalType,
 }) => {
-  const [openModal, setOpenModal] = useState(false)
-  const [modalType, setModalType] = useState()
   const [clientMail, setClientMail] = useState('')
   const [clientName, setClientName] = useState('')
 
@@ -78,7 +84,7 @@ const CalculatorPriceItemsList: React.FC<CalculatorPriceItemsListProps> = ({
         files = []
       }
 
-      /* const body = {
+      const body = {
         From: 'info@balindustry.com',
         To: 'info@balindustry.com',
         Cc: `${clientMail}`,
@@ -96,7 +102,13 @@ const CalculatorPriceItemsList: React.FC<CalculatorPriceItemsListProps> = ({
         Attachments: files,
       }
 
-      await axios.post('../api/contactForm', body) */
+      await axios.post('https://api.postmarkapp.com/email', body, {
+        headers: {
+          'content-type': 'application/json',
+          Accept: 'application/json',
+          'X-Postmark-Server-Token': 'a38f4fd9-c260-482a-9ecf-c9e9a3b638b5',
+        },
+      })
     } catch (error) {
       console.log(error)
     }
@@ -113,34 +125,41 @@ const CalculatorPriceItemsList: React.FC<CalculatorPriceItemsListProps> = ({
     if (isItemsSelected && isNameValid && isEmailValid) {
       await sendRequest()
       setClientMail('')
-      setOpenModal(true)
+      setIsModalOpen(true)
       setModalType('thanks')
     } else {
-      setOpenModal(true)
+      setIsModalOpen(true)
       setModalType('contact')
     }
   }
 
+  console.log(isModalOpen)
   return (
-    <div>
-      <CalculatorModalBox
-        openModal={openModal}
-        setOpenModal={setOpenModal}
-        setFilesArray={setFilesArray}
-        type={modalType}
-      />
-      <>
+    <>
+      <div>
+        {isModalOpen ? (
+          <CalculatorModalBox
+            setOpenModal={setIsModalOpen}
+            setFilesArray={setFilesArray}
+            type={modalType}
+          />
+        ) : null}
+      </div>
+      <div className={styles.priceItemsListWrapper}>
         {selectedItems.length === 0 ? (
           <></>
         ) : (
           <>
             <div>
+              <p className={styles.sectionTitle}>
+                Lista wybranych konfiguracji
+              </p>
               {selectedItems.map((item, index) => (
                 <div key={index}>
                   <div className={styles.itemWrapper}>
                     <div className={styles.dataWrapper}>
                       <div className={styles.imgWrapper}>
-                        <CalculatorImagePreview />
+                        <CalculatorImagePreview filePath={item.file} />
                       </div>
                       <div className={styles.detailsWrapper}>
                         <div className={styles.detailName}>{item.name}</div>
@@ -184,36 +203,46 @@ const CalculatorPriceItemsList: React.FC<CalculatorPriceItemsListProps> = ({
               ))}
             </div>
 
-            <div>
-              <p>Podaj nam swoje dane, abyśmy mogli się z Tobą skontaktować</p>
-              <div>
-                <Label htmlFor="name">Imię i nazwisko *</Label>
-                <Input
-                  type="text"
-                  id="name"
-                  placeholder="Jan Nowak"
-                  value={clientName}
-                  onChange={(e) => {
-                    setClientName(e.target.value)
-                  }}
-                />
-                <Label htmlFor="name">Imię i nazwisko *</Label>
-                <Input
-                  type="email"
-                  id="mail"
-                  placeholder="jannowak@gmail.com"
-                  value={clientMail}
-                  onChange={(e) => {
-                    setClientMail(e.target.value)
-                  }}
-                />
+            <div className={styles.contactWrapper}>
+              <p className={styles.sectionTitle}>
+                Podaj nam swoje dane, abyśmy mogli się z Tobą skontaktować
+              </p>
+              <div className={styles.inputWrapper}>
+                <div className={styles.labelInput}>
+                  <Label htmlFor="name">Imię i nazwisko *</Label>
+                  <Input
+                    type="text"
+                    id="name"
+                    placeholder="Jan Nowak"
+                    value={clientName}
+                    onChange={(e) => {
+                      setClientName(e.target.value)
+                    }}
+                  />
+                </div>
+                <div className={styles.labelInput}>
+                  <Label htmlFor="mail">Twój email *</Label>
+                  <Input
+                    type="email"
+                    id="mail"
+                    placeholder="jannowak@gmail.com"
+                    value={clientMail}
+                    onChange={(e) => {
+                      setClientMail(e.target.value)
+                    }}
+                  />
+                </div>
               </div>
             </div>
-            <Button content="Zapytaj o wycenę" onClick={handleSubmit} />
+            <Button
+              className={styles.sendOfferButton}
+              content="Zapytaj o wycenę"
+              onClick={handleSubmit}
+            />
           </>
         )}
-      </>
-    </div>
+      </div>
+    </>
   )
 }
 

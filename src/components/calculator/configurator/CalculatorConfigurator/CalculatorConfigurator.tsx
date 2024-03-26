@@ -30,6 +30,7 @@ const CalculatorConfigurator: React.FC<CalculatorConfiguratorProps> = ({
   const selectedContext = useContext(SelectedContext)
   const [selectedItems, setSelectedItems] = useState<SelectedItem[]>([])
   const [isModalOpen, setIsModalOpen] = useState(false)
+  const [modalType, setModalType] = useState<string>('')
 
   const formatFileName = (filename: string) =>
     filename
@@ -101,7 +102,7 @@ const CalculatorConfigurator: React.FC<CalculatorConfiguratorProps> = ({
       })
     } else {
       setIsModalOpen(true)
-      /*     setModalType('configuration') */
+      setModalType('configuration')
     }
   }
 
@@ -127,6 +128,10 @@ const CalculatorConfigurator: React.FC<CalculatorConfiguratorProps> = ({
         filesArray={filesArray}
         selectedItems={selectedItems}
         setSelectedItems={setSelectedItems}
+        isModalOpen={isModalOpen}
+        setIsModalOpen={setIsModalOpen}
+        modalType={modalType}
+        setModalType={setModalType}
       />
     </div>
   )
