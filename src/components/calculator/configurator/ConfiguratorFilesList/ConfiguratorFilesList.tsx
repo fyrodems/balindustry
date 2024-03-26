@@ -1,9 +1,9 @@
 import { type Dispatch, type SetStateAction, useContext, useState } from 'react'
 import { X } from 'lucide-react'
 import { type IDxf } from 'dxf-parser'
-import { DataContext } from '../../../app/context/dataContext'
-import { SelectedContext } from '../../../app/context/selectedContext'
-import DropInput from '../DropInput/DropInput'
+import { DataContext } from '../../../../app/context/dataContext'
+import { SelectedContext } from '../../../../app/context/selectedContext'
+import DropInput from '../../DropInput/DropInput'
 import styles from './ConfiguratorFilesList.module.scss'
 import Button from '@/components/common/Button'
 

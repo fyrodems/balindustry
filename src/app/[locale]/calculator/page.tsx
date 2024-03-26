@@ -3,16 +3,15 @@ import { useContext, useState } from 'react'
 import { DataContext } from '../../context/dataContext'
 import styles from './calculator.module.scss'
 import PageTitle from '@/components/common/PageTitle'
-import DropdownInfo from '@/components/calculator/DropdownInfo/DropdownInfo'
+import DropdownInfo from '@/components/calculator/infoWithInput/DropdownInfo/DropdownInfo'
 import DropInput from '@/components/calculator/DropInput/DropInput'
-import CalculatorConfigurator from '@/components/calculator/CalculatorConfigurator/CalculatorConfigurator'
+import CalculatorConfigurator from '@/components/calculator/configurator/CalculatorConfigurator/CalculatorConfigurator'
 import SelectedContextProvider from '@/app/context/selectedContext'
 
 export const Calculator = () => {
   const contextData = useContext(DataContext)
   const [filesArray, setFilesArray] = useState<File[]>([])
-  console.log(contextData?.data)
-  console.log(filesArray)
+
   return (
     <main className={styles.wrapper}>
       <PageTitle content="Wycena cięcia" />

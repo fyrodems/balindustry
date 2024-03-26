@@ -1,7 +1,7 @@
 import { useContext } from 'react'
-import { DataContext } from '../../../app/context/dataContext'
-import { SelectedContext } from '../../../app/context/selectedContext'
-import { type FileData } from '../../../../server/interfaces'
+import { DataContext } from '../../../../app/context/dataContext'
+import { SelectedContext } from '../../../../app/context/selectedContext'
+import { type FileData } from '../../../../../server/interfaces'
 import styles from './CalculatedModelDetails.module.scss'
 
 const displayLength = ({

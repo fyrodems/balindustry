@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react'
-import { type FileContextType } from '../../../../app/context/dataContext'
-import { type SelectedFileContextType } from '../../../../app/context/selectedContext'
-import materials from '../../materials.json'
+import { type FileContextType } from '../../../../../../app/context/dataContext'
+import { type SelectedFileContextType } from '../../../../../../app/context/selectedContext'
+import materials from '../../../../materials.json'
 import styles from './ThicknessSelector.module.scss'
 import { Label } from '@/components/ui/label'
 
@@ -54,6 +54,7 @@ const Thickness: React.FC<ThicknessProps> = ({
     selectRef.current.value = thickness ?? ''
   }, [thickness])
  */
+
   return (
     <div className={styles.thicknessSelector}>
       <Label className={styles.label} htmlFor="thicknessList">

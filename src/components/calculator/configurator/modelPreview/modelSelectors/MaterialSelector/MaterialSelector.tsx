@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
-import { type FileContextType } from '../../../../app/context/dataContext'
-import { type SelectedFileContextType } from '../../../../app/context/selectedContext'
-import materials from '../../materials.json'
+import { type FileContextType } from '../../../../../../app/context/dataContext'
+import { type SelectedFileContextType } from '../../../../../../app/context/selectedContext'
+import materials from '../../../../materials.json'
 import styles from './MaterialSelector.module.scss'
 import { Label } from '@/components/ui/label'
 
