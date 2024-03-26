@@ -238,7 +238,7 @@ const DesktopNavbar = () => {
           <MainCategory content="Usługi" />
           <MenubarContent className={cn(styles.popover, styles.services)}>
             <div className={styles.gridWrapper}>
-              <Link href="/">
+              <Link href="/forms/form">
                 <MenubarItem>
                   <Image
                     src={'/images/navbarProducts/form-offer.svg'}
