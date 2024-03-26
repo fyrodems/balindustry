@@ -1,7 +1,7 @@
 import QRious from 'qrious'
 import satyniarkaAndroid from '../../public/assets/ARModels/SATYNIARKA.glb'
 import satyniarkaIOS from '../../public/assets/ARModels/SATYNIARKA.usdz'
-import magazynAndroid from '../../public/assets/ARModels/MAGAZYN.glb'
+/* import magazynAndroid from '../../public/assets/ARModels/MAGAZYN.glb'
 import magazynIOS from '../../public/assets/ARModels/MAGAZYN.usdz'
 import piecAndroid from '../../public/assets/ARModels/PIEC.glb'
 import piecIOS from '../../public/assets/ARModels/PIEC.usdz'
@@ -15,7 +15,7 @@ import kozaABS2Android from '../../public/assets/ARModels/KOZA_AB_S2_DRN.glb'
 import kozaABS2IOS from '../../public/assets/ARModels/KOZA_AB_S2_DRN.usdz'
 import koza11KAndroid from '../../public/assets/ARModels/KOZA_11_K.glb'
 import koza11KIOS from '../../public/assets/ARModels/KOZA_11_'
-
+*/
 class ARMode {
   #selectedFireplace
 
@@ -25,13 +25,13 @@ class ARMode {
     else this.#selectedFireplace = window.location.pathname.split('/')[2]
     this.models = {
       SATYNIARKA: { Android: satyniarkaAndroid, IOS: satyniarkaIOS },
-      KOZA_11_K: { Android: koza11KAndroid, IOS: koza11KIOS },
+      /* KOZA_11_K: { Android: koza11KAndroid, IOS: koza11KIOS },
       KOZA_AB_S2_DRN: { Android: kozaABS2Android, IOS: kozaABS2IOS },
       THOR_L_M: { Android: thorLMAndroid, IOS: thorLMIOS },
       INOX_210_ECO: { Android: inox210EcoAndroid, IOS: inox210EcoIOS },
       INOX_210S: { Android: inox210SAndroid, IOS: inox210SIOS },
       PIEC: { Android: piecAndroid, IOS: piecIOS },
-      MAGAZYN: { Android: magazynAndroid, IOS: magazynIOS },
+      MAGAZYN: { Android: magazynAndroid, IOS: magazynIOS },*/
     }
   }
 
