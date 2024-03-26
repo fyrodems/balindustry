@@ -40,7 +40,7 @@
     "swiper": "^11.0.7",
     "tailwind-merge": "^2.2.1",
     "tailwindcss-animate": "^1.0.7",
-    "three": "^0.162.0"
+    "three": "^0.160.0"
   },
   "devDependencies": {
     "@types/node": "^20",
