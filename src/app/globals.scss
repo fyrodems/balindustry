@@ -18,18 +18,19 @@ body {
   box-sizing: border-box;
   color: $text-dark-color;
   scroll-behavior: smooth;
+  position: relative;
 }
 
 button {
   border: none;
 }
 
-// podnosimy maina, aby navbar miał tło
 main {
   position: relative;
-  // top: -$navbar-height-mobile;
   max-width: 1600px;
   margin: 0 auto;
+  position: relative;
+  min-height: calc(100vh - 72px);
 }
 
 li {

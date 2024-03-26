@@ -1,5 +1,5 @@
 import { createContext, useEffect, useState } from 'react'
-import useFilesData from '../../hooks/useFilesData'
+import useFilesData from '../../utils/useFilesData'
 import { type FileData } from '../../../server/interfaces'
 
 export interface FileContextType {
