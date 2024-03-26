@@ -48,7 +48,6 @@ export default function Products() {
           Wypełnij formularz ofertowy na naszej stronie.
         </>
       ),
-      /* !!! link do zmiany jak będzie kalkulator */
       link: '/contact',
       topButton: 'Formularz',
       bottomHeader: 'Usługi',
