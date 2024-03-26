@@ -1,4 +1,3 @@
-import { type IEntity } from 'dxf-parser'
 import { type ArrayAllLength, type Entity, type Vertice } from './interfaces'
 
 export const line = {
@@ -8,7 +7,7 @@ export const line = {
    * @param {*} arrayAllLength
    * @returns
    */
-  getLength(entity: IEntity, arrayAllLength: ArrayAllLength[]) {
+  getLength(entity: Entity, arrayAllLength: ArrayAllLength[]) {
     const dx = entity.vertices[1].x - entity.vertices[0].x
     const dy = entity.vertices[1].y - entity.vertices[0].y
     const totalLength = Math.hypot(dx, dy)

@@ -1,5 +1,9 @@
-import { type IEntity } from 'dxf-parser'
-import { type ArrayAllLength, type Polyline, type Arc } from './interfaces'
+import {
+  type ArrayAllLength,
+  type Polyline,
+  type Arc,
+  type Entity,
+} from './interfaces'
 
 export const arc = {
   /**
@@ -8,7 +12,7 @@ export const arc = {
    * @param {*} arrayAllLength -tablica z długościami potrzebne do wyświetlenia
    * @returns
    */
-  getLength(entity: IEntity, arrayAllLength: ArrayAllLength[]) {
+  getLength(entity: Entity, arrayAllLength: ArrayAllLength[]) {
     const radius = entity.radius
     const startAngle = entity.startAngle
     const endAngle = entity.endAngle

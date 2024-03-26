@@ -1,9 +1,13 @@
-import { type IEntity } from 'dxf-parser'
-import { type ArrayAllLength, type Vertice, type Segment } from './interfaces'
+import {
+  type ArrayAllLength,
+  type Vertice,
+  type Segment,
+  type Entity,
+} from './interfaces'
 
 export const polyline = {
   // Wyliczanie długości
-  getLength(entity: IEntity, arrayAllLength: ArrayAllLength[]) {
+  getLength(entity: Entity, arrayAllLength: ArrayAllLength[]) {
     const polyLineArr = []
     let totalLength = 0
     const vertices = entity.vertices

@@ -133,7 +133,6 @@ const CalculatorPriceItemsList: React.FC<CalculatorPriceItemsListProps> = ({
     }
   }
 
-  console.log(isModalOpen)
   return (
     <>
       <div>

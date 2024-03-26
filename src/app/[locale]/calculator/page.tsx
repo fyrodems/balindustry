@@ -8,7 +8,7 @@ import DropInput from '@/components/calculator/DropInput/DropInput'
 import CalculatorConfigurator from '@/components/calculator/configurator/CalculatorConfigurator/CalculatorConfigurator'
 import SelectedContextProvider from '@/app/context/selectedContext'
 
-export const Calculator = () => {
+const Calculator = () => {
   const contextData = useContext(DataContext)
   const [filesArray, setFilesArray] = useState<File[]>([])
 

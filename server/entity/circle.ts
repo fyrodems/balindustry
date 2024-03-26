@@ -1,5 +1,4 @@
-import { type IEntity } from 'dxf-parser'
-import { type ArrayAllLength } from './interfaces'
+import { type Entity, type ArrayAllLength } from './interfaces'
 
 export const circle = {
   /**
@@ -8,7 +7,7 @@ export const circle = {
    * @param {*} arrayAllLength -tablica z długościami potrzebne do wyświetlenia
    * @returns
    */
-  getLength(entity: IEntity, arrayAllLength: ArrayAllLength[]) {
+  getLength(entity: Entity, arrayAllLength: ArrayAllLength[]) {
     const totalLength = 2 * Math.PI * entity.radius
     arrayAllLength.push({ type: entity.type, length: totalLength })
     return totalLength

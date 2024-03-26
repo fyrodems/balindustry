@@ -1,5 +1,4 @@
-import { type IEntity } from 'dxf-parser'
-import { type ArrayAllLength } from './interfaces'
+import { type Entity, type ArrayAllLength } from './interfaces'
 
 export const spline = {
   /**
@@ -8,7 +7,7 @@ export const spline = {
    * @param {*} arrayAllLength
    * @returns
    */
-  getLength(entity: IEntity, arrayAllLength: ArrayAllLength[]) {
+  getLength(entity: Entity, arrayAllLength: ArrayAllLength[]) {
     let totalLength = 0
     for (let i = 0; i < entity.controlPoints.length - 1; i++) {
       const dx = entity.controlPoints[i].x - entity.controlPoints[i + 1].x
