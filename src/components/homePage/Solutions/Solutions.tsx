@@ -1,4 +1,5 @@
 import styles from './Solutions.module.scss'
+import { Link } from '@/navigation'
 import Button from '@/components/common/Button'
 
 export default function Solutions() {
@@ -12,7 +13,9 @@ export default function Solutions() {
           partnerstwa. Wspólnie podniesiemy efektywność i automatyzację Twojej
           firmy.
         </p>
-        <Button disabled={false} size="XL" content="Dowiedz się więcej" />
+        <Link href="/about">
+          <Button disabled={false} size="XL" content="Dowiedz się więcej" />
+        </Link>
       </div>
     </section>
   )

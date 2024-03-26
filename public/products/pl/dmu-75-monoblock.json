@@ -1,0 +1,159 @@
+{
+  "basic_data": {
+    "pathID": "dmu-75-monoblock",
+    "name": "DMU 75 monoBLOCK",
+    "additional_name": "Materiał do obróbki: Stal, Stal nierdzewna, Aluminium, Żeliwo, Metale kolorowe, Tworzywo sztuczne",
+    "description": "DMU 75 monoBLOCK to wysokowydajne centrum obróbcze, stosowane przede wszystkim w przemyśle metalowym. Posiada ono możliwość obróbki zarówno frezarskiej, jak i tokarskiej. Dzięki swojej kompaktowej konstrukcji oraz zaawansowanym funkcjom automatyki, DMU 75 monoBLOCK jest popularnym wyborem w branży inżynieryjnej.",
+    "with_data": true
+  },
+  "images": [
+    "/products/images/dmu-75-monoblock/carousel1.svg"
+  ],
+  "floating_CTA": {
+    "title": "DMU 75 monoBLOCK",
+    "image": "/products/images/dmu-75-monoblock/floatingCTA.svg",
+    "content": "",
+    "button": "Zapytaj o wycenę",
+    "form": "/contact",
+    "qp": "",
+    "ar": ""
+  },
+  "parameters": [
+    {
+      "name": "Maks. przesuwy w osi X",
+      "value": "750 mm"
+    },
+    {
+      "name": "Maks. długość obrabianego przedmiotu",
+      "value": "500 mm"
+    },
+    {
+      "name": "Maks. przesuwy w osi Y",
+      "value": "650 mm"
+    },
+    {
+      "name": "Maks. ciężar detalu",
+      "value": "600 kg"
+    },
+    {
+      "name": "Maks. przesuwy w osi Z",
+      "value": "560 mm"
+    },
+    {
+      "name": "Maks. średnica detalu",
+      "value": "840 mm"
+    }
+  ],
+  "main_characteristics": [
+    {
+      "title": "Ergonomiczny design dla optymalnej wydajności",
+      "content": [
+        "Dzięki szerokiemu prześwitowi drzwi i kompaktowej konstrukcji zajmuje zaledwie 8 m² powierzchni, umożliwiając łatwy dostęp do obszaru roboczego. Dodatkowo, nieograniczony załadunek dźwigiem do 600 kg oraz szybki dostęp dzięki 3-punktowemu podparciu sprawiają, że ta obrabiarka to idealne rozwiązanie dla wymagających zadań produkcyjnych."
+      ],
+      "image": ""
+    },
+    {
+      "title": "Precyzyjne rozwiązania dla perfekcyjnych detali",
+      "content": [
+        "Wyróżnia się doskonałą precyzją dzięki kompleksowemu chłodzeniu, wysoko wydajnemu chłodziwu oraz standardowej kompensacji wieloczujnikowej. Zapewniając dokładność pozycjonowania na poziomie 4 µm w standardzie, umożliwia produkcję detali o najwyższej jakości. Dodatkowo, śruby toczne z napędem bezpośrednim w osiach X i Y gwarantują niezawodność i skuteczność procesu obróbki."
+      ],
+      "image": ""
+    },
+    {
+      "title": "Niezawodność i stabilność w jednym",
+      "content": [
+        "Dzięki sztywnej konstrukcji monoBLOCK, DMU 75 zapewnia maksymalną stabilność, wynikającą z jednego odlewu. Kolumna jednoelementowa wyposażona w duże, stabilne prowadnice ślizgowe i rolkowe o średnicy 45 mm na wszystkich osiach zapewniają niezawodność w trakcie obróbki. Dodatkowo, maksymalną stabilność gwarantują duże śruby kulowe we wszystkich osiach o średnicy ø 40 / 50 / 40 mm, wsparte optymalizacją FEM wszystkich podzespołów. Zaciski stołu obrotowego dopełniają konstrukcję, zapewniając solidne i precyzyjne trzymanie detali podczas pracy."
+      ],
+      "image": ""
+    }
+  ],
+  "specification": [
+    {
+      "name": "Szeroki prześwit drzwi",
+      "param": [
+        "1310 mm"
+      ]
+    },
+    {
+      "name": "Unikalny dostęp do obszaru roboczego",
+      "param": [
+        "Maksymalnie kompaktowa obrabiarka, zajmująca zaledwie 8 m²"
+      ]
+    },
+    {
+      "name": "Nieograniczony załadunek",
+      "param": [
+        "Dźwigiem do 600 kg"
+      ]
+    },
+    {
+      "name": "Szybki i łatwy dostęp",
+      "param": [
+        "3-punktowe podparcie"
+      ]
+    },
+    {
+      "name": "Kompleksowe chłodzenie",
+      "param": [
+        "Wysoko wydajne chłodziwo i kompensacja wieloczujnikowa w standardzie"
+      ]
+    },
+    {
+      "name": "Dokładność pozycjonowania",
+      "param": [
+        "4 µm w standardzie"
+      ]
+    },
+    {
+      "name": "Napęd bezpośredni w osiach X i Y",
+      "param": [
+        "Śruby toczne z napędem bezpośrednim w osiach X i Y"
+      ]
+    },
+    {
+      "name": "Kolumna jednoelementowa",
+      "param": [
+        "Duże, stabilne prowadnice ślizgowe i prowadnice rolkowe 45 mm na wszystkich osiach"
+      ]
+    },
+    {
+      "name": "Maksymalna stabilność",
+      "param": [
+        "Duże śruby kulowe we wszystkich osiach ø 40 / 50 / 40 mm"
+      ]
+    },
+    {
+      "name": "Optymalizacja FEM",
+      "param": [
+        "Wszystkich podzespołów"
+      ]
+    }
+  ],
+  "additional_products": [
+    {
+      "name": "DMU 75 monoBLOCK",
+      "image": "/products/images/dmu-75-monoblock/carousel1.svg",
+      "link": "/product/dmu-75-monoblock"
+    },
+    {
+      "name": "M1",
+      "image": "/products/images/m1/carousel1.svg",
+      "link": "/product/m1"
+    },
+    {
+      "name": "SPRINT 32I5",
+      "image": "/products/images/sprint-32I5/carousel1.svg",
+      "link": "/product/sprint-32I5"
+    },
+    {
+      "name": "Obróbka powierzchni",
+      "image": "/products/images/surface-treatment/carousel1.svg",
+      "link": "/product/surface-treatment"
+    },
+    {
+      "name": "CLX 350",
+      "image": "/products/images/clx-350/carousel1.svg",
+      "link": "/product/clx-350"
+    }
+  ]
+}

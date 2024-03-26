@@ -1,0 +1,86 @@
+{
+  "basic_data": {
+    "pathID": "bending-station",
+    "name": "Stanowisko gięcia",
+    "additional_name": "",
+    "description": "Niezbędne narzędzie w produkcji elementów z giętymi detalami, takich jak obudowy, kształtowniki czy elementy konstrukcyjne. Stanowisko gięcia umożliwia precyzyjne wyginanie materiałów zgodnie z określonymi parametrami technicznymi oraz zapewnia efektywną i powtarzalną obróbkę.",
+    "with_data": false
+  },
+  "images": [
+    "/products/images/bending-station/carousel1.svg",
+    "/products/images/bending-station/carousel2.svg",
+    "/products/images/bending-station/carousel3.svg",
+    "/products/images/bending-station/carousel4.svg"
+  ],
+  "floating_CTA": {
+    "title": "Stanowisko gięcia",
+    "image": "/products/images/bending-station/floatingCTA.svg",
+    "content": "",
+    "button": "Zapytaj o wycenę",
+    "form": "/contact",
+    "qp": "",
+    "ar": ""
+  },
+  "parameters": [
+    {
+      "name": "Prasa",
+      "value": "Trumpf"
+    },
+    {
+      "name": "Robot",
+      "value": "IRB 4600"
+    },
+    {
+      "name": "Maks. wielkość detalu",
+      "value": "1500 mm x 1500 mm"
+    },
+    {
+      "name": "Maks. grubość detalu",
+      "value": "4-5 mm"
+    }
+  ],
+  "main_characteristics": [
+    {
+      "title": "",
+      "content": [
+        ""
+      ],
+      "image": ""
+    }
+  ],
+  "specification": [
+    {
+      "name": "",
+      "param": [
+        ""
+      ]
+    }
+  ],
+  "additional_products": [
+    {
+      "name": "TrueLaser 3030 fiber | TRUMPH",
+      "image": "/products/images/truelaser-3030/carousel1.svg",
+      "link": "/product/truelaser-3030"
+    },
+    {
+      "name": "TruLaser Tube 7000 fiber",
+      "image": "/products/images/truelaser-7000/carousel1.svg",
+      "link": "/product/truelaser-7000"
+    },
+    {
+      "name": "5-cio osiowe CNC",
+      "image": "/products/images/5-axis-cnc/carousel1.svg",
+      "link": "/product/5-axis-cnc"
+    },
+    {
+      "name": "TruPunch 5000 | TRUMPH",
+      "image": "/products/images/trupunch-5000/carousel1.svg",
+      "link": "/product/trupunch-5000"
+    },
+    {
+      "name": "Primus Waterjet INTERMAC",
+      "image": "/products/images/waterjet/carousel1.svg",
+      "link": "/product/waterjet"
+    }
+  ]
+}

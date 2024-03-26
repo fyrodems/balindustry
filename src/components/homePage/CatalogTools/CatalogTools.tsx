@@ -1,5 +1,6 @@
-import { PiBookOpen } from 'react-icons/pi'
 // eslint-disable-next-line import/no-extraneous-dependencies
+
+import { PiBookOpen } from 'react-icons/pi'
 import { Drill } from 'lucide-react'
 import Image from 'next/image'
 import catalog from '../../../../public/images/imgs/BAL_catalog.webp'
@@ -18,12 +19,26 @@ export default function CatalogTools() {
           </div>
           <h2>Przejrzyj nasz katalog</h2>
           <p>Dowiedz się więcej o naszych maszynach dzięki katalogowi.</p>
-          <Button disabled={false} size="XL" content="Pobierz katalog" />
+          <a
+            href={'/assets/BAL_Industry_2023.pdf'}
+            aria-label="download-catalog"
+            className="catalogView__downloadLink"
+            download="BAL_Industry_Catalog_2023.pdf"
+          >
+            <Button disabled={false} size="XL" content="Pobierz katalog" />
+          </a>
         </div>
         <div className={styles.imgContainer}>
           <Image src={catalog} alt="Catalog photo" />
         </div>
-        <Button disabled={false} size="XL" content="Pobierz katalog" />
+        <a
+          href={'/assets/BAL_Industry_2023.pdf'}
+          aria-label="download-catalog"
+          className="catalogView__downloadLink"
+          download="BAL_Industry_Catalog_2023.pdf"
+        >
+          <Button disabled={false} size="XL" content="Pobierz katalog" />
+        </a>
       </div>
       <div className={styles.container}>
         <div className={styles.containerText}>
@@ -38,7 +53,9 @@ export default function CatalogTools() {
               <li>VRED Autodesk.</li>
             </ul>
           </div>
-          <Link href="./">Dowiedz się więcej</Link>
+          <Link href="/about" className="underline">
+            Dowiedz się więcej
+          </Link>
         </div>
         <div className={styles.imgContainer}>
           <Image

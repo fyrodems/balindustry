@@ -1,0 +1,156 @@
+{
+  "basic_data": {
+    "pathID": "alw-1200",
+    "name": "ALW 1200 - Automatic Linear Welder",
+    "additional_name": "",
+    "description": "Maszyna ALW-1200 przeznaczona jest to automatycznego spawania wzdłużnie połączeń elementów walcowanych o średnicach dopasowanych do potrzeb klienta. W zależności od wymagań procesu spawania i materiału z jakiego będą wykonywane elementy walcowane możemy dostosować nasze urządzenie do spawania w metodzie TIG i/lub MIG/MAG.",
+    "with_data": true
+  },
+  "images": [
+    "/products/images/alw-1200/carousel1.png",
+    "/products/images/alw-1200/carousel2.png",
+    "/products/images/alw-1200/carousel3.png",
+    "/products/images/alw-1200/carousel4.png",
+    "/products/images/alw-1200/carousel5.png",
+    "/products/images/alw-1200/carousel6.png"
+  ],
+  "floating_CTA": {
+    "title": "ALW 1200",
+    "image": "/products/images/alw-1200/carousel1.png",
+    "content": "",
+    "button": "Zapytaj o wycenę",
+    "form": "/forms/robotic-stations",
+    "qp": "",
+    "ar": ""
+  },
+  "parameters": [
+    {
+      "name": "Silnik",
+      "value": "HIWIN EM1"
+    },
+    {
+      "name": "Kontrola",
+      "value": "Siemens S7 - 1200"
+    },
+    {
+      "name": "Długość spawania",
+      "value": "max. 2100 mm"
+    },
+    {
+      "name": "Panel operatorski",
+      "value": "HMI"
+    }
+  ],
+  "main_characteristics": [
+    {
+      "title": "Możliwość spawania detali o różnej długości dzięki zastosowaniu dzielonych sekcji docisku elementu spawanego",
+      "content": [
+        ""
+      ],
+      "image": "/products/images/alw-1200/mainCharacteristics1.png"
+    },
+    {
+      "title": "Niezwodny system łożysk liniowych oraz serwonapęd",
+      "content": [
+        "Napęd palnika i pakietu przewodów opraty jest o niezwodny system łożysk liniowych oraz serwonapęd firmy Hiwin.",
+        "Uchwyt do spawania możemy regulować w osi Y oraz w osi Z."
+      ],
+      "image": "/products/images/alw-1200/mainCharacteristics2.png"
+    }
+  ],
+  "specification": [
+    {
+      "name": "Średnica elementu spawanego",
+      "param": [
+        "min. 190, max. 1200 mm"
+      ]
+    },
+    {
+      "name": "Długość spawania",
+      "param": [
+        "max. 2100 mm"
+      ]
+    },
+    {
+      "name": "Grubość łączonych materiałów",
+      "param": [
+        "0,5 - 8 mm"
+      ]
+    },
+    {
+      "name": "Źródło spawalnicze",
+      "param": [
+        "Fronius/Esab"
+      ]
+    },
+    {
+      "name": "Metoda spawania",
+      "param": [
+        "MIG/MAG & TIG"
+      ]
+    },
+    {
+      "name": "Długość łuku",
+      "param": [
+        "stała na całej długości"
+      ]
+    },
+    {
+      "name": "Chłodzenie",
+      "param": [
+        "podkładka (trzpień), palnik"
+      ]
+    },
+    {
+      "name": "Kontrola",
+      "param": [
+        "Siemens S7 - 1200"
+      ]
+    },
+    {
+      "name": "Silnik",
+      "param": [
+        "HIWIN Silnik serwo EM1"
+      ]
+    },
+    {
+      "name": "Panel operatorski",
+      "param": [
+        "HMI"
+      ]
+    },
+    {
+      "name": "Listwa oporowa",
+      "param": [
+        "Miedź odporna na ścieranie"
+      ]
+    }
+  ],
+  "additional_products": [
+    {
+      "name": "Flex Cobot Esab",
+      "image": "/products/images/flex-esab/carousel1.png",
+      "link": "/product/flex-esab"
+    },
+    {
+      "name": "Obróbka powierzchni",
+      "image": "/products/images/surface-treatment/carousel1.svg",
+      "link": "/product/surface-treatment"
+    },
+    {
+      "name": "ARC B250",
+      "image": "/products/images/arc-b250/carousel1.svg",
+      "link": "/product/arc-b250"
+    },
+    {
+      "name": "Flex Cobot Fronius",
+      "image": "/products/images/flex-fronius/carousel1.png",
+      "link": "/product/flex-fronius"
+    },
+    {
+      "name": "ARC Trackmotion 2t",
+      "image": "/products/images/arc-trackmotion-2t/carousel1.svg",
+      "link": "/product/arc-trackmotion-2t"
+    }
+  ]
+}

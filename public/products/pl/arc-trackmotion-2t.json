@@ -1,0 +1,87 @@
+{
+  "basic_data": {
+    "pathID": "arc-trackmotion-2t",
+    "name": "ARC Trackmotion 2t",
+    "additional_name": "",
+    "description": "ABB oferuje kompleksową gamę pozycjonerów przedmiotów, które umożliwiają w pełni zsynchronizowane ruchy robota podczas programowania oraz w trakcie operacji.",
+    "with_data": false
+  },
+  "images": [
+    "/products/images/arc-trackmotion-2t/carousel1.svg"
+  ],
+  "floating_CTA": {
+    "title": "ARC Trackmotion 2t",
+    "image": "/products/images/arc-trackmotion-2t/floatingCTA.svg",
+    "content": "",
+    "button": "Zapytaj o wycenę",
+    "form": "/contact",
+    "qp": "",
+    "ar": ""
+  },
+  "parameters": [
+    {
+      "name": "Pozycjoner",
+      "value": "IRBP L-2000"
+    },
+    {
+      "name": "Tor jazdy",
+      "value": "10 m"
+    },
+    {
+      "name": "Nosność",
+      "value": "2000 kg"
+    },
+    {
+      "name": "Maks. długość",
+      "value": "4000 mm"
+    },
+    {
+      "name": "Maks. średnica przestrzeni roboczej",
+      "value": "1500 mm"
+    }
+  ],
+  "main_characteristics": [
+    {
+      "title": "",
+      "content": [
+        ""
+      ],
+      "image": ""
+    }
+  ],
+  "specification": [
+    {
+      "name": "",
+      "param": [
+        ""
+      ]
+    }
+  ],
+  "additional_products": [
+    {
+      "name": "ARC B250",
+      "image": "/products/images/arc-b250/carousel1.svg",
+      "link": "/product/arc-b250"
+    },
+    {
+      "name": "ARC D600",
+      "image": "/products/images/arc-d600/carousel1.svg",
+      "link": "/product/arc-d600"
+    },
+    {
+      "name": "DMU 210 P",
+      "image": "/products/images/dmu-210-p/carousel1.svg",
+      "link": "/product/dmu-210-p"
+    },
+    {
+      "name": "TruLaser Tube 7000 fiber",
+      "image": "/products/images/truelaser-7000/carousel1.svg",
+      "link": "/product/truelaser-7000"
+    },
+    {
+      "name": "TruPunch 5000 | TRUMPH",
+      "image": "/products/images/trupunch-5000/carousel1.svg",
+      "link": "/product/trupunch-5000"
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "basic_data": {
+    "pathID": "5-axis-cnc",
+    "name": "5-cio osiowe CNC",
+    "additional_name": "Materiał do obróbki: Stal, Stal nierdzewna, Aluminium, Żeliwo, Metale kolorowe, Tworzywo sztuczne, Marmur, Szkło",
+    "description": "Dzięki połączeniu doskonałej inżynierii mechanicznej z inteligentnym oprogramowaniem oraz szeroką gamą akcesoriów, zapewniają one kompleksowe rozwiązania dla potrzeb pomiarowych.",
+    "with_data": true
+  },
+  "images": [
+    "/products/images/5-axis-cnc/carousel1.svg"
+  ],
+  "floating_CTA": {
+    "title": "5-cio osiowe CNC",
+    "image": "/products/images/5-axis-cnc/floatingCTA.svg",
+    "content": "",
+    "button": "Zapytaj o wycenę",
+    "form": "/contact",
+    "qp": "",
+    "ar": ""
+  },
+  "parameters": [
+    {
+      "name": "Maks. przesuwy w osi X",
+      "value": "3400 mm"
+    },
+    {
+      "name": "Pojemność magazywnowa",
+      "value": "> 45"
+    },
+    {
+      "name": "Maks. przesuwy w osi Y",
+      "value": "1650 mm"
+    },
+    {
+      "name": "Moc zainstalowania",
+      "value": "22,5kW"
+    },
+    {
+      "name": "Maks. przesuwy w osi Z",
+      "value": "465 mm"
+    },
+    {
+      "name": "Moc elektrowrzeciona",
+      "value": "15kW (12 000 RPM)"
+    }
+  ],
+  "main_characteristics": [
+    {
+      "title": "Nowe Technologie dla Perfekcyjnych Projektów",
+      "content": [
+        "Dzięki wsparciu Programu Operacyjnego Inteligentny Rozwój, poddziałanie 2.3.5. Design dla Przedsiębiorców, firma BAL Industry mogła wzbogacić swój park maszynowy o najnowszej generacji maszyny CNC dedykowane do pracy nad spiekami ceramicznymi. Nowoczesne technologie CNC pozwalają na precyzyjne i skomplikowane obróbki, umożliwiając tworzenie projektów niemożliwych do zrealizowania tradycyjnymi metodami. Dzięki temu BAL Industry może sprostać nawet najbardziej wymagającym oczekiwaniom klientów, oferując produkty najwyższej jakości i perfekcyjne wykonanie."
+      ],
+      "image": ""
+    },
+    {
+      "title": "Zapewnia wykonanie prac w zakresie:",
+      "content": [
+        "Wiercenie",
+        "Frezowanie",
+        "Krawędziowanie wewnętrzne i zewnętrzne",
+        "Profilowanie krawędzi prostych i łukowych (półwałek, ćwierćwałek, faza)",
+        "Profilowanie stopnic",
+        "Polerowanie krawędzi prostych i łukowych",
+        "Wykonywanie powierzchniowych kanałów",
+        "Skosowanie pod kątem 45 stopni",
+        "Frezowanie powierzchni płyty ceramicznej wgłębnie",
+        "Frezowanie zagłębień antypoślizgowych na stopnicy"
+      ],
+      "image": ""
+    }
+  ],
+  "specification": [
+    {
+      "name": "Stół roboczy",
+      "param": [
+        "3800x2000 mm",
+        "wysokość 520 mm"
+      ]
+    },
+    {
+      "name": "Elektrowrzeciono",
+      "param": [
+        "15 kW"
+      ]
+    },
+    {
+      "name": "Oprogramowanie EasyStone DDX",
+      "param": [
+        "Przyjazne dla użytkownika, zwiększona moc obliczeniowa"
+      ]
+    },
+    {
+      "name": "Uchwyt dla tarczy o maksymalnej średnicy",
+      "param": [
+        "350 mm",
+        "umożliwiający wykonywanie cięć liniowych"
+      ]
+    }
+  ],
+  "additional_products": [
+    {
+      "name": "ARC B250",
+      "image": "/products/images/arc-b250/carousel1.svg",
+      "link": "/product/arc-b250"
+    },
+    {
+      "name": "DMU 75 monoBLOCK",
+      "image": "/products/images/dmu-75-monoblock/carousel1.svg",
+      "link": "/product/dmu-75-monoblock"
+    },
+    {
+      "name": "NLX 2500",
+      "image": "/products/images/nlx-2500/carousel1.svg",
+      "link": "/product/nlx-2500"
+    },
+    {
+      "name": "TrueLaser 3030 fiber | TRUMPH",
+      "image": "/products/images/truelaser-3030/carousel1.svg",
+      "link": "/product/truelaser-3030"
+    },
+    {
+      "name": "Primus Waterjet INTERMAC",
+      "image": "/products/images/waterjet/carousel1.svg",
+      "link": "/product/waterjet"
+    }
+  ]
+}

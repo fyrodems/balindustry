@@ -1,0 +1,51 @@
+{
+  "basic_data": {
+    "pathID": "",
+    "name": "",
+    "additional_name": "",
+    "description": "",
+    "with_data": false
+  },
+  "images": [
+    ""
+  ],
+  "floating_CTA": {
+    "title": "",
+    "image": "",
+    "content": "",
+    "button": "Zapytaj o wycenę",
+    "form": "/forms/",
+    "qp": "",
+    "ar": ""
+  },
+  "parameters": [
+    {
+      "name": "",
+      "value": ""
+    }
+  ],
+  "main_characteristics": [
+    {
+      "title": "",
+      "content": [
+        ""
+      ],
+      "image": ""
+    }
+  ],
+  "specification": [
+    {
+      "name": "",
+      "param": [
+        ""
+      ]
+    }
+  ],
+  "additional_products": [
+    {
+      "name": "",
+      "image": "",
+      "link": ""
+    }
+  ]
+}

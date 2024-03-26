@@ -1,0 +1,166 @@
+{
+  "basic_data": {
+    "pathID": "dmu-210-p",
+    "name": "DMU 210 P",
+    "additional_name": "Materiał do obróbki: Stal, Stal nierdzewna, Aluminium, Żeliwo, Metale kolorowe, Tworzywo sztuczne",
+    "description": "DMU 210 P (FD) to zaawansowana obrabiarka wielofunkcyjna, wykorzystywana głównie do precyzyjnego frezowania i obróbki detali metalowych. Jest to model wysokiej klasy, zapewniający precyzję i efektywność w procesach produkcyjnych.",
+    "with_data": true
+  },
+  "images": [
+    "/products/images/dmu-210-p/carousel1.svg"
+  ],
+  "floating_CTA": {
+    "title": "DMU 210 P",
+    "image": "/products/images/dmu-210-p/floatingCTA.svg",
+    "content": "",
+    "button": "Zapytaj o wycenę",
+    "form": "/contact",
+    "qp": "",
+    "ar": ""
+  },
+  "parameters": [
+    {
+      "name": "Maks. przesuwy w osi X",
+      "value": "2100 mm"
+    },
+    {
+      "name": "Maks. wysokość obrabianego przedmiotu",
+      "value": "1460 mm"
+    },
+    {
+      "name": "Maks. przesuwy w osi Y",
+      "value": "2100 mm"
+    },
+    {
+      "name": "Maks. ciężar detalu",
+      "value": "8000 kg"
+    },
+    {
+      "name": "Maks. przesuwy w osi Z",
+      "value": "1250 mm"
+    },
+    {
+      "name": "Maks. średnica detalu",
+      "value": "2500 mm"
+    }
+  ],
+  "main_characteristics": [
+    {
+      "title": "Zintegrowana Obróbka Skrawaniem: Frezowanie, Toczenie i Szlifowanie w Jednym Ustawieniu",
+      "content": [
+        "Oferując kompletną obróbkę skrawaniem w jednym ustawieniu, nasza nowa technologia umożliwia frezowanie i toczenie przy jednoczesnej integracji technologii obróbki szlifierskiej. Dzięki stołowi DirectDrive z momentem obrotowym do 6800 Nm zapewniamy nie tylko efektywność, ale również najwyższą jakość powierzchni detali."
+      ],
+      "image": ""
+    },
+    {
+      "title": "Zintegrowane Rozwiązania dla Maksymalnej Dokładności",
+      "content": [
+        "Zapewniamy maksymalną dokładność w obróbce skrawaniem dzięki wyjątkowym funkcjom naszej nowej obrabiarki. Dzięki chłodzonemu wodą napędowi posuwu oraz zespołowi filtra taśmowego z pojemnością 980 litrów w standardzie, zapewniamy nie tylko doskonałą precyzję, ale również optymalne warunki pracy. Dodatkowo, nasza maszyna wyposażona jest w chłodzone liniowe prowadnice oraz aktywną kontrolę rozszerzalności wrzeciona, co gwarantuje najwyższą długoterminową dokładność obróbki skrawaniem."
+      ],
+      "image": ""
+    },
+    {
+      "title": "Wydajność, Dynamika i Innowacyjne Rozwiązania",
+      "content": [
+        "Obrabiarka skrawająca oferuje niezrównaną efektywność dzięki wysokiej dynamice z prędkością posuwu do 60 000 mm/min oraz wysokiej sile posuwowej skrawania do 40 kN. Dostępna zarówno w wersji frezarskiej, jak i tokarskiej, maszyna wyposażona jest w największą ofertę wrzecion na rynku, w tym elektrowrzeciono powerMASTER o masie do 1000 Nm oraz wrzeciono przekładni torqueMASTER o mocy 1800 Nm. Dodatkowo, zapewnia wydajność dzięki niższemu zużyciu energii dzięki inteligentnym modułom zasilania oraz innowacyjnemu magazynowi kołowemu z maksymalnie 303 narzędziami, przy minimalnej powierzchni ustawczej. Konstrukcja Gantry z pionową ruchomą belką poprzeczną z hydrauliczną kompensacją ciężaru zapewnia stabilność i precyzję podczas pracy."
+      ],
+      "image": ""
+    },
+    {
+      "title": "Obrabiarka Zbudowana na Innowacyjnej Konstrukcji Termosymetrycznej",
+      "content": [
+        "Oferujemy najwyższą sztywność i dynamikę, osiągając przyspieszenie do 6 m/s². Dzięki konstrukcji termosymetrycznej oraz 3-punktowemu podparciu ze sztywnym łożem maszyny, nie są wymagane fundamenty, co zapewnia nie tylko stabilność, ale także oszczędność czasu i kosztów montażu. Standardowo gwarantujemy wysoką stabilność temperaturową z dokładnością pozycjonowania do 10 μm, jednak opcjonalnie oferujemy również pakiet dokładności, umożliwiający uzyskanie jeszcze większej precyzji - do 8 μm. Dodatkowo, nasz unikatowy wariant o wysokiej precyzji mikronowej oferuje niezrównaną dokładność pozycjonowania do 4 μm, co czyni naszą obrabiarkę wyjątkową na skalę światową."
+      ],
+      "image": ""
+    }
+  ],
+  "specification": [
+    {
+      "name": "Zespół filtra taśmowego",
+      "param": [
+        "Pojemność 980 l w standardzie"
+      ]
+    },
+    {
+      "name": "Najwyższa długoterminowa dokładność",
+      "param": [
+        "Chłodzone liniowe prowadnice i aktywna kontrola rozszerzalności wrzeciona"
+      ]
+    },
+    {
+      "name": "Dynamika",
+      "param": [
+        "do 60 000 mm/min"
+      ]
+    },
+    {
+      "name": "Siła posuwowa skrawania",
+      "param": [
+        "do 40 kN"
+      ]
+    },
+    {
+      "name": "Elektrowrzeciono powerMASTER o masie",
+      "param": [
+        "do 1000 Nm"
+      ]
+    },
+    {
+      "name": "Wrzeciono przekładni torqueMASTER o mocy",
+      "param": [
+        "1800 Nm"
+      ]
+    },
+    {
+      "name": "Magazyn kołowy",
+      "param": [
+        "Z maksymalnie 303 narzędziami przy minimalnej powierzchni ustawczej"
+      ]
+    },
+    {
+      "name": "Stabilność temperaturowa",
+      "param": [
+        "do 10 μm"
+      ]
+    },
+    {
+      "name": "Dokładność pozycjonowania",
+      "param": [
+        "do 8 μm"
+      ]
+    },
+    {
+      "name": "Precyzja",
+      "param": [
+        "Z dokładnością pozycjonowania do 4 μm"
+      ]
+    }
+  ],
+  "additional_products": [
+    {
+      "name": "CLX 350",
+      "image": "/products/images/clx-350/carousel1.svg",
+      "link": "/product/clx-350"
+    },
+    {
+      "name": "DMU 75 monoBLOCK",
+      "image": "/products/images/dmu-75-monoblock/carousel1.svg",
+      "link": "/product/dmu-75-monoblock"
+    },
+    {
+      "name": "ARC Trackmotion 2t",
+      "image": "/products/images/arc-trackmotion-2t/carousel1.svg",
+      "link": "/product/arc-trackmotion-2t"
+    },
+    {
+      "name": "M1",
+      "image": "/products/images/m1/carousel1.svg",
+      "link": "/product/m1"
+    },
+    {
+      "name": "NLX 2500",
+      "image": "/products/images/nlx-2500/carousel1.svg",
+      "link": "/product/nlx-2500"
+    }
+  ]
+}

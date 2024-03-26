@@ -1,0 +1,105 @@
+{
+  "basic_data": {
+    "pathID": "vertical-warehouse",
+    "name": "Magazyn pionowy blach",
+    "additional_name": "",
+    "description": "Projektujemy i dostarczamy systemy do magazynowania blach, takie jak pakietów arkuszy blach oraz rozwiązania w zakresie magazynowania elementów wraz z paletami transportowymi.",
+    "with_data": false
+  },
+  "images": [
+    "/products/images/vertical-warehouse/carousel1.png"
+  ],
+  "floating_CTA": {
+    "title": "Magazyn pionowy blach",
+    "image": "",
+    "content": "Zeskanuj kod QR, aby zobaczyć w rzeczywistości rozszerzonej AR",
+    "button": "Zapytaj o wycenę",
+    "form": "/forms/warehouses",
+    "qp": "",
+    "ar": "QRView/MAGAZYN"
+  },
+  "parameters": [
+    {
+      "name": "",
+      "value": ""
+    }
+  ],
+  "main_characteristics": [
+    {
+      "title": "Rozwiązania dla efektywnego zarządzania materiałami",
+      "content": [
+        "Nasze rozwiązania są projektowane z myślą o zróżnicowanych potrzebach klientów, zapewniając elastyczność i skalowalność w dostosowaniu do różnych rodzajów produkcji i wielkości magazynów."
+      ],
+      "image": ""
+    }
+  ],
+  "specification": [
+    {
+      "name": "",
+      "param": [
+        ""
+      ]
+    }
+  ],
+  "additional_products": [
+    {
+      "name": "Stanowisko Twin One-axis",
+      "image": "/products/images/twin-one-axis/carousel1.svg",
+      "link": "/product/twin-one-axis"
+    },
+    {
+      "name": "Obróbka powierzchni",
+      "image": "/products/images/surface-treatment/carousel1.svg",
+      "link": "/product/surface-treatment"
+    },
+    {
+      "name": "Montaż lakierni",
+      "image": "/products/images/paintshops-installation/carousel1.svg",
+      "link": "/product/paintshops-installation"
+    },
+    {
+      "name": "Piece komorowe",
+      "image": "/products/images/furnace/carousel1.svg",
+      "link": "/product/furnace"
+    },
+    {
+      "name": "Stanowisko gięcia",
+      "image": "/products/images/bending-station/carousel1.svg",
+      "link": "/product/bending-station"
+    }
+  ],
+  "metal_sheets": [
+    {
+      "size": "1000 x 2000 mm",
+      "mass": "> 2500 kg",
+      "drawers": "-"
+    },
+    {
+      "size": "1250 x 2500 mm",
+      "mass": "> 2500 kg",
+      "drawers": "-"
+    },
+    {
+      "size": "1500 x 3000 mm",
+      "mass": "> 2500 kg",
+      "drawers": "12"
+    }
+  ],
+  "pallets_elements": [
+    {
+      "size": "1000 x 2000 mm",
+      "mass": "> 2500 kg",
+      "drawers": "-"
+    },
+    {
+      "size": "1250 x 2500 mm",
+      "mass": "> 2500 kg",
+      "drawers": "-"
+    },
+    {
+      "size": "1500 x 3000 mm",
+      "mass": "> 2500 kg",
+      "drawers": "12"
+    }
+  ]
+}

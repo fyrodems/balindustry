@@ -6,7 +6,7 @@ interface ButtonProps {
   size?: 'XL' | 'L' | 'M' | 'XS' | null
   className?: string
   primary?: boolean
-  onClick: () => void
+  onClick?: () => void
 }
 
 export const Button: React.FC<ButtonProps> = ({

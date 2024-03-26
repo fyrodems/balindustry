@@ -1,0 +1,91 @@
+{
+  "basic_data": {
+    "pathID": "arc-d600",
+    "name": "ARC D600",
+    "additional_name": "",
+    "description": "",
+    "with_data": false
+  },
+  "images": [
+    "/products/images/arc-d600/carousel1.svg"
+  ],
+  "floating_CTA": {
+    "title": "ARC D600",
+    "image": "/products/images/arc-d600/floatingCTA.svg",
+    "content": "",
+    "button": "Zapytaj o wycenę",
+    "form": "/contact",
+    "qp": "",
+    "ar": ""
+  },
+  "parameters": [
+    {
+      "name": "Pozycjoner",
+      "value": "IRBP D-600"
+    },
+    {
+      "name": "Źródło spawalnicze",
+      "value": "Fronius"
+    },
+    {
+      "name": "Nosność",
+      "value": "600 kg"
+    },
+    {
+      "name": "Maks. długość",
+      "value": "2000 mm"
+    },
+    {
+      "name": "Przy loadmaster tube 9,2m",
+      "value": "9200 mm"
+    },
+    {
+      "name": "Spowalniany materiał",
+      "value": "Stal czarna nierdzewna"
+    }
+  ],
+  "main_characteristics": [
+    {
+      "title": "",
+      "content": [
+        ""
+      ],
+      "image": ""
+    }
+  ],
+  "specification": [
+    {
+      "name": "",
+      "param": [
+        ""
+      ]
+    }
+  ],
+  "additional_products": [
+    {
+      "name": "5-cio osiowe CNC",
+      "image": "/products/images/5-axis-cnc/carousel1.svg",
+      "link": "/product/5-axis-cnc"
+    },
+    {
+      "name": "ARC B250",
+      "image": "/products/images/arc-b250/carousel1.svg",
+      "link": "/product/arc-b250"
+    },
+    {
+      "name": "ARC Trackmotion 2t",
+      "image": "/products/images/arc-trackmotion-2t/carousel1.svg",
+      "link": "/product/arc-trackmotion-2t"
+    },
+    {
+      "name": "SPRINT 32I5",
+      "image": "/products/images/sprint-32I5/carousel1.svg",
+      "link": "/product/sprint-32I5"
+    },
+    {
+      "name": "Obróbka powierzchni",
+      "image": "/products/images/surface-treatment/carousel1.svg",
+      "link": "/product/surface-treatment"
+    }
+  ]
+}

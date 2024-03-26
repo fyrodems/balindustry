@@ -1,0 +1,138 @@
+{
+  "basic_data": {
+    "pathID": "trupunch-5000",
+    "name": "TruPunch 5000 | TRUMPH",
+    "additional_name": "Materiał do obróbki: Stal, Stal nierdzewna, Aluminium, Żeliwo, Metale kolorowe",
+    "description": "Wyjątkowa produktywność i bezpieczeństwo procesu dzięki napędowi bez luzu, umożliwiającemu ekstremalnie szybką obróbkę konturów i kształtowanie gwintu przy dużych prędkościach rotacji osi C. Szybkie wykrawanie i znakowanie, wspierając elastyczność i efektywność procesu.",
+    "with_data": true
+  },
+  "images": [
+    "/products/images/trupunch-5000/carousel1.svg"
+  ],
+  "floating_CTA": {
+    "title": "TruPunch 5000 | TRUMPH",
+    "image": "/products/images/trupunch-5000/floatingCTA.svg",
+    "content": "",
+    "button": "Zapytaj o wycenę",
+    "form": "/contact",
+    "qp": "",
+    "ar": ""
+  },
+  "parameters": [
+    {
+      "name": "Szerokość",
+      "value": "6540 mm"
+    },
+    {
+      "name": "Wysokość",
+      "value": "2072 mm"
+    },
+    {
+      "name": "Maks. przesuwy w osi Y",
+      "value": "1250 mm"
+    },
+    {
+      "name": "Maks. przesuwy w osi X",
+      "value": "2500 mm"
+    },
+    {
+      "name": "Maks. grubości blachy",
+      "value": "3 mm"
+    },
+    {
+      "name": "Maks. waga wykrywalnego obiektu",
+      "value": "250 kg"
+    }
+  ],
+  "main_characteristics": [
+    {
+      "title": "Elastyczna obróbka z narzędziami wielkości 5 dla aktywnej matrycy",
+      "content": [
+        "Narzędzia o rozmiarze 5 do aktywnej matrycy umożliwiają elastyczną pracę, zarówno przy wywijaniu obrzeży otworów, jak i przy tworzeniu szczelin. Wśród narzędzi wykorzystanych do tego celu znajdują się tłocznik do wywijania obrzeży otworów od dołu, narzędzie do szczelin, narzędzie do prowadzenia karty oraz narzędzie do wytłaczania rolkami."
+      ],
+      "image": "/products/images/trupunch-5000/mainCharacteristics1.svg"
+    },
+    {
+      "title": "Efektywne wygładzanie podczas procesu",
+      "content": [
+        "Dzięki funkcji zintegrowanego prostowania oraz odpowiedniemu narzędziu możliwe jest niwelowanie nierówności już w trakcie procesu wykrawania, eliminując konieczność dodatkowej obróbki wykańczającej."
+      ],
+      "image": "/products/images/trupunch-5000/mainCharacteristics2.svg"
+    },
+    {
+      "title": "Efektywna Produkcja z TruTops Boost",
+      "content": [
+        "TruTops Boost, kompleksowe oprogramowanie 3D, umożliwia projektowanie i programowanie laserów, wykrawarek oraz laserowych wykrawarek. Dzięki licznych automatyzacjom możliwe jest skrócenie czasu potrzebnego na rutynowe czynności oraz oszczędność materiału dzięki wspólnej puli zadań. Dodatkowo, program umożliwia pełną kontrolę nad wszystkimi zleceniami produkcyjnymi oraz zoptymalizowaną pracę opartą na zleceniach."
+      ],
+      "image": ""
+    },
+    {
+      "title": "Inteligentne Rozwiązania Przemysłu 4.0 od TRUMPF",
+      "content": [
+        "Rozwiązania oprogramowania firmy TRUMPF doskonale optymalizują proces produkcyjny od pierwszego zapytania klienta aż po dostawę gotowej części. Inteligentne połączenie oprogramowania, maszyn oraz usług dostarcza kompleksowe i spersonalizowane rozwiązania dla Smart Factory w erze Przemysłu 4.0."
+      ],
+      "image": ""
+    }
+  ],
+  "specification": [
+    {
+      "name": "Maks. siła wykrawania",
+      "param": [
+        "220 kN"
+      ]
+    },
+    {
+      "name": "Szeroki rozstaw prowadnic",
+      "param": [
+        "580 mm w osi X / przejazd 550 mm",
+        "560 mm w osi Y / przejazd 550 mm",
+        "260 mm w osi Z / przejazd 510 mm"
+      ]
+    },
+    {
+      "name": "Czas zmiany narzędzia multitool",
+      "param": [
+        "0,3 s"
+      ]
+    },
+    {
+      "name": "Maks. grubości blachy",
+      "param": [
+        "3 mm"
+      ]
+    },
+    {
+      "name": "Maks. waga wykrywalnego obiektu",
+      "param": [
+        "250 kg"
+      ]
+    }
+  ],
+  "additional_products": [
+    {
+      "name": "ARC D600",
+      "image": "/products/images/arc-d600/carousel1.svg",
+      "link": "/product/arc-d600"
+    },
+    {
+      "name": "ARC Trackmotion 2t",
+      "image": "/products/images/arc-trackmotion-2t/carousel1.svg",
+      "link": "/product/arc-trackmotion-2t"
+    },
+    {
+      "name": "5-cio osiowe CNC",
+      "image": "/products/images/5-axis-cnc/carousel1.svg",
+      "link": "/product/5-axis-cnc"
+    },
+    {
+      "name": "TruPunch 5000 | TRUMPH",
+      "image": "/products/images/trupunch-5000/carousel1.svg",
+      "link": "/product/trupunch-5000"
+    },
+    {
+      "name": "Stanowisko Twin One-axis",
+      "image": "/products/images/twin-one-axis/carousel1.svg",
+      "link": "/product/twin-one-axis"
+    }
+  ]
+}

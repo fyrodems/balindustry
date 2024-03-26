@@ -9,7 +9,7 @@ import { useRef, useCallback } from 'react'
 import { FaArrowDown } from 'react-icons/fa6'
 import photo from '../../../../public/images/mainPageProducts/twin_one_axis.png'
 import styles from './PopularOffers.module.scss'
-import useWindowDimensions from '@/hooks/useWindowDimensions'
+import useWindowDimensions from '@/utils/useWindowDimensions'
 
 export default function PopularOffers() {
   const windowDimensions = useWindowDimensions()

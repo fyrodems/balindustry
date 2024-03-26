@@ -1,0 +1,83 @@
+{
+  "basic_data": {
+    "pathID": "furnace",
+    "name": "Piece komorowe",
+    "additional_name": "",
+    "description": "Piec służy do różnych rodzajów obróbki cieplanej wsadu w temperaturach od 900°C do 1260°C. W piecach z wysuwanym trzonem możemy również ustawić równomierny rozkład temperatury.",
+    "with_data": false
+  },
+  "images": [
+    "/products/images/furnace/carousel1.svg"
+  ],
+  "floating_CTA": {
+    "title": "Piece komorowe",
+    "image": "",
+    "content": "Zeskanuj kod QR, aby zobaczyć w rzeczywistości rozszerzonej AR",
+    "button": "Zapytaj o wycenę",
+    "form": "/forms/furnaces",
+    "qp": "",
+    "ar": "QRView/PIEC"
+  },
+  "parameters": [
+    {
+      "name": "Trzony jezdne",
+      "value": "2"
+    },
+    {
+      "name": "Moc",
+      "value": "140kW"
+    },
+    {
+      "name": "Wymiary wewnętrzne (mm)",
+      "value": "1850 x 900 x 3600"
+    },
+    {
+      "name": "Wymiary zewnętrzne (mm)",
+      "value": "3100 x 3400 x 14000"
+    }
+  ],
+  "main_characteristics": [
+    {
+      "title": "",
+      "content": [
+        ""
+      ],
+      "image": ""
+    }
+  ],
+  "specification": [
+    {
+      "name": "",
+      "param": [
+        ""
+      ]
+    }
+  ],
+  "additional_products": [
+    {
+      "name": "5-cio osiowe CNC",
+      "image": "/products/images/5-axis-cnc/carousel1.svg",
+      "link": "/product/5-axis-cnc"
+    },
+    {
+      "name": "TruPunch 5000 | TRUMPH",
+      "image": "/products/images/trupunch-5000/carousel1.svg",
+      "link": "/product/trupunch-5000"
+    },
+    {
+      "name": "Stanowisko Twin One-axis",
+      "image": "/products/images/twin-one-axis/carousel1.svg",
+      "link": "/product/twin-one-axis"
+    },
+    {
+      "name": "Montaż lakierni",
+      "image": "/products/images/paintshops-installation/carousel1.svg",
+      "link": "/product/paintshops-installation"
+    },
+    {
+      "name": "Primus Waterjet INTERMAC",
+      "image": "/products/images/waterjet/carousel1.svg",
+      "link": "/product/waterjet"
+    }
+  ]
+}

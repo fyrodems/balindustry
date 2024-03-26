@@ -1,0 +1,168 @@
+{
+  "basic_data": {
+    "pathID": "sprint-32I5",
+    "name": "SPRINT 32I5",
+    "additional_name": "Materiał do obróbki: Stal, Stal nierdzewna, Aluminium, Żeliwo, Metale kolorowe, Tworzywo sztuczne",
+    "description": "Zaawansowany automat tokarski, zapewniający precyzyjną obróbkę przedmiotów o różnych kształtach i wymiarach, przy wykorzystaniu maksymalnej średnicy materiału do 32 mm i pięciu osi sterowania narzędziami.",
+    "with_data": true
+  },
+  "images": [
+    "/products/images/sprint-32I5/carousel1.svg"
+  ],
+  "floating_CTA": {
+    "title": "SPRINT 32I5",
+    "image": "/products/images/sprint-32I5/floatingCTA.svg",
+    "content": "",
+    "button": "Zapytaj o wycenę",
+    "form": "/contact",
+    "qp": "",
+    "ar": ""
+  },
+  "parameters": [
+    {
+      "name": "Maks. przesuwy w osi X",
+      "value": "70 mm"
+    },
+    {
+      "name": "Maks. długość obrabianego przedmiotu",
+      "value": "240 mm"
+    },
+    {
+      "name": "Maks. przesuwy w osi Y",
+      "value": "405 mm"
+    },
+    {
+      "name": "Maks. średnica wewnętrzna rury zaciskowej",
+      "value": "8000 kg"
+    },
+    {
+      "name": "Maks. przesuwy w osi Z",
+      "value": "100 mm"
+    },
+    {
+      "name": "Maks. średnica detalu",
+      "value": "32 mm"
+    }
+  ],
+  "main_characteristics": [
+    {
+      "title": " Efektywność i Wielofunkcyjność",
+      "content": [
+        "Oferujemy zaawansowane możliwości automatycznej obróbki dzięki 5 osiom liniowym i osi C. Wyposażona w wrzeciono główne o imponujących parametrach, takich jak prędkość obrotowa 8500 obr./min, moment obrotowy 40,4 Nm i moc 5,5 kW, oraz dodatkowe wrzeciono przechwytujące o prędkości obrotowej 8500 obr./min, moment obrotowy 14 Nm i moc 2,2 kW, zapewniając wysoką wydajność i precyzję obróbki. Dodatkowo, opcjonalne SWISSTYPEkit umożliwia obróbkę zarówno krótkich, jak i długich części na jednej obrabiarce, a możliwość obróbki prętów o średnicy do 32 (38) mm sprawia, że nasza maszyna jest wszechstronnym narzędziem do produkcji precyzyjnych detali."
+      ],
+      "image": "/products/images/sprint-32I5/main-characteristics1.svg"
+    },
+    {
+      "title": "Modułowa Budowa Platformowa z 22 Stacjami Narzędziowymi",
+      "content": [
+        "Nasza platforma charakteryzuje się modułową budową, co zapewnia elastyczność w dostosowaniu do różnorodnych procesów produkcyjnych. Zestaw 22 stacji narzędziowych, z czego 4 są napędzane w standardzie, umożliwiają optymalne wykorzystanie maszyny. Dodatkowo, napędzane wrzeciona narzędziowe osiągają prędkość obrotową do 6000 obr./min, moment obrotowy 3 Nm i moc 1 kW, zapewniając wysoką wydajność i precyzję w obróbce."
+      ],
+      "image": ""
+    },
+    {
+      "title": "Zaawansowany Panel Sterowania z Systemem FANUC 32i-B Plus",
+      "content": [
+        "Nasza maszyna wyposażona jest w zaawansowany panel sterowania z 10,4-calowym kolorowym wyświetlaczem, umożliwiającym intuicyjne sterowanie za pomocą systemu FANUC 32i-B Plus. Dzięki 2 kanałom sterującym, 5 osiom liniowym i osi C, zapewniamy elastyczność i precyzję w różnorodnych procesach produkcyjnych. Dodatkowo, opcjonalny system monitorowania narzędzi z graficznym wskaźnikiem załadunku narzędzia umożliwia optymalne zarządzanie procesem. Nasza maszyna obsługuje do 2 narzędzi pracujących jednocześnie, zapewniając maksymalną wydajność i efektywność w produkcji."
+      ],
+      "image": ""
+    },
+    {
+      "title": "Przełom w Cyfrowej Precyzji: Platforma o Najwyższej Sztywności i Dokładności",
+      "content": [
+        "Nasza platforma reprezentuje rewolucyjny krok w cyfrowej przemysłowej precyzji. Dzięki stałej sztywności, zapewnionej przez duże prowadnice kulowe rozmieszczone w sposób zbalansowany, oraz pionowym osłonom i swobodnemu spływowi wiórów, gwarantujemy niezrównaną jakość obróbki. Dodatkowo, zintegrowane elektrowrzeciona dla wrzeciona głównego i przechwytującego z bezpośrednim systemem pomiarowym zapewniają precyzję na najwyższym poziomie. Nasza termosymetryczna konstrukcja łoża obrabiarki to gwarancja najwyższej dokładności w każdym zadaniu."
+      ],
+      "image": ""
+    }
+  ],
+  "specification": [
+    {
+      "name": "Wrzeciono główne",
+      "param": [
+        "Prędkość obrotowa: 8500 obr./min",
+        "Moment obrotowy: 40,4 Nm",
+        "Moc: 5,5 kW"
+      ]
+    },
+    {
+      "name": "Wrzeciono przechwytujące",
+      "param": [
+        "Prędkość obrotowa: 8500 obr./min",
+        "Moment obrotowy: 14 Nm",
+        "Moc: 2,2 kW"
+      ]
+    },
+    {
+      "name": "SWISSTYPEkit",
+      "param": [
+        "Do toczenia krótkich i długich części na jednej obrabiarce"
+      ]
+    },
+    {
+      "name": "Obróbka prętów",
+      "param": [
+        "Średnica do 32 (38) mm"
+      ]
+    },
+    {
+      "name": "Stacje narzędziowe",
+      "param": [
+        "Razem: 22",
+        "Napędzane stacje narzędziowe w standardzie: 4"
+      ]
+    },
+    {
+      "name": "Napędzane wrzeciona narzędziowe",
+      "param": [
+        "Prędkość obrotowa: 6000 obr./min",
+        "Moment obrotowy: 3 Nm",
+        "Moc: 1 kW"
+      ]
+    },
+    {
+      "name": "Sterowanie",
+      "param": [
+        "2 kanały sterujące",
+        "5 osi liniowych i oś C"
+      ]
+    },
+    {
+      "name": "System monitorowania narzędzi",
+      "param": [
+        "Z graficznym wskaźnikiem załadunku narzędzia jako opcja"
+      ]
+    },
+    {
+      "name": "Praca jednocześnie",
+      "param": [
+        "Do 2 narzędzi pracujących jednocześnie"
+      ]
+    }
+  ],
+  "additional_products": [
+    {
+      "name": "M1",
+      "image": "/products/images/m1/carousel1.svg",
+      "link": "/product/m1"
+    },
+    {
+      "name": "ARC Trackmotion 2t",
+      "image": "/products/images/arc-trackmotion-2t/carousel1.svg",
+      "link": "/product/arc-trackmotion-2t"
+    },
+    {
+      "name": "DMU 210 P",
+      "image": "/products/images/dmu-210-p/carousel1.svg",
+      "link": "/product/dmu-210-p"
+    },
+    {
+      "name": "5-cio osiowe CNC",
+      "image": "/products/images/5-axis-cnc/carousel1.svg",
+      "link": "/product/5-axis-cnc"
+    },
+    {
+      "name": "Primus Waterjet INTERMAC",
+      "image": "/products/images/waterjet/carousel1.svg",
+      "link": "/product/waterjet"
+    }
+  ]
+}
