@@ -20,7 +20,7 @@ function QRCode() {
         'SingleStation',
         'DualStation',
         'TwinOneaxis',
-      ].includes(product)
+      ].includes(product as string)
     ) {
       const detectDevice = new ARMode()
       detectDevice.detectDevice()

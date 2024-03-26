@@ -34,7 +34,11 @@ export default function Partners() {
         pagination={false}
         modules={[Autoplay]}
         loop={true}
-        slidesPerView={Math.floor(windowDimensions.width / 220)}
+        slidesPerView={Math.floor(
+          windowDimensions.width === undefined
+            ? 1
+            : windowDimensions.width / 220
+        )}
         spaceBetween={50}
         navigation={false}
         autoplay={{

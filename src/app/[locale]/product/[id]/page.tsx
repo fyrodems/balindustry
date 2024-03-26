@@ -1,6 +1,5 @@
 'use client'
 
-import { type UseProductDataResult } from '../types'
 import useProductData from '../useProductData'
 import PageTitle from '@/components/common/PageTitle'
 import Presentation from '@/components/product/Presentation/Presentation'
@@ -20,11 +19,10 @@ export default function ProductPage({
 }) {
   const { id, locale } = params
 
-  const { data, isLoading, error, isPaused }: UseProductDataResult =
-    useProductData({
-      locale,
-      id,
-    })
+  const { data, isLoading, error, isPaused } = useProductData({
+    locale,
+    id,
+  })
 
   const ErrorMessage = () => (
     <p className="grid min-h-[93vh] place-items-center text-center">
