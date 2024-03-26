@@ -75,7 +75,7 @@ export default function Products() {
                   <div className={styles.servicesCard}>
                     <div className={styles.headerWOImg}>
                       <h3>{card.topHeader}</h3>
-                      {card.topParagraph ?? <p>{card.topParagraph}</p>}
+                      {card.topParagraph && <p>{card.topParagraph}</p>}
                     </div>
                     {/* <Link href="/about" className="z-50 flex self-end"> */}
                     <Button
