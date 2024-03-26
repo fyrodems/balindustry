@@ -8,10 +8,12 @@ import { initializeArButton } from '@/utils/createQR'
 const FloatingCTA: React.FC<FloatingCTAProps> = ({ data }) => {
   const { title, image, content, button, form, qr, ar } = data
 
-  /* !!! do uzupełnienia
-  
-  ar na mobile, 
-  qr na desktop */
+  /**
+   * !!! do uzupełnienia
+   * ar na mobile,
+   * qr na desktop
+   *
+   */
 
   useEffect(() => {
     const arLink = `${window.location.protocol}//${window.location.host}/${ar}`

@@ -1,23 +1,37 @@
-/* eslint-disable import/no-duplicates */
 import QRious from 'qrious'
-// import satyniarkaAndroid from '../ARModels/ARModels/SATYNIARKA.glb'
-// import satyniarkaIOS from '../ARModels/ARModels/SATYNIARKA.glb'
-// import satyniarkaIOS from '../assets/ARModels/SATYNIARKA.glb'
+import satyniarkaAndroid from '../assets/ARModels/SATYNIARKA.glb'
+import satyniarkaIOS from '../assets/ARModels/SATYNIARKA.usdz'
+import magazynAndroid from '../assets/ARModels/MAGAZYN.glb'
+import magazynIOS from '../assets/ARModels/MAGAZYN.usdz'
+import piecAndroid from '../assets/ARModels/PIEC.glb'
+import piecIOS from '../assets/ARModels/PIEC.usdz'
+import inox210SAndroid from '../assets/ARModels/INOX_210S.glb'
+import inox210SIOS from '../assets/ARModels/INOX_210S.usdz'
+import inox210EcoAndroid from '../assets/ARModels/INOX_210_ECO.glb'
+import inox210EcoIOS from '../assets/ARModels/INOX_210_ECO.usdz'
+import thorLMAndroid from '../assets/ARModels/THOR_L_M.glb'
+import thorLMIOS from '../assets/ARModels/THOR_L_M.usdz'
+import kozaABS2Android from '../assets/ARModels/KOZA_AB_S2_DRN.glb'
+import kozaABS2IOS from '../assets/ARModels/KOZA_AB_S2_DRN.usdz'
+import koza11KAndroid from '../assets/ARModels/KOZA_11_K.glb'
+import koza11KIOS from '../assets/ARModels/KOZA_11_K.usdz'
 
 class ARMode {
   #selectedFireplace
 
   constructor() {
-    this.#selectedFireplace = sessionStorage.getItem('selectedFireplace')
-      ? sessionStorage.getItem('selectedFireplace')
-      : window.location.pathname.split('/')[2]
+    if (sessionStorage.getItem('selectedFireplace'))
+      this.#selectedFireplace = sessionStorage.getItem('selectedFireplace')
+    else this.#selectedFireplace = window.location.pathname.split('/')[2]
     this.models = {
-      SATYNIARKA: {},
-      PIEC: {},
-      MAGAZYN: {},
-      SingleStation: {},
-      DualStation: {},
-      TwinOneaxis: {},
+      SATYNIARKA: { Android: satyniarkaAndroid, IOS: satyniarkaIOS },
+      KOZA_11_K: { Android: koza11KAndroid, IOS: koza11KIOS },
+      KOZA_AB_S2_DRN: { Android: kozaABS2Android, IOS: kozaABS2IOS },
+      THOR_L_M: { Android: thorLMAndroid, IOS: thorLMIOS },
+      INOX_210_ECO: { Android: inox210EcoAndroid, IOS: inox210EcoIOS },
+      INOX_210S: { Android: inox210SAndroid, IOS: inox210SIOS },
+      PIEC: { Android: piecAndroid, IOS: piecIOS },
+      MAGAZYN: { Android: magazynAndroid, IOS: magazynIOS },
     }
   }
 
@@ -31,12 +45,12 @@ class ARMode {
     device = this.#detectDeviceIOS()
 
     if (!device) {
-      // Weryfikacja czy Android i jaka przeglądarka
+      //Weryfikacja czy Android i jaka przeglądarka
       device = this.#detectDeviceAndroid()
     }
 
     if (!device) {
-      // Wyświetlanie QRcode
+      //Wyświetlanie QRcode
       if (!document.getElementById('QR')) {
         this.#initializeArButtonQr()
         device = 'QR'
@@ -161,9 +175,10 @@ class ARMode {
    * Wyświetla odpowiedni widok dla Android
    */
   #initializeArButtonAndroid() {
-    let source = `${window.location.protocol}//${window.location.host}${this.models[this.#selectedFireplace].Android}`
+    let source =
+      `http://46.242.130.6:3002/models/` + this.#selectedFireplace + `.glb`
     const title = this.selectedFireplaceModel,
-      fallBackUrl = 'http://balindustry.pl/',
+      fallBackUrl = 'http://balindustry.com/',
       link = null //można dodac adres url do kupna całego kominka
     let noScale = null,
       href = `intent://arvr.google.com/scene-viewer/1.0?file=${source}&mode=ar_preferred`
@@ -180,7 +195,6 @@ class ARMode {
       href += `S.browser_fallback_url=${encodeURIComponent(fallBackUrl)};`
     }
     href += `end;`
-
     this.#activateAR(href, false)
   }
 
