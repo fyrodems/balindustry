@@ -233,7 +233,6 @@ const DesktopNavbar = () => {
           </MenubarContent>
         </MenubarMenu>
 
-        {/* !!! linki do uzupełnienia */}
         <MenubarMenu>
           <MainCategory content="Usługi" />
           <MenubarContent className={cn(styles.popover, styles.services)}>
@@ -249,7 +248,7 @@ const DesktopNavbar = () => {
                   <span>Formularz ofertowy</span>
                 </MenubarItem>
               </Link>
-              <Link href="/">
+              <Link href="/calculator">
                 <MenubarItem>
                   <Image
                     src={'/images/navbarProducts/calc.svg'}

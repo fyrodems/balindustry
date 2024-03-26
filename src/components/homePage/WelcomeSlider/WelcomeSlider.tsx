@@ -38,8 +38,7 @@ export default function WelcomeSlider() {
       header: 'Usługi',
       text: `W oparciu o wiedzę i doświadczenie naszych specjalistów, dostosowujemy swoje usługi do indywidualnych potrzeb i wymagań klientów, zapewniając im profesjonalną obsługę i satysfakcję z otrzymanych rezultatów.`,
       buttonText: 'Dowiedz się więcej',
-      /* !!! link do zmiany jak będzie kalkulator */
-      link: '/contact',
+      link: '/calculator',
     },
   ]
 

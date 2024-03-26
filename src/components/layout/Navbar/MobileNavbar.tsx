@@ -55,18 +55,7 @@ const MobileNavbar: React.FC<{
                   </Link>
                   {categories.map((category, idx) =>
                     category.subcategories ? (
-                      <motion.li
-                        key={idx}
-                        // initial={{ scale: 0, opacity: 0 }}
-                        // animate={{ scale: 1, opacity: 1 }}
-                        // transition={{
-                        //   type: 'spring',
-                        //   stiffness: 260,
-                        //   damping: 20,
-                        //   delay: 0.1 + idx / 10,
-                        // }}
-                        // className="w-full rounded-xl p-[0.08rem]"
-                      >
+                      <motion.li key={idx}>
                         <AccordionItem value={`${idx}`}>
                           <AccordionTrigger>{category.name}</AccordionTrigger>
                           <AccordionContent>
