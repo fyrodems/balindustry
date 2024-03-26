@@ -40,7 +40,7 @@ const MobileNavbar: React.FC<{
             <Accordion type="multiple" className="w-full">
               <ScrollArea className="h-[95vh] pb-8 pt-5">
                 <ul className="grid gap-2">
-                  <Link href={categories[0].link}>
+                  <Link href={categories[0].link as string}>
                     <motion.li>
                       <AccordionItem
                         className="pb-4 pt-0 font-medium"
@@ -103,7 +103,7 @@ const MobileNavbar: React.FC<{
                       </motion.li>
                     ) : null
                   )}
-                  <Link href={categories[categories.length - 1].link}>
+                  <Link href={categories[categories.length - 1].link as string}>
                     <motion.li>
                       <AccordionItem
                         className="pb-4 pt-0 font-medium"

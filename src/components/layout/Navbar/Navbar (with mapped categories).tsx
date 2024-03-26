@@ -30,32 +30,25 @@ const Navbar = () => {
 
         {categories.map((category, index) => (
           <MenubarMenu key={index}>
-            <MainCategory
-              content={category.name}
-              onClick={() => {
-                console.log(index)
-              }}
-            />
-
+            <MainCategory content={category.name} />
             <MenubarContent
               className={cn(styles.popover, styles.index, 'w-[100vw]')}
             >
-              {category.subcategories.map((subcategory, subIndex) => (
+              {category.subcategories?.map((subcategory, subIndex) => (
                 <div key={subIndex}>
                   <span className="text-xs !text-orange-500">
                     {subcategory.name}
                   </span>
                   {subcategory.items.map((item, itemIndex) => (
                     <MenubarItem key={itemIndex}>
-                      {item.image && (
+                      {'image' in item && (
                         <Image
-                          // src={item?.image}
+                          src={item.image}
                           alt={item.name}
                           width={80}
                           height={80}
                         />
                       )}
-
                       <div>
                         <span>{item.name}</span>
                       </div>
