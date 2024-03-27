@@ -1,17 +1,17 @@
 {
   "basic_data": {
-    "pathID": "truelaser-3030",
-    "name": "TrueLaser 3030 fiber | TRUMPH",
+    "pathID": "trulaser-3030",
+    "name": "TruLaser 3030 fiber | TRUMPH",
     "additional_name": "Materiał do obróbki: Stal, Stal nierdzewna, Aluminium, Żeliwo, Metale kolorowe",
     "description": "Zapewnia opłacalne cięcie blachy o różnych grubościach, wykorzystując laser na ciele stałym TruDisk oraz technologię BrightLine fiber do osiągnięcia najwyższej jakości krawędzi i zwiększenia produktywności.",
     "with_data": true
   },
   "images": [
-    "/products/images/truelaser-3030/carousel1.svg"
+    "/products/images/trulaser-3030/carousel1.svg"
   ],
   "floating_CTA": {
-    "title": "TrueLaser 3030 fiber | TRUMPH",
-    "image": "/products/images/truelaser-3030/floatingCTA.svg",
+    "title": "TruLaser 3030 fiber | TRUMPH",
+    "image": "/products/images/trulaser-3030/floatingCTA.svg",
     "content": "",
     "button": "Zapytaj o wycenę",
     "form": "/contact",
@@ -104,8 +104,8 @@
   "additional_products": [
     {
       "name": "TruLaser Tube 7000 fiber",
-      "image": "/products/images/truelaser-7000/carousel1.svg",
-      "link": "/product/truelaser-7000"
+      "image": "/products/images/trulaser-7000/carousel1.svg",
+      "link": "/product/trulaser-7000"
     },
     {
       "name": "TruPunch 5000 | TRUMPH",

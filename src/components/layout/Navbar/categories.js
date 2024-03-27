@@ -47,12 +47,12 @@ export const categories = [
           { name: 'Waterjet', link: '/product/waterjet' },
           { name: 'TruPunch 5000 | TRUMPF', link: '/product/trupunch-5000' },
           {
-            name: 'TrueLaser Tube 7000 fiber',
-            link: '/product/truelaser-7000',
+            name: 'TruLaser Tube 7000 fiber',
+            link: '/product/trulaser-7000',
           },
           {
-            name: 'TrueLaser 3030 fiber | TRUMPF',
-            link: '/product/truelaser-3030',
+            name: 'TruLaser 3030 fiber | TRUMPF',
+            link: '/product/trulaser-3030',
           },
           { name: 'Stanowisko gięcia', link: '/product/bending-station' },
           { name: 'ARC D600', link: '/product/arc-d600' },

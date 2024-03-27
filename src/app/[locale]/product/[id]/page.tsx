@@ -19,6 +19,7 @@ export default function ProductPage({
 }) {
   const { id, locale } = params
 
+  /* !!! nie typować - psuje deploya */
   const { data, isLoading, error, isPaused } = useProductData({
     locale,
     id,
@@ -54,6 +55,7 @@ export default function ProductPage({
     return <UnavailableMessage />
   }
 
+  /* !!! nie typować - psuje deploya */
   const {
     basic_data,
     floating_CTA,
@@ -66,7 +68,7 @@ export default function ProductPage({
 
   return (
     <>
-      <main>
+      <main className="overflow-hidden">
         {basic_data.pathID === 'service-paintshop' ? (
           <>
             <PageTitle content={basic_data.name} />
