@@ -11,12 +11,13 @@
   ],
   "floating_CTA": {
     "title": "Magazyn pionowy blach",
-    "image": "",
-    "content": "Zeskanuj kod QR, aby zobaczyć w rzeczywistości rozszerzonej AR",
+    "image": "/products/images/vertical-warehouse/carousel1.png",
+    "content": "",
     "button": "Zapytaj o wycenę",
     "form": "/forms/warehouses",
     "qp": "",
-    "ar": "QRView/MAGAZYN"
+    "ar": true,
+    "arLink": "/product/vertical-warehouse/MAGAZYN"
   },
   "parameters": [
     {

@@ -11,12 +11,12 @@
   ],
   "floating_CTA": {
     "title": "Piece komorowe",
-    "image": "",
-    "content": "Zeskanuj kod QR, aby zobaczyć w rzeczywistości rozszerzonej AR",
+    "image": "/products/images/furnace/carousel1.svg",
+    "content": "",
     "button": "Zapytaj o wycenę",
     "form": "/forms/furnaces",
-    "qp": "",
-    "ar": "QRView/PIEC"
+    "ar": true,
+    "arLink": "/product/furnace/PIEC"
   },
   "parameters": [
     {

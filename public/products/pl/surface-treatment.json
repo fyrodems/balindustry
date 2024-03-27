@@ -11,12 +11,13 @@
   ],
   "floating_CTA": {
     "title": "Satyniarka",
-    "image": "",
-    "content": "Zeskanuj kod QR, aby zobaczyć w rzeczywistości rozszerzonej AR",
+    "image": "/products/images/surface-treatment/carousel1.svg",
+    "content": "",
     "button": "Zapytaj o wycenę",
     "form": "/forms/satin",
     "qp": "",
-    "ar": "QRView/SATYNIARKA"
+    "ar": true,
+    "arLink": "/product/surface-treatment/SATYNIARKA"
   },
   "parameters": [
     {
