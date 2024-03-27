@@ -3,10 +3,30 @@
     "homepage": {
       "title": "Innowacyjne Rozwiązania CNC, Wycinanie, Skrawanie i Automatyzacja Przemysłowa | BAL Industry",
       "description": "BAL Industry oferuje usługi CNC, wycinania, skrawania, zgrzewania, automatyki i robotyzacji. Sprawdź innowacyjne rozwiązania zwiększające wydajność produkcji."
+    },
+    "about": {
+      "title": "Twój Partner w Przemysłowej Automatyzacji i Produkcji | BAL Industry",
+      "description": "Poznaj BAL Industry - ekspertów w dziedzinie CNC, wycinania, zgrzewania i automatyzacji. Nasza firma to pewność wydajności i jakości produkcji."
+    },
+    "automation": {
+      "title": "Automatyzacja Maszyn i Urządzeń | Zwiększ Efektywność Produkcyjną | BAL Industry",
+      "description": "Zapoznaj się z naszymi usługami modernizacji maszyn i urządzeń pod kątem automatyzacji. Zwiększ wydajność i precyzję produkcji. Skontaktuj się z nami!"
+    },
+    "calculator": {
+      "title": "Oblicz Koszt Cięcia Laserem | BAL Industry",
+      "description": "Skorzystaj z naszego kalkulatora wyceny cięcia laserem. Oblicz koszt cięcia materiału na podstawie wybranych parametrów. Precyzyjnie ocenimy koszty produkcji dla Twojego projektu"
+    },
+    "contact": {
+      "title": "Skontaktuj się z BAL Industry - Twoim partnerem w przemyśle",
+      "description": "Masz pytania lub potrzebujesz wsparcia? Skorzystaj z naszego formularza kontaktowego. Jesteśmy ekspertami w dziedzinie automatyki i przemysłu."
+    },
+    "forms": {
+      "title": "Zamów usługi gięcia, spawania, zgrzewania i więcej | BAL Industry",
+      "description": "Skorzystaj z naszego formularza i zamów usługi gięcia, spawania, zgrzewania, malowania, obróbki CNC i wielu innych. Wypełnij formularz i otrzymaj szybką wycenę!"
+    },
+    "product": {
+      "title": "Nowoczesne Maszyny Przemysłowe | BAL Industry",
+      "description": "Oferujemy zaawansowane narzędzia przemysłowe, w tym wycinarki laserowe i spawarki. Dzięki naszemu technologicznemu parkowi maszynowemu zrealizujesz nawet najbardziej wymagające projekty."
     }
-  },
-
-  "homepage": {
-    "test": "test pl"
   }
 }
