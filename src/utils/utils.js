@@ -69,4 +69,24 @@ const isMobile = () => {
   return false
 }
 
-export { isMobile, formatFileName }
+const generateARTitle = (name) => {
+  switch (name) {
+    case 'SATYNIARKA': {
+      return 'Obróbka powierzchni'
+    }
+
+    case 'PIEC': {
+      return 'Piec komorowy'
+    }
+
+    case 'MAGAZYN': {
+      return 'Magazyn pionowy blach'
+    }
+
+    default: {
+      return ''
+    }
+  }
+}
+
+export { isMobile, formatFileName, generateARTitle }
