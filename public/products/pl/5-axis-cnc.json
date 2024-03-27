@@ -3,7 +3,7 @@
     "pathID": "5-axis-cnc",
     "name": "5-cio osiowe CNC",
     "additional_name": "Materiał do obróbki: Stal, Stal nierdzewna, Aluminium, Żeliwo, Metale kolorowe, Tworzywo sztuczne, Marmur, Szkło",
-    "description": "Dzięki połączeniu doskonałej inżynierii mechanicznej z inteligentnym oprogramowaniem oraz szeroką gamą akcesoriów, zapewniają one kompleksowe rozwiązania dla potrzeb pomiarowych.",
+    "description": "Dzięki naszej maszynie CNC mamy możliwość precyzyjnego szlifowania, piłowania, wiercenia, ukosowania i polerowania profili, co pozwala na tworzenie skomplikowanych kształtów oraz wykonywanie grawerunków w wysokim standardzie wykończenia.",
     "with_data": true
   },
   "images": [
@@ -45,13 +45,6 @@
     }
   ],
   "main_characteristics": [
-    {
-      "title": "Nowe Technologie dla Perfekcyjnych Projektów",
-      "content": [
-        "Dzięki wsparciu Programu Operacyjnego Inteligentny Rozwój, poddziałanie 2.3.5. Design dla Przedsiębiorców, firma BAL Industry mogła wzbogacić swój park maszynowy o najnowszej generacji maszyny CNC dedykowane do pracy nad spiekami ceramicznymi. Nowoczesne technologie CNC pozwalają na precyzyjne i skomplikowane obróbki, umożliwiając tworzenie projektów niemożliwych do zrealizowania tradycyjnymi metodami. Dzięki temu BAL Industry może sprostać nawet najbardziej wymagającym oczekiwaniom klientów, oferując produkty najwyższej jakości i perfekcyjne wykonanie."
-      ],
-      "image": ""
-    },
     {
       "title": "Zapewnia wykonanie prac w zakresie:",
       "content": [

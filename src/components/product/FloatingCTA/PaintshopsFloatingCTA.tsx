@@ -1,22 +1,9 @@
-import Image from 'next/image'
-import { useEffect } from 'react'
 import { type FloatingCTAProps } from '@/app/[locale]/product/types'
 import Button from '@/components/common/Button'
 import { Link } from '@/navigation'
-import { initializeArButton } from '@/utils/createQR'
 
 const PaintshopsFloatingCTA: React.FC<FloatingCTAProps> = ({ data }) => {
-  const { title, image, content, button, form, qr, ar } = data
-
-  /* !!! do uzupełnienia
-  
-  ar na mobile, 
-  qr na desktop */
-
-  useEffect(() => {
-    const arLink = `${window.location.protocol}//${window.location.host}/${ar}`
-    initializeArButton(arLink)
-  }, [])
+  const { title, button, form } = data
 
   return (
     <div

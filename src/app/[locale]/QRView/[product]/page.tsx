@@ -8,7 +8,8 @@ import { initializeArButton } from '@/utils/createQR'
 import PageTitle from '@/components/common/PageTitle'
 
 function QRCode() {
-  const { product } = useParams()
+  const { product } = useParams() as unknown as string
+  console.log(product)
   const locale = useLocale()
 
   useEffect(() => {
@@ -30,16 +31,16 @@ function QRCode() {
     } else {
       redirect('/')
     }
-  })
+  }, [])
 
   return (
-    <div className="min-h-[73vh]">
+    <main>
       <PageTitle content={''} />
       <p className="text-center">
         Zeskanuj kod QR, aby zobaczyć <br /> w rzeczywistości rozszerzonej AR
       </p>
       <canvas className="mx-auto my-8 w-full max-w-[300px] " id="qr-code" />
-    </div>
+    </main>
   )
 }
 

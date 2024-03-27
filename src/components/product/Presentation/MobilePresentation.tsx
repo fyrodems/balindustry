@@ -10,7 +10,7 @@ const Parameter: React.FC<{ name: string; value: string }> = ({
   value,
 }) => {
   return (
-    <div className="flex flex-col items-center justify-between text-center ">
+    <div className="flex flex-col items-center justify-between text-center">
       <span className="font-bold">{name}</span>
       <span>{value}</span>
     </div>
@@ -55,10 +55,10 @@ const MobilePresentation: React.FC<ProductDataProps> = ({ data }) => {
         <Button className="mx-2 w-full" content={floating_CTA.button} />
       </Link>
       {/* !!! do sprawdzenia czy ar działa */}
-      {floating_CTA.ar !== '' && (
+      {floating_CTA.ar && floating_CTA.arLink && (
         <Link
           className="mx-[auto] block max-w-[320px]"
-          href={`${window.location.protocol}//${window.location.host}/${locale}/${floating_CTA.ar}`}
+          href={floating_CTA.arLink}
         >
           <Button
             className="mx-2 my-6 w-full"

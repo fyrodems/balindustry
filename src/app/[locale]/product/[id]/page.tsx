@@ -66,7 +66,6 @@ export default function ProductPage({
 
   return (
     <>
-      <PageTitle content={''} />
       <main>
         {basic_data.pathID === 'service-paintshop' ? (
           <>
@@ -85,41 +84,44 @@ export default function ProductPage({
             </div>
           </>
         ) : (
-          <div className="laptop:grid laptop:grid-cols-[70%_30%] 2xl:grid-cols-[80%_20%]">
-            <div>
-              <Presentation data={data} />
-              {basic_data.with_data && (
-                <>
-                  <DetailsNavigation characteristics specification />
+          <>
+            <PageTitle content={''} />
+            <div className="laptop:grid laptop:grid-cols-[70%_30%] 2xl:grid-cols-[80%_20%]">
+              <div>
+                <Presentation data={data} />
+                {basic_data.with_data && (
+                  <>
+                    <DetailsNavigation characteristics specification />
+                    <MainCharacteristics data={main_characteristics} />
+                    <Specification data={specification} />
+                  </>
+                )}
+                {basic_data.pathID === 'paintshops-installation' && (
                   <MainCharacteristics data={main_characteristics} />
-                  <Specification data={specification} />
-                </>
-              )}
-              {basic_data.pathID === 'paintshops-installation' && (
-                <MainCharacteristics data={main_characteristics} />
-              )}
-              {basic_data.pathID === 'vertical-warehouse' && (
-                <>
-                  <DetailsNavigation characteristics specification />
-                  <MainCharacteristics data={main_characteristics} />
-                  <WarehouseSpecification
-                    metal={metal_sheets}
-                    pallets={pallets_elements}
-                  />
-                </>
-              )}
-              {basic_data.pathID === 'lh' && (
-                <>
-                  <DetailsNavigation characteristics />
-                  <MainCharacteristics data={main_characteristics} />
-                </>
-              )}
-              <CrossSellCarousel data={additional_products} />
+                )}
+                {basic_data.pathID === 'vertical-warehouse' && (
+                  <>
+                    <DetailsNavigation characteristics specification />
+                    <MainCharacteristics data={main_characteristics} />
+                    <WarehouseSpecification
+                      metal={metal_sheets}
+                      pallets={pallets_elements}
+                    />
+                  </>
+                )}
+                {basic_data.pathID === 'lh' && (
+                  <>
+                    <DetailsNavigation characteristics />
+                    <MainCharacteristics data={main_characteristics} />
+                  </>
+                )}
+                <CrossSellCarousel data={additional_products} />
+              </div>
+              <div className="hidden laptop:block">
+                <FloatingCTA data={floating_CTA} />
+              </div>
             </div>
-            <div className="hidden laptop:block">
-              <FloatingCTA data={floating_CTA} />
-            </div>
-          </div>
+          </>
         )}
       </main>
     </>

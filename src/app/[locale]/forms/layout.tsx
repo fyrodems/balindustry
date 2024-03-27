@@ -15,7 +15,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     'h-fit w-fit focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-black focus-visible:ring-offset-1 border-transparent border-2 rounded-sm'
 
   return (
-    <>
+    <main>
       <PageTitle content="Formularz ofertowy" />
       <p className="mx-auto -mt-8 w-11/12 max-w-[750px] text-center text-sm sm:-mt-4 sm:text-base">
         Drogi kliencie, <br /> prosimy o&nbsp;wypełnienie danych do zapytania
@@ -43,6 +43,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           />
         </a>
       </div>
-    </>
+    </main>
   )
 }

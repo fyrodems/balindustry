@@ -13,7 +13,8 @@ export interface FloatingCTA {
   button: string
   form: string
   qr: string
-  ar: string
+  ar: string | boolean
+  arLink?: string
 }
 
 export interface Parameter {

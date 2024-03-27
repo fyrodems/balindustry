@@ -144,7 +144,7 @@ export const categories = [
           {
             name: 'Wycena cięcia',
             image: '',
-            link: '', // !!! do uzupełnienia
+            link: '/calculator',
           },
         ],
       },

@@ -129,39 +129,21 @@ interface LangWithFlagProps {
   isMobile: boolean
 }
 
-interface LanguageSelectorProps {
-  isMobile: boolean
+interface LinkProps {
+  locale: Locale | undefined
 }
 
-const generateLanguageName = (locale: Locale | undefined): string => {
-  switch (locale) {
-    case 'pl': {
-      return 'PL'
-    }
-
-    case 'en': {
-      return 'EN'
-    }
-
-    case 'de': {
-      return 'DE'
-    }
-
-    case 'fr': {
-      return 'FR'
-    }
-
-    default: {
-      return ''
-    }
-  }
+interface LanguageSelectorProps {
+  isMobile: boolean
 }
 
 const GenerateLanguageSelectorTrigger: React.FC<LangWithFlagProps> = ({
   isMobile,
 }) => {
   const languageRef = useRef<HTMLDivElement>(null)
-  const [chosenLanguage, setChosenLanguage] = useState('pl')
+  const [chosenLanguage, setChosenLanguage] = useState<
+    'pl' | 'fr' | 'gb' | 'de' | 'en'
+  >('pl')
   const [isOpen, setIsOpen] = useState(false)
 
   useEffect(() => {
@@ -180,7 +162,7 @@ const GenerateLanguageSelectorTrigger: React.FC<LangWithFlagProps> = ({
     }
   }, [])
 
-  const LinkWithFlag: React.FC<LangWithFlagProps> = ({ locale }) => (
+  const LinkWithFlag: React.FC<LinkProps> = ({ locale }) => (
     <div
       onClick={() => {
         setChosenLanguage(locale ?? 'pl')
@@ -192,7 +174,7 @@ const GenerateLanguageSelectorTrigger: React.FC<LangWithFlagProps> = ({
         height={25}
         width={25}
       />
-      {generateLanguageName(locale)}
+      {locale?.toUpperCase()}
     </div>
   )
 
@@ -220,7 +202,7 @@ const GenerateLanguageSelectorTrigger: React.FC<LangWithFlagProps> = ({
               ) : (
                 <div className={styles.emptyFlag}></div>
               )}
-              {generateLanguageName(language)}
+              {language.toUpperCase()}
             </div>
           ))}
         </>
@@ -239,7 +221,7 @@ const GenerateLanguageSelectorTrigger: React.FC<LangWithFlagProps> = ({
             height={25}
             width={25}
           />
-          {generateLanguageName(chosenLanguage)}
+          {chosenLanguage.toUpperCase()}
           {isOpen && (
             <div className={styles.flagsContainer}>
               {SupportedLocales.map((supportedLocale) => (
