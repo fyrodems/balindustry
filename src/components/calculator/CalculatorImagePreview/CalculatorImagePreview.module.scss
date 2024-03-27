@@ -1,0 +1,19 @@
+@import '@/app/styles/colors';
+
+.imgWrapper {
+  background-color: $calculator-img-bg;
+  border-radius: 6px;
+  padding: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  img {
+    max-height: 150px;
+    margin: auto;
+    position: relative !important;
+    width: auto !important;
+  }
+}

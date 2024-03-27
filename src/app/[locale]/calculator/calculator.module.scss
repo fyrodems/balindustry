@@ -1,0 +1,35 @@
+@import '@/app/styles/mixins';
+@import '@/app/styles/colors';
+
+.headingText {
+  text-align: center;
+}
+
+.wrapper {
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+.mainContent {
+  margin-bottom: 20px;
+}
+
+.dropInput {
+  width: 100%;
+}
+
+.acceptedFiles {
+  color: $calculator-acceptedFiles-color;
+  text-align: center;
+  margin: 15px 0;
+}
+
+.mainColumns {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 20px;
+
+  @include laptop {
+    flex-direction: row;
+  }
+}

@@ -1,0 +1,49 @@
+@import '@/app/styles/colors';
+@import '@/app/styles/mixins';
+
+.detailsContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  border: 1px solid $language-selector-empty-border;
+  border-radius: 6px;
+  padding: 20px;
+  width: 100%;
+  max-width: 455px;
+
+  p {
+    color: $orange;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+}
+
+.dataLabel {
+  font-weight: 700;
+}
+
+.calculatedModelDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  gap: 22px;
+
+  @include tablet {
+    flex-direction: row;
+    gap: 60px;
+  }
+}
+
+.header {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.calculatedModelDetailsWrapper {
+  max-width: 970px;
+  margin: auto;
+}
