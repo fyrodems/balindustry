@@ -72,7 +72,7 @@ const isMobile = () => {
 const generateARTitle = (name) => {
   switch (name) {
     case 'SATYNIARKA': {
-      return 'Obróbka powierzchni'
+      return 'Satyniarka'
     }
 
     case 'PIEC': {

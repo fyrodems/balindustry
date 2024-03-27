@@ -106,11 +106,11 @@ const DesktopNavbar = () => {
                 <Link href="/product/trupunch-5000">
                   <MenubarItem>TruPunch 5000 | TRUMPF</MenubarItem>
                 </Link>
-                <Link href="/product/truelaser-7000">
-                  <MenubarItem>TrueLaser Tube 7000 fiber</MenubarItem>
+                <Link href="/product/trulaser-7000">
+                  <MenubarItem>TruLaser Tube 7000 fiber</MenubarItem>
                 </Link>
-                <Link href="/product/truelaser-3030">
-                  <MenubarItem>TrueLaser 3030 fiber | TRUMPF</MenubarItem>
+                <Link href="/product/trulaser-3030">
+                  <MenubarItem>TruLaser 3030 fiber | TRUMPF</MenubarItem>
                 </Link>
                 <Link href="/product/bending-station">
                   <MenubarItem>Stanowisko gięcia</MenubarItem>
