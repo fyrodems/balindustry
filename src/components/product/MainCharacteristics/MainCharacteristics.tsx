@@ -19,7 +19,7 @@ const MainCharacteristics: React.FC<MainCharacteristicsProps> = ({ data }) => {
             {data.map((characteristic, i) => (
               <div
                 key={i}
-                className="my-[60px] laptop:mb-[100px] laptop:ml-[40px]"
+                className="my-[60px] laptop:mb-[400px] laptop:ml-[40px]"
               >
                 <h2 className="text-balance text-xl font-bold text-black">
                   {characteristic.title}
