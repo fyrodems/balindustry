@@ -44,7 +44,8 @@
     "slick-carousel": "^1.8.1",
     "swiper": "^11.0.7",
     "tailwind-merge": "^2.2.1",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "three": "^0.160.0"
   },
   "devDependencies": {
     "@types/dxf": "^4.6.7",

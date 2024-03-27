@@ -1,12 +1,14 @@
 model-viewer {
   height: 100%;
   width: 100%;
-
-  --poster-color: #ffffff00;
   position: relative;
 }
 
 #ar-button {
   bottom: 0;
   right: 0;
+}
+
+.icon {
+  color: hsl(211, 64%, 46%);
 }
