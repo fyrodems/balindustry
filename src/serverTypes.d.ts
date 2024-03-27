@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 // typy napisane w celu zlikwidowania błędów na serwerze,są na 100% źle ~Michał
 
 declare module 'dxf2svg' {
@@ -10,7 +9,7 @@ declare module 'dxf2svg' {
     return arg.length
   }
 }
-
+/* 
 declare module '@injectit/threejs-nodejs-exporters' {
   export function helloWorld(arg: string): string {
     return arg.length
@@ -73,3 +72,4 @@ declare module 'occt-import-js' {
 
   export default mainFunction
 }
+ */
