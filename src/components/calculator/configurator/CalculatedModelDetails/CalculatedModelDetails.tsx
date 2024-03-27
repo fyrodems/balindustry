@@ -72,9 +72,9 @@ const CalculatedModelDetails = () => {
     selectedModel = contextData.data[selectedContext.index]
 
     // obliczanie masy
-    const thickness = (selectedModel.thickness ?? 0) / 1000
-    const volume = ((selectedModel.totalArea ?? 0) / 1_000_000) * thickness
-    mass = volume * ((selectedModel.density ?? 0) * 1000)
+    const thickness = (selectedModel?.thickness ?? 0) / 1000
+    const volume = ((selectedModel?.totalArea ?? 0) / 1_000_000) * thickness
+    mass = volume * ((selectedModel?.density ?? 0) * 1000)
   }
 
   const round = (value: number) => Math.round(value * 1000) / 1000

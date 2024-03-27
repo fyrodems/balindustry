@@ -15,8 +15,7 @@ const CalculatorImagePreview: React.FC<ImagePreviewProps> = ({ filePath }) => {
   let selectedModel = null
   if (allModels) {
     selectedModel = allModels[selectedContext?.index ?? 0]
-
-    url = 'https://www.balindustry.com/api/' + selectedModel.path
+    url = 'https://www.balindustry.com/api/' + (selectedModel?.path ?? '')
   }
 
   return (

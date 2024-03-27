@@ -20,8 +20,8 @@ const Thickness: React.FC<ThicknessProps> = ({
   let material: string | null = null
   let thickness: number | null = null
   if (contextData.data) {
-    material = contextData.data[selectedModel.index].material
-    thickness = contextData.data[selectedModel.index].thickness
+    material = contextData.data[selectedModel.index]?.material
+    thickness = contextData.data[selectedModel.index]?.thickness
   }
 
   const selectRef = useRef(null)

@@ -3,9 +3,11 @@ import { writeFile } from 'node:fs/promises'
 import path from 'node:path'
 import process from 'node:process'
 import { type NextRequest, NextResponse } from 'next/server'
-import { stpParse } from '../../../../server/stpParse'
+// import { stpParse } from '../../../../server/stpParse'
 import { dxfParse } from '../../../../server/dxfParse'
 import { type FileData } from '../../../../server/interfaces'
+
+// logika kalkulatora nie zosatła zakończona, jeśli będziemy chcieli ją zaimplementować, to trzeba będzie ją dokończyć
 
 export async function POST(req: NextRequest) {
   const formData = await req.formData()
@@ -31,10 +33,9 @@ export async function POST(req: NextRequest) {
         case 'dxf':
           arrReturnData = dxfParse.parse(fileWithPath, arrReturnData)
           break
-        case 'stp':
-          // poniższa linia wywala błąd
-          // arrReturnData = stpParse.parse(fileWithPath, arrReturnData)
-          break
+        // case 'stp':
+        //   arrReturnData = stpParse.parse(fileWithPath, arrReturnData)
+        //   break
         default:
           break
       }

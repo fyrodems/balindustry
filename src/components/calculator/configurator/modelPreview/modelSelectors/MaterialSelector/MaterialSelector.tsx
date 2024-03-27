@@ -13,7 +13,7 @@ interface MaterialProps {
 const Material: React.FC<MaterialProps> = ({ contextData, selectedModel }) => {
   let material: string | null = null
   if (contextData.data) {
-    material = contextData.data[selectedModel.index].material
+    material = contextData.data[selectedModel.index]?.material
   }
 
   const list = materials.map((el) => el.name)

@@ -32,7 +32,7 @@ const DropInput: React.FC<DropInputProps> = ({ filesArray, setFilesArray }) => {
     e.preventDefault()
 
     // Check if the accept condition is met
-    const allowedExtensions = new Set(['.dxf', '.stp'])
+    const allowedExtensions = new Set(['.dxf'])
     const files = (e.target as HTMLInputElement).files
 
     let validFiles = true
@@ -91,7 +91,7 @@ const DropInput: React.FC<DropInputProps> = ({ filesArray, setFilesArray }) => {
               id="calcDropInput"
               name="Plik"
               type="file"
-              accept=".dxf,.stp"
+              accept=".dxf"
               className={styles.invisibleInput}
               onChange={handleInputChange}
               multiple={true}

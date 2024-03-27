@@ -30,7 +30,7 @@ const Calculator = () => {
           ) : (
             <>
               <p className={styles.acceptedFiles}>
-                Akceptowalne rozszerzenia plików: .dxf oraz .stp (max. 8MB)
+                Akceptowalne rozszerzenie plików: .dxf (max. 8MB)
               </p>
               <div className={styles.mainColumns}>
                 <DropdownInfo />
