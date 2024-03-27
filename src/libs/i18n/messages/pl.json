@@ -26,7 +26,115 @@
     },
     "product": {
       "title": "Nowoczesne Maszyny Przemysłowe | BAL Industry",
-      "description": "Oferujemy zaawansowane narzędzia przemysłowe, w tym wycinarki laserowe i spawarki. Dzięki naszemu technologicznemu parkowi maszynowemu zrealizujesz nawet najbardziej wymagające projekty."
+      "description": "Oferujemy zaawansowane narzędzia przemysłowe, w tym wycinarki laserowe i spawarki. Dzięki naszemu technologicznemu parkowi maszynowemu zrealizujesz nawet najbardziej wymagające projekty.",
+      "single": {
+        "title": "Stanowisko Single | BAL Industry",
+        "description": "Oferujemy zaawansowane narzędzia przemysłowe, w tym wycinarki laserowe i spawarki. Dzięki naszemu technologicznemu parkowi maszynowemu zrealizujesz nawet najbardziej wymagające projekty."
+      },
+      "dual": {
+        "title": "Stanowisko Dual | BAL Industry",
+        "description": "Oferujemy zaawansowane narzędzia przemysłowe, w tym wycinarki laserowe i spawarki. Dzięki naszemu technologicznemu parkowi maszynowemu zrealizujesz nawet najbardziej wymagające projekty."
+      },
+      "twin-one-axis": {
+        "title": "Stanowisko Twin One-axis | BAL Industry",
+        "description": "Oferujemy zaawansowane narzędzia przemysłowe, w tym wycinarki laserowe i spawarki. Dzięki naszemu technologicznemu parkowi maszynowemu zrealizujesz nawet najbardziej wymagające projekty."
+      },
+      "waterjet": {
+        "title": "Waterjet | BAL Industry",
+        "description": "Oferujemy zaawansowane narzędzia przemysłowe, w tym wycinarki laserowe i spawarki. Dzięki naszemu technologicznemu parkowi maszynowemu zrealizujesz nawet najbardziej wymagające projekty."
+      },
+      "trupunch-5000": {
+        "title": "TruPunch 5000 | TRUMPH | BAL Industry",
+        "description": "Oferujemy zaawansowane narzędzia przemysłowe, w tym wycinarki laserowe i spawarki. Dzięki naszemu technologicznemu parkowi maszynowemu zrealizujesz nawet najbardziej wymagające projekty."
+      },
+      "trulaser-7000": {
+        "title": "TruLaser Tube 7000 fiber | BAL Industry",
+        "description": "Oferujemy zaawansowane narzędzia przemysłowe, w tym wycinarki laserowe i spawarki. Dzięki naszemu technologicznemu parkowi maszynowemu zrealizujesz nawet najbardziej wymagające projekty."
+      },
+      "trulaser-3030": {
+        "title": "TruLaser 3030 fiber | TRUMPH | BAL Industry",
+        "description": "Oferujemy zaawansowane narzędzia przemysłowe, w tym wycinarki laserowe i spawarki. Dzięki naszemu technologicznemu parkowi maszynowemu zrealizujesz nawet najbardziej wymagające projekty."
+      },
+      "bending-station": {
+        "title": "Stanowisko gięcia | BAL Industry",
+        "description": "Oferujemy zaawansowane narzędzia przemysłowe, w tym wycinarki laserowe i spawarki. Dzięki naszemu technologicznemu parkowi maszynowemu zrealizujesz nawet najbardziej wymagające projekty."
+      },
+      "arc-d600": {
+        "title": "ARC D600 | BAL Industry",
+        "description": "Oferujemy zaawansowane narzędzia przemysłowe, w tym wycinarki laserowe i spawarki. Dzięki naszemu technologicznemu parkowi maszynowemu zrealizujesz nawet najbardziej wymagające projekty."
+      },
+      "arc-b250": {
+        "title": "ARC B250 | BAL Industry",
+        "description": "Oferujemy zaawansowane narzędzia przemysłowe, w tym wycinarki laserowe i spawarki. Dzięki naszemu technologicznemu parkowi maszynowemu zrealizujesz nawet najbardziej wymagające projekty."
+      },
+      "arc-trackmotion-2t": {
+        "title": "ARC Trackmotion 2t | BAL Industry",
+        "description": "Oferujemy zaawansowane narzędzia przemysłowe, w tym wycinarki laserowe i spawarki. Dzięki naszemu technologicznemu parkowi maszynowemu zrealizujesz nawet najbardziej wymagające projekty."
+      },
+      "clx-350": {
+        "title": "CLX 350 | BAL Industry",
+        "description": "Oferujemy zaawansowane narzędzia przemysłowe, w tym wycinarki laserowe i spawarki. Dzięki naszemu technologicznemu parkowi maszynowemu zrealizujesz nawet najbardziej wymagające projekty."
+      },
+      "dmu-75-monoblock": {
+        "title": "DMU 75 monoBLOCK | BAL Industry",
+        "description": "Oferujemy zaawansowane narzędzia przemysłowe, w tym wycinarki laserowe i spawarki. Dzięki naszemu technologicznemu parkowi maszynowemu zrealizujesz nawet najbardziej wymagające projekty."
+      },
+      "dmu-210-p": {
+        "title": "DMU 210 P | BAL Industry",
+        "description": "Oferujemy zaawansowane narzędzia przemysłowe, w tym wycinarki laserowe i spawarki. Dzięki naszemu technologicznemu parkowi maszynowemu zrealizujesz nawet najbardziej wymagające projekty."
+      },
+      "sprint-32I5": {
+        "title": "SPRINT 32I5 | BAL Industry",
+        "description": "Oferujemy zaawansowane narzędzia przemysłowe, w tym wycinarki laserowe i spawarki. Dzięki naszemu technologicznemu parkowi maszynowemu zrealizujesz nawet najbardziej wymagające projekty."
+      },
+      "m1": {
+        "title": "M1 | BAL Industry",
+        "description": "Oferujemy zaawansowane narzędzia przemysłowe, w tym wycinarki laserowe i spawarki. Dzięki naszemu technologicznemu parkowi maszynowemu zrealizujesz nawet najbardziej wymagające projekty."
+      },
+      "lh": {
+        "title": "LH | BAL Industry",
+        "description": "Oferujemy zaawansowane narzędzia przemysłowe, w tym wycinarki laserowe i spawarki. Dzięki naszemu technologicznemu parkowi maszynowemu zrealizujesz nawet najbardziej wymagające projekty."
+      },
+      "5-axis-cnc": {
+        "title": "5-cio osiowe CNC | BAL Industry",
+        "description": "Oferujemy zaawansowane narzędzia przemysłowe, w tym wycinarki laserowe i spawarki. Dzięki naszemu technologicznemu parkowi maszynowemu zrealizujesz nawet najbardziej wymagające projekty."
+      },
+      "nlx-2500": {
+        "title": "NLX 2500 | BAL Industry",
+        "description": "Oferujemy zaawansowane narzędzia przemysłowe, w tym wycinarki laserowe i spawarki. Dzięki naszemu technologicznemu parkowi maszynowemu zrealizujesz nawet najbardziej wymagające projekty."
+      },
+      "surface-treatment": {
+        "title": "Obróbka powierzchni | BAL Industry",
+        "description": "Oferujemy zaawansowane narzędzia przemysłowe, w tym wycinarki laserowe i spawarki. Dzięki naszemu technologicznemu parkowi maszynowemu zrealizujesz nawet najbardziej wymagające projekty."
+      },
+      "furnace": {
+        "title": "Piece komorowe | BAL Industry",
+        "description": "Oferujemy zaawansowane narzędzia przemysłowe, w tym wycinarki laserowe i spawarki. Dzięki naszemu technologicznemu parkowi maszynowemu zrealizujesz nawet najbardziej wymagające projekty."
+      },
+      "vertical-warehouse": {
+        "title": "Magazyn pionowy blach | BAL Industry",
+        "description": "Oferujemy zaawansowane narzędzia przemysłowe, w tym wycinarki laserowe i spawarki. Dzięki naszemu technologicznemu parkowi maszynowemu zrealizujesz nawet najbardziej wymagające projekty."
+      },
+      "paintshops-installation": {
+        "title": "Montaż lakierni | BAL Industry",
+        "description": "Oferujemy zaawansowane narzędzia przemysłowe, w tym wycinarki laserowe i spawarki. Dzięki naszemu technologicznemu parkowi maszynowemu zrealizujesz nawet najbardziej wymagające projekty."
+      },
+      "alw-1200": {
+        "title": "ALW 1200 | BAL Industry",
+        "description": "Oferujemy zaawansowane narzędzia przemysłowe, w tym wycinarki laserowe i spawarki. Dzięki naszemu technologicznemu parkowi maszynowemu zrealizujesz nawet najbardziej wymagające projekty."
+      },
+      "flex-esab": {
+        "title": "Flex Cobot Esab | BAL Industry",
+        "description": "Oferujemy zaawansowane narzędzia przemysłowe, w tym wycinarki laserowe i spawarki. Dzięki naszemu technologicznemu parkowi maszynowemu zrealizujesz nawet najbardziej wymagające projekty."
+      },
+      "flex-fronius": {
+        "title": "Flex Cobot Fronius | BAL Industry",
+        "description": "Oferujemy zaawansowane narzędzia przemysłowe, w tym wycinarki laserowe i spawarki. Dzięki naszemu technologicznemu parkowi maszynowemu zrealizujesz nawet najbardziej wymagające projekty."
+      }
+    },
+    "ar": {
+      "title": "Podgląd w 3D | BAL Industry",
+      "description": "Obejrzyj nasz produkt w trójwymiarze"
     }
   }
 }
