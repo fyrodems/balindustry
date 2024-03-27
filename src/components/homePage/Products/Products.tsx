@@ -9,7 +9,7 @@ import { Link } from '@/navigation'
 export default function Products() {
   const sectionCards = [
     {
-      topHeader: 'Robotyzacja i automatyzacja',
+      topHeader: 'Robotyzacja i\u00A0automatyzacja',
       topPhoto: cela,
       topParagraph: null,
       link: '/automation',

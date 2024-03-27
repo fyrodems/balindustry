@@ -86,6 +86,13 @@
   color: $text-white-color;
   padding: 25px;
   min-height: 390px;
+  height: 100%;
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
   div:first-child {
     display: flex;
