@@ -1,6 +1,11 @@
-const Loader = () => {
+import { cn } from '@/libs/utils'
+
+const Loader = ({ isAr = false }: { isAr?: boolean }) => {
   return (
-    <div role="status" className="grid min-h-[100vh] place-items-center">
+    <div
+      role="status"
+      className={cn('grid place-items-center', isAr ? 'mt-6' : 'min-h-screen')}
+    >
       <svg
         aria-hidden="true"
         className="inline h-16 w-16 animate-spin fill-gray-600 text-gray-200 dark:fill-gray-300 dark:text-gray-600"
