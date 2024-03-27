@@ -1,6 +1,16 @@
+import { getTranslations } from 'next-intl/server'
 import PageTitle from '@/components/common/PageTitle'
 import Intro from '@/components/contact/Intro/Intro'
 import { Form } from '@/components/forms/form'
+
+export async function generateMetadata() {
+  const t = await getTranslations('metaData.contact')
+
+  return {
+    title: t('title'),
+    description: t('description'),
+  }
+}
 
 const Contact = () => {
   return (

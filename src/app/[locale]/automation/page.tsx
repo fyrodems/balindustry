@@ -1,6 +1,16 @@
+import { getTranslations } from 'next-intl/server'
 import styles from './page.module.scss'
 import PageTitle from '@/components/common/PageTitle'
 import Advantages from '@/components/automation/Advantages'
+
+export async function generateMetadata() {
+  const t = await getTranslations('metaData.automation')
+
+  return {
+    title: t('title'),
+    description: t('description'),
+  }
+}
 
 const Automation = () => {
   return (

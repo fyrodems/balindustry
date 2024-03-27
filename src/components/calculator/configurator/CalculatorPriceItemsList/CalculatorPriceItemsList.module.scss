@@ -43,7 +43,7 @@
 .dataWrapper {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 25px;
   width: 100%;
 
   @include tablet {
@@ -106,4 +106,8 @@
 .priceItemsListWrapper {
   max-width: 970px;
   margin: auto;
+}
+
+.configBox {
+  margin-bottom: 20px;
 }

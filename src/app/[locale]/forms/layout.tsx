@@ -1,12 +1,13 @@
 import Image from 'next/image'
+import { getTranslations } from 'next-intl/server'
 import PageTitle from '@/components/common/PageTitle'
 
 export async function generateMetadata() {
+  const t = await getTranslations('metaData.forms')
+
   return {
-    title:
-      'Formularz ofertowy - zamów usługi gięcia, spawania, zgrzewania i więcej | BAL Industry',
-    description:
-      'Skorzystaj z naszego formularza i zamów usługi gięcia, spawania, zgrzewania, malowania, obróbki CNC i wielu innych. Wypełnij formularz i otrzymaj szybką wycenę!',
+    title: t('title'),
+    description: t('description'),
   }
 }
 

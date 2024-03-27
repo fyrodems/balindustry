@@ -1,10 +1,20 @@
 import dynamic from 'next/dynamic'
+import { getTranslations } from 'next-intl/server'
 import { BackButton } from './backButton'
 
 const Model = dynamic(() => import('./Model'), { ssr: false })
 
 interface Props {
   params: { ar: string }
+}
+
+export async function generateMetadata() {
+  const t = await getTranslations('metaData.ar')
+
+  return {
+    title: t('title'),
+    description: t('description'),
+  }
 }
 
 export default function Viewer({ params: { ar } }: Props) {

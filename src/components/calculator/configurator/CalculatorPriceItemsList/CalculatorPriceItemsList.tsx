@@ -154,7 +154,7 @@ const CalculatorPriceItemsList: React.FC<CalculatorPriceItemsListProps> = ({
                 Lista wybranych konfiguracji
               </p>
               {selectedItems.map((item, index) => (
-                <div key={index}>
+                <div key={index} className={styles.configBox}>
                   <div className={styles.itemWrapper}>
                     <div className={styles.dataWrapper}>
                       <div className={styles.imgWrapper}>
