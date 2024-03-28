@@ -64,19 +64,6 @@ export interface CheckboxFieldProps {
   validationFunction: () => void
 }
 
-export interface ContactInfoProps {
-  iconSrc: string
-  alt: string
-  contactType: string
-  contact: string
-}
-
-export interface ContactProps {
-  person: string
-  mail: string
-  phone: string
-}
-
 export interface HandleKeyDownProps {
   (
     e: React.KeyboardEvent<HTMLInputElement>,

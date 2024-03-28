@@ -113,6 +113,18 @@ export const Form = ({ className }: { className?: string }) => {
               register={register}
               errors={errors}
             />
+            {pathname.includes('contact') && (
+              <TextField
+                requiredMessage="Temat wiadomości jest wymagany"
+                fieldName="topic"
+                label={'Temat wiadomości *'}
+                placeholder={'Podaj temat wiadomości'}
+                register={register}
+                errors={errors}
+              />
+            )}
+          </div>
+          <div className="gap-8 md:flex">
             <TextField
               requiredMessage="E-mail jest wymagany"
               fieldName="email"
@@ -124,33 +136,7 @@ export const Form = ({ className }: { className?: string }) => {
                 validateEmail(value, 'E-mail jest nieprawidłowy')
               }
             />
-          </div>
-          <div className="gap-8 md:flex">
             <PhoneField register={register} errors={errors} />
-
-            {pathname.includes('contact') ? (
-              <TextField
-                requiredMessage="Temat wiadomości jest wymagany"
-                fieldName="topic"
-                label={'Temat wiadomości *'}
-                placeholder={'Podaj temat wiadomości'}
-                register={register}
-                errors={errors}
-              />
-            ) : (
-              <TextField
-                requiredMessage="Podanie czasu jest wymagane"
-                fieldName="time"
-                label={'Oczekiwany czas realizacji *'}
-                placeholder={'Podaj oczekiwany czas realizacji'}
-                register={register}
-                errors={errors}
-                maxLength={{
-                  value: 120,
-                  message: 'Pole może zawierać maksymalnie 120 znaków',
-                }}
-              />
-            )}
           </div>
           {additionalInputsSection.map(
             (section, index) =>

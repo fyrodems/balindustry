@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { getTranslations } from 'next-intl/server'
 import PageTitle from '@/components/common/PageTitle'
+import { Form } from '@/components/forms/form'
 
 export async function generateMetadata() {
   const t = await getTranslations('metaData.forms')
@@ -11,7 +12,7 @@ export async function generateMetadata() {
   }
 }
 
-export default function Layout({ children }: { children: React.ReactNode }) {
+export default function Layout() {
   const linkClass =
     'h-fit w-fit focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-black focus-visible:ring-offset-1 border-transparent border-2 rounded-sm'
 
@@ -23,7 +24,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         w&nbsp;celu dopasowania oferty do twoich potrzeb. Pozostaw swoje dane
         kontaktowe. Odzwonimy do Ciebie w&nbsp;celu omówienia&nbsp;zapytania.
       </p>
-      {children}
+      <Form />
       <p className="my-4 text-center text-lg font-semibold">Obserwuj nas:</p>
       <div className="mx-auto mb-24 flex justify-center gap-3 sm:mb-32">
         <a className={linkClass} href="">
