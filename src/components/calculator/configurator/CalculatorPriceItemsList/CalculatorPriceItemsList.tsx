@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/restrict-template-expressions */
 import { useState, type Dispatch, type SetStateAction } from 'react'
 import axios from 'axios'
 import { X } from 'lucide-react'
@@ -84,6 +85,28 @@ const CalculatorPriceItemsList: React.FC<CalculatorPriceItemsListProps> = ({
         files = []
       }
 
+      const itemsData = selectedItems.map(
+        (item) =>
+          `<div>
+          <p>
+            <span>Nazwa pliku: </span>
+            ${item.name}
+          </p>
+          <p>
+            <span>Materiał: </span>
+            ${item.material}
+          </p>
+          <p>
+            <span>Grubość: </span>
+            ${item.thickness} mm
+          </p>
+          <p>
+            <span>Liczba sztuk: </span>
+            ${item.quantity}
+          </p>
+        </div>`
+      )
+
       const body = {
         From: 'info@balindustry.com',
         To: 'info@balindustry.com',
@@ -95,6 +118,10 @@ const CalculatorPriceItemsList: React.FC<CalculatorPriceItemsListProps> = ({
         <p>Od: ${clientMail}</p>
         <p>Imię: ${clientName} </p>
         <p>Email: ${clientMail} </p>
+        <div>
+        <h5>Konfiguracje:</h5>
+        ${itemsData}
+        </div>
       `,
         ReplyTo: 'info@balindustry.com',
         TrackOpens: false,

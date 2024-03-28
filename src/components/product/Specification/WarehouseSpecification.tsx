@@ -23,7 +23,7 @@ const WarehouseSpecification: React.FC<WarehouseSpecificationProps> = ({
     <div className="mx-[20px] mb-[60px] mt-[20px]" id="specification">
       <Accordion type="single" collapsible defaultValue="open">
         <AccordionItem value="open">
-          <AccordionTrigger className="mb-[40px] border-0 border-b-[2px] border-solid border-stone-300 text-[26px] font-bold text-stone-800">
+          <AccordionTrigger className="mb-[10px] border-0 border-b-[2px] border-solid border-stone-300 text-[26px] font-bold text-stone-800">
             Parametry
           </AccordionTrigger>
 

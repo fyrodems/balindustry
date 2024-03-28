@@ -75,7 +75,7 @@ export default function ProductPage({
             <p className="mx-auto -mt-8 mb-[60px] w-11/12 max-w-[1100px] text-balance text-center text-sm sm:-mt-4 sm:text-base">
               {basic_data.description}
             </p>
-            <div className="laptop:grid laptop:grid-cols-[60%_40%] 2xl:grid-cols-[80%_20%]">
+            <div className="laptop:grid laptop:grid-cols-[60%_40%] 2xl:grid-cols-[70%_30%]">
               <div>
                 <MainCharacteristics data={main_characteristics} />
                 <CrossSellCarousel data={additional_products} />

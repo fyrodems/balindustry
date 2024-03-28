@@ -19,14 +19,14 @@ const MainCharacteristics: React.FC<MainCharacteristicsProps> = ({ data }) => {
             {data.map((characteristic, i) => (
               <div
                 key={i}
-                className="my-[60px] laptop:mb-[400px] laptop:ml-[40px]"
+                className="my-[30px] laptop:mb-[20px] laptop:ml-[40px]"
               >
                 <h2 className="text-balance text-xl font-bold text-black">
                   {characteristic.title}
                 </h2>
 
                 {characteristic.content.length === 1 ? (
-                  <p className="my-[30px]">{characteristic.content[0]}</p>
+                  <p className="my-[10px]">{characteristic.content[0]}</p>
                 ) : (
                   <ul className="flex flex-col">
                     {characteristic.content.map((characteristic, i) => {
