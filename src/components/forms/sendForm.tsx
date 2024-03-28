@@ -48,9 +48,9 @@ export const sendForm = async (
       'https://api.postmarkapp.com/email',
       {
         From: 'info@balindustry.com',
-        To: 'info@balindustry.com',
+        To: 'k.kepka@kratki.com',
         Cc: `${data.email}`,
-        Bcc: 'info@balindustry.com',
+        Bcc: 'k.kepka@kratki.com',
         Subject: data.type
           ? `BAL Industry - zamówienie na ${data.type}`
           : 'Wiadomość z formularza kontaktowego BAL Industry ',
