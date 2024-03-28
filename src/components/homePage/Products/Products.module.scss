@@ -47,7 +47,7 @@
     row-gap: 70px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    row-gap: 140px;
+    row-gap: 80px;
     column-gap: 50px;
   }
 
@@ -169,6 +169,7 @@
   height: 100%;
   padding: 0 40px;
   text-align: center;
+  margin-top: 10px;
 
   h3 {
     font-weight: 500;

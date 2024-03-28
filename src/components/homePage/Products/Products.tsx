@@ -26,7 +26,7 @@ export default function Products() {
       topButton: 'Formularz',
       bottomHeader: 'Park maszynowy',
       bottomText:
-        'Sprawdź sprzęt, na którym pracujemy i dowiedz się, dlaczego jesteśmy najlepsi!',
+        'Sprawdź sprzęt, na którym pracujemy i dowiedz się, dlaczego jesteśmy najlepsi! Jakość nie jest dla nas pustym frazesem.',
     },
     {
       topHeader: 'Produkty',
@@ -36,7 +36,7 @@ export default function Products() {
       topButton: 'Formularz',
       bottomHeader: 'Rozwiązania',
       bottomText:
-        'Poznaj ofertę produktową skierowaną do przedsiębiorstw każdej wielkości!',
+        'Poznaj ofertę produktową skierowaną do przedsiębiorstw każdej wielkości! Zwiększ produktywność w Twojej firmie.',
     },
     {
       topHeader: 'Usługi',
@@ -52,7 +52,7 @@ export default function Products() {
       topButton: 'Formularz',
       bottomHeader: 'Usługi',
       bottomText:
-        'Chcesz nawiązać współpracę? Skorzystaj z naszego kalkulatora albo wypełnij formularz kontaktowy.',
+        'Chcesz nawiązać współpracę lub poznać ofertę? Skorzystaj z naszego kalkulatora albo wypełnij formularz kontaktowy.',
     },
   ]
 
