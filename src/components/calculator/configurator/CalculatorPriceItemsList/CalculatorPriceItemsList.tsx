@@ -123,7 +123,7 @@ const CalculatorPriceItemsList: React.FC<CalculatorPriceItemsListProps> = ({
         ${itemsData}
         </div>
       `,
-        ReplyTo: 'info@balindustry.com',
+        ReplyTo: `${clientMail}`,
         TrackOpens: false,
         TrackLinks: 'None',
         Attachments: files,

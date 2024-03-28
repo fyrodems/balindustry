@@ -48,7 +48,29 @@ export const Form = ({ className }: { className?: string }) => {
       handleAnchorScroll()
       return
     }
-    sendForm(data, file, reset, setFile, setErrorInfo, toast)
+
+    const getRecipientEmail = (pathname: string) => {
+      const emailMap: {
+        [key: string]: string
+      } = {
+        satin: 'j.sobisz@balindustry.com',
+        warehouses: 'j.sobisz@balindustry.com',
+        paintshops: 'j.sobisz@balindustry.com',
+        furnaces: 'j.sobisz@balindustry.com',
+        'robotic-stations': 'r.mrozik@balindustry.com',
+      }
+
+      for (const key in emailMap) {
+        if (pathname.includes(key)) {
+          return emailMap[key]
+        }
+      }
+
+      return 'info@balindustry.com'
+    }
+    const recipientEmail = getRecipientEmail(pathname)
+
+    sendForm(data, file, reset, setFile, setErrorInfo, toast, recipientEmail)
   }
 
   return (

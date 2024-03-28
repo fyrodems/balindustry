@@ -22,8 +22,7 @@ const Intro = () => (
             zapytań&nbsp;dotyczących
             <span className="font-semibold">
               {' '}
-              działu robotyzacji, magazynu pionowego blach, obróbki
-              powierzchni,&nbsp;spawalnictwa.
+              działu robotyzacji lub&nbsp;spawalnictwa.
             </span>
           </p>
         }
@@ -37,7 +36,8 @@ const Intro = () => (
             zapytań&nbsp;dotyczących
             <span className="font-semibold">
               {' '}
-              montażu lakierni, pieców&nbsp;komorowych.
+              montażu lakierni,magazynu pionowego blach, obróbki powierzchni,
+              pieców&nbsp;komorowych.
             </span>
           </p>
         }

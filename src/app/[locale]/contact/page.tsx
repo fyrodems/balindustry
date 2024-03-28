@@ -20,7 +20,7 @@ const Contact = () => (
       poniższego formularza, aby skontaktować się z&nbsp;nami. Postaramy się
       odpowiedzieć jak&nbsp;najszybciej.
     </p>
-    <div className="mx-auto my-0 grid w-11/12 max-w-[1300px] grid-cols-[1fr] laptop:grid-cols-[40%_60%]">
+    <div className="mx-auto mb-6 mt-0 grid w-11/12 max-w-[1300px] grid-cols-[1fr] sm:mb-20 laptop:grid-cols-[40%_60%]">
       <Intro />
       <Form className="mt-0 laptop:-mt-5" />
     </div>

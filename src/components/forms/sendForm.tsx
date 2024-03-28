@@ -9,7 +9,8 @@ export const sendForm = async (
   reset: () => void,
   setFile: (file: File | null) => void,
   setErrorInfo: Dispatch<SetStateAction<string>>,
-  toast: ({ title }: { title: string }) => void
+  toast: ({ title }: { title: string }) => void,
+  recipientEmail: string
 ) => {
   const toBase64 = (file: File) =>
     new Promise((resolve, reject) => {
@@ -56,7 +57,7 @@ export const sendForm = async (
       'https://api.postmarkapp.com/email',
       {
         From: 'info@balindustry.com',
-        To: 'info@balindustry.com',
+        To: `${recipientEmail}`,
         Cc: `${data.email}`,
         Bcc: 'info@balindustry.com',
         Subject:
@@ -83,7 +84,7 @@ export const sendForm = async (
       ${data.quantity && <p>Oczekiwana liczba szuflad: ${data.quantity} </p>}
       ${data.sheetDimensions && <p>Maksymalne wymiary arkuszy: ${data.sheetDimensions} </p>}
       `,
-        ReplyTo: 'info@balindustry.com',
+        ReplyTo: `${data.email}`,
         TrackOpens: false,
         TrackLinks: 'None',
         Attachments: [attachment],
