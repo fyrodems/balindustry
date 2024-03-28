@@ -11,7 +11,7 @@ export const validateAllFalse: ValidateAllFalseTypes = (
   setErrorInfo
 ) => {
   const isAllFalse = variants.every(
-    ({ label }: { label: string }) => watch(label) === false
+    ({ fieldName }: { fieldName: string }) => watch(fieldName) === false
   )
   setErrorInfo(isAllFalse ? 'Proszę wybrać przynajmniej jedną opcję' : '')
   return isAllFalse

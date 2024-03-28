@@ -1,6 +1,7 @@
 import { Dispatch, SetStateAction } from 'react'
 import axios from 'axios'
 import { FieldValues } from 'react-hook-form'
+import { satinData } from '@/components/forms/data'
 
 export const sendForm = async (
   data: FieldValues,
@@ -44,16 +45,24 @@ export const sendForm = async (
       }
     }
 
+    const renderSelectedLabels = () => {
+      const selectedLabels = satinData
+        .filter(({ fieldName }) => data[fieldName])
+        .map(({ label }) => label)
+      return selectedLabels.join(', ')
+    }
+
     await axios.post(
       'https://api.postmarkapp.com/email',
       {
         From: 'info@balindustry.com',
-        To: 'k.kepka@kratki.com',
+        To: 'info@balindustry.com',
         Cc: `${data.email}`,
-        Bcc: 'k.kepka@kratki.com',
-        Subject: data.type
-          ? `BAL Industry - zamówienie na ${data.type}`
-          : 'Wiadomość z formularza kontaktowego BAL Industry ',
+        Bcc: 'info@balindustry.com',
+        Subject:
+          data.type || renderSelectedLabels() !== ''
+            ? `BAL Industry - zamówienie na ${renderSelectedLabels() !== '' ? renderSelectedLabels() : data.type}`
+            : 'Wiadomość z formularza kontaktowego BAL Industry ',
         Tag: 'zamówienie',
         HtmlBody: `<h3>Wiadomość z formularza kontaktowego</h3>
       <p>Od: ${data.email}</p>
@@ -64,6 +73,7 @@ export const sendForm = async (
       ${data.paintshops && <p>Wybrane technologie malowania: ${data.paintshops} </p>}
       <p>Czas_realizacji: ${data.realisation} </p>
       <p>Opis: ${data.description} </p>
+      ${renderSelectedLabels() !== '' && <p>Wybrane opcje: {renderSelectedLabels()} </p>}
       ${data.roboticStations && <p>Wybrane rodzaje spawania: {data.roboticStations} </p>}
       ${data.paintshops && <p>Wybrane technologie malowania: ${data.paintshops} </p>}
       ${data.maxDimensions && <p>Maksymalne gabaryty detalu: ${data.maxDimensions} </p>}

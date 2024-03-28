@@ -87,7 +87,7 @@ export const Form = ({ className }: { className?: string }) => {
                 Wybierz rodzaj obróbki (możliwość wielokrotnego&nbsp;wyboru):
               </p>
               <div className="relative mx-auto my-2 flex flex-col items-start justify-start gap-3 sm:flex-row sm:gap-6">
-                {satinData.map(({ label, id }) => (
+                {satinData.map(({ label, id, fieldName }) => (
                   <CheckboxField
                     control={control}
                     key={id}
@@ -95,7 +95,7 @@ export const Form = ({ className }: { className?: string }) => {
                       validateAllFalse(satinData, watch, setErrorInfo)
                     }
                     label={label}
-                    fieldName={label}
+                    fieldName={fieldName}
                   />
                 ))}
                 <p className="absolute -bottom-10 text-xs text-orange-500 sm:-bottom-6">

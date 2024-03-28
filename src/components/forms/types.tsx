@@ -10,7 +10,7 @@ import {
 
 export interface ValidateAllFalseTypes {
   (
-    variants: { label: string; id: number }[],
+    variants: { fieldName: string; id: number }[],
     watch: UseFormWatch<FieldValues>,
     setErrorInfo: React.Dispatch<React.SetStateAction<string>>
   ): boolean

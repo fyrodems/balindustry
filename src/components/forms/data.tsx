@@ -10,10 +10,11 @@ export const mainFormData = [
 ]
 
 export const satinData = [
-  { label: 'Satynowanie', id: 0 },
-  { label: 'Zatępianie krawędzi', id: 1 },
-  { label: 'Szlifowanie', id: 2 },
+  { label: 'Satynowanie', fieldName: 'satinizing', id: 0 },
+  { label: 'Zatępianie krawędzi', fieldName: 'blunting', id: 1 },
+  { label: 'Szlifowanie', fieldName: 'grinding', id: 2 },
 ]
+
 export const roboticStationsData = [
   { label: 'TIG', id: 0 },
   { label: 'MIG', id: 1 },
